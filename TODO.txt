@@ -1,0 +1,59 @@
+## Jungle UI todo
+
+* [x] Implement an icon system
+* [x] Implement proper buttons (Svelte style, with inner layout)
+
+* [ ] Load Inter local
+
+* [x] Design color system
+* [ ] Design color styles for badges
+* [ ] Implement color styles for badges
+
+* [x] Add delete, edit icon
+
+* [x] Add add icon
+
+* [ ] Add modal
+
+* [ ] Implement proper tabs (pill style) component with active state
+* [ ] Implement active state for menu
+
+* [ ] Implement more pleasing link styles (text decoration on hover utility)
+
+* Tables
+    * [ ] Implement zebra stripes on tables
+    * [ ] Align the actions to the end
+
+* [ ] Add Mono icons
+
+* [ ] Make sign out button work
+
+* Test unordered list
+* Test code samples
+* Implement alert stack
+* Test alert stack
+
+* Screens
+    * [ ] Implement sign in screen
+
+* [ ] Implement charts with layercake.graphics
+* [ ] Implement column system for detail page
+
+* [ ] Make alerts use global color system
+
+* [ ] Go through overall CSS - make it use color variables
+
+* [ ] Create style guide route
+* [ ] Implement autoprefixer
+* [ ] Implement chart example from chart.js
+* [ ] Implement scrollable areas
+* [ ] Implement ghost button again
+
+* [ ] Implement dark mode
+
+* [ ] Integrate .svx/mdsvex for markdown content
+
+* [ ] Test SSR
+
+## Done
+

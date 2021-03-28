@@ -1,0 +1,13 @@
+
+/* Use this to make sure screen readers read something sensible when encountering the mi. If you are using the icons decoratively, you can omit the <span> */
+// u = utility
+// d = display
+
+.u-d-sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
