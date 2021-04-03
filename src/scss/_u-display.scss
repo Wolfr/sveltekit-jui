@@ -1,4 +1,13 @@
 
+/* ==========================================================================
+  Utility: display
+  ===
+  Display-related utility classes
+   ========================================================================== */
+
+/* Utilities
+   ========================================================================== */
+
 /* Use this to make sure screen readers read something sensible when encountering the mi. If you are using the icons decoratively, you can omit the <span> */
 // u = utility
 // d = display
@@ -10,4 +19,8 @@
   width:1px;
   height:1px;
   overflow:hidden;
+}
+
+.u-d-block {
+  display: block;
 }

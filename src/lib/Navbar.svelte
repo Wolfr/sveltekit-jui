@@ -7,11 +7,12 @@
 
   */
   export let border = "bottom";
+  export let skin = "white";
 
 </script>
 
 {#if border == "top"}
-  <div class="c-navbar c-navbar--bordered-top"><slot /></div>
+  <div class="c-navbar c-navbar--{skin} c-navbar--bordered-top"><slot /></div>
 {:else}
-  <div class="c-navbar c-navbar--bordered-bottom"><slot /></div>
+  <div class="c-navbar c-navbar--{skin} c-navbar--bordered-bottom"><slot /></div>
 {/if}

@@ -37,7 +37,7 @@
     class:c-button--primary={variant=='primary'}
     class:c-button--secondary={!variant}
     class:c-button--block={block}
-    class:c-button--icon-only={layout=="icon-only"}
+    class:c-button--icon={layout=="icon"}
   >
         <ButtonInnerLayout {icon} {layout}><slot></slot></ButtonInnerLayout>
    </a>
@@ -51,7 +51,7 @@
             class:c-button--primary={variant=='primary'}
             class:c-button--secondary={!variant}
             class:c-button--block={block}
-            class:c-button--icon-only={layout=="icon-only"}
+            class:c-button--icon={layout=="icon"}
             on:submit|preventDefault on:click|preventDefault
         >
             <ButtonInnerLayout {icon} {layout}><slot></slot></ButtonInnerLayout>
@@ -66,7 +66,7 @@
             class:c-button--primary={variant=='primary'}
             class:c-button--secondary={!variant}
             class:c-button--block={block}
-            class:c-button--icon-only={layout=="icon-only"}
+            class:c-button--icon={layout=="icon"}
         >
             <ButtonInnerLayout {icon} {layout}><slot></slot></ButtonInnerLayout>
         </button>

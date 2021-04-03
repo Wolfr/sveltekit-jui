@@ -1,0 +1,32 @@
+/* ==========================================================================
+  c-nav
+ ========================================================================== */
+
+.c-nav {
+  height: 6.4rem;
+}
+
+.c-nav li {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.8rem;
+  height: calc(100% - 0.2rem);
+}
+
+.c-nav__item a {
+  font-weight: $g-headings-font-weight;
+  display: block;
+  padding: 0.4rem 0.8rem;
+  color: $color-gray-600;
+  text-decoration: none;
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.c-nav__item--active {
+  border-bottom: 0.3rem solid $color-primary;
+  a {
+    color: $color-primary;
+  }
+}

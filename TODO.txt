@@ -1,9 +1,17 @@
 ## Jungle UI todo
 
-* [x] Implement an icon system
-* [x] Implement proper buttons (Svelte style, with inner layout)
 
+* [ ] Implement sidebar component in settings
+* [ ] Center sign in form
+
+* [ ] Implement link buttons
+* [ ] Style tab
 * [ ] Load Inter local
+
+* [ ] Add a user profile thing top right
+* [ ] Work on avatar component
+
+* [ ] Work on having a dropdown (with popper)
 
 * [x] Design color system
 * [ ] Design color styles for badges
@@ -57,3 +65,5 @@
 
 ## Done
 
+* [x] Implement an icon system
+* [x] Implement proper buttons (Svelte style, with inner layout)

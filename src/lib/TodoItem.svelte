@@ -15,7 +15,7 @@
     <Checkbox bind:checked={todo.completed} />
     {todo.title} {todo.id}
   </div>
-  <Button on:click={handleDelete} icon="delete" layout="icon-only">Remove</Button>
+  <Button on:click={handleDelete} icon="delete" layout="icon">Remove</Button>
 
 </li>
 

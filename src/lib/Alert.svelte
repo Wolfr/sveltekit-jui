@@ -17,7 +17,7 @@
     <div class="c-alert {type ? 'c-alert--'+type : 'c-alert--default'}" role="alert">
         <slot></slot>
         {#if dismissible}
-            <Button icon="close" layout="icon-only" on:click="{() => show = false}">Close</Button>
+            <Button icon="close" layout="icon" on:click="{() => show = false}">Close</Button>
         {/if}
     </div>
 {/if}
