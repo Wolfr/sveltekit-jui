@@ -35,9 +35,11 @@
     {style}
     class="c-button {classValue ? classValue : ''}"
     class:c-button--primary={variant=='primary'}
-    class:c-button--secondary={!variant}
+    class:c-button--secondary={!variant||variant=='secondary'}
+    class:c-button--borderless={variant=='borderless'}
     class:c-button--block={block}
     class:c-button--icon={layout=="icon"}
+    class:c-button--disabled={disabled}
   >
         <ButtonInnerLayout {icon} {layout}><slot></slot></ButtonInnerLayout>
    </a>
@@ -49,7 +51,8 @@
             class="c-button {classValue ? classValue : ''}"
             {style}
             class:c-button--primary={variant=='primary'}
-            class:c-button--secondary={!variant}
+            class:c-button--secondary={!variant||variant=='secondary'}
+            class:c-button--borderless={variant=='borderless'}
             class:c-button--block={block}
             class:c-button--icon={layout=="icon"}
             on:submit|preventDefault on:click|preventDefault
@@ -64,7 +67,8 @@
             {style}
             on:submit|preventDefault on:click|preventDefault
             class:c-button--primary={variant=='primary'}
-            class:c-button--secondary={!variant}
+            class:c-button--secondary={!variant||variant=='secondary'}
+            class:c-button--borderless={variant=='borderless'}
             class:c-button--block={block}
             class:c-button--icon={layout=="icon"}
         >

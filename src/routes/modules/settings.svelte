@@ -11,14 +11,12 @@
 
 </script>
 
-
-
 <div style="display: flex; height: calc( 100% - 5.6rem);">
-  <div style="padding: 2.4rem; border-right: 1px solid #C3C9D6;">
+  <div style="padding: 2.4rem; border-right: 1px solid #CED3DE;">
     <SideMenu>
-        <SideMenuItem href="/">Nav item 1</SideMenuItem>
-        <SideMenuItem href="/">Nav item 2</SideMenuItem>
-        <SideMenuItem href="/">Nav item 3</SideMenuItem>
+        <SideMenuItem href="/">Setting 1</SideMenuItem>
+        <SideMenuItem href="/">Setting 2</SideMenuItem>
+        <SideMenuItem href="/">Setting 3</SideMenuItem>
     </SideMenu>
   </div>
   <div class="o-scroll-wrapper" style="flex-grow: 1;">

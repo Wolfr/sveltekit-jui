@@ -1,0 +1,62 @@
+
+<script>
+  import Badge from '$lib/Badge.svelte';
+  import Card from '$lib/Card.svelte';
+  import Button from '$lib/Button.svelte';
+  import Navbar from '$lib/Navbar.svelte';
+  import Toolbar from '$lib/Toolbar.svelte';
+  import ToolbarGroup from '$lib/ToolbarGroup.svelte';
+  import ToolbarItem from '$lib/ToolbarItem.svelte';
+  import ToolbarTitle from '$lib/ToolbarTitle.svelte';
+  import Icon from '$lib/Icon.svelte';
+  
+  import Panel from '$lib/Panel.svelte';
+  import PanelHeader from '$lib/PanelHeader.svelte';
+  import PanelBody from '$lib/PanelBody.svelte';
+
+  import FormGroupLayout from '$lib/FormGroupLayout.svelte';
+  import FormGroup from '$lib/FormGroup.svelte';
+
+  import SideMenu from '$lib/SideMenu.svelte';
+  import SideMenuItem from '$lib/SideMenuItem.svelte';
+  import SideMenuSectionHeader from '$lib/SideMenuSectionHeader.svelte';
+  
+  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  
+</script>
+  
+<Navbar>
+  <Toolbar>
+    <ToolbarGroup position="left">
+      <ToolbarItem>
+        <ToolbarTitle>Styleguide</ToolbarTitle>
+      </ToolbarItem>
+    </ToolbarGroup>
+  </Toolbar>
+</Navbar>
+
+<div style="display: flex; height: calc( 100% - 5.6rem);">
+  <div style="padding: 2.4rem 0; border-right: 1px solid #CED3DE;">
+    <SideMenu>
+        <SideMenuSectionHeader>Basics</SideMenuSectionHeader>
+        <SideMenuItem href="/styleguide/basics/icons">Icons</SideMenuItem>
+        <SideMenuItem href="/styleguide/basics/colors">Colors</SideMenuItem>
+        <SideMenuSectionHeader>Components</SideMenuSectionHeader>
+        <SideMenuItem href="/styleguide/components/button">Button</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/badge">Badge</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/panel">Panel</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/side-menu">Side menu</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/pagination">Pagination</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/rich-content">Rich content</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/toolbar">Toolbar</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/checkbox">Checkbox</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/input">Input</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/form-group">Form group</SideMenuItem>
+    </SideMenu>
+  </div>
+  <div class="o-scroll-wrapper" style="flex-grow: 1;">
+    <div class="o-scroll-wrapper__body" style="padding: 2.4rem;">
+        <slot />
+    </div>
+  </div>
+</div>

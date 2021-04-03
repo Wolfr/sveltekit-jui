@@ -42,31 +42,31 @@ $c-button-link-color: $color-primary !default;
 /* Secondary
    ========================================================================== */
 
-   .c-button.c-button--secondary {
-    border: 1px solid $color-primary;
-    background: none;
-    color: $color-primary;
+.c-button.c-button--secondary {
+  border: .1rem solid $color-primary;
+  background: none;
+  color: $color-primary;
 
-    svg * {
-      fill: $color-primary;
-    }
-
-    &:hover,
-    &:active,
-    &.c-button--active,
-    &:active:focus,
-    &.c-button--active:focus {
-      background: $color-brand-blue-200;
-    }
-
+  svg * {
+    fill: $color-primary;
   }
+
+  &:hover,
+  &:active,
+  &.c-button--active,
+  &:active:focus,
+  &.c-button--active:focus {
+    background: $color-brand-blue-200;
+  }
+
+}
 
 
 /* Tertiary
    ========================================================================== */
 
 .c-button.c-button--tertiary {
-  border: 1px solid $color-gray-200;
+  border: .1rem solid $color-gray-200;
   background: #fff;
   color: $color-gray-700;
 
@@ -89,7 +89,7 @@ $c-button-link-color: $color-primary !default;
    ========================================================================== */
 
 .c-button.c-button--default {
-  border: 1px solid $color-gray-200;
+  border: .1rem solid $color-gray-200;
   background: #fff;
   color: $color-gray-700;
 
@@ -129,7 +129,7 @@ $c-button-link-color: $color-primary !default;
    ========================================================================== */
 
 .c-button.c-button--danger-hover {
-  border: 1px solid $color-gray-200;
+  border: .1rem solid $color-gray-200;
   background: #fff;
   color: $color-gray-700;
 

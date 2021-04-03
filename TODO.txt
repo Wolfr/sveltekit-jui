@@ -69,6 +69,10 @@
 * [ ] Update Inter to latest version and only load woff
 * [ ] Implement autoprefixer
 
+## Todos module
+
+* [ ] bug: you can submit the form with enter, and it messes up the app state
+
 ## Done
 
 * [x] Implement an icon system

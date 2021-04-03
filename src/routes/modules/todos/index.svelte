@@ -30,16 +30,18 @@
           <td><a href="/modules/todos/detail">List {i+1}</a></td>
           <td>Apr 3 2021 10:34</td>
           <td>
-            <Badge skin="success">Badge label</Badge>
-            <Badge skin="error">Badge label</Badge>
+            <Badge>Badge label</Badge>
+            <Badge>Badge label</Badge>
           </td>
-          <td class="c-table__actions"><Button href="/modules/todos/detail" layout="icon" icon="chevron-right">Detail page</Button>
+          <td class="c-table__actions">
+            <Button variant="borderless" href="/modules/todos/detail" layout="icon" icon="chevron-right">Detail page</Button>
+          </td>
         </tr>
         {/each}
         
       </tbody>
     </table>
-    
+
     <Pagination />
 
   </div>

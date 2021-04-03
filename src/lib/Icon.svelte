@@ -2,4 +2,4 @@
     export let icon;
 </script>
 
-<i class="mi mi-{icon}"></i>
+<i class="c-icon mi mi-{icon}"></i>

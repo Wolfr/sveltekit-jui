@@ -46,7 +46,7 @@
   <Toolbar>
     <ToolbarGroup position="left">
       <ToolbarItem>
-        <Button href="../data" layout="icon" icon="chevron-left">Back</Button>
+        <Button href="../todos" layout="icon" icon="chevron-left">Back</Button>
       </ToolbarItem>
       <ToolbarItem>
         <ToolbarTitle tag="h2">Todo list 1</ToolbarTitle>

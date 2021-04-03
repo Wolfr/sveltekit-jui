@@ -3,20 +3,32 @@
    ========================================================================== */
 
 .c-badge {
-  color: #333;
-  display: inline-block;
-  background: #CCC;
   font-size: 1.3rem;
-  padding: .6rem;
-  border-radius: .8rem;
+  font-weight: $g-headings-font-weight;
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-badge--default {
+  color: $color-gray-500;
+  background: $color-gray-100;
+}
+
+.c-badge--warning {
+  background: $color-orange-200;
+  color: $color-orange-500;
 }
 
 .c-badge--success {
-  color: $color-green-500;
   background: $color-green-200;
+  color: $color-green-500;
 }
 
-.c-badge--error {
-  color: $color-red-500;
+.c-badge--danger {
   background: $color-red-200;
+  color: $color-red-500;
 }

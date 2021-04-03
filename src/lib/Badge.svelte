@@ -16,6 +16,6 @@
 </script>
 
 
-<span class="c-badge c-badge--{skin}">
+<span class="c-badge {skin ? 'c-badge--'+skin : 'c-badge--default'}">
   <slot />
 </span>

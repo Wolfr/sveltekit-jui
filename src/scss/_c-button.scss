@@ -12,17 +12,17 @@ $c-button-border-radius: 0.3rem !default;
 
 // Sizes (heights)
 
-$c-button-height: 3.6rem !default;
+$c-button-height: 3.4rem !default;
 $c-button-height-small: 3.2rem !default;
 
 // Font size
 
-$c-button-font-size: 1.5rem;
-$c-button-font-size-small: 1.4rem;
+$c-button-font-size: 1.6rem;
+$c-button-font-size-small: 1.3rem;
 
 // Line height
 
-$c-button-line-height: 2.4rem;
+$c-button-line-height: 2.2rem;
 $c-button-line-height-small: 1.8rem;
 
 // Horizontal padding (border included)
@@ -32,7 +32,7 @@ $c-button-padding-horizontal-small: 1rem !default;
 
 // Spacing between icon and label
 
-$c-button-icon-spacing: 0.8rem !default;
+$c-button-icon-spacing: .4rem !default;
 $c-button-icon-spacing-small: 0 !default;
 
 
@@ -49,6 +49,7 @@ $c-button-icon-spacing-small: 0 !default;
   padding: (($c-button-height - $c-button-line-height) / 2) $c-button-padding-horizontal;
   font-size: $c-button-font-size;
   text-align: center;
+  display: inline-flex;
   align-items: center;
   font-weight: 500;
 }
@@ -79,16 +80,16 @@ button.c-button {
   white-space: nowrap;
 }
 
-.o-svg-icon + .c-button__label,
-.c-button__label + .o-svg-icon {
+.c-icon + .c-button__label,
+.c-button__label + .c-icon {
   margin-left: $c-button-icon-spacing;
 }
 
-.c-button:not(.c-button--icon) .o-svg-icon:first-child {
+.c-button:not(.c-button--icon) .c-icon:first-child {
   margin-left: -0.4rem;
 }
 
-.c-button:not(.c-button--icon) .o-svg-icon:last-child {
+.c-button:not(.c-button--icon) .c-icon:last-child {
   margin-right: -0.4rem;
 }
 
@@ -96,11 +97,19 @@ button.c-button {
    ========================================================================== */
 
 .c-button--icon {
-  padding: ($c-button-height - $c-button-line-height)/2;
+  height: 3.6rem;
+  width: 3.6rem;
+  padding: 0;
+  display: inline-flex;
+}
+
+.c-button--icon .c-button__content {
+  width: 100%;
+  text-align: center;
 }
 
 .c-button--small.c-button--icon {
-  padding: ($c-button-height-small - $c-button-line-height-small)/2;;
+  padding: ($c-button-height-small - $c-button-line-height-small)/2;
 }
 
 /* Block button
@@ -121,25 +130,8 @@ button.c-button {
   text-decoration: none;
   &:hover,
   &:active,
-  &:hover svg *,
-  &:active svg * {
+  &:hover .c-icon:before,
+  &:active .c-icon:before {
     color: darken($color-primary, 15%);
-  }
-}
-
-/* File button
-   ---
-   Hide an input type file inside a button that is fully clickable
-   ========================================================================== */
-
-.c-button--file {
-  position: relative;
-  input[type="file"] {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.0001;
   }
 }

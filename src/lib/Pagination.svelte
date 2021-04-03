@@ -3,10 +3,10 @@
 </script>
 
 <div class="o-container-vertical">
-  <Button icon="chevron-left">Previous</Button>
-  <Button>1</Button>
-  <Button>2</Button>
-  <Button>3</Button>
-  <Button>4</Button>
+  <Button icon="chevron-left" disabled>Previous</Button>
+  <Button variant="borderless">1</Button>
+  <Button variant="borderless">2</Button>
+  <Button variant="borderless">3</Button>
+  <Button variant="borderless">4</Button>
   <Button layout="label-icon" icon="chevron-right">Next</Button>
 </div>
