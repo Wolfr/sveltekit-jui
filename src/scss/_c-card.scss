@@ -77,17 +77,6 @@ $c-card-border-color: $color-gray-200 !default;
   border-radius: $c-card-border-radius;
   background-color: #fff;
   height: 100%;
-  *:not(.c-button) {
-    position: relative;
-    pointer-events: none;
-  }
-  .c-button {
-    pointer-events: visible;
-  }
-  .is-selected & {
-    background-color: $color-primary;
-    border-color: $color-primary;
-  }
 }
 
 .c-card__content h3 {

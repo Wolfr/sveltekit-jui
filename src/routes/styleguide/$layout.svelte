@@ -38,11 +38,14 @@
 <div style="display: flex; height: calc( 100% - 5.6rem);">
   <div style="padding: 2.4rem 0; border-right: 1px solid #CED3DE; min-width: 24rem;">
     <SideMenu>
+        <SideMenuItem href="/styleguide/">Intro</SideMenuItem>
         <SideMenuSectionHeader>Basics</SideMenuSectionHeader>
         <SideMenuItem href="/styleguide/basics/icons">Icons</SideMenuItem>
         <SideMenuItem href="/styleguide/basics/colors">Colors</SideMenuItem>
         <SideMenuSectionHeader>Components</SideMenuSectionHeader>
+        <SideMenuItem href="/styleguide/components/avatar">Avatar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/button">Button</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/button-group">Button Group</SideMenuItem>
         <SideMenuItem href="/styleguide/components/badge">Badge</SideMenuItem>
         <SideMenuItem href="/styleguide/components/panel">Panel</SideMenuItem>
         <SideMenuItem href="/styleguide/components/pagination">Pagination</SideMenuItem>
@@ -50,7 +53,11 @@
         <SideMenuItem href="/styleguide/components/form-group">Form group</SideMenuItem>
         <SideMenuItem href="/styleguide/components/toolbar">Toolbar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/checkbox">Checkbox</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/radio-button">Radio button</SideMenuItem>
         <SideMenuItem href="/styleguide/components/input">Input</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/tooltip">Tooltip</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/popover">Popover</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/select">Select (menu)</SideMenuItem>
         <SideMenuItem href="/styleguide/components/side-menu">Side menu</SideMenuItem>
         <SideMenuItem href="/styleguide/components/table">Table</SideMenuItem>
     </SideMenu>

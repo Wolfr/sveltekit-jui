@@ -1,0 +1,155 @@
+/* ==========================================================================
+  Component: Avatar
+  ---
+  A profile image for users. When there is no image, display the initials of the user.
+   ========================================================================== */
+
+/* Variables
+   ========================================================================== */
+
+$c-avatar-default-bg: $color-gray-500 !default;
+$c-avatar-dimensions-xl: 9.6rem !default;
+$c-avatar-dimensions-l: 6.4rem !default;
+$c-avatar-dimensions-m: 4.8rem !default;
+$c-avatar-dimensions: 3.2rem !default;
+$c-avatar-dimensions-s: 2.4rem !default;
+$c-avatar-dimensions-xs: 1.8rem !default;
+
+/* Component
+   ========================================================================== */
+
+.c-avatar {
+  font-size: 1.4rem;
+  font-weight: $g-headings-font-weight;
+  width: $c-avatar-dimensions;
+  height: $c-avatar-dimensions;
+  min-width: $c-avatar-dimensions;
+  min-height: $c-avatar-dimensions;
+  line-height: $c-avatar-dimensions;
+  border-radius: 50%;
+  text-align: center;
+  background-color: $c-avatar-default-bg;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  .o-svg-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative;
+    top: -0.1rem;
+    margin: auto;
+  }
+}
+
+/* Skins
+   ========================================================================== */
+
+.c-avatar--success {
+  background-color: $color-green-500;
+}
+
+.c-avatar--primary {
+  background-color: $color-red-500;
+}
+
+.c-avatar--muted {
+  background-color: $color-gray-500;
+}
+
+/* Sizes
+   ========================================================================== */
+
+.c-avatar--xsmall {
+  width: $c-avatar-dimensions-xs;
+  height: $c-avatar-dimensions-xs;
+  min-width: $c-avatar-dimensions-xs;
+  min-height: $c-avatar-dimensions-xs;
+  line-height: $c-avatar-dimensions-xs;
+  font-size: 0.8rem;
+  .o-svg-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    top: -0.1rem;
+  }
+}
+
+.c-avatar--small {
+  width: $c-avatar-dimensions-s;
+  height: $c-avatar-dimensions-s;
+  min-width: $c-avatar-dimensions-s;
+  min-height: $c-avatar-dimensions-s;
+  line-height: $c-avatar-dimensions-s;
+  font-size: 80%;
+
+  .o-svg-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    position: relative;
+    top: -0.1rem;
+  }
+}
+
+.c-avatar--medium {
+  width: $c-avatar-dimensions-m;
+  height: $c-avatar-dimensions-m;
+  min-width: $c-avatar-dimensions-m;
+  min-height: $c-avatar-dimensions-m;
+  line-height: $c-avatar-dimensions-m;
+  font-size: 1.8rem;
+
+  .o-svg-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative;
+    top: -0.1rem;
+  }
+}
+
+.c-avatar--large {
+  width: $c-avatar-dimensions-l;
+  height: $c-avatar-dimensions-l;
+  min-width: $c-avatar-dimensions-l;
+  min-height: $c-avatar-dimensions-l;
+  line-height: $c-avatar-dimensions-l;
+  font-size: 2.4rem;
+}
+
+/* Image variant
+   ========================================================================== */
+
+.c-avatar--img {
+  background: none;
+  border: 0.1rem solid $color-border;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover; // Not supported in IE
+    object-position: center; // Not supported in IE
+  }
+}
+
+/* Avatar list
+   ========================================================================== */
+
+.c-avatar-list {
+  display: flex;
+  align-items: center;
+
+  .c-avatar + .c-avatar {
+    margin-left: -0.8rem;
+  }
+
+  $i: 0;
+  @while ($i < 10) {
+    .c-avatar:nth-child(#{$i}) {
+      z-index: 10 - $i;
+    }
+    $i: $i + 1;
+  }
+}

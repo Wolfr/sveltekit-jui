@@ -192,7 +192,7 @@
 
 <ul class="c-styleguide-color-categories">
   {#each groups as group}
-    <li class="category">
+    <li>
       <h2 class="c-h3">{group.category}</h2>
       <ul class="c-styleguide-color-list">
         {#each group.values as item}

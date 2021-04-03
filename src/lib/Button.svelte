@@ -1,4 +1,3 @@
-
 <script>
 
     import ButtonInnerLayout from './ButtonInnerLayout.svelte';

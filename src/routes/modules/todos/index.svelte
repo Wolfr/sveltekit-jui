@@ -15,7 +15,7 @@
 <div class="o-container">
   <div class="o-container-vertical">
 
-    <table class="c-table c-table--styled c-table--bordered" style="margin: 0 0 2rem;">
+    <table class="c-table c-table--styled c-table--striped c-table--bordered" style="margin: 0 0 2rem;">
       <thead>
         <tr>
           <th>List name</th>
