@@ -1,5 +1,9 @@
 ## Jungle UI todo
 
+* [ ] Add custom checkbox on deeper todo list page
+* [ ] Fix look of back button on deeper todo list page
+* [ ] Make the form on deeper todo list page an inline form
+* [ ] Document inline forms
 
 * [x] Implement sidebar component in settings
 * [x] Center sign in form
@@ -10,7 +14,6 @@
 * [ ] Implement link buttons
 * [ ] Style tab
 * [x] Load Inter local
-
 
 * [ ] Add a user profile thing top right
 * [ ] Work on avatar component

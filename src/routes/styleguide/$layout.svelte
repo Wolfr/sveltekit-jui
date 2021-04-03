@@ -36,7 +36,7 @@
 </Navbar>
 
 <div style="display: flex; height: calc( 100% - 5.6rem);">
-  <div style="padding: 2.4rem 0; border-right: 1px solid #CED3DE;">
+  <div style="padding: 2.4rem 0; border-right: 1px solid #CED3DE; min-width: 24rem;">
     <SideMenu>
         <SideMenuSectionHeader>Basics</SideMenuSectionHeader>
         <SideMenuItem href="/styleguide/basics/icons">Icons</SideMenuItem>
@@ -45,13 +45,14 @@
         <SideMenuItem href="/styleguide/components/button">Button</SideMenuItem>
         <SideMenuItem href="/styleguide/components/badge">Badge</SideMenuItem>
         <SideMenuItem href="/styleguide/components/panel">Panel</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/side-menu">Side menu</SideMenuItem>
         <SideMenuItem href="/styleguide/components/pagination">Pagination</SideMenuItem>
         <SideMenuItem href="/styleguide/components/rich-content">Rich content</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/form-group">Form group</SideMenuItem>
         <SideMenuItem href="/styleguide/components/toolbar">Toolbar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/checkbox">Checkbox</SideMenuItem>
         <SideMenuItem href="/styleguide/components/input">Input</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/form-group">Form group</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/side-menu">Side menu</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/table">Table</SideMenuItem>
     </SideMenu>
   </div>
   <div class="o-scroll-wrapper" style="flex-grow: 1;">

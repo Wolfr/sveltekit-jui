@@ -9,6 +9,8 @@
 
 </script>
 
+<StyleguideIntro title={pageTitle} />
+
 <StyleguideCard title={pageTitle}>
 
   <FormGroupLayout>

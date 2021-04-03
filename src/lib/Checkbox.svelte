@@ -1,5 +1,20 @@
 <script>
   export let checked;
+  export let label;
+  
+  export let hideLabel = null;
+  
+  function toggle() {
+    checked = !checked;
+  }
 </script>
 
-<input type="checkbox" bind:checked />
+<div class="c-checkbox">
+  <label>
+    <input type="checkbox" bind:checked on:click={toggle} />
+    {#if !hideLabel}
+      {label}
+    {/if}
+
+  </label>
+</div>
