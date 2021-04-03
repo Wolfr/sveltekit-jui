@@ -1,5 +1,6 @@
 <script>
   import Button from '$lib/Button.svelte';
+  import FormGroup from '$lib/FormGroup.svelte';
 </script>
   
 <div class="c-frame">
@@ -9,23 +10,13 @@
           <div class="c-panel c-panel--large">
             <div class="c-panel__body">
               <h2 class="c-h3">Sign in</h2>
-              <form action="/projects/overview.html">
+              <form>
                 <div class="u-spacer-bottom-l">
                   <div class="o-form-group-layout o-form-group-layout--standard">
+                    <FormGroup label="E-mail address" id="emailId" type="email" />
+                    <FormGroup label="Password" id="passwordId" type="password" />
                     <div class="o-form-group">
-                      <label class="o-form-group__label" for="emailId">E-mail address</label>
-                      <div class="o-form-group__controls">
-                        <input class="c-input" id="emailId" type="text" name="email">
-                      </div>
-                    </div>
-                    <div class="o-form-group">
-                      <label class="o-form-group__label" for="passwordId">Password</label>
-                      <div class="o-form-group__controls">
-                        <input class="c-input" id="passwordId" type="password">
-                      </div>
-                    </div>
-                    <div class="o-form-group">
-                      <Button href="/modules/" variant="primary" block>Aanmelden</Button>
+                      <Button href="/modules/todos" variant="primary" block>Sign in</Button>
                     </div>
                   </div>
                 </div>

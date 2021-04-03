@@ -16,7 +16,7 @@
       </ToolbarItem>
       <ToolbarItem>
         <Nav>
-          <NavItem href="/modules/">Todos</NavItem>
+          <NavItem href="/modules/todos">Todos</NavItem>
           <NavItem href="/modules/stats">Stats</NavItem>
           <NavItem href="/modules/settings">Settings</NavItem>
         </Nav>

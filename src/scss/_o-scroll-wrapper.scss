@@ -1,0 +1,15 @@
+/* ==========================================================================
+  Component: scroll wrapper
+   ========================================================================== */
+
+.o-scroll-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.o-scroll-wrapper__body {
+  overflow: scroll;
+  flex: 1;
+  height: 100%;
+}

@@ -1,0 +1,76 @@
+$o-dynamic-grid-breakpoints: (
+  "small": $g-bp1,
+  "medium": $g-bp2,
+  "large": $g-bp3,
+  "extra-large": $g-bp4,
+) !default;
+
+$o-dynamic-grid-column-gap: 2.4rem !default;
+$o-dynamic-grid-row-gap: 2.4rem !default;
+$o-dynamic-grid-max-columns: 6 !default;
+$o-dynamic-grid-max-rows: 6 !default;
+
+$o-dynamic-grid-item-width: 25.6rem !default; // minium width of a dynamic
+$o-dynamic-grid-item-min-width: 4.8rem !default; // the absolute minimum width of a dynamic, to prevent grid blowout
+
+@mixin each-breakpoint {
+  @each $size, $bp in $o-dynamic-grid-breakpoints {
+    @media screen and (min-width: #{$bp}) {
+      @for $i from 1 through $o-dynamic-grid-max-columns {
+        &.#{$size}-up-#{$i} {
+          grid-template-columns: repeat(
+            #{$i},
+            minmax(#{$o-dynamic-grid-item-min-width}, 1fr)
+          );
+        }
+      }
+    }
+  }
+}
+
+.o-dynamic-grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: $o-dynamic-grid-row-gap $o-dynamic-grid-column-gap;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(#{$o-dynamic-grid-item-width}, 1fr)
+  );
+
+  @include each-breakpoint;
+}
+
+.o-dynamic-grid__item {
+  @for $i from 1 through $o-dynamic-grid-max-columns {
+    &[data-column="-#{$i}"] {
+      grid-column-start: -#{$i + 1};
+    }
+
+    &[data-column="#{$i}"] {
+      grid-column-start: #{$i};
+    }
+
+    &[data-column-span="#{$i}"] {
+      grid-column-end: span #{$i};
+    }
+  }
+  @for $i from 1 through $o-dynamic-grid-max-rows {
+    &[data-row="-#{$i}"] {
+      grid-row-start: -#{$i + 1};
+    }
+
+    &[data-row="#{$i}"] {
+      grid-row-start: #{$i};
+    }
+
+    &[data-row-span="#{$i}"] {
+      grid-row-end: span #{$i};
+    }
+  }
+}
+
+.o-dynamic-grid--fill {
+  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr)); 
+}

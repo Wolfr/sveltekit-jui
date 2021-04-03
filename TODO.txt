@@ -1,12 +1,16 @@
 ## Jungle UI todo
 
 
-* [ ] Implement sidebar component in settings
-* [ ] Center sign in form
+* [x] Implement sidebar component in settings
+* [x] Center sign in form
+
+* [x] Implement scroll wrappers
+* [ ] Implement footer positioned navbars
 
 * [ ] Implement link buttons
 * [ ] Style tab
-* [ ] Load Inter local
+* [x] Load Inter local
+
 
 * [ ] Add a user profile thing top right
 * [ ] Work on avatar component
@@ -52,9 +56,8 @@
 * [ ] Go through overall CSS - make it use color variables
 
 * [ ] Create style guide route
-* [ ] Implement autoprefixer
+
 * [ ] Implement chart example from chart.js
-* [ ] Implement scrollable areas
 * [ ] Implement ghost button again
 
 * [ ] Implement dark mode
@@ -62,6 +65,9 @@
 * [ ] Integrate .svx/mdsvex for markdown content
 
 * [ ] Test SSR
+
+* [ ] Update Inter to latest version and only load woff
+* [ ] Implement autoprefixer
 
 ## Done
 
