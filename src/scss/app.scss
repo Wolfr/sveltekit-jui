@@ -39,3 +39,24 @@ html, body, #svelte {
   height: 100%;
   overflow: hidden;
 }
+
+// Bedrock
+
+.br-prototype-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.br-prototype-wrapper__content {
+  flex: 0 1 100%;
+  height: 100%;
+}
+
+.br-prototype-wrapper__nav {
+  z-index: 3000;
+  width: 32rem;
+  background: #FFF;
+  box-shadow: 0 0 0.8rem rgba(0,0,0,0.15);
+}

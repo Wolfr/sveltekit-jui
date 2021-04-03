@@ -31,17 +31,3 @@
 </Navbar>
 
 <slot></slot>
-
-<div class="c-styleguide-link">
-  <a href="/styleguide">View styleguide</a>
-</div>
-
-<style>
-
-  .c-styleguide-link {
-    position: fixed;
-    bottom: 1.6rem;
-    right: 1.6rem;
-  }
-
-</style>

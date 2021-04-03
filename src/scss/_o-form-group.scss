@@ -60,9 +60,11 @@ $o-form-group-label-font-weight: $g-headings-font-weight !default;
 
 .o-form-group-layout--inline {
   display: flex;
+
   .o-form-group__label {
     white-space: nowrap;
   }
+
   .o-form-group {
     display: flex;
     flex: 1 0 auto;

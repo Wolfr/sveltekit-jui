@@ -6,7 +6,14 @@
   import Card from '$lib/Card.svelte';
   import Input from '$lib/Input.svelte';
   import Navbar from '$lib/Navbar.svelte';
+  
+  import FormGroup from '$lib/FormGroup.svelte';
+  import FormGroupLayout from '$lib/FormGroupLayout.svelte';
+  
+  // Specific
   import TodoItem from '$lib/TodoItem.svelte';
+
+  // Toolbar
   import Toolbar from '$lib/Toolbar.svelte';
   import ToolbarGroup from '$lib/ToolbarGroup.svelte';
   import ToolbarItem from '$lib/ToolbarItem.svelte';
@@ -46,7 +53,7 @@
   <Toolbar>
     <ToolbarGroup position="left">
       <ToolbarItem>
-        <Button href="../todos" layout="icon" icon="chevron-left">Back</Button>
+        <Button href="../todos" layout="icon" variant="borderless" icon="chevron-left">Back</Button>
       </ToolbarItem>
       <ToolbarItem>
         <ToolbarTitle tag="h2">Todo list 1</ToolbarTitle>
@@ -58,9 +65,15 @@
 <main>
   <div class="u-spacer">
     <div class="o-container-vertical">
-        <form preventdefault>
-          <Input type="text" bind:value={todoText} />
-          <Button on:submit={addTodo} on:click={addTodo} icon="add">Add item</Button>
+        <form on:submit|preventDefault={addTodo}>
+          <FormGroupLayout layoutType="inline">
+            <FormGroup layoutType="inline">
+              <Input type="text" bind:value={todoText} />
+            </FormGroup>
+            <FormGroup layoutType="inline">
+              <Button on:submit={addTodo} on:click={addTodo} icon="add">Add item</Button>
+            </FormGroup>
+          </FormGroupLayout>
         </form>
     </div>
   

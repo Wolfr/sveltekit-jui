@@ -36,7 +36,7 @@
 </Navbar>
 
 <div style="display: flex; height: calc( 100% - 5.6rem);">
-  <div style="padding: 2.4rem 0; border-right: 1px solid #CED3DE; min-width: 24rem;">
+  <div style="padding: 2.4rem 0; border-right: 1px solid #CED3DE; min-width: 24rem; overflow: auto">
     <SideMenu>
         <SideMenuItem href="/styleguide/">Intro</SideMenuItem>
         <SideMenuSectionHeader>Basics</SideMenuSectionHeader>
