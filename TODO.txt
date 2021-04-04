@@ -1,20 +1,44 @@
 ## Jungle UI todo
 
+* [ ] Svelte kit: experiment with server routes equivalent
 
-* [ ] Add an overal “brand” (leaf icon @rinxols?)
-* [ ] Proper CSS for link button
 
-* [ ] Blank slate component
-* [ ] Support icons on badges, left and right side
+* [ ] Examples: create a contact form
+* [ ] Examples: create a pricing page
+* [ ] Examples: create a blog post
+* [ ] Examples: create a blog comments list
+* [ ] Examples: create a simple pagination for blog
 
-* [ ] Implement forgot password success page
 
-* [ ] Implement alert stack base logic (showing alert stack in all its positions)
-* [ ] Implement accordion
+* [ ] Todo page: disable the button when the input is empty
+* [ ] Todo page: strike-through the todo when checked
+* [ ] Todo list: add a "created by" column where the cells have avatars
+* [ ] Todo list: actually delete the item from the list when delete is called
+
+* [ ] Menu with icon component
+* [ ] Nav menu (top): support icons
+
+
+* [ ] Stats page: try to integrate layercake.graphics (again)
 
 * [ ] Add a favicon
+    * [ ] Add an overal “brand” (leaf icon @rinxols?) or draw one myself
+* [ ] Proper CSS for link button, differentiated from actual button
+
+* [ ] Add blank slate component
+* [ ] Add circular badge component
+* [ ] Change badge component into pill component
+* [ ] Support icons on pills, on left and right side
+
+* [ ] Screen: Implement forgot password success page, with success alert
+
+* [ ] Sortable table header
+* [ ] Checkbox table
+
+* [ ] Implement alert stack base logic (showing alert stack in all its positions)
 
 * [ ] Add modal example to style guide
+* [ ] Fix modal examples messing with scroll
 
 * [ ] Document toolbar centered examples
 

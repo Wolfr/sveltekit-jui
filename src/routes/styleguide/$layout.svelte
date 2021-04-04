@@ -72,7 +72,6 @@
         <!-- <SideMenuItem href="/styleguide/components/popover">Popover</SideMenuItem> -->
         <SideMenuItem href="/styleguide/components/radio-button">Radio button</SideMenuItem>
         <SideMenuItem href="/styleguide/components/radio-group">Radio group</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/rich-content">Rich content</SideMenuItem>
         <SideMenuItem href="/styleguide/components/side-menu">Side menu</SideMenuItem>
         <SideMenuItem href="/styleguide/components/spinner">Spinner</SideMenuItem>
         <SideMenuItem href="/styleguide/components/table">Table</SideMenuItem>
