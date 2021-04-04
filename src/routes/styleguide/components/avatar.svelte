@@ -45,7 +45,7 @@
   
 </script>
 
-<StyleguideIntro title={pageTitle} />
+<StyleguideIntro title={pageTitle} content="<p>A profile picture.</p>" />
 
 <StyleguideCard title={pageTitle}
   code="&lt;Avatar initials=&quot;JC&quot; /&gt;">

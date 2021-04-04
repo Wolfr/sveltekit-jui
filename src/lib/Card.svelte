@@ -4,6 +4,8 @@
 
 <div class="c-card {cssClass}">
   <div class="c-card__content">
-    <slot />
+    <div class="c-content">
+      <slot />
+    </div>
   </div>
 </div>

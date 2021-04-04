@@ -1,20 +1,19 @@
 
-
 <script>
   import '../scss/app.scss';
 
-let visible = true;
+  let pageIndexVisible = true;
 
-function toggleVisibility() {
-  visible = !visible;
-}
-
-let trigger = '§';
-function handleKeydown(e) {
-  if (e.key == trigger) {
-    visible = !visible;
+  function toggleVisibility() {
+    pageIndexVisible = !pageIndexVisible;
   }
-}
+
+  let trigger = '§';
+  function handleKeydown(e) {
+    if (e.key == trigger) {
+      pageIndexVisible = !pageIndexVisible;
+    }
+  }
 
 </script>
 
@@ -22,7 +21,7 @@ function handleKeydown(e) {
   <div class="br-prototype-wrapper__content">
     <slot />
   </div>
-  {#if visible}
+  {#if pageIndexVisible}
   <div class="br-prototype-wrapper__nav">
     <div class="u-spacer">
       <div class="c-content">
@@ -32,16 +31,24 @@ function handleKeydown(e) {
         <p>View the <a href="/styleguide">style guide</a>.</p>
 
         <ul>
-          <li><a href="/">Login</a></li>
-          <li><a href="/forgot-password">Forgot password</a></li>
           <li>
-            <a href="/modules/todos">Todos</a>
+              <a href="/site/">Website</a>
+          </li>
+          <li>
+            <a href="/app">App</a>
             <ul>
-              <li><a href="/modules/todos/detail">Detail</a></li>
+              <li><a href="/app/">Login</a></li>
+              <li><a href="/app/forgot-password">Forgot password</a></li>
+              <li>
+                <a href="/app/modules/todos">Todos</a>
+                <ul>
+                  <li><a href="/app/modules/todos/detail">Detail</a></li>
+                </ul>
+              </li>
+              <li><a href="/app/modules/stats">Stats</a></li>
+              <li><a href="/app/modules/settings">Settings</a></li>
             </ul>
           </li>
-          <li><a href="/modules/stats">Stats</a></li>
-          <li><a href="/modules/settings">Settings</a></li>
         </ul>
 
       </div>

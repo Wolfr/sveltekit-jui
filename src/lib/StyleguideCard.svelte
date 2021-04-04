@@ -1,7 +1,7 @@
 <script>
   export let title = null;
   export let code = null;
-  export let description;
+  export let description = null;
 
   let showCode = false;
 
@@ -28,7 +28,7 @@
     {#if showCode}
       <div class="c-styleguide-code-block">
         <pre class="c-pre"><code>{code}</code></pre>
-        <button class="c-copy-code-button c-tiny-button" on:click={copyCode}>Copy code</button>
+        <!-- <button class="c-copy-code-button c-tiny-button" on:click={copyCode}>Copy code</button> -->
       </div>
       
     {/if}
@@ -42,7 +42,7 @@
     position: relative;
     background: red;
   }
-  
+
   .c-tiny-button {
     border: .1rem solid #CED3DE;
     background: #FFF;

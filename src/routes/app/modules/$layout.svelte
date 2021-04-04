@@ -6,7 +6,11 @@
   import Navbar from '$lib/Navbar.svelte';
   import Nav from '$lib/Nav.svelte';
   import NavItem from '$lib/NavItem.svelte';
+  import Avatar from '$lib/Avatar.svelte';  
+  
 </script>
+
+
 
 <Navbar skin="gray-50">
   <Toolbar>
@@ -16,15 +20,18 @@
       </ToolbarItem>
       <ToolbarItem>
         <Nav>
-          <NavItem href="/modules/todos">Todos</NavItem>
-          <NavItem href="/modules/stats">Stats</NavItem>
-          <NavItem href="/modules/settings">Settings</NavItem>
+          <NavItem href="/app/modules/todos">Todos</NavItem>
+          <NavItem href="/app/modules/stats">Stats</NavItem>
+          <NavItem href="/app/modules/settings">Settings</NavItem>
         </Nav>
       </ToolbarItem>
     </ToolbarGroup>
     <ToolbarGroup position="right">
       <ToolbarItem>
-        <p><a href="/">Sign out</p>
+        <Avatar />
+      </ToolbarItem>
+      <ToolbarItem>
+        <p><a href="/app">Sign out</p>
       </ToolbarItem>
     </ToolbarGroup>
   </Toolbar>

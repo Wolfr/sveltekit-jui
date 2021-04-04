@@ -1,40 +1,43 @@
 ## Jungle UI todo
 
-* [ ] Add a user profile thing top right
-* [ ] Work on avatar component
 
-* [ ] Implement paste button
-
-* [ ] Implement Svelte Prism https://www.npmjs.com/package/svelte-prism
+* [ ] Implement alerts
+* [ ] Implement alert stack base
+* [ ] Document utility classes
+* [ ] Document containers (objects page)
 
 * [ ] Implement footer positioned navbars
-
-* [ ] Implement link buttons
 * [ ] Style tab
-
-
-* [ ] Work on having a dropdown (with popper)
-
-* [ ] Accordion
-* [ ] Segmented control
-* [ ] Tooltip
 * [ ] Add modal
-* [ ] Implement proper tabs (pill style) component with active state
-* [ ] Implement active state for menu
 
+* [ ] Add Mono icons as devDependency instead of CDN
+
+### External reference needed (component level)
+
+* [ ] Accordion component
+* [ ] Tabs component
+* [ ] Segmented control (with radio)
+
+### External reference needed
+
+* [ ] Implement Svelte Prism https://www.npmjs.com/package/svelte-prism
+* [ ] Implement copy paste button (using clipboard js?)
+* [ ] Work on having a dropdown (with popper)
+* [ ] Tooltip
+* [ ] Implement link buttons
+
+### Uncategorized
+
+* [ ] Implement proper tabs (pill style) component with active state
 * [ ] Implement more pleasing link styles (text decoration on hover utility)
 
-* [ ] Add Mono icons
+* [x] Make sign out button work
 
-* [ ] Make sign out button work
+* [ ] Test unordered list
+* [ ] Syntax highlight code samples
+* [ ] Implement alert stack animations
+* [ ] Test alert stack
 
-* Test unordered list
-* Test code samples
-* Implement alert stack
-* Test alert stack
-
-* Screens
-    * [ ] Implement sign in screen
 
 * [ ] Implement charts with layercake.graphics
 * [ ] Implement column system for detail page
@@ -43,10 +46,6 @@
 
 * [ ] Go through overall CSS - make it use color variables
 
-* [ ] Create style guide route
-
-* [ ] Implement chart example from chart.js
-* [ ] Implement ghost button again
 
 * [ ] Implement dark mode
 
@@ -55,9 +54,12 @@
 * [ ] Test SSR
 
 * [ ] Update Inter to latest version and only load woff
-* [ ] Implement autoprefixer
+* [ ] Implement autoprefixer to CSS build logic
+
+### Bedrock-like todos
 
 * [ ] Add local filter (using JS) to styleguide tree left
+* [ ] Add Ctrl+M shortcut
 
 ## Todos module
 
@@ -82,3 +84,9 @@
 * [x] Load Inter local
 * [x] Tables: Implement zebra stripes on tables
 * [x] Tables: Align the actions to the end
+* [x] Screens: Implement sign in screen
+* [x] Create style guide route
+* [x] Active states on the main menu
+* [x] Add a user profile thing top right
+* [x] Work on avatar component
+* [x] Implement active state for menu

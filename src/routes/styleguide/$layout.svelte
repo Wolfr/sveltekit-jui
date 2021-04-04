@@ -42,14 +42,17 @@
         <SideMenuSectionHeader>Basics</SideMenuSectionHeader>
         <SideMenuItem href="/styleguide/basics/icons">Icons</SideMenuItem>
         <SideMenuItem href="/styleguide/basics/colors">Colors</SideMenuItem>
+        <SideMenuSectionHeader>Objects</SideMenuSectionHeader>
+        <SideMenuItem href="/styleguide/objects/form-group">Form group</SideMenuItem>
+        <SideMenuItem href="/styleguide/objects/dynamic-grid">Dynamic grid</SideMenuItem>
         <SideMenuSectionHeader>Components</SideMenuSectionHeader>
         <SideMenuItem href="/styleguide/components/avatar">Avatar</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/button">Button</SideMenuItem>
         <SideMenuItem href="/styleguide/components/badge">Badge</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/button">Button</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/button-toolbar">Button Toolbar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/panel">Panel</SideMenuItem>
         <SideMenuItem href="/styleguide/components/pagination">Pagination</SideMenuItem>
         <SideMenuItem href="/styleguide/components/rich-content">Rich content</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/form-group">Form group</SideMenuItem>
         <SideMenuItem href="/styleguide/components/toolbar">Toolbar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/checkbox">Checkbox</SideMenuItem>
         <SideMenuItem href="/styleguide/components/radio-button">Radio button</SideMenuItem>

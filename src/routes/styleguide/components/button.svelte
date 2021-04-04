@@ -78,6 +78,14 @@
         {
           name: 'borderless',
           default: false
+        },
+        {
+          name: 'danger',
+          default: false
+        },
+        {
+          name: 'danger-hover',
+          default: false
         }
       ]
     }
@@ -108,6 +116,8 @@
   <Button>Secondary button</Button>
   <Button variant="primary">Primary button</Button>
   <Button variant="borderless">Borderless button</Button>
+  <Button variant="danger">Danger button</Button>
+  <Button variant="danger-hover">Danger on hover button</Button>
 </StyleguideCard>
 
 <StyleguidePropsTable propsTable={propsTable} />

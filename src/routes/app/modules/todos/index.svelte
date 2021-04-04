@@ -26,14 +26,14 @@
     <tbody>
       {#each {length: 10} as elem, i}
       <tr>
-        <td><a href="/modules/todos/detail">List {i+1}</a></td>
+        <td><a href="/app/modules/todos/detail">List {i+1}</a></td>
         <td>Apr 3 2021 10:34</td>
         <td>
           <Badge>Badge label</Badge>
           <Badge>Badge label</Badge>
         </td>
         <td class="c-table__actions">
-          <Button variant="borderless" href="/modules/todos/detail" layout="icon" icon="chevron-right">Detail page</Button>
+          <Button variant="borderless" href="/app/modules/todos/detail" layout="icon" icon="chevron-right">Detail page</Button>
         </td>
       </tr>
       {/each}

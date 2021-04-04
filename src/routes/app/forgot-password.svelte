@@ -16,6 +16,7 @@
         <div class="u-spacer-bottom">
           <div class="c-panel c-panel--large">
             <div class="c-panel__body">
+              <a href="../app">Back</a>
               <h2 class="c-h3">Forgot password</h2>
               
               <div class="o-container-vertical">

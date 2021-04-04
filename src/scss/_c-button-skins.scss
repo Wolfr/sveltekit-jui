@@ -8,7 +8,6 @@
    ========================================================================== */
 
 $c-button-text-color: $g-text-color !default;
-$c-button-hover-border-color: $color-gray-150 !default;
 $c-button-outline-color: $color-primary !default;
 $c-button-focus-ring-color: $color-primary !default;
 $c-button-link-color: $color-primary !default;
@@ -111,10 +110,6 @@ $c-button-link-color: $color-primary !default;
   background: $color-red-500;
   color: #FFF;
 
-  svg * {
-    fill: #FFF;
-  }
-
   &:active,
   &.c-button--active,
   &:active:focus,
@@ -124,7 +119,6 @@ $c-button-link-color: $color-primary !default;
 
 }
 
-
 /* Danger hover
    ========================================================================== */
 
@@ -133,10 +127,6 @@ $c-button-link-color: $color-primary !default;
   background: #fff;
   color: $color-gray-700;
 
-  svg * {
-    fill: $c-button-text-color;
-  }
-
   &:active,
   &:hover,
   &.c-button--active,
@@ -144,6 +134,7 @@ $c-button-link-color: $color-primary !default;
   &.c-button--active:focus {
     background: $color-red-500;
     color: #FFF;
+    border-color: $color-red-500;
     box-shadow: inset 0 0 0 0.1rem $color-red-500;
     transition: box-shadow 0.18s ease-in-out, background 0.18s ease-in-out, color 0.18s ease-in-out;
     svg * {
@@ -162,7 +153,7 @@ $c-button-link-color: $color-primary !default;
   border: 0;
 
   &:hover {
-    box-shadow: inset 0 0 0 0.1rem $c-button-hover-border-color;
+    box-shadow: inset 0 0 0 0.1rem $color-gray-200;
   }
 
   &:active,
@@ -170,7 +161,7 @@ $c-button-link-color: $color-primary !default;
   &:active:focus,
   &.c-button--active:focus {
     background: $color-gray-100;
-    box-shadow: inset 0 0 0 0.1rem $c-button-hover-border-color;
+    box-shadow: inset 0 0 0 0.1rem $color-gray-200;
   }
 
 }
@@ -220,20 +211,20 @@ $c-button-link-color: $color-primary !default;
 /* Invisible
    ========================================================================== */
 
-   .c-button--invisible {
-    position: absolute;
-    display: block;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 0.3rem;
-  
-    &:hover,
-    &:focus {
-      background-color: $color-gray-25;
-      border: .1rem solid $color-primary;
-    }
+.c-button--invisible {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+
+  &:hover,
+  &:focus {
+    background-color: $color-gray-25;
+    border: .1rem solid $color-primary;
   }
+}

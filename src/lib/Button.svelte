@@ -21,6 +21,14 @@
     export let layout = null;
     export let variant = null;
 
+    let variantValue = '';
+
+    if (variant) {
+      variantValue = 'c-button--'+variant;
+    } else {
+       variantValue = 'c-button--secondary';
+    }
+
 </script>
 
 <!--
@@ -32,10 +40,7 @@
    <a
     href="{href}"
     {style}
-    class="c-button {classValue ? classValue : ''}"
-    class:c-button--primary={variant=='primary'}
-    class:c-button--secondary={!variant||variant=='secondary'}
-    class:c-button--borderless={variant=='borderless'}
+    class="c-button {classValue ? classValue : ''} { variantValue }"
     class:c-button--block={block}
     class:c-button--icon={layout=="icon"}
     class:c-button--disabled={disabled}
@@ -47,11 +52,8 @@
         <button
             type="submit"
             {disabled}
-            class="c-button {classValue ? classValue : ''}"
+            class="c-button {classValue ? classValue : ''} { variantValue }"
             {style}
-            class:c-button--primary={variant=='primary'}
-            class:c-button--secondary={!variant||variant=='secondary'}
-            class:c-button--borderless={variant=='borderless'}
             class:c-button--block={block}
             class:c-button--icon={layout=="icon"}
             on:submit|preventDefault on:click|preventDefault
@@ -62,12 +64,9 @@
         <button
             type="button"
             {disabled}
-            class="c-button {classValue ? classValue : ''}"
+            class="c-button {classValue ? classValue : ''} { variantValue }"
             {style}
             on:submit|preventDefault on:click|preventDefault
-            class:c-button--primary={variant=='primary'}
-            class:c-button--secondary={!variant||variant=='secondary'}
-            class:c-button--borderless={variant=='borderless'}
             class:c-button--block={block}
             class:c-button--icon={layout=="icon"}
         >

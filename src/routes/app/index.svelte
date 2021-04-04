@@ -1,7 +1,6 @@
 <script>
   import Button from '$lib/Button.svelte';
   import FormGroup from '$lib/FormGroup.svelte';
-
 </script>
 
 <div class="c-frame">
@@ -17,7 +16,7 @@
                   <FormGroup label="E-mail address" id="emailId" type="email" />
                   <FormGroup label="Password" id="passwordId" type="password" />
                   <div class="o-form-group">
-                    <Button href="/modules/todos" variant="primary" block>Sign in</Button>
+                    <Button href="/app/modules/todos/" variant="primary" block>Sign in</Button>
                   </div>
                 </div>
               </div>
@@ -25,7 +24,7 @@
           </div>
         </div>
       </div>
-      <a class="u-text-muted u-text-center u-d-block" href="/forgot-password">Forgot password?</a>
+      <a class="u-text-muted u-text-center u-d-block" href="/app/forgot-password">Forgot password?</a>
     </div>
   </div>
 </div>

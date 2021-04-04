@@ -111,3 +111,15 @@ $c-card-border-color: $color-gray-200 !default;
   }
 }
 
+
+
+.c-card .c-content {
+  *:first-child {
+    margin-top: 0;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+
+}

@@ -1,6 +1,7 @@
 <script>
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import Button from '$lib/Button.svelte';
 
   let pageTitle = 'Popover';
 
@@ -10,6 +11,6 @@
 
 <StyleguideCard title={pageTitle}>
 
-TODO
+  <Button>Click to show a popover</Button>
 
 </StyleguideCard>
