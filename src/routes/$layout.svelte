@@ -49,7 +49,7 @@
         <li>
           <span>App</span>
           <ul>
-            <li><a href="/app/">Login</a></li>
+            <li><a href="/app/">Sign in</a></li>
             <li><a href="/app/forgot-password">Forgot password</a></li>
             <li>
               <a href="/app/modules/todos">Todos</a>

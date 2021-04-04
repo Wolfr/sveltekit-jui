@@ -61,6 +61,7 @@
         <SideMenuItem href="/styleguide/components/avatar">Avatar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/badge">Badge</SideMenuItem>
         <SideMenuItem href="/styleguide/components/button">Button</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/button-link">Button (Link)</SideMenuItem>
         <SideMenuItem href="/styleguide/components/button-toolbar">Button Toolbar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/checkbox">Checkbox</SideMenuItem>
         <SideMenuItem href="/styleguide/components/input-text">Input (text)</SideMenuItem>

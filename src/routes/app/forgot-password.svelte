@@ -1,5 +1,6 @@
 <script>
   import Button from '$lib/Button.svelte';
+  import LinkButton from '$lib/LinkButton.svelte';
 
   import Input from '$lib/Input.svelte';
   import FormGroup from '$lib/FormGroup.svelte';
@@ -16,7 +17,9 @@
         <div class="u-spacer-bottom">
           <div class="c-panel c-panel--large">
             <div class="c-panel__body">
-              <a href="../app">Back</a>
+
+              <LinkButton href="../app" icon="chevron-left">Back</LinkButton>
+
               <h2 class="c-h3">Forgot password</h2>
               
               <div class="o-container-vertical">

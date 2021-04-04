@@ -1,4 +1,5 @@
 <script>
+
   import Button from '$lib/Button.svelte';
   import ButtonToolbar from '$lib/ButtonToolbar.svelte';
   
@@ -19,31 +20,6 @@
 
 </div>
 
-<div class="c-modal-context c-modal-context--visible ">
-  <div class="c-modal-backdrop c-modal-backdrop--visible"></div>
-  <div class="c-modal c-modal--small" role="dialog" aria-labelledby="modalTitle-02">
-    <div class="c-modal__push"></div>
-    <div class="c-modal__body">
-      <div class="u-spacer-l u-spacer-bottom-auto">
-        <h3 class="c-h3">Modal Window</h3>
-        <p class="u-p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-    </div>
-    <div class="c-modal__footer">
-      <div class="c-toolbar c-toolbar--spaced">
-        <div class="c-toolbar__right">
-          <div class="c-toolbar__item">
-            <ButtonToolbar>
-              <Button>Cancel</Button>
-              <Button variant="primary">Save</Button>
-            </ButtonToolbar>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="c-modal__push"></div>
-  </div>
-</div>
 
 <div class="c-modal-backdrop c-modal-backdrop--visible" style="position:absolute;z-index:0;"></div>
 <div class="c-modal c-modal--medium" role="dialog" aria-labelledby="modalTitle-01">

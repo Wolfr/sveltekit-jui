@@ -6,11 +6,32 @@
   let pageTitle = 'Alert';
   import Alert from '$lib/Alert.svelte';
 
+  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
+
   let propsTable = [
     {
       name: 'closable',
       description: 'Alert is closable.',
       required: false,
+    },
+    {
+      name: 'type',
+      description: 'Determines look of the alert.',
+      required: false,
+      options: [
+        {
+          name: 'success',
+          default: false
+        },
+        {
+          name: 'error',
+          default: false
+        },
+        {
+          name: 'warning',
+          default: false
+        }
+      ]
     }
   ]
 

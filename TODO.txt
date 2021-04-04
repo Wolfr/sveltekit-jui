@@ -2,8 +2,10 @@
 
 
 * [ ] Add an overal “brand” (leaf icon @rinxols?)
+* [ ] Proper CSS for link button
 
 * [ ] Blank slate component
+* [ ] Support icons on badges, left and right side
 
 * [ ] Implement forgot password success page
 
