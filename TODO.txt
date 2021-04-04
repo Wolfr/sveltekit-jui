@@ -1,6 +1,8 @@
 ## Jungle UI todo
 
 
+* [ ] Implement typography docs
+
 * [ ] Implement alerts
 * [ ] Implement alert stack base
 * [ ] Document utility classes
@@ -9,6 +11,11 @@
 * [ ] Implement footer positioned navbars
 * [ ] Style tab
 * [ ] Add modal
+
+* [ ] Spinner
+
+* [ ] Progress bar
+    <progress value="59" max="100" />
 
 * [ ] Add Mono icons as devDependency instead of CDN
 
@@ -24,6 +31,8 @@
 * [ ] Implement copy paste button (using clipboard js?)
 * [ ] Work on having a dropdown (with popper)
 * [ ] Tooltip
+    * What is an elegant way to make something accessible across entire app?
+    
 * [ ] Implement link buttons
 
 ### Uncategorized

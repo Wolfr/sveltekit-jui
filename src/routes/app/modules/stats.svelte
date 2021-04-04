@@ -16,7 +16,7 @@
       </Panel>
     </div>
     <div class="o-dynamic-grid__item">
-      <Panel minimal>
+      <Panel>
           <PanelHeader title="Panel header" />
           <PanelBody>
               <p>I am other HTML content.</p>
@@ -24,7 +24,7 @@
       </Panel>
     </div>
     <div class="o-dynamic-grid__item">
-      <Panel minimal>
+      <Panel>
         <PanelHeader>
             <div slot="panel-header">
               <h2>

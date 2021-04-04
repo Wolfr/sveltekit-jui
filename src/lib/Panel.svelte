@@ -1,7 +1,7 @@
 <script>
-    export let minimal = false;
+
 </script>
 
-<div class="c-panel {minimal ? 'c-panel--minimal' : ''}">
+<div class="c-panel">
   <slot></slot>
 </div>

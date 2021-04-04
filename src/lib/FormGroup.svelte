@@ -1,9 +1,9 @@
 <script>
-  export let label;
+  export let label = null;
   export let layoutType = null;
-  export let type;
-  export let value;
-  export let id;
+  export let type = null;
+  export let value = null;
+  export let id = null;
   export let cssClass = null;
 </script>
 

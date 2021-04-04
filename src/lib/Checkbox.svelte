@@ -1,6 +1,6 @@
 <script>
-  export let checked;
-  export let label;
+  export let checked = null;
+  export let label = null;
   
   export let hideLabel = null;
   

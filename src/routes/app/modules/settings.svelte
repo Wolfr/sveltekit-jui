@@ -23,7 +23,7 @@
   </div>
   <div class="o-scroll-wrapper" style="flex-grow: 1;">
     <div class="o-scroll-wrapper__body" style="padding: 2.4rem;">
-        <Panel minimal>
+        <Panel>
           <PanelHeader title="Setting name" />
             <PanelBody>
                 <FormGroupLayout>
