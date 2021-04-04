@@ -9,6 +9,8 @@
 
 * [ ] Work on this progress bar at the top? The spinning circle in the middle is too much of a flash
 
+* [ ] Work on validation: grab form help text, form help text error etc from other projects and correctly pass it into the way forms are built
+
 * [ ] Examples: create a contact form
 * [ ] Examples: create a pricing page
 * [ ] Examples: create a blog post
