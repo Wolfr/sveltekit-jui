@@ -141,18 +141,17 @@
       hex: '#263261',
       category: 'Tertiary'
     }
-
   ]
   
   let groups = data.reduce((curr, val) => {
-  let group = curr.find(g => g.category === `${val.category}`)
-  if (group) {
-    group.values.push(val)
-  } else {
-    curr.push({ category: `${val.category}`, values: [ val ] }) 
-  }
-  return curr
-}, [])
+    let group = curr.find(g => g.category === `${val.category}`)
+    if (group) {
+      group.values.push(val)
+    } else {
+      curr.push({ category: `${val.category}`, values: [ val ] }) 
+    }
+    return curr
+  }, [])
 
 </script>
 
