@@ -2,6 +2,7 @@
   export let title = null;
   export let code = null;
   export let description = null;
+  export let id = null;
 
   let showCode = false;
 
@@ -10,7 +11,7 @@
   }
 </script>
 
-<div class="o-container-vertical">
+<div class="o-container-vertical" {id}>
   {#if title}
   <h3 class="c-h3">{title}</h3>
   {/if}

@@ -1,4 +1,8 @@
 <script>
+  import { navigating } from '$app/stores';
+
+  import Spinner from '$lib/Spinner.svelte';
+  
   import '../scss/app.scss';
 
   let pageIndexVisible = true;
@@ -23,7 +27,13 @@
 
 <div class="br-prototype-wrapper">
   <div class="br-prototype-wrapper__content">
-    <slot />
+    {#if $navigating}
+      <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
+        <Spinner />
+      </div>
+    {:else}
+      <slot />
+    {/if}
   </div>
   {#if pageIndexVisible}
   <div class="br-prototype-wrapper__nav">

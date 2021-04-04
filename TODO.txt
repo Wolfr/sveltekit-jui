@@ -2,10 +2,12 @@
 
 * [ ] Svelte kit: experiment with server routes equivalent
 
-* [ ] Work on unique identifiers e.g. in radio groups
+* [ ] Work on unique identifiers e.g. in radio groups, partly done but needs to be a generated UUID
 
-* [ ] Document input group
-* [ ] Document input file 
+* [ ] Document input group (there is a CSS file for this but no docs, this is about append/prepend)
+* [ ] Document input file (there is a CSS file for this but no docs)
+
+* [ ] Work on this progress bar at the top? The spinning circle in the middle is too much of a flash
 
 * [ ] Examples: create a contact form
 * [ ] Examples: create a pricing page
@@ -29,7 +31,6 @@
 
 * [ ] Menu with icon component
 * [ ] Nav menu (top): support icons
-
 
 * [ ] Stats page: try to integrate layercake.graphics (again)
 
