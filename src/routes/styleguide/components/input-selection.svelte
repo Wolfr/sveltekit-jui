@@ -2,13 +2,13 @@
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
 
-  let pageTitle = 'Select';
+  let pageTitle = 'Input (Selection)';
 
 </script>
 
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title={pageTitle}>
+<StyleguideCard title="Select menu">
 
   <div class="c-select-holder">
     <select class="c-select">
@@ -19,3 +19,9 @@
   </div>
 
 </StyleguideCard>
+
+<!-- <StyleguideCard title="Select menu (custom)">
+
+   @TODO
+
+</StyleguideCard> -->

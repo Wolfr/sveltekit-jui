@@ -57,12 +57,6 @@
   margin: 1.4rem 0;
 }
 
-.c-subline {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06rem;
-}
-
 .c-content {
 
   p {
@@ -74,7 +68,7 @@
   }
 
   dl {
-    border: 1px solid $color-gray-100;
+    border: .1rem solid $color-gray-100;
     border-radius: .3rem;
     overflow: hidden;
     padding: 1.2rem;
@@ -145,12 +139,8 @@
   .c-button {
     text-decoration: none;
   }
-}
 
-.c-content--inverse {
-  color: $color-gray-100;
 }
-
 
 .c-pre, .c-content pre {
   background: $color-gray-50;

@@ -6,23 +6,34 @@
   let pageTitle = 'Alert';
   import Alert from '$lib/Alert.svelte';
 
+  let propsTable = [
+    {
+      name: 'closable',
+      description: 'Alert is closable.',
+      required: false,
+    }
+  ]
+
 </script>
 
 <StyleguideIntro title={pageTitle} />
 
 <StyleguideCard title={pageTitle}>
 
-  <Alert type="success" icon="check">Hey</Alert>
+  <Alert>This is an alert with no specified type.</Alert>
   <br>
-  <Alert type="error">Hey</Alert>
+  <Alert type="success">This is a succes message!</Alert>
   <br>
-  <Alert>Hey</Alert>
+  <Alert type="error">This is an error message.</Alert>
+  <br>
+  <Alert type="warning">This is a warning message.</Alert>
 
 </StyleguideCard>
 
 <StyleguideCard title={pageTitle}>
 
-  <Alert dismissible>Hey</Alert>
+  <Alert closable>Hey, I am a closable alert.</Alert>
 
 </StyleguideCard>
 
+<StyleguidePropsTable propsTable={propsTable} />

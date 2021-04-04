@@ -6,6 +6,8 @@
 * [ ] Implement alert stack base logic (showing alert stack in all its positions)
 * [ ] Implement accordion
 
+* [ ] Add a favicon
+
 * [ ] Document toolbar centered examples
 
 * [ ] Add spinner to project
@@ -69,7 +71,6 @@
 
 * [ ] Go through overall CSS - make it use color variables
 
-
 * [ ] Implement dark mode
 
 * [ ] Integrate .svx/mdsvex for markdown content
@@ -113,3 +114,8 @@
 * [x] Add a user profile thing top right
 * [x] Work on avatar component
 * [x] Implement active state for menu
+
+## My feedback on Svelte kit
+
+* Needs a title system
+* Needs a way to add meta tags properly per page

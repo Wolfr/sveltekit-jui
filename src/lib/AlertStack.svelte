@@ -1,9 +1,7 @@
 <script>
 
-  
-
 </script>
 
-<div class="c-accordion">
+<div class="c-alert-stack">
   <slot />
 </div>

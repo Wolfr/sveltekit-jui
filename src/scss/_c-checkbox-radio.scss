@@ -8,25 +8,12 @@
    ========================================================================== */
 
 $c-checkbox-input-border-radius: 0.3rem !default;
-
 $c-checkbox-size: 1.6rem !default;
 $c-checkbox-small-size: 1.2rem !default;
 $c-radio-size: 1.6rem !default;
 $c-radio-dot-size: $c-radio-size / 2 !default;
-
 $c-checkbox-icon-size: 1.6rem !default;
 
-$c-checkbox-background-color: #FFF !default;
-$c-radio-background-color: #FFF !default;
-
-$c-checkbox-spacing: 0.8rem !default;
-$c-radio-spacing: 0.8rem !default;
-
-$c-checkbox-spacing-inline: 0.8rem !default;
-$c-radio-spacing-inline: 0.8rem !default;
-
-$c-checkbox-checked-color: $color-primary !default;
-$c-radio-checked-color: $color-primary !default;
 
 /* Spacing/Grouping
    ========================================================================== */
@@ -74,7 +61,7 @@ $c-radio-checked-color: $color-primary !default;
 .c-checkbox input[type='checkbox']:checked,
 .c-checkbox input[type='checkbox'][data-indeterminate]:checked,
 .c-radio input[type='radio']:checked {
-  border-color: $c-checkbox-checked-color;
+  border-color: $color-primary;
 
   &:before {
     opacity: 1;
@@ -98,12 +85,12 @@ $c-radio-checked-color: $color-primary !default;
    ========================================================================== */
 
 .c-checkbox input[type='checkbox'] {
-  background: $c-checkbox-background-color;
+  background: #FFF;
   border: .1rem solid $color-gray-300;
   border-radius: $c-checkbox-input-border-radius;
   height: $c-checkbox-size;
   width: $c-checkbox-size;
-  margin: 0 $c-checkbox-spacing 0 0;
+  margin: 0 .8rem 0 0;
 
   &:before {
     width: 1.6rem;
@@ -135,18 +122,18 @@ $c-radio-checked-color: $color-primary !default;
    ========================================================================== */
 
 .c-radio input[type='radio'] {
-  background: $c-radio-background-color;
+  background: #FFF;
   border: .1rem solid $color-gray-300;
   border-radius: 100%;
   height: $c-radio-size;
   width: $c-radio-size;
-  margin: 0 $c-radio-spacing 0 0;
+  margin: 0 .8rem 0 0;
 }
 
 .c-radio input[type='radio']:checked,
 .c-radio input[type='radio'][disabled] {
   &:before {
-    background: $c-radio-checked-color;
+    background: $color-primary;
     height: $c-radio-dot-size;
     width: $c-radio-dot-size;
     top: ($c-radio-size - $c-radio-dot-size - 0.2rem) / 2;
@@ -174,7 +161,7 @@ $c-radio-checked-color: $color-primary !default;
   .c-radio {
     display: inline-block;
     height: $c-radio-size;
-    margin-right: $c-radio-spacing-inline;
+    margin-right: .8rem;
   }
 }
 
@@ -182,7 +169,7 @@ $c-radio-checked-color: $color-primary !default;
   .c-checkbox {
     display: inline-block;
     height: $c-checkbox-size;
-    margin-right: $c-checkbox-spacing-inline;
+    margin-right: .8rem;
   }
 }
 

@@ -58,20 +58,24 @@
         <SideMenuItem href="/styleguide/components/button">Button</SideMenuItem>
         <SideMenuItem href="/styleguide/components/button-toolbar">Button Toolbar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/checkbox">Checkbox</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/input">Input</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/input-text">Input (text)</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/input-selection">Input (selection)</SideMenuItem>
         <SideMenuItem href="/styleguide/components/modal">Modal</SideMenuItem>
         <SideMenuItem href="/styleguide/components/pagination">Pagination</SideMenuItem>
         <SideMenuItem href="/styleguide/components/panel">Panel</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/popover">Popover</SideMenuItem>
+        <!-- <SideMenuItem href="/styleguide/components/popover">Popover</SideMenuItem> -->
         <SideMenuItem href="/styleguide/components/radio-button">Radio button</SideMenuItem>
         <SideMenuItem href="/styleguide/components/radio-group">Radio group</SideMenuItem>
         <SideMenuItem href="/styleguide/components/rich-content">Rich content</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/select">Select (menu)</SideMenuItem>
         <SideMenuItem href="/styleguide/components/side-menu">Side menu</SideMenuItem>
         <SideMenuItem href="/styleguide/components/spinner">Spinner</SideMenuItem>
         <SideMenuItem href="/styleguide/components/table">Table</SideMenuItem>
         <SideMenuItem href="/styleguide/components/toolbar">Toolbar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/tooltip">Tooltip</SideMenuItem>
+        <SideMenuSectionHeader>Utilities</SideMenuSectionHeader>
+        <SideMenuItem href="/styleguide/utilities/spacer">Spacer</SideMenuItem>
+        <SideMenuItem href="/styleguide/utilities/flex">Flex</SideMenuItem>
+        <SideMenuItem href="/styleguide/utilities/display">Display</SideMenuItem>
     </SideMenu>
   </div>
   <div class="o-scroll-wrapper" style="flex-grow: 1;">

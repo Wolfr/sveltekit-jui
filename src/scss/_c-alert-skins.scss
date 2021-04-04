@@ -18,26 +18,25 @@ $c-dark-alert-bg-color: $color-gray-700 !default;
   border: 1px solid $color-gray-100;
 }
 
-.c-alert--dark {
-  border: none;
-  background: $c-dark-alert-bg-color;
-  color: #FFF;
-  a {
-    color: #FFF;
-    border-bottom: 1px solid rgba(#FFF,0.5);
-  }
-}
-
 .c-alert--success {
   background: $color-green-200;
+  .c-icon {
+    color: $color-green-500;
+  }
 }
 
 .c-alert--error {
   background: $color-red-200;
+  .c-icon {
+    color: $color-red-500;
+  }
 }
 
 .c-alert--warning {
   background: $color-orange-200;
+  .c-icon {
+    color: $color-orange-500;
+  }
 }
 
 .c-alert--loading {
