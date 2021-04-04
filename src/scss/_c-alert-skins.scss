@@ -15,10 +15,11 @@ $c-dark-alert-bg-color: $color-gray-700 !default;
 .c-alert {
   background: #FFF;
   border-radius: 0.3rem;
-  border: 1px solid $color-gray-100;
+  border: .1rem solid $color-gray-200;
 }
 
 .c-alert--success {
+  border-color: darken($color-green-200, 10%);
   background: $color-green-200;
   .c-icon {
     color: $color-green-500;
@@ -26,6 +27,7 @@ $c-dark-alert-bg-color: $color-gray-700 !default;
 }
 
 .c-alert--error {
+  border-color: darken($color-red-200, 10%);
   background: $color-red-200;
   .c-icon {
     color: $color-red-500;
@@ -33,6 +35,7 @@ $c-dark-alert-bg-color: $color-gray-700 !default;
 }
 
 .c-alert--warning {
+  border-color: darken($color-orange-200, 10%);
   background: $color-orange-200;
   .c-icon {
     color: $color-orange-500;

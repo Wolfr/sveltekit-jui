@@ -2,13 +2,25 @@
 
 * [ ] Svelte kit: experiment with server routes equivalent
 
+* [ ] Work on unique identifiers e.g. in radio groups
+
+* [ ] Document input group
+* [ ] Document input file 
 
 * [ ] Examples: create a contact form
 * [ ] Examples: create a pricing page
 * [ ] Examples: create a blog post
 * [ ] Examples: create a blog comments list
 * [ ] Examples: create a simple pagination for blog
+* [ ] Examples: create an icon toolbar, with a segmented divider
 
+* [ ] Examples: create a mobile tabbed view (arkiplan mobile vue)
+* [ ] Examples: create a mobile list view (arkiplan mobile vue)
+
+
+* [ ] Component: Input with icon left right
+* [ ] Component: Datepicker
+* [ ] Media card (cfr. YouTube)
 
 * [ ] Todo page: disable the button when the input is empty
 * [ ] Todo page: strike-through the todo when checked

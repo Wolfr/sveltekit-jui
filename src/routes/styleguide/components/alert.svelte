@@ -6,8 +6,6 @@
   let pageTitle = 'Alert';
   import Alert from '$lib/Alert.svelte';
 
-  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
-
   let propsTable = [
     {
       name: 'closable',

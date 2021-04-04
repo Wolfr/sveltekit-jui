@@ -1,6 +1,7 @@
 <script>
   export let options;
   export let inline;
+  export let uuid;
 
   let activeIndex = 0;
 
@@ -19,18 +20,19 @@
 <div class="c-radio-group { inline ? 'c-radio-group--inline' : '' }">
   {#each options as item, index}
   <div class="c-radio">
-    <label for="radio-{index+1}">
+    <label for={uuid+index}>
         <input
             type="radio"
-            id="radio-{index+1}"
-            name="group-radios"
-            value={item}
+            id={uuid+index}
+            name={uuid}
+            value={uuid+index}
             autocomplete="off"
-            checked={activeIndex == index}
+            checked={item.checked}
+            disabled={item.disabled}
             on:change={ () => activeIndex = index}
             on:change={ () => sendValue(item) }
         >
-        {item}
+        {item.name}
     </label>
   </div>
   {/each}

@@ -11,29 +11,10 @@
 
   let propsTable = [
     {
-      name: 'skin',
-      description: 'Changes the look of the badge.',
-      required: false,
-      options: [
-        {
-          name: 'default',
-          default: true
-        },
-        {
-          name: 'success',
-          default: false
-        },
-        {
-          name: 'warning',
-          default: false
-        },
-        {
-          name: 'danger',
-          default: false
-        }
-      ]
-    },
-    
+      name: 'compact',
+      description: 'Moves the buttons into one another.',
+      required: false
+    }    
   ]
   
 </script>
@@ -50,11 +31,16 @@
   </ButtonToolbar>
 </StyleguideCard>
 
-<StyleguideCard title="Button toolbar (compact)" code="&lt;ButtonToolbar compact&gt;
-  &lt;Button&gt;A button&lt;/Button&gt;
-  &lt;Button&gt;A button&lt;/Button&gt;
-&lt;/ButtonToolbar&gt;">
+<StyleguideCard>
   <ButtonToolbar compact>
+    <Button icon="add">A button</Button>
+    <Button icon="delete">A button</Button>
+  </ButtonToolbar>
+</StyleguideCard>
+
+<StyleguideCard>
+  <ButtonToolbar compact>
+    <Button>A button</Button>
     <Button>A button</Button>
     <Button>A button</Button>
   </ButtonToolbar>

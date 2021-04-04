@@ -116,6 +116,9 @@
   <Button>Secondary button</Button>
   <Button variant="primary">Primary button</Button>
   <Button variant="borderless">Borderless button</Button>
+</StyleguideCard>
+
+<StyleguideCard title="Danger buttons">
   <Button variant="danger">Danger button</Button>
   <Button variant="danger-hover">Danger on hover button</Button>
 </StyleguideCard>

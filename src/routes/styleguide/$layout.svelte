@@ -8,6 +8,7 @@
   import ToolbarItem from '$lib/ToolbarItem.svelte';
   import ToolbarTitle from '$lib/ToolbarTitle.svelte';
   import Icon from '$lib/Icon.svelte';
+  import Input from '$lib/Input.svelte';
   
   import Panel from '$lib/Panel.svelte';
   import PanelHeader from '$lib/PanelHeader.svelte';
@@ -41,6 +42,9 @@
 
 <div style="display: flex; height: calc( 100% - 5.6rem);">
   <div style="padding: 2.4rem 0; border-right: 1px solid #CED3DE; min-width: 24rem; overflow: auto">
+    <!-- <div style="padding: 0 2.4rem 2.4rem;">
+      <Input icon="search" type="search"  placeholder="Enter a search term..." />
+    </div> -->
     <SideMenu>
         <SideMenuItem href="/styleguide/">Intro</SideMenuItem>
         <SideMenuSectionHeader>Dev notes</SideMenuSectionHeader>
@@ -57,6 +61,7 @@
         <SideMenuItem href="/styleguide/objects/dynamic-grid">Dynamic grid</SideMenuItem>
         <SideMenuSectionHeader>Components</SideMenuSectionHeader>
         <SideMenuItem href="/styleguide/components/accordion">Accordion</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/accordion-item">Accordion Item</SideMenuItem>
         <SideMenuItem href="/styleguide/components/alert">Alert</SideMenuItem>
         <SideMenuItem href="/styleguide/components/avatar">Avatar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/badge">Badge</SideMenuItem>

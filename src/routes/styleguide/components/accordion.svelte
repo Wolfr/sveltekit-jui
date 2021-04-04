@@ -24,11 +24,14 @@
       open: false
     }
   ]
+  
+  let propsTable = false;
+
 </script>
 
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title="Inline accordion">
+<StyleguideCard title="Accordion" description="<p>Wraps <code>AccordionItem</code>s together.</p>">
   <Accordion>
       {#each accordionContent as item}
       <AccordionItem title={item.title} open={item.open}>
@@ -37,3 +40,6 @@
       {/each}
   </Accordion>
 </StyleguideCard>
+
+
+<StyleguidePropsTable propsTable={propsTable} />

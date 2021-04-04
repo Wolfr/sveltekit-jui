@@ -2,12 +2,12 @@
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
 
-  let pageTitle = 'Input';
+  let pageTitle = 'Input (text)';
   
   import Input from '$lib/Input.svelte';
 </script>
 
-<StyleguideIntro title={pageTitle} />
+<StyleguideIntro title={pageTitle} content="Inputs for inputting text."/>
 
 <StyleguideCard title={pageTitle}>
   <Input />
@@ -19,4 +19,8 @@
 
 <StyleguideCard title="Password"}>
   <Input type="password" />
+</StyleguideCard>
+
+<StyleguideCard title="Textarea"}>
+  <textarea class="c-input" />
 </StyleguideCard>

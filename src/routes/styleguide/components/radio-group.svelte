@@ -5,6 +5,42 @@
   let pageTitle = 'Radio group';
   
   import RadioGroup from '$lib/RadioGroup.svelte';
+  
+  let optionSet1 = [
+    {
+        name:'Option 1',
+        disabled: false,
+        checked: true
+    },
+    {
+        name:'Option 2',
+        disabled: false,
+    },
+    {
+        name:'Option 3',
+        disabled: false,
+    },
+  ]
+
+  let optionSet2 = [
+    {
+        name:'Option 1',
+        disabled: false,
+        checked: true
+    },
+    {
+        name:'Option 2',
+        disabled: false,
+    },
+    {
+        name:'Option 3',
+        disabled: false,
+    },
+    {
+        name:'Disabled option',
+        disabled: true,
+    },
+  ]
 
 </script>
 
@@ -12,12 +48,12 @@
 
 <StyleguideCard title={pageTitle}>
 
-  <RadioGroup options={['Option 1', 'Option 2', 'Option 3']} />
+  <RadioGroup options={optionSet1} uuid="suh12" />
 
 </StyleguideCard>
 
 <StyleguideCard title="Radio group (inline)">
 
-  <RadioGroup options={['Option 1', 'Option 2', 'Option 3']}  inline />
+  <RadioGroup options={optionSet2}  inline uuid="suh2" />
 
 </StyleguideCard>

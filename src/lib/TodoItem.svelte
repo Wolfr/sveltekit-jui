@@ -12,7 +12,7 @@
 
 <li class="c-todo-item">
   <div>
-    <Checkbox bind:checked={todo.completed} label={todo.title} />
+    <Checkbox bind:checked={todo.completed} label={todo.title} cssClass="strikethrough" />
     <!-- {todo.id} -->
   </div>
   <Button on:click={handleDelete} icon="delete" layout="icon">Remove</Button>
@@ -33,6 +33,10 @@
     justify-content: space-between;
     align-items: center;
     padding: .8rem;
+  }
+  
+  :global(.c-todo-item .strikethrough) {
+    text-decoration: line-through;
   }
 
 </style>
