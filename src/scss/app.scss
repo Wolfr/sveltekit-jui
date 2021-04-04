@@ -1,18 +1,24 @@
 @import "https://unpkg.com/mono-icons@1.2.4/iconfont/icons.css";
 
+// Settings
 @import "../scss/s-colors";
 @import "../scss/s-fonts";
 @import "../scss/s-semantic-colors";
 @import "../scss/s-variables";
 
+// Generic
 @import "../scss/reset";
+
+// Elements
 @import "../scss/e-base";
 
+// Objects
 @import "../scss/o-container";
 @import "../scss/o-dynamic-grid";
 @import "../scss/o-form-group";
 @import "../scss/o-scroll-wrapper";
 
+// Components
 @import "../scss/c-accordion";
 @import "../scss/c-alert-skins";
 @import "../scss/c-alert-stack";
@@ -41,8 +47,7 @@
 @import "../scss/c-table";
 @import "../scss/c-toolbar";
 
-
-
+// Utilities
 @import "../scss/u-display";
 @import "../scss/u-text";
 @import "../scss/u-spacer";
@@ -53,7 +58,7 @@ html, body, #svelte {
   overflow: hidden;
 }
 
-// Bedrock
+// Bedrock specific, remove in production
 
 .br-prototype-wrapper {
   display: flex;

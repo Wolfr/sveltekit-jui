@@ -1,21 +1,12 @@
 <script>
-  import Badge from '$lib/Badge.svelte';
-  import Card from '$lib/Card.svelte';
-  import Button from '$lib/Button.svelte';
+
   import Navbar from '$lib/Navbar.svelte';
   import Toolbar from '$lib/Toolbar.svelte';
   import ToolbarGroup from '$lib/ToolbarGroup.svelte';
   import ToolbarItem from '$lib/ToolbarItem.svelte';
   import ToolbarTitle from '$lib/ToolbarTitle.svelte';
-  import Icon from '$lib/Icon.svelte';
-  import Input from '$lib/Input.svelte';
-  
-  import Panel from '$lib/Panel.svelte';
-  import PanelHeader from '$lib/PanelHeader.svelte';
-  import PanelBody from '$lib/PanelBody.svelte';
 
-  import FormGroupLayout from '$lib/FormGroupLayout.svelte';
-  import FormGroup from '$lib/FormGroup.svelte';
+  import Input from '$lib/Input.svelte';
 
   import SideMenu from '$lib/SideMenu.svelte';
   import SideMenuItem from '$lib/SideMenuItem.svelte';
@@ -197,12 +188,12 @@
     <title>{pageTitle} - Components - Style guide - JUI</title>
 </svelte:head>
 
-<div style="display: flex; height: calc( 100% - 5.6rem);">
-  <div style="padding: 2.4rem 0; border-right: 1px solid #CED3DE; min-width: 24rem; overflow: auto">
+<div class="c-styleguide-wrapper">
+  <div class="c-styleguide-sidebar">
 
-    <!-- <div style="padding: 0 2.4rem 2.4rem;">
+    <div style="padding: 0 2.4rem 2.4rem;">
       <Input icon="search" type="search"  placeholder="Enter a search term..." />
-    </div> -->
+    </div>
 
     <SideMenu>
       <SideMenuItem href="/styleguide/">Intro</SideMenuItem>
@@ -221,3 +212,18 @@
     </div>
   </div>
 </div>
+
+<style>
+
+  .c-styleguide-wrapper {
+    display: flex; height: calc( 100% - 5.6rem);
+  }
+  
+  .c-styleguide-sidebar {
+    padding: 2.4rem 0;
+    border-right: 1px solid #CED3DE;
+    min-width: 24rem;
+    overflow: auto;
+  }
+
+</style>

@@ -1,4 +1,5 @@
 <script>
+  import Alert from '$lib/Alert.svelte';
   import Button from '$lib/Button.svelte';
   import LinkButton from '$lib/LinkButton.svelte';
 
@@ -6,8 +7,22 @@
   import FormGroup from '$lib/FormGroup.svelte';
   import FormGroupLayout from '$lib/FormGroupLayout.svelte';
   
+  let success = false;
+  let emailFieldBlankError = false;
+  let emailNotAnEmailError = false;
+  let email = '';
+  
   function submitForgotPassword() {
-    alert('To be implemented;')
+    // first, validate the email
+    if (email = '') {
+      emailFieldBlankError = true;
+    }
+    if (email = 'jr') {
+      emailNotAnEmailError = true;
+    }
+    if (!emailFieldBlankError && !emailNotAnEmailError) {
+      success = true;
+    }
   }
 </script>
   
@@ -21,19 +36,28 @@
               <LinkButton href="../app" icon="chevron-left">Back</LinkButton>
 
               <h2 class="c-h3">Forgot password</h2>
+
+              <p>Forgot your password? No problem, simply enter your e-mail address to receive a reset link.</p>
               
               <div class="o-container-vertical">
+                {#if success}
+                  <Alert type="success"><p><strong>Check your e-mail.</strong> If you don't see anything, make sure to whitelist e-mails from domain xyz.com.</p></Alert>
+                {:else}
                   <form on:submit|preventDefault={submitForgotPassword}>
                     <FormGroupLayout layoutType="inline">
                       <FormGroup layoutType="inline">
-                        <Input type="email" placeholder="Enter your e-mail address..." />
+                          <Input type="email" bind:value={email} placeholder="Enter your e-mail address..." />
+                          {#if emailFieldBlankError}<p class="{">Field must be filled.</p>{/if}
+                          {#if emailNotAnEmailError}<p>This value is not a correct e-mail address.</p>{/if}
                       </FormGroup>
                       <FormGroup layoutType="inline">
-                        <Button>Send</Button>
+                        <Button on:click="{submitForgotPassword}">Send</Button>
                       </FormGroup>
                     </FormGroupLayout>
                   </form>
+                {/if}
               </div>
+
             </div>
           </div>
         </div>
