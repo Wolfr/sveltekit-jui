@@ -11,10 +11,23 @@
 
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title={pageTitle}>
+<StyleguideCard title={pageTitle} id="alert-stack-demo">
   <AlertStack>
-    <Alert>This is an alert with no specified type.</Alert>
+    <Alert closable>This is an alert with no specified type.</Alert>
     <Alert type="success">This is a succes message!</Alert>
   </AlertStack>
 </StyleguideCard>
 
+
+<style>
+
+  :global(#alert-stack-demo .c-card__content) {
+    position: relative;
+    min-height: 40rem;
+  }
+
+  :global(#alert-stack-demo .c-card__content .c-alert-stack) {
+    position: absolute;
+  }
+
+</style>
