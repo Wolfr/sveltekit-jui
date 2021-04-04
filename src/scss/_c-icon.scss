@@ -2,6 +2,12 @@
   c-icon
    ========================================================================== */
 
+.c-icon {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+}
+
 .c-icon:before {
   font-size: 2rem;
 }

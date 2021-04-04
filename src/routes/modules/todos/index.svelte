@@ -12,37 +12,35 @@
   import ToolbarItem from '$lib/ToolbarItem.svelte';
 </script>
 
-<div class="o-container">
-  <div class="o-container-vertical">
+<div class="u-spacer-l">
 
-    <table class="c-table c-table--styled c-table--striped c-table--bordered" style="margin: 0 0 2rem;">
-      <thead>
-        <tr>
-          <th>List name</th>
-          <th>Last modified</th>
-          <th>Tags</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        {#each {length: 10} as elem, i}
-        <tr>
-          <td><a href="/modules/todos/detail">List {i+1}</a></td>
-          <td>Apr 3 2021 10:34</td>
-          <td>
-            <Badge>Badge label</Badge>
-            <Badge>Badge label</Badge>
-          </td>
-          <td class="c-table__actions">
-            <Button variant="borderless" href="/modules/todos/detail" layout="icon" icon="chevron-right">Detail page</Button>
-          </td>
-        </tr>
-        {/each}
-        
-      </tbody>
-    </table>
+  <table class="c-table c-table--styled c-table--striped c-table--bordered" >
+    <thead>
+      <tr>
+        <th>List name</th>
+        <th>Last modified</th>
+        <th>Tags</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {#each {length: 10} as elem, i}
+      <tr>
+        <td><a href="/modules/todos/detail">List {i+1}</a></td>
+        <td>Apr 3 2021 10:34</td>
+        <td>
+          <Badge>Badge label</Badge>
+          <Badge>Badge label</Badge>
+        </td>
+        <td class="c-table__actions">
+          <Button variant="borderless" href="/modules/todos/detail" layout="icon" icon="chevron-right">Detail page</Button>
+        </td>
+      </tr>
+      {/each}
+      
+    </tbody>
+  </table>
 
-    <Pagination />
+  <Pagination />
 
-  </div>
 </div>

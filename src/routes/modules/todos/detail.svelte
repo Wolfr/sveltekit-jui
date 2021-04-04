@@ -64,18 +64,16 @@
 
 <main>
   <div class="u-spacer">
-    <div class="o-container-vertical">
-        <form on:submit|preventDefault={addTodo}>
-          <FormGroupLayout layoutType="inline">
-            <FormGroup layoutType="inline">
-              <Input type="text" bind:value={todoText} />
-            </FormGroup>
-            <FormGroup layoutType="inline">
-              <Button on:submit={addTodo} on:click={addTodo} icon="add">Add item</Button>
-            </FormGroup>
-          </FormGroupLayout>
-        </form>
-    </div>
+    <form on:submit|preventDefault={addTodo} style="width: 100%;">
+      <FormGroupLayout layoutType="inline">
+        <FormGroup cssClass="o-form-group--inline-grow" layoutType="inline">
+          <Input type="text" bind:value={todoText} />
+        </FormGroup>
+        <FormGroup cssClass="o-form-group--inline-shrink" layoutType="inline">
+          <Button on:submit={addTodo} on:click={addTodo} icon="add">Add item</Button>
+        </FormGroup>
+      </FormGroupLayout>
+    </form>
   
     <div class="o-container-vertical">
       <ul class="c-todo-list">

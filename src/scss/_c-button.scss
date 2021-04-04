@@ -103,9 +103,17 @@ button.c-button {
   display: inline-flex;
 }
 
-.c-button--icon .c-button__content {
+.c-button--icon .c-button__content,
+.c-button--icon .c-button__icon-wrap {
   width: 100%;
+  height: 100%;
   text-align: center;
+}
+
+.c-button--icon .c-button__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .c-button--small.c-button--icon {

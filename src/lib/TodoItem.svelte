@@ -12,8 +12,8 @@
 
 <li class="c-todo-item">
   <div>
-    <Checkbox bind:checked={todo.completed} />
-    {todo.title} {todo.id}
+    <Checkbox bind:checked={todo.completed} label={todo.title} />
+    <!-- {todo.id} -->
   </div>
   <Button on:click={handleDelete} icon="delete" layout="icon">Remove</Button>
 
@@ -28,7 +28,7 @@
     }
   }
 
-  li {
+  .c-todo-item {
     display: flex;
     justify-content: space-between;
     align-items: center;

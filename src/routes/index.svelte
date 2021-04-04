@@ -3,7 +3,7 @@
   import FormGroup from '$lib/FormGroup.svelte';
 
 </script>
-  
+
 <div class="c-frame">
   <div class="o-container-vertical o-container-vertical--padding-small">
     <div class="o-container o-container--small">

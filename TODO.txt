@@ -1,6 +1,6 @@
 ## Jungle UI todo
 
-* [ ] Add custom checkbox on deeper todo list page
+* [x] Add custom checkbox on deeper todo list page
 
 * Implement Svelte Prism https://www.npmjs.com/package/svelte-prism
 
