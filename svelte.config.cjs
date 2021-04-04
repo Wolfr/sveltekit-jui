@@ -2,6 +2,7 @@ const sveltePreprocess = require('svelte-preprocess');
 const node = require('@sveltejs/adapter-node');
 const pkg = require('./package.json');
 const vercel = require('@sveltejs/adapter-vercel');
+const dsv = require('@rollup/plugin-dsv');
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
@@ -22,7 +23,8 @@ module.exports = {
 		vite: {
 			ssr: {
 				noExternal: Object.keys(pkg.dependencies || {})
-			}
+			},
+      plugins: [dsv()]
 		}
 	}
 };

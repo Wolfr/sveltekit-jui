@@ -7,6 +7,7 @@
 		"start": "svelte-kit start"
 	},
 	"devDependencies": {
+		"@rollup/plugin-dsv": "^2.0.1",
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/kit": "next",

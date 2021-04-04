@@ -3,13 +3,14 @@
 
     import { LayerCake, Svg } from 'layercake';
 
-    import Line from './components/Line.svelte';
-    import Area from './components/Area.svelte';
-    import AxisX from './components/AxisX.svelte';
-    import AxisY from './components/AxisY.svelte';
+    import Line from '$lib/Line.svelte';
+    import Area from '$lib/Area.svelte';
+    import AxisX from '$lib/AxisX.svelte';
+    import AxisY from '$lib/AxisY.svelte';
 
     // This example loads csv data as json using @rollup/plugin-dsv
-    import data from './data/points.csv';
+
+    import data from '../../data/points.csv';
 
     const xKey = 'myX';
     const yKey = 'myY';
