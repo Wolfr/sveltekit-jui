@@ -10,6 +10,12 @@
 
 <StyleguideCard title={pageTitle}>
 
-TODO
+  <div class="c-select-holder">
+    <select class="c-select">
+      <option>Item 1</option>
+      <option>Item 2</option>
+      <option>Item 3</option>
+    </select>
+  </div>
 
 </StyleguideCard>

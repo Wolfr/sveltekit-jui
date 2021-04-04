@@ -1,0 +1,85 @@
+/* ==========================================================================
+  Component: Button Toolbar
+  ---
+  Group multiple buttons together
+   ========================================================================== */
+
+.c-button-toolbar {
+  align-items: center;
+  display: flex;
+
+  .c-button + .c-button {
+    margin-left: 0.8rem;
+  }
+
+  .c-button--link + .c-button--link {
+    margin-left: 1.6rem;
+  }
+}
+
+.c-button-toolbar__label {
+  margin-bottom: $g-spacer-unit;
+}
+
+.c-table .c-button-toolbar {
+  justify-content: flex-end;
+}
+
+.c-button-toolbar--compact {
+  .c-button {
+    border-radius: 0;
+  }
+
+  .c-button-toolbar__label {
+    margin: 0;
+  }
+
+  .c-button-toolbar__label + * {
+    margin-left: $g-spacer-unit * 2;
+  }
+
+  * + .c-button-toolbar__label {
+    margin-left: $g-spacer-unit * 2;
+  }
+
+  .c-button:first-child {
+    border-top-left-radius: $c-button-border-radius;
+    border-bottom-left-radius: $c-button-border-radius;
+  }
+
+  .c-button:last-child {
+    border-top-right-radius: $c-button-border-radius;
+    border-bottom-right-radius: $c-button-border-radius;
+  }
+
+  .c-button + .c-button {
+    margin: 0 0 0 -0.1rem;
+  }
+}
+
+.c-button-toolbar--vertical {
+  flex-flow: column;
+
+  .c-button + .c-button {
+    margin-left: 0;
+    margin-top: $g-spacer-unit;
+  }
+
+  .c-button:first-child {
+    border-radius: 0;
+    border-top-left-radius: $c-button-border-radius;
+    border-top-right-radius: $c-button-border-radius;
+  }
+
+  .c-button:last-child {
+    border-radius: 0;
+    border-bottom-left-radius: $c-button-border-radius;
+    border-bottom-right-radius: $c-button-border-radius;
+  }
+
+  &.c-button-toolbar--compact {
+    .c-button + .c-button {
+      margin: -0.2rem 0 0 0;
+    }
+  }
+}

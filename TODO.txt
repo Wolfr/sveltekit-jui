@@ -1,25 +1,17 @@
 ## Jungle UI todo
 
-* [x] Add custom checkbox on deeper todo list page
+* [ ] Add a user profile thing top right
+* [ ] Work on avatar component
 
-* Implement Svelte Prism https://www.npmjs.com/package/svelte-prism
+* [ ] Implement paste button
 
-* [ ] Fix look of back button on deeper todo list page
-* [ ] Make the form on deeper todo list page an inline form
-* [ ] Document inline forms
+* [ ] Implement Svelte Prism https://www.npmjs.com/package/svelte-prism
 
-* [x] Implement sidebar component in settings
-* [x] Center sign in form
-
-* [x] Implement scroll wrappers
 * [ ] Implement footer positioned navbars
 
 * [ ] Implement link buttons
 * [ ] Style tab
-* [x] Load Inter local
 
-* [ ] Add a user profile thing top right
-* [ ] Work on avatar component
 
 * [ ] Work on having a dropdown (with popper)
 
@@ -27,15 +19,10 @@
 * [ ] Segmented control
 * [ ] Tooltip
 * [ ] Add modal
-
 * [ ] Implement proper tabs (pill style) component with active state
 * [ ] Implement active state for menu
 
 * [ ] Implement more pleasing link styles (text decoration on hover utility)
-
-* Tables
-    * [ ] Implement zebra stripes on tables
-    * [ ] Align the actions to the end
 
 * [ ] Add Mono icons
 
@@ -85,3 +72,13 @@
 * [x] Design color system
 * [x] Design color styles for badges
 * [x] Implement color styles for badges
+* [x] Add custom checkbox on deeper todo list page
+* [x] Fix look of back button on deeper todo list page
+* [x] Make the form on deeper todo list page an inline form
+* [x] Document inline forms
+* [x] Implement sidebar component in settings
+* [x] Center sign in form
+* [x] Implement scroll wrappers
+* [x] Load Inter local
+* [x] Tables: Implement zebra stripes on tables
+* [x] Tables: Align the actions to the end

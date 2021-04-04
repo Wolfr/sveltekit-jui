@@ -47,15 +47,21 @@
 
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title={pageTitle}>
+<StyleguideCard title={pageTitle}
+  code="&lt;Avatar initials=&quot;JC&quot; /&gt;">
   <Avatar initials="JC" />
 </StyleguideCard>
 
-<StyleguideCard title="Avatar with image">
+<StyleguideCard title="Avatar with image" code="&lt;Avatar imgSrc=&quot;http://placekitten.com/500/500&quot; /&gt;">
   <Avatar imgSrc="http://placekitten.com/500/500" />
 </StyleguideCard>
 
-<StyleguideCard title="Avatar sizes">
+<StyleguideCard title="Avatar sizes" code="&lt;Avatar initials=&quot;DK&quot; size=&quot;xsmall&quot; /&gt;
+&lt;Avatar initials=&quot;DK&quot; size=&quot;small&quot; /&gt;
+&lt;Avatar initials=&quot;DK&quot;  /&gt;
+&lt;Avatar initials=&quot;DK&quot; size=&quot;medium&quot; /&gt;
+&lt;Avatar initials=&quot;DK&quot; size=&quot;large&quot; /&gt;
+">
   <Avatar initials="DK" size="xsmall" />
   <Avatar initials="DK" size="small" />
   <Avatar initials="DK"  />

@@ -154,9 +154,15 @@
   :global(.styleguide-icon-listing) {
     columns: 30rem;
   }
+  
+  :global(.styleguide-icon-listing) li {
+    display: flex;
+    align-items: center;
+    margin: 0 0 .8rem;
+  }
 
-  :global(.styleguide-icon-listing i) {
-    padding: 0.4rem 1.6rem;
+  :global(.styleguide-icon-listing .c-icon) {
+    margin-right: 0.4rem;
     display: inline-block;
   }
 </style>

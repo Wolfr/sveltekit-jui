@@ -45,7 +45,6 @@
         <SideMenuSectionHeader>Components</SideMenuSectionHeader>
         <SideMenuItem href="/styleguide/components/avatar">Avatar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/button">Button</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/button-group">Button Group</SideMenuItem>
         <SideMenuItem href="/styleguide/components/badge">Badge</SideMenuItem>
         <SideMenuItem href="/styleguide/components/panel">Panel</SideMenuItem>
         <SideMenuItem href="/styleguide/components/pagination">Pagination</SideMenuItem>
