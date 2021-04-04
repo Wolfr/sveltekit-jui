@@ -190,6 +190,12 @@
 
 <h1 class="c-h1">Colors</h1>
 
+<div class="u-spacer-bottom-l">
+  <div classs="c-content">
+    <p>Available colors.</p>
+  </div>
+</div>
+
 <ul class="c-styleguide-color-categories">
   {#each groups as group}
     <li>

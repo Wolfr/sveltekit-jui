@@ -1,10 +1,16 @@
 ## Jungle UI todo
 
-
 * [ ] Implement typography docs
+
+
+
 
 * [ ] Implement alerts
 * [ ] Implement alert stack base
+
+
+* [ ] Document toolbar centered examples
+
 * [ ] Document utility classes
 * [ ] Document containers (objects page)
 

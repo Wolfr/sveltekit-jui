@@ -9,6 +9,8 @@
 
 <StyleguideIntro title={pageTitle} />
 
+<p>By default, every bare HTML element is rendered without any styles, to prevent too much overriding in CSS. When you need rich content, use this component which inserts a wrapper class upon which bare HTML elements do get styled.</p>
+
 <StyleguideCard title={pageTitle}>
 
 <RichContent>

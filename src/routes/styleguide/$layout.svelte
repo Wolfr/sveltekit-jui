@@ -1,4 +1,3 @@
-
 <script>
   import Badge from '$lib/Badge.svelte';
   import Card from '$lib/Card.svelte';
@@ -20,11 +19,11 @@
   import SideMenu from '$lib/SideMenu.svelte';
   import SideMenuItem from '$lib/SideMenuItem.svelte';
   import SideMenuSectionHeader from '$lib/SideMenuSectionHeader.svelte';
-  
+
   import StyleguideCard from '$lib/StyleguideCard.svelte';
-  
+
 </script>
-  
+
 <Navbar>
   <Toolbar>
     <ToolbarGroup position="left">
@@ -42,6 +41,7 @@
         <SideMenuSectionHeader>Basics</SideMenuSectionHeader>
         <SideMenuItem href="/styleguide/basics/icons">Icons</SideMenuItem>
         <SideMenuItem href="/styleguide/basics/colors">Colors</SideMenuItem>
+        <SideMenuItem href="/styleguide/basics/typography">Typography</SideMenuItem>
         <SideMenuSectionHeader>Objects</SideMenuSectionHeader>
         <SideMenuItem href="/styleguide/objects/form-group">Form group</SideMenuItem>
         <SideMenuItem href="/styleguide/objects/dynamic-grid">Dynamic grid</SideMenuItem>

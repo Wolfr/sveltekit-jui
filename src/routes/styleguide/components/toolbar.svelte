@@ -13,6 +13,8 @@
 
 <StyleguideIntro title={pageTitle} />
 
+<p>Use the toolbar to position elements to the left and right.</p>
+
 <StyleguideCard title={pageTitle}>
 
   <Toolbar>
