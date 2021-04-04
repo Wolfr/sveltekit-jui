@@ -2,7 +2,7 @@
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
 
-  let pageTitle = 'Input (Selection)';
+  let pageTitle = 'Menu (Selection)';
 
 </script>
 

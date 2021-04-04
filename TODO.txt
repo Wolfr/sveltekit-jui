@@ -1,18 +1,23 @@
 ## Jungle UI todo
 
-* [ ] Implement typography docs
 
-* [ ] Implement better alerts
+* [ ] Add an overal “brand” (leaf icon @rinxols?)
+
+* [ ] Blank slate component
+
+* [ ] Implement forgot password success page
+
 * [ ] Implement alert stack base logic (showing alert stack in all its positions)
 * [ ] Implement accordion
 
 * [ ] Add a favicon
 
+* [ ] Add modal example to style guide
+
 * [ ] Document toolbar centered examples
 
-* [ ] Add spinner to project
-* [ ] Improve pagination component API
-* [ ] Create checkbox group - Document checkbox group
+* [ ] Improve pagination component API, render amount of pages based on a number prop (see Vue.js work in 2020)
+* [ ] Create checkbox group - Document checkbox group (like radio group)
 
 * [ ] Improve page listing in sidebar
 
@@ -26,9 +31,6 @@
 
 * [ ] Implement footer positioned navbars
 * [ ] Style tab
-* [ ] Add modal
-
-* [ ] Spinner
 
 * [ ] Progress bar
     <progress value="59" max="100" />
@@ -114,8 +116,13 @@
 * [x] Add a user profile thing top right
 * [x] Work on avatar component
 * [x] Implement active state for menu
+* [x] Implement typography docs
+* [x] Implement better alerts
+* [x] Add spinner to project
+* [x] Add modal
 
 ## My feedback on Svelte kit
 
 * Needs a title system
 * Needs a way to add meta tags properly per page
+* How do I access the object with all routes?

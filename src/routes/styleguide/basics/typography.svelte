@@ -9,7 +9,7 @@
 
 <h1 class="c-h1">{pageTitle}</h1>
 
-<p>Typographic elements used throughout the application/site. See <a href="/styleguide/components/rich-content">RichContent</a>.</p>
+<p>This page documents the typography used in the design system. Use the right typography to present your design and content as clearly and efficiently as possible.</p>
 
 <StyleguideCard>
   

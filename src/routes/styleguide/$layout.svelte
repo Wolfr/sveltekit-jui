@@ -43,6 +43,11 @@
   <div style="padding: 2.4rem 0; border-right: 1px solid #CED3DE; min-width: 24rem; overflow: auto">
     <SideMenu>
         <SideMenuItem href="/styleguide/">Intro</SideMenuItem>
+        <SideMenuSectionHeader>Dev notes</SideMenuSectionHeader>
+        <SideMenuItem href="/styleguide/dev-notes/css-architecture">CSS architecture</SideMenuItem>
+        <!-- <SideMenuSectionHeader>Design Patterns</SideMenuSectionHeader>
+        <SideMenuItem href="/styleguide/design-patterns/forms">Forms</SideMenuItem> -->
+
         <SideMenuSectionHeader>Basics</SideMenuSectionHeader>
         <SideMenuItem href="/styleguide/basics/icons">Icons</SideMenuItem>
         <SideMenuItem href="/styleguide/basics/colors">Colors</SideMenuItem>
@@ -59,7 +64,7 @@
         <SideMenuItem href="/styleguide/components/button-toolbar">Button Toolbar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/checkbox">Checkbox</SideMenuItem>
         <SideMenuItem href="/styleguide/components/input-text">Input (text)</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/input-selection">Input (selection)</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/menu-selection">Menu (selection)</SideMenuItem>
         <SideMenuItem href="/styleguide/components/modal">Modal</SideMenuItem>
         <SideMenuItem href="/styleguide/components/pagination">Pagination</SideMenuItem>
         <SideMenuItem href="/styleguide/components/panel">Panel</SideMenuItem>
