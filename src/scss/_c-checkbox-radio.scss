@@ -7,11 +7,6 @@
 /* Variables
    ========================================================================== */
 
-$c-checkbox-input-border-color: $color-gray-400 !default;
-
-$c-checkbox-input-border: 0.1rem solid $c-checkbox-input-border-color !default;
-$c-radio-input-border: 0.1rem solid $c-checkbox-input-border-color !default;
-
 $c-checkbox-input-border-radius: 0.3rem !default;
 
 $c-checkbox-size: 1.6rem !default;
@@ -94,8 +89,8 @@ $c-radio-checked-color: $color-primary !default;
 .c-radio input[type='radio']:active,
 .c-radio input[type='radio']:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba($c-checkbox-input-border-color, .5);
-  border-color: $c-checkbox-input-border-color;
+  box-shadow: 0 0 0 0.2rem rgba($color-gray-300, .5);
+  border-color: $color-gray-300;
   transition: 0.14s box-shadow ease-in-out;
 }
 
@@ -104,7 +99,7 @@ $c-radio-checked-color: $color-primary !default;
 
 .c-checkbox input[type='checkbox'] {
   background: $c-checkbox-background-color;
-  border: $c-checkbox-input-border;
+  border: .1rem solid $color-gray-300;
   border-radius: $c-checkbox-input-border-radius;
   height: $c-checkbox-size;
   width: $c-checkbox-size;
@@ -127,29 +122,13 @@ $c-radio-checked-color: $color-primary !default;
 }
 
 .c-checkbox input[type='checkbox'][disabled] {
-  border: $c-checkbox-input-border;
-
-  &:checked:before {
-    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='1.414'%3E%3Cpath fill='none' d='M0 0h16v16H0z'/%3E%3CclipPath id='a'%3E%3Cpath d='M0 0h16v16H0z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M11.69 4.675l-.443.424L6.77 9.575 4.752 7.558l-.442-.422L3.445 8l.423.442 2.46 2.46.442.423.442-.423 4.92-4.92.423-.442-.865-.865z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E") no-repeat;
-  }
-}
-
-.c-checkbox input[type='checkbox'][disabled]:not(:checked) {
-  &:before {
-    border-radius: 0.1rem;
-    width: 1rem;
-    height: 1rem;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: $c-checkbox-input-border;
-    opacity: 1;
-  }
+  border-color: $color-gray-300;
+  background-color: $color-gray-200;
 }
 
 .c-checkbox input[type='checkbox']:checked:not([disabled]),
 .c-checkbox input[type='checkbox'][data-indeterminate]:checked:not([disabled]) {
-  background-color: $c-checkbox-checked-color;
+  background-color: $color-primary;
 }
 
 /* Radio specific
@@ -157,7 +136,7 @@ $c-radio-checked-color: $color-primary !default;
 
 .c-radio input[type='radio'] {
   background: $c-radio-background-color;
-  border: $c-radio-input-border;
+  border: .1rem solid $color-gray-300;
   border-radius: 100%;
   height: $c-radio-size;
   width: $c-radio-size;
@@ -177,14 +156,14 @@ $c-radio-checked-color: $color-primary !default;
 }
 
 .c-radio input[type='radio'][disabled] {
-  border-color: $c-radio-input-border;
+  border-color: $color-gray-300;
 
   &:before {
     background: #FFF;
   }
 
   &:checked:before {
-    background: $c-radio-input-border;
+    background: $color-gray-200;
   }
 }
 

@@ -1,0 +1,48 @@
+/* ==========================================================================
+  Component: Alert
+  ---
+  Use alerts for messaging across the application.
+  ---
+  Rules of this file: this file is ONLY for layout, please see alert-skins.scss for colors
+   ========================================================================== */
+
+/* Component
+   ========================================================================== */
+
+.c-alert {
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .o-svg-icon-close {
+    cursor: pointer;
+  }
+}
+
+.c-alert__body {
+  display: flex;
+  align-items: center;
+  & > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.c-alert__text {
+  .c-alert__title {
+    font-weight: 500;
+    margin-bottom: .2rem;
+  }
+  .c-alert__message {
+    margin-bottom: 0;
+  }
+}
+
+.c-alert--floating {
+  border-radius: 3px;
+  display: flex;
+  padding: 1.6rem;
+  transform: translateX(-50%);
+  z-index: 100;
+  min-width: 15rem;
+}

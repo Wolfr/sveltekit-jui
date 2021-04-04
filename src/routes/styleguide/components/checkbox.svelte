@@ -15,3 +15,19 @@
   <Checkbox checked label="Label" />
 
 </StyleguideCard>
+
+<StyleguideCard title="Indeterminate">
+
+  <Checkbox indeterminate checked label="Label" />
+
+</StyleguideCard>
+
+<StyleguideCard title="Disabled">
+
+  <Checkbox disabled label="Label" />
+  <br>
+  <Checkbox disabled checked label="Label" />
+
+</StyleguideCard>
+
+

@@ -1,18 +1,15 @@
 <script>
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import Button from '$lib/Button.svelte';
+  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
 
-  let pageTitle = 'Popover';
+  let pageTitle = 'Accordion';
+  import Accordion from '$lib/Accordion.svelte';
 
 </script>
 
 <StyleguideIntro title={pageTitle} />
 
-<p>TODO</p>
-
 <StyleguideCard title={pageTitle}>
-
-  <Button>Click to show a popover</Button>
-
+  <Accordion />
 </StyleguideCard>

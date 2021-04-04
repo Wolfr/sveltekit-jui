@@ -1,4 +1,3 @@
-
 <script>
   import '../scss/app.scss';
 
@@ -16,6 +15,10 @@
   }
 
 </script>
+  
+<svelte:head>
+    <title>JUI</title>
+</svelte:head>
 
 <div class="br-prototype-wrapper">
   <div class="br-prototype-wrapper__content">

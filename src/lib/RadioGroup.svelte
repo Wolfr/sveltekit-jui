@@ -1,16 +1,19 @@
 <script>
-    import { createEventDispatcher } from 'svelte';
-    const dispatch = createEventDispatcher();
+  export let options;
+  export let inline;
 
-    function sendValue(item) {
-	    dispatch('sendvalue', {
-            text: item
-        });
-    }
+  let activeIndex = 0;
 
-    export let options;
-    let activeIndex = 0;
-    export let inline;
+  // Pass data
+  import { createEventDispatcher } from 'svelte';
+  const dispatch = createEventDispatcher();
+
+  function sendValue(item) {
+	  dispatch('sendvalue', {
+      text: item
+    });
+  }
+
 </script>
 
 <div class="c-radio-group { inline ? 'c-radio-group--inline' : '' }">

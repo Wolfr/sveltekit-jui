@@ -4,7 +4,7 @@
 
   let pageTitle = 'Radio button';
   
-  import RadioButton from '$lib/RadioButton.svelte';
+  import Radio from '$lib/Radio.svelte';
 
 </script>
 
@@ -12,6 +12,13 @@
 
 <StyleguideCard title={pageTitle}>
 
-  <RadioButton checked label="Label" />
+  <Radio checked label="Label" />
+
+</StyleguideCard>
+
+
+<StyleguideCard title={pageTitle}>
+
+  <Radio disabled label="Label" />
 
 </StyleguideCard>

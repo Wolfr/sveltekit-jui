@@ -22,6 +22,7 @@
 
   import StyleguideCard from '$lib/StyleguideCard.svelte';
 
+  let pageTitle = 'Style guide';
 </script>
 
 <Navbar>
@@ -33,6 +34,10 @@
     </ToolbarGroup>
   </Toolbar>
 </Navbar>
+
+<svelte:head>
+    <title>{pageTitle} - Components - Style guide - JUI</title>
+</svelte:head>
 
 <div style="display: flex; height: calc( 100% - 5.6rem);">
   <div style="padding: 2.4rem 0; border-right: 1px solid #CED3DE; min-width: 24rem; overflow: auto">
@@ -46,22 +51,27 @@
         <SideMenuItem href="/styleguide/objects/form-group">Form group</SideMenuItem>
         <SideMenuItem href="/styleguide/objects/dynamic-grid">Dynamic grid</SideMenuItem>
         <SideMenuSectionHeader>Components</SideMenuSectionHeader>
+        <SideMenuItem href="/styleguide/components/accordion">Accordion</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/alert">Alert</SideMenuItem>
         <SideMenuItem href="/styleguide/components/avatar">Avatar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/badge">Badge</SideMenuItem>
         <SideMenuItem href="/styleguide/components/button">Button</SideMenuItem>
         <SideMenuItem href="/styleguide/components/button-toolbar">Button Toolbar</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/panel">Panel</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/pagination">Pagination</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/rich-content">Rich content</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/toolbar">Toolbar</SideMenuItem>
         <SideMenuItem href="/styleguide/components/checkbox">Checkbox</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/radio-button">Radio button</SideMenuItem>
         <SideMenuItem href="/styleguide/components/input">Input</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/tooltip">Tooltip</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/modal">Modal</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/pagination">Pagination</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/panel">Panel</SideMenuItem>
         <SideMenuItem href="/styleguide/components/popover">Popover</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/radio-button">Radio button</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/radio-group">Radio group</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/rich-content">Rich content</SideMenuItem>
         <SideMenuItem href="/styleguide/components/select">Select (menu)</SideMenuItem>
         <SideMenuItem href="/styleguide/components/side-menu">Side menu</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/spinner">Spinner</SideMenuItem>
         <SideMenuItem href="/styleguide/components/table">Table</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/toolbar">Toolbar</SideMenuItem>
+        <SideMenuItem href="/styleguide/components/tooltip">Tooltip</SideMenuItem>
     </SideMenu>
   </div>
   <div class="o-scroll-wrapper" style="flex-grow: 1;">

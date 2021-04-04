@@ -2,17 +2,25 @@
 
 * [ ] Implement typography docs
 
-
-
-
-* [ ] Implement alerts
-* [ ] Implement alert stack base
-
+* [ ] Implement better alerts
+* [ ] Implement alert stack base logic (showing alert stack in all its positions)
+* [ ] Implement accordion
 
 * [ ] Document toolbar centered examples
 
+* [ ] Add spinner to project
+* [ ] Improve pagination component API
+* [ ] Create checkbox group - Document checkbox group
+
+* [ ] Improve page listing in sidebar
+
+* [ ] Add option for 2nd nav level in side menu
+
 * [ ] Document utility classes
 * [ ] Document containers (objects page)
+
+* [ ] Person picker
+* [ ] Color picker
 
 * [ ] Implement footer positioned navbars
 * [ ] Style tab

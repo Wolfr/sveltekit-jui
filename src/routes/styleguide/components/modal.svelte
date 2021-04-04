@@ -1,18 +1,16 @@
 <script>
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import Button from '$lib/Button.svelte';
+  import Modal from '$lib/Modal.svelte';
 
-  let pageTitle = 'Popover';
+  let pageTitle = 'Modal';
 
 </script>
 
 <StyleguideIntro title={pageTitle} />
 
-<p>TODO</p>
-
 <StyleguideCard title={pageTitle}>
 
-  <Button>Click to show a popover</Button>
+  MODAL here
 
 </StyleguideCard>

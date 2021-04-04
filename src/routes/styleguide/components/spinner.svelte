@@ -1,18 +1,17 @@
 <script>
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import Button from '$lib/Button.svelte';
 
-  let pageTitle = 'Popover';
+  let pageTitle = 'Spinner';
+  
+  import Spinner from '$lib/Spinner.svelte';
 
 </script>
 
 <StyleguideIntro title={pageTitle} />
 
-<p>TODO</p>
-
 <StyleguideCard title={pageTitle}>
 
-  <Button>Click to show a popover</Button>
+  <Spinner />
 
 </StyleguideCard>
