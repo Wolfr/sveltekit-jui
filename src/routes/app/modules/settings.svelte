@@ -13,17 +13,7 @@
     import Radio from '$lib/Radio.svelte';
     import RadioGroup from '$lib/RadioGroup.svelte';
     
-    let radioOptions = [
-      {
-        label: "Hey"
-      },
-      {
-        label: "Hey"
-      },
-      {
-        label: "Hey"
-      }
-    ]
+    let radioOptions = ['EU','Outside EU'];
 
 </script>
 
@@ -54,17 +44,38 @@
                   </div>
                   
                   <div class="o-form-group">
-                    <label class="o-form-group__label">Radio options</label>
-                    <RadioGroup bind:group={options}>
-                      {#each radioOptions as option}
-                        <Radio {option.label} /> 
-                      {/each}
-                    </RadioGroup>
+                      <label class="o-form-group__label">Location</label>
+                      <div class="o-form-group__controls">
+                        <RadioGroup options={radioOptions} />
+                      </div>
                   </div>
                 </FormGroupLayout>
             </PanelBody>
             <PanelBody>
-              <p>I am the 2nd panel body.</p>
+              <div class="o-form-group-layout o-form-group-layout--standard">
+                  <div class="o-form-group">
+                      <label class="o-form-group__label">Value</label>
+                      <div class="o-form-group__controls">
+                          <div class="c-radio-group c-radio-group--inline">
+                              <div class="c-radio">
+                                  <label>
+                                      <input type="radio" name="radio12" />Inline Value 1
+                                  </label>
+                              </div>
+                              <div class="c-radio">
+                                  <label>
+                                      <input type="radio" name="radio12" />Inline Value 2
+                                  </label>
+                              </div>
+                              <div class="c-radio">
+                                  <label>
+                                      <input type="radio" name="radio12" checked="checked" />Inline Value 3
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
             </PanelBody>
         </Panel>
     </div>

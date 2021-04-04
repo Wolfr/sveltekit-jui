@@ -15,6 +15,5 @@
     {#if !hideLabel}
       {label}
     {/if}
-
   </label>
 </div>
