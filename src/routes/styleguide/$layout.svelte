@@ -24,6 +24,163 @@
   import StyleguideCard from '$lib/StyleguideCard.svelte';
 
   let pageTitle = 'Style guide';
+  
+  let data = [
+    {
+      prettyName: "CSS architecture",
+      url: "css-architecture",
+      category: "dev-notes"
+    },
+    {
+      url: "icons",
+      category: "basics"
+    },
+    {
+      url: "typography",
+      category: "basics"
+    },
+    {
+      url: "colors",
+      category: "basics"
+    },
+    {
+      url: "dynamic-grid",
+      category: "objects"
+    },
+    {
+      url: "form-group",
+      category: "objects"
+    },
+    {
+      url: "accordion",
+      category: "components"
+    },
+    {
+      url: "accordion-item",
+      category: "components"
+    },
+    {
+      url: 'alert-stack',
+      category: 'components'
+    },
+    {
+      url: 'alert',
+      category: 'components'
+    },
+    {
+      url: 'avatar',
+      category: 'components'
+    },
+    {
+      url: 'badge',
+      category: 'components'
+    },
+    {
+      url: 'button-link',
+      category: 'components'
+    },
+    {
+      url: 'button-toolbar',
+      category: 'components'
+    },
+    {
+      url: 'button',
+      category: 'components'
+    },
+    {
+      url: 'checkbox',
+      category: 'components'
+    },
+    {
+      url: 'input-text',
+      category: 'components'
+    },
+    {
+      url: 'menu-navigation',
+      category: 'components'
+    },
+    {
+      url: 'menu-selection',
+      category: 'components'
+    },
+    {
+      url: 'modal',
+      category: 'components'
+    },
+    {
+      url: 'navbar',
+      category: 'components'
+    },
+    {
+      url: 'pagination',
+      category: 'components'
+    },
+    {
+      url: 'panel',
+      category: 'components'
+    },
+    {
+      url: 'popover',
+      category: 'components'
+    },
+    {
+      url: 'radio-button',
+      category: 'components'
+    },
+    {
+      url: 'radio-group',
+      category: 'components'
+    },
+    {
+      url: 'side-menu',
+      category: 'components'
+    },
+    {
+      url: 'spinner',
+      category: 'components'
+    },
+    {
+      url: 'table',
+      category: 'components'
+    },
+    {
+      url: 'toolbar',
+      category: 'components'
+    },
+    {
+      url: 'tooltip',
+      category: 'components'
+    },
+    {
+      url: 'display',
+      category: 'utilities'
+    },
+    {
+      url: 'spacer',
+      category: 'utilities'
+    },
+    {
+      url: 'flex',
+      category: 'utilities'
+    }
+  ]
+
+  let groups = data.reduce((curr, val) => {
+    let group = curr.find(g => g.category === `${val.category}`)
+    if (group) {
+      group.values.push(val)
+    } else {
+      curr.push({ category: `${val.category}`, values: [ val ] }) 
+    }
+    return curr
+  }, [])
+  
+  function prettyTitle(title) {
+    title = title.replace(/-/, " ");
+    title = title.charAt(0).toUpperCase() + title.slice(1);
+    return title;
+  }
+
 </script>
 
 <Navbar>
@@ -42,51 +199,21 @@
 
 <div style="display: flex; height: calc( 100% - 5.6rem);">
   <div style="padding: 2.4rem 0; border-right: 1px solid #CED3DE; min-width: 24rem; overflow: auto">
+
     <!-- <div style="padding: 0 2.4rem 2.4rem;">
       <Input icon="search" type="search"  placeholder="Enter a search term..." />
     </div> -->
-    <SideMenu>
-        <SideMenuItem href="/styleguide/">Intro</SideMenuItem>
-        <SideMenuSectionHeader>Dev notes</SideMenuSectionHeader>
-        <SideMenuItem href="/styleguide/dev-notes/css-architecture">CSS architecture</SideMenuItem>
-        <!-- <SideMenuSectionHeader>Design Patterns</SideMenuSectionHeader>
-        <SideMenuItem href="/styleguide/design-patterns/forms">Forms</SideMenuItem> -->
 
-        <SideMenuSectionHeader>Basics</SideMenuSectionHeader>
-        <SideMenuItem href="/styleguide/basics/icons">Icons</SideMenuItem>
-        <SideMenuItem href="/styleguide/basics/colors">Colors</SideMenuItem>
-        <SideMenuItem href="/styleguide/basics/typography">Typography</SideMenuItem>
-        <SideMenuSectionHeader>Objects</SideMenuSectionHeader>
-        <SideMenuItem href="/styleguide/objects/form-group">Form group</SideMenuItem>
-        <SideMenuItem href="/styleguide/objects/dynamic-grid">Dynamic grid</SideMenuItem>
-        <SideMenuSectionHeader>Components</SideMenuSectionHeader>
-        <SideMenuItem href="/styleguide/components/accordion">Accordion</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/accordion-item">Accordion Item</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/alert">Alert</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/avatar">Avatar</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/badge">Badge</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/button">Button</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/button-link">Button (Link)</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/button-toolbar">Button Toolbar</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/checkbox">Checkbox</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/input-text">Input (text)</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/menu-selection">Menu (selection)</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/modal">Modal</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/pagination">Pagination</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/panel">Panel</SideMenuItem>
-        <!-- <SideMenuItem href="/styleguide/components/popover">Popover</SideMenuItem> -->
-        <SideMenuItem href="/styleguide/components/radio-button">Radio button</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/radio-group">Radio group</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/side-menu">Side menu</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/spinner">Spinner</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/table">Table</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/toolbar">Toolbar</SideMenuItem>
-        <SideMenuItem href="/styleguide/components/tooltip">Tooltip</SideMenuItem>
-        <SideMenuSectionHeader>Utilities</SideMenuSectionHeader>
-        <SideMenuItem href="/styleguide/utilities/spacer">Spacer</SideMenuItem>
-        <SideMenuItem href="/styleguide/utilities/flex">Flex</SideMenuItem>
-        <SideMenuItem href="/styleguide/utilities/display">Display</SideMenuItem>
+    <SideMenu>
+      <SideMenuItem href="/styleguide/">Intro</SideMenuItem>
+      {#each groups as group}
+        <SideMenuSectionHeader>{group.category}</SideMenuSectionHeader>
+        {#each group.values as item}
+          <SideMenuItem href="/styleguide/{group.category}/{item.url}">{#if item.prettyName}{item.prettyName}{:else}{prettyTitle(item.url)}{/if}</SideMenuItem>
+        {/each}
+      {/each}
     </SideMenu>
+
   </div>
   <div class="o-scroll-wrapper" style="flex-grow: 1;">
     <div class="o-scroll-wrapper__body" style="padding: 2.4rem;">
