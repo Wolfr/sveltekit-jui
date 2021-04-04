@@ -10,6 +10,20 @@
     import SideMenuItem from '$lib/SideMenuItem.svelte';
     
     import Checkbox from '$lib/Checkbox.svelte';
+    import Radio from '$lib/Radio.svelte';
+    import RadioGroup from '$lib/RadioGroup.svelte';
+    
+    let radioOptions = [
+      {
+        label: "Hey"
+      },
+      {
+        label: "Hey"
+      },
+      {
+        label: "Hey"
+      }
+    ]
 
 </script>
 
@@ -37,6 +51,15 @@
                     <Checkbox label="Bananas" /> 
                     <Checkbox label="Grapes" /> 
                     <Checkbox label="Strawberries" /> 
+                  </div>
+                  
+                  <div class="o-form-group">
+                    <label class="o-form-group__label">Radio options</label>
+                    <RadioGroup bind:group={options}>
+                      {#each radioOptions as option}
+                        <Radio {option.label} /> 
+                      {/each}
+                    </RadioGroup>
                   </div>
                 </FormGroupLayout>
             </PanelBody>
