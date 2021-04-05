@@ -1,0 +1,19 @@
+.c-select-menu {
+  background: #FFF;
+  border: .1rem solid $color-gray-200;
+  padding: .8rem 0;
+  border-radius: .3rem;
+  box-shadow: 0 0 0.8rem rgba(0,0,0,0.15);
+}
+
+.c-select-menu__item {
+  background: #FFF;
+  border-radius: .3rem;
+  padding: .8rem 1.6rem;
+  margin: 0 .8rem;
+  display: block;
+  &:hover {
+    cursor: pointer;
+    background: $color-gray-50;
+  }
+}

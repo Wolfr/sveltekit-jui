@@ -9,6 +9,9 @@
 
 ### Drawing app demo
 
+* Implement same width modifier for SelectMenu and NavMenu
+* Implement multiple select component
+
 * [ ] Icon toolbar
     * [ ] Add segments to the drawing app controls
     * [ ] Add a way to have a dropdown on this UI component

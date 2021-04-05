@@ -22,6 +22,8 @@ For those who are curious, here is the technical reasoning behind the way this f
 
 * We use ITCSS to sort our CSS components
 
+* Sometimes, duplication is better than abstraction. To avoid tangling unrelated components, even if they share many similarities, code is duplicated (e.g. NavMenu vs SelectMenu)
+
 * We avoid using Svelte's style tag, so we can make use of consistent SCSS variables and have a way for variables to influence each other with a passthrough logic, something which CSS custom properties is not entirely ready for
 
 * When customizing this framework, I recommend throwing out all SCSS partials for components you do not use to minimize the final stylesheet
