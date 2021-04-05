@@ -9,8 +9,10 @@
 
 ### Drawing app demo
 
-* Implement same width modifier for SelectMenu and NavMenu
-* Implement multiple select component
+* [ ] Implement same width modifier for SelectMenu and NavMenu
+* [ ] Document SelectMenu and NavMenu
+* [ ] Implement closable pills - selectable pills
+* [ ] Implement multiple select component (using closable pills)
 
 * [ ] Icon toolbar
     * [ ] Add segments to the drawing app controls
