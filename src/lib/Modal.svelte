@@ -15,11 +15,33 @@
 	import { clickOutside } from '$lib/clickOutside.js';
   import { modals } from '$lib/modals.js';
   
-  function handleClickOutside(event) {
+  function switchModalVisibility() {
     $modals[0].modalShow = !$modals[0].modalShow;
   }
 
+  function handleClickOutside(event) {
+    switchModalVisibility();
+  }
+
+  function handleCancelClick() {
+    switchModalVisibility();
+  }
+  
+  function handleCloseClick() {
+    switchModalVisibility();
+  }
+
+  let trigger = 'Escape';
+
+  function handleKeydown(e) {
+    if (e.key == trigger) {
+      switchModalVisibility();
+    }
+  }
+
 </script>
+
+<svelte:window on:keydown={handleKeydown}/>
 
 <div class="c-modal c-modal--{size}" role="dialog" aria-labelledby="modalTitle-02" use:clickOutside on:click_outside={handleClickOutside}>
   <div class="c-modal__push"></div>
@@ -33,7 +55,7 @@
       </ToolbarGroup>
       <ToolbarGroup position="right">
         <ToolbarItem>
-          <Button icon="close" variant="borderless" layout="icon">Cancel</Button>
+          <Button icon="close" skin="borderless" layout="icon" on:click={handleCloseClick}>Close</Button>
         </ToolbarItem>
       </ToolbarGroup>
     </Toolbar>
@@ -48,8 +70,8 @@
       <div class="c-toolbar__right">
         <div class="c-toolbar__item">
           <ButtonToolbar>
-            <Button>Cancel</Button>
-            <Button variant="primary">Save</Button>
+            <Button on:click={handleCancelClick}>Cancel</Button>
+            <Button skin="primary">Save</Button>
           </ButtonToolbar>
         </div>
       </div>

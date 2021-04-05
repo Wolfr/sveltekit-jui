@@ -52,8 +52,8 @@ select {
 }
 
 a {
-  color: $color-primary;
   text-decoration: none;
+  color: inherit;
 }
 
 em, i {

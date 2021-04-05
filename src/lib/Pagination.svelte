@@ -12,7 +12,7 @@
 
   <ButtonToolbar>
   {#each {length: totalPages} as elem, index}
-    <Button variant="borderless" active={ index+1 == currentPage }>{index+1}</Button>
+    <Button skin="borderless" active={ index+1 == currentPage }>{index+1}</Button>
   {/each}
   </ButtonToolbar>
 

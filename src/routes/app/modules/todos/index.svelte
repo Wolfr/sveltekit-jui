@@ -33,7 +33,7 @@
           <Badge>Badge label</Badge>
         </td>
         <td class="c-table__actions">
-          <Button variant="borderless" href="/app/modules/todos/detail" layout="icon" icon="chevron-right">Detail page</Button>
+          <Button skin="borderless" href="/app/modules/todos/detail" layout="icon" icon="chevron-right">Detail page</Button>
         </td>
       </tr>
       {/each}

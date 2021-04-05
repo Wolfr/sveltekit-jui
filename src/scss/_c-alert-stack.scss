@@ -6,9 +6,6 @@
   position: fixed;
   right: 1.2rem;
   bottom: 1.2rem;
-  .c-alert {
-    max-width: 30rem;
-  }
 }
 
 .c-alert-stack li {
@@ -21,7 +18,8 @@
   display: flex;
   padding: 1.6rem;
   z-index: 100;
-  min-width: 24rem;
+  min-width: 44rem;
+  max-width: 44rem;
   &:last-child {
     margin: 0;
   }

@@ -34,6 +34,10 @@ $c-table-row-selected-bg: $color-primary !default;
   th {
     font-weight: 500;
   }
+  
+  a {
+    color: $color-primary;
+  }
 
 }
 

@@ -14,14 +14,14 @@
     export let style = null;
     export let icon = null;
     export let layout = null;
-    export let variant = null;
+    export let skin = null;
 
-    let variantValue = '';
+    let computedSkinValue = '';
 
-    if (variant) {
-      variantValue = 'c-link-button--'+variant;
+    if (skin) {
+      computedSkinValue = 'c-link-button--'+skin;
     } else {
-       variantValue = 'c-link-button--secondary';
+       computedSkinValue = 'c-link-button--secondary';
     }
 
 </script>
@@ -29,7 +29,7 @@
 <a
   href="{href}"
   {style}
-  class="c-link-button { cssClass } { variantValue }"
+  class="c-link-button { cssClass } { computedSkinValue }"
   class:c-link-button--icon={layout=="icon"}
   class:c-link-button--disabled={disabled}
 >

@@ -16,7 +16,7 @@
                   <FormGroup label="E-mail address" id="emailId" type="email" />
                   <FormGroup label="Password" id="passwordId" type="password" />
                   <div class="o-form-group">
-                    <Button href="/app/modules/todos/" variant="primary" block>Sign in</Button>
+                    <Button href="/app/modules/todos/" skin="primary" block>Sign in</Button>
                   </div>
                 </div>
               </div>

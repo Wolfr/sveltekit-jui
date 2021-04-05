@@ -43,7 +43,7 @@
       ]
     },
     {
-      name: 'variant',
+      name: 'skin',
       description: 'Determines button look',
       default: 'secondary',
       required: false,

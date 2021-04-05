@@ -1,12 +1,12 @@
 /* ==========================================================================
-  Component: Link button
+  c-pill-list
    ========================================================================== */
 
-.c-link-button {
-  color: $color-primary;
+.c-pill-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.c-link-button .c-button__content {
-  display: inline-flex;
-  align-items: center;
+.c-pill-list__item {
+  margin-left: .4rem;
 }

@@ -1,0 +1,24 @@
+/* ==========================================================================
+  c-bordered-list
+   ========================================================================== */
+
+.c-bordered-list, .c-bordered-list ul {
+  list-style: none;
+}
+
+.c-bordered-list ul {
+  padding-left: 2.4rem;
+}
+
+.c-bordered-list li a {
+  padding: .4rem;
+  border-bottom: .1rem solid #E9ECF1;
+  display: block;
+  color: $color-primary;
+}
+
+.c-bordered-list li span {
+  padding: .4rem;
+  border-bottom: .1rem solid #E9ECF1;
+  display: block;
+}

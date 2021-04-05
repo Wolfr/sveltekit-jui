@@ -79,30 +79,10 @@
 
 </div>
 
-
 <svelte:window on:keydown={handleKeydown}/>
 
 <style lang="scss">
 
-  .c-bordered-list, .c-bordered-list ul {
-    list-style: none;
-  }
-  
-  .c-bordered-list ul {
-    padding-left: 2.4rem;
-  }
-
-  .c-bordered-list li a {
-    padding: .4rem;
-    border-bottom: .1rem solid #E9ECF1;
-    display: block;
-  }
-  
-  .c-bordered-list li span {
-    padding: .4rem;
-    border-bottom: .1rem solid #E9ECF1;
-    display: block;
-  }
   
   /* Better display for modals when prototype nav is open
      ========================================================================== */

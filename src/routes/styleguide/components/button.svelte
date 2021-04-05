@@ -62,7 +62,7 @@
       ]
     },
     {
-      name: 'variant',
+      name: 'skin',
       description: 'Determines button look',
       default: 'secondary',
       required: false,
@@ -96,12 +96,12 @@
 <StyleguideIntro title={pageTitle} />
 
 <StyleguideCard title="Button layouts" code="&lt;Button&gt;A button&lt;/Button&gt;
-&lt;Button variant=&quot;primary&quot;&gt;A button&lt;/Button&gt;
+&lt;Button skin=&quot;primary&quot;&gt;A button&lt;/Button&gt;
 &lt;Button icon=&quot;add&quot;&gt;A button&lt;/Button&gt;
 &lt;Button icon=&quot;add&quot; layout=&quot;icon&quot;&gt;A button&lt;/Button&gt;
 &lt;Button icon=&quot;chevron-right&quot; layout=&quot;label-icon&quot;&gt;A button&lt;/Button&gt;">
   <Button>A button</Button>
-  <Button variant="primary">A button</Button>
+  <Button skin="primary">A button</Button>
   <Button icon="add">A button</Button>
   <Button icon="add" layout="icon">A button</Button>
   <Button icon="chevron-right" layout="label-icon">A button</Button>
@@ -110,17 +110,17 @@
 <StyleguideCard
   title="Button skins"
   code="&lt;Button&gt;Secondary button&lt;/Button&gt;
-&lt;Button variant=&quot;primary&quot;&gt;Primary button&lt;/Button&gt;
-&lt;Button variant=&quot;borderless&quot;&gt;Borderless button&lt;/Button&gt;"
+&lt;Button skin=&quot;primary&quot;&gt;Primary button&lt;/Button&gt;
+&lt;Button skin=&quot;borderless&quot;&gt;Borderless button&lt;/Button&gt;"
 >
   <Button>Secondary button</Button>
-  <Button variant="primary">Primary button</Button>
-  <Button variant="borderless">Borderless button</Button>
+  <Button skin="primary">Primary button</Button>
+  <Button skin="borderless">Borderless button</Button>
 </StyleguideCard>
 
 <StyleguideCard title="Danger buttons">
-  <Button variant="danger">Danger button</Button>
-  <Button variant="danger-hover">Danger on hover button</Button>
+  <Button skin="danger">Danger button</Button>
+  <Button skin="danger-hover">Danger on hover button</Button>
 </StyleguideCard>
 
 <StyleguidePropsTable propsTable={propsTable} />

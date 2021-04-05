@@ -1,0 +1,27 @@
+.c-media-card {
+  max-width: 32rem;
+}
+
+.c-media-card a {
+  display: block;
+  border: .1rem solid $color-gray-200;
+  border-radius: .3rem;
+  &:hover {
+    border-color: $color-gray-500;
+  }
+  &:hover .c-media-card__content {
+    background: $color-gray-50;
+  }
+}
+
+.c-media-card img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+.c-media-card__content {
+  padding: 1.6rem;
+  background: #FFF;
+}

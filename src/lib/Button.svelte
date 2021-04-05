@@ -20,14 +20,14 @@
     export let icon = null;
     export let layout = null;
     export let active = null;
-    export let variant = null;
+    export let skin = null;
 
-    let variantValue = '';
+    let computedSkinValue = '';
 
-    if (variant) {
-      variantValue = 'c-button--'+variant;
+    if (skin) {
+      computedSkinValue = 'c-button--'+skin;
     } else {
-       variantValue = 'c-button--secondary';
+       computedSkinValue = 'c-button--secondary';
     }
 
 </script>
@@ -41,7 +41,7 @@
    <a
     href="{href}"
     {style}
-    class="c-button { cssClass } { variantValue }"
+    class="c-button { cssClass } { computedSkinValue }"
     class:c-button--block={block}
     class:c-button--icon={layout=="icon"}
     class:c-button--disabled={disabled}
@@ -54,7 +54,7 @@
         <button
             type="submit"
             {disabled}
-            class="c-button { cssClass } { variantValue }"
+            class="c-button { cssClass } { computedSkinValue }"
             {style}
             class:c-button--block={block}
             class:c-button--icon={layout=="icon"}
@@ -67,7 +67,7 @@
         <button
             type="button"
             {disabled}
-            class="c-button { cssClass } { variantValue }"
+            class="c-button { cssClass } { computedSkinValue }"
             {style}
             on:submit|preventDefault on:click|preventDefault
             class:c-button--block={block}

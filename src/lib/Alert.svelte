@@ -25,7 +25,7 @@
     <slot></slot>
     </div>
     {#if closable}
-      <Button icon="close" layout="icon" variant="borderless" on:click="{() => show = false}">Close</Button>
+      <Button icon="close" layout="icon" skin="borderless" on:click="{() => show = false}">Close</Button>
     {/if}
   </div>
 {/if}
