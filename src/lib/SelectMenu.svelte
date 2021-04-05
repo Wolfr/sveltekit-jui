@@ -1,6 +1,6 @@
 <script>
 
-  export let options;
+  export let options = [{name: "Option 1"}];
 
   import Icon from '$lib/Icon.svelte';
   

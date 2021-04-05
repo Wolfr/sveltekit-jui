@@ -33,9 +33,9 @@
     </SelectMenu>
 
     <NavMenu>
-      <NavMenuItem href="/">Action 1</NavMenuItem>
-      <NavMenuItem href="/">Action 2</NavMenuItem>
-      <NavMenuItem href="/">Action 3</NavMenuItem>
+      <NavMenuItem href="/">Navigation item 1</NavMenuItem>
+      <NavMenuItem href="/">Navigation item 2</NavMenuItem>
+      <NavMenuItem href="/">Navigation item 3</NavMenuItem>
       <NavMenuDivider />
       <NavMenuItem destructive href="/">Destructive action</NavMenuItem>
     </NavMenu>
