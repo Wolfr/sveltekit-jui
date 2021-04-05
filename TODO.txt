@@ -1,5 +1,7 @@
 ## Jungle UI todo
 
+* [ ] Implement escape key closing for modal
+
 * [ ] Svelte kit: experiment with server routes equivalent
 
 * [ ] Work on unique identifiers e.g. in radio groups, partly done but needs to be a generated UUID
@@ -10,7 +12,8 @@
 * [ ] Work on this progress bar at the top? The spinning circle in the middle is too much of a flash
 
 * [ ] Work on validation: grab form help text, form help text error etc from other projects and correctly pass it into the way forms are built
-
+    Email validation with regex https://html5-tutorial.net/form-validation/validating-email/
+   
 * [ ] Examples: create a contact form
 * [ ] Examples: create a pricing page
 * [ ] Examples: create a blog post
@@ -18,9 +21,8 @@
 * [ ] Examples: create a simple pagination for blog
 * [ ] Examples: create an icon toolbar, with a segmented divider
 
-* [ ] Examples: create a mobile tabbed view (arkiplan mobile vue)
-* [ ] Examples: create a mobile list view (arkiplan mobile vue)
-
+* [ ] Examples: create a mobile tabbed view (Arkiplan mobile vue)
+* [ ] Examples: create a mobile list view (Arkiplan mobile vue)
 
 * [ ] Component: Input with icon left right
 * [ ] Component: Datepicker

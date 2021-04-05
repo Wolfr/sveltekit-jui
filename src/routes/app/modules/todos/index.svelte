@@ -12,9 +12,9 @@
   import ToolbarItem from '$lib/ToolbarItem.svelte';
 </script>
 
-<div class="u-spacer-l">
+<div style="flex: 0 0 calc(100% - 11.2rem); overflow: scroll;">
 
-  <table class="c-table c-table--styled c-table--striped c-table--bordered" >
+  <table class="c-table c-table--styled c-table--indented" >
     <thead>
       <tr>
         <th>List name</th>
@@ -37,10 +37,17 @@
         </td>
       </tr>
       {/each}
-      
+  
     </tbody>
   </table>
 
-  <Pagination />
-
 </div>
+<Navbar borderPosition="top">
+  <Toolbar>
+    <ToolbarGroup position="left">
+      <ToolbarItem>
+        <Pagination totalPages="3" currentPage="1" />
+      </ToolbarItem>
+    </ToolbarGroup>
+  </Toolbar>
+</Navbar>

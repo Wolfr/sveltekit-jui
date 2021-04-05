@@ -11,30 +11,33 @@
 </script>
 
 
+<div style="display: flex; flex-direction: column; height: 100%;">
 
-<Navbar skin="gray-50">
-  <Toolbar>
-    <ToolbarGroup position="left">
-      <ToolbarItem>
-        <ToolbarTitle>My app</ToolbarTitle>
-      </ToolbarItem>
-      <ToolbarItem>
-        <Nav>
-          <NavItem href="/app/modules/todos">Todos</NavItem>
-          <NavItem href="/app/modules/stats">Stats</NavItem>
-          <NavItem href="/app/modules/settings">Settings</NavItem>
-        </Nav>
-      </ToolbarItem>
-    </ToolbarGroup>
-    <ToolbarGroup position="right">
-      <ToolbarItem>
-        <Avatar />
-      </ToolbarItem>
-      <ToolbarItem>
-        <p><a href="/app">Sign out</p>
-      </ToolbarItem>
-    </ToolbarGroup>
-  </Toolbar>
-</Navbar>
+  <Navbar skin="gray-50">
+    <Toolbar>
+      <ToolbarGroup position="left">
+        <ToolbarItem>
+          <ToolbarTitle>My app</ToolbarTitle>
+        </ToolbarItem>
+        <ToolbarItem>
+          <Nav>
+            <NavItem href="/app/modules/todos">Todos</NavItem>
+            <NavItem href="/app/modules/stats">Stats</NavItem>
+            <NavItem href="/app/modules/settings">Settings</NavItem>
+          </Nav>
+        </ToolbarItem>
+      </ToolbarGroup>
+      <ToolbarGroup position="right">
+        <ToolbarItem>
+          <Avatar />
+        </ToolbarItem>
+        <ToolbarItem>
+          <p><a href="/app">Sign out</p>
+        </ToolbarItem>
+      </ToolbarGroup>
+    </Toolbar>
+  </Navbar>
 
-<slot></slot>
+  <slot></slot>
+
+</div>

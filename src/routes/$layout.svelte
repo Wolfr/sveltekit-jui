@@ -25,7 +25,7 @@
     <title>JUI</title>
 </svelte:head>
 
-<div class="br-prototype-wrapper">
+<div class="br-prototype-wrapper" class:br-prototype-nav-is-open={pageIndexVisible}>
   <div class="br-prototype-wrapper__content">
     {#if $navigating}
       <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
@@ -82,7 +82,7 @@
 
 <svelte:window on:keydown={handleKeydown}/>
 
-<style>
+<style lang="scss">
 
   .c-bordered-list, .c-bordered-list ul {
     list-style: none;
@@ -102,6 +102,18 @@
     padding: .4rem;
     border-bottom: .1rem solid #E9ECF1;
     display: block;
+  }
+  
+  /* Better display for modals when prototype nav is open
+     ========================================================================== */
+
+  :global(.br-prototype-nav-is-open .c-modal) {
+    left: 11%;
+    position: relative;
+    &.c-modal--fullscreen {
+      left: 0;
+      padding-left: calc(25rem);
+    }
   }
 
 </style>

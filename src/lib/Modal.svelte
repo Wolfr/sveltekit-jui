@@ -1,6 +1,7 @@
 <script>
 
-  export let size;
+  export let size = "medium";
+  export let title = "Modal window";
   export let headerless;
 
   import Button from '$lib/Button.svelte';
@@ -11,16 +12,23 @@
   import ToolbarItem from '$lib/ToolbarItem.svelte';
   import ToolbarTitle from '$lib/ToolbarTitle.svelte';
 
+	import { clickOutside } from '$lib/clickOutside.js';
+  import { modals } from '$lib/modals.js';
+  
+  function handleClickOutside(event) {
+    $modals[0].modalShow = !$modals[0].modalShow;
+  }
+
 </script>
 
-<div class="c-modal c-modal--{size}" role="dialog" aria-labelledby="modalTitle-02">
+<div class="c-modal c-modal--{size}" role="dialog" aria-labelledby="modalTitle-02" use:clickOutside on:click_outside={handleClickOutside}>
   <div class="c-modal__push"></div>
   {#if !headerless}
   <div class="c-modal__header c-modal__header--bordered">
     <Toolbar>
       <ToolbarGroup position="left">
         <ToolbarItem>
-          <ToolbarTitle>Modal window</ToolbarTitle>
+          <ToolbarTitle>{title}</ToolbarTitle>
         </ToolbarItem>
       </ToolbarGroup>
       <ToolbarGroup position="right">

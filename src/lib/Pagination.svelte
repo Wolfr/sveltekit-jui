@@ -1,12 +1,21 @@
 <script>
   import Button from '$lib/Button.svelte';
+  import ButtonToolbar from '$lib/ButtonToolbar.svelte';
+  export let totalPages = 1;
+  export let currentPage = 1;
 </script>
 
-<div class="o-container-vertical">
-  <Button icon="chevron-left" disabled>Previous</Button>
-  <Button variant="borderless">1</Button>
-  <Button variant="borderless">2</Button>
-  <Button variant="borderless">3</Button>
-  <Button variant="borderless">4</Button>
-  <Button layout="label-icon" icon="chevron-right">Next</Button>
+
+<div class="c-pagination">
+  
+  <Button icon="chevron-left" disabled cssClass="c-pagination__previous">Previous</Button>
+
+  <ButtonToolbar>
+  {#each {length: totalPages} as elem, index}
+    <Button variant="borderless" active={ index+1 == currentPage }>{index+1}</Button>
+  {/each}
+  </ButtonToolbar>
+
+  <Button layout="label-icon" icon="chevron-right" cssClass="c-pagination__next">Next</Button>
+
 </div>

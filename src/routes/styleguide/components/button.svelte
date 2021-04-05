@@ -24,7 +24,7 @@
       ]
     },
     {
-      name: 'classValue',
+      name: 'cssClass',
       description: 'Used to add an extra CSS class.',
       required: false,
     },

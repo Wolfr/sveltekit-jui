@@ -47,7 +47,7 @@
                     <FormGroupLayout layoutType="inline">
                       <FormGroup layoutType="inline">
                           <Input type="email" bind:value={email} placeholder="Enter your e-mail address..." />
-                          {#if emailFieldBlankError}<p class="{">Field must be filled.</p>{/if}
+                          {#if emailFieldBlankError}<p class="">Field must be filled.</p>{/if}
                           {#if emailNotAnEmailError}<p>This value is not a correct e-mail address.</p>{/if}
                       </FormGroup>
                       <FormGroup layoutType="inline">

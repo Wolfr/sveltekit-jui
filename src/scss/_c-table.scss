@@ -238,3 +238,19 @@ $i: 1;
     padding-right: 2.4rem;
   }
 }
+
+
+.c-table--indented {
+  td:first-child {
+    padding-left: 2.4rem;
+  }
+  td:last-child {
+    padding-right: 2.4rem;
+  }
+  th:first-child {
+    padding-left: 2.4rem;
+  }
+  th:last-child {
+    padding-right: 2.4rem;
+  }
+}

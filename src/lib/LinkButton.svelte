@@ -3,7 +3,7 @@
     import ButtonInnerLayout from './ButtonInnerLayout.svelte';
 
     // Extra class
-    export let classValue = null;
+    export let cssClass = null;
 
     export let href = false;
 
@@ -29,7 +29,7 @@
 <a
   href="{href}"
   {style}
-  class="c-link-button {classValue ? classValue : ''} { variantValue }"
+  class="c-link-button { cssClass } { variantValue }"
   class:c-link-button--icon={layout=="icon"}
   class:c-link-button--disabled={disabled}
 >

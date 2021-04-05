@@ -160,7 +160,6 @@ $c-button-link-color: $color-primary !default;
   &.c-button--active,
   &:active:focus,
   &.c-button--active:focus {
-    background: $color-gray-100;
     box-shadow: inset 0 0 0 0.1rem $color-gray-200;
   }
 
@@ -197,6 +196,7 @@ $c-button-link-color: $color-primary !default;
 
 .c-button.c-button--primary,
 .c-button.c-button--default,
+.c-button.c-button--secondary,
 .c-button.c-button--danger,
 .c-button.c-button--danger-hover {
   &:disabled,
