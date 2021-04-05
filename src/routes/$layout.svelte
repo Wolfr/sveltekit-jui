@@ -64,6 +64,7 @@
               <li><a href="/demos/modal">Modal</a></li>
               <li><a href="/demos/alert-stack">Alert stack</a></li>
               <li><a href="/demos/popover">Popover</a></li>
+              <li><a href="/demos/popper">Popper</a></li>
             </ul>
         </li>
         <li>
