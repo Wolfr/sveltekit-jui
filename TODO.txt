@@ -1,5 +1,7 @@
 ## Jungle UI todo
 
+### New components
+
 * [ ] Slider
 * [ ] Progress bar
 
@@ -7,12 +9,17 @@
 
 * Start making it!
 
+### General
 
-* [ ] style headerless modal better
+* [ ] Fix scroll bug on modals page
+* [ ] Style headerless modal better
 * [ ] Provide proper event dispatching for select menu for single selection
 * [x] Implement same width modifier for SelectMenu and NavMenu
 * [x] Document SelectMenu and NavMenu
 * [ ] Implement closable pills - selectable pills
+* [x] Change badge component into pill component
+* [x] Deduplicate badge
+* [ ] Support icons on pills, on left and right side
 * [ ] Implement multiple select component (using closable pills)
 
 * [ ] Document navbar
@@ -23,9 +30,7 @@
     * [ ] Add segments to the drawing app controls
     * [ ] Add a way to have a dropdown on this UI component
 
-
 * [ ] Svelte kit: experiment with server routes equivalent
-
 * [ ] Work on unique identifiers e.g. in radio groups, partly done but needs to be a generated UUID
 
 * [ ] Document input group (there is a CSS file for this but no docs, this is about append/prepend)
@@ -35,6 +40,8 @@
 
 * [ ] Work on validation: grab form help text, form help text error etc from other projects and correctly pass it into the way forms are built
     * Email validation with regex https://html5-tutorial.net/form-validation/validating-email/
+
+### Examples
 
 * [ ] Examples: create a contact form
 * [ ] Examples: create a pricing page
@@ -48,7 +55,6 @@
 
 * [ ] Component: Input with icon left right
 * [ ] Component: Datepicker
-* [ ] Media card (cfr. YouTube)
 
 * [ ] Todo page: disable the button when the input is empty
 * [ ] Todo page: strike-through the todo when checked
@@ -64,11 +70,10 @@
     * [ ] Add an overal “brand” (leaf icon @rinxols?) or draw one myself
 
 * [ ] Proper CSS for link button, differentiated from actual button
+* [ ] Better docs for link button
 
 * [ ] Add blank slate component
 * [ ] Add circular badge component
-* [ ] Change badge component into pill component
-* [ ] Support icons on pills, on left and right side
 
 * [ ] Screen: Implement forgot password success page, with success alert
 
@@ -78,7 +83,6 @@
 * [ ] Implement alert stack base logic (showing alert stack in all its positions)
 
 * [ ] Add modal example to style guide
-* [ ] Fix modal examples messing with scroll
 
 * [ ] Document toolbar centered examples
 
@@ -131,11 +135,8 @@
 * [ ] Implement alert stack animations
 * [ ] Test alert stack
 
-
 * [ ] Implement charts with layercake.graphics
 * [ ] Implement column system for detail page
-
-* [ ] Make alerts use global color system
 
 * [ ] Go through overall CSS - make it use color variables
 
@@ -187,9 +188,11 @@
 * [x] Add spinner to project
 * [x] Add modal
 * [x] Implement escape key closing for modal
+* [x] Media card (cfr. YouTube)
 
 ## My feedback on Svelte kit
 
 * Needs a title system
 * Needs a way to add meta tags properly per page
 * How do I access the object with all routes?
+* [x] Make alerts use global color system
