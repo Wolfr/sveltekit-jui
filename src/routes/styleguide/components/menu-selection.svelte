@@ -3,20 +3,28 @@
   import StyleguideCard from '$lib/StyleguideCard.svelte';
 
   import SelectMenu from '$lib/SelectMenu.svelte';
-  import SelectMenuItem from '$lib/SelectMenuItem.svelte';
 
   let pageTitle = 'Menu (Selection)';
 
+
   let optionSet1 = [
     {
-        name:'Option 1',
-        selected: true
+        name:'Option 1'
     },
     {
         name:'Option 2',
     },
     {
         name:'Option 3',
+    },
+    {
+        name:'Better option 1',
+    },
+    {
+        name:'Better option 2',
+    },
+    {
+        name:'Better option 3',
     },
   ]
 
@@ -36,15 +44,8 @@
 
 </StyleguideCard>
 
-<StyleguideCard
-  title="Select menu (custom) (singular selection)"
-  description="<p>@todo proper event dispatching</p><p>@todo proper selection logic</p>"
->
+<StyleguideCard title="Select menu (custom) (singular selection)">
 
-  <SelectMenu>
-    {#each optionSet1 as option, index}
-      <SelectMenuItem selected="{option.selected}">{option.name}</SelectMenuItem>
-    {/each}
-  </SelectMenu>
+  <SelectMenu options={optionSet1} />
 
 </StyleguideCard>

@@ -18,7 +18,6 @@
 
 </script>
 
-
 <div style="height: 100%; flex-direction: column;;">
 
   <Navbar>

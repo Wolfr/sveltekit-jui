@@ -6,14 +6,26 @@
   box-shadow: 0 0 0.8rem rgba(0,0,0,0.15);
 }
 
+
+
 .c-select-menu__item {
-  background: #FFF;
-  border-radius: .3rem;
-  padding: .8rem 1.6rem;
-  margin: 0 .8rem;
-  display: block;
-  &:hover {
-    cursor: pointer;
-    background: $color-gray-50;
+  button {
+    box-sizing: border-box;
+    appearance: none;
+    background: #FFF;
+    border-radius: .3rem;
+    padding: .8rem 1.6rem;
+    margin: 0 .8rem;
+    border: none;
+    width: calc(100% - 1.6rem);
+    display: flex;
+    .c-icon {
+      flex: 0 0 auto;
+      margin-right: .8rem;
+    }
+    &:hover {
+      cursor: pointer;
+      background: $color-gray-50;
+    }
   }
 }
