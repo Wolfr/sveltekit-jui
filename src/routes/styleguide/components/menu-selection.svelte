@@ -36,7 +36,10 @@
 
 </StyleguideCard>
 
-<StyleguideCard title="Select menu (custom) (singular selection)" description="<p>@todo proper event dispatching</p>">
+<StyleguideCard
+  title="Select menu (custom) (singular selection)"
+  description="<p>@todo proper event dispatching</p><p>@todo proper selection logic</p>"
+>
 
   <SelectMenu>
     {#each optionSet1 as option, index}

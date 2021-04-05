@@ -1,6 +1,6 @@
 <script>
 
-  import Globe from './Globe.svelte';
+  import Globe from './MyGlobe.svelte';
   import Icon from '$lib/Icon.svelte';
 
   import Button from '$lib/Button.svelte';
