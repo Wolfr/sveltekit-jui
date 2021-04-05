@@ -46,7 +46,11 @@
       </div>
       <ul class="c-bordered-list">
         <li>
-            <a href="/site/">Website</a>
+            <span>Website</span>
+            <ul>
+              <li><a href="/site/">Media example</a></li>
+              <li><a href="/site/blog">Blog list</a></li>
+            </ul>
         </li>
         <li>
             <span>Demos</span>
