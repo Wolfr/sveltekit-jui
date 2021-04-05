@@ -11,17 +11,14 @@
 
 ### General
 
+* [ ] Implement a tooltip (using Popper, or tippy?)
+* [ ] Custom select: be able to start typing, then based on what you type make a selection (implement using tick()?)
 * [ ] Fix scroll bug on modals page
 * [ ] Style headerless modal better
-* [ ] Provide proper event dispatching for select menu for single selection
-* [x] Implement same width modifier for SelectMenu and NavMenu
-* [x] Document SelectMenu and NavMenu
 * [ ] Implement closable pills - selectable pills
-* [x] Change badge component into pill component
-* [x] Deduplicate badge
+* [ ] Deduplicate badge
 * [ ] Support icons on pills, on left and right side
 * [ ] Implement multiple select component (using closable pills)
-
 * [ ] Document navbar
 
 ### Drawing app demo
@@ -189,10 +186,14 @@
 * [x] Add modal
 * [x] Implement escape key closing for modal
 * [x] Media card (cfr. YouTube)
+* [x] Provide proper event dispatching for select menu for single selection
+* [x] Implement same width modifier for SelectMenu and NavMenu
+* [x] Document SelectMenu and NavMenu
+* [x] Make alerts use global color system
+* [x] Change badge component into pill component
 
 ## My feedback on Svelte kit
 
 * Needs a title system
 * Needs a way to add meta tags properly per page
 * How do I access the object with all routes?
-* [x] Make alerts use global color system
