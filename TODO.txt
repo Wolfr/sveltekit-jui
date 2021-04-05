@@ -7,8 +7,8 @@
 
 * Start making it!
 
-### Drawing app demo
 
+* [ ] style headerless modal better
 * [ ] Provide proper event dispatching for select menu for single selection
 * [x] Implement same width modifier for SelectMenu and NavMenu
 * [x] Document SelectMenu and NavMenu
@@ -17,9 +17,12 @@
 
 * [ ] Document navbar
 
+### Drawing app demo
+
 * [ ] Icon toolbar
     * [ ] Add segments to the drawing app controls
     * [ ] Add a way to have a dropdown on this UI component
+
 
 * [ ] Svelte kit: experiment with server routes equivalent
 
