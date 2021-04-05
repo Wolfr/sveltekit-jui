@@ -25,7 +25,20 @@
     }
   ]
   
-  let propsTable = false;
+
+  let propsTable = [
+    {
+      name: 'open',
+      description: 'Open accordion item.',
+      options: [
+        {
+          name: 'true/false',
+          default: false
+        }
+      ],
+      required: false
+    }    
+  ]
 
 </script>
 
@@ -41,5 +54,18 @@
   </Accordion>
 </StyleguideCard>
 
+
+
+<StyleguideIntro title="Accordion Item" />
+
+<StyleguideCard title="Accordion item" code="&lt;AccordionItem title=&quot;Title&quot; open&gt;
+  &lt;p&gt;Some HTML content.&lt;/p&gt;
+&lt;/AccordionItem&gt;">
+
+  <AccordionItem title="Title" open>
+      <p>Some HTML content.</p>
+  </AccordionItem>
+
+</StyleguideCard>
 
 <StyleguidePropsTable propsTable={propsTable} />

@@ -49,7 +49,7 @@
 
 </StyleguideCard>
 
-<StyleguideCard title={pageTitle}>
+<StyleguideCard title="Alert (closable)">
 
   <Alert closable>Hey, I am a closable alert.</Alert>
 

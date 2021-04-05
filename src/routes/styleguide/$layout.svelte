@@ -20,7 +20,7 @@
     {
       prettyName: "CSS architecture",
       url: "css-architecture",
-      category: "dev-notes"
+      category: "Dev notes"
     },
     {
       url: "icons",
@@ -47,10 +47,6 @@
       category: "components"
     },
     {
-      url: "accordion-item",
-      category: "components"
-    },
-    {
       url: 'alert-stack',
       category: 'components'
     },
@@ -68,7 +64,8 @@
     },
     {
       url: 'button-link',
-      category: 'components'
+      category: 'components',
+      prettyName: 'Button (link)'
     },
     {
       url: 'button-toolbar',

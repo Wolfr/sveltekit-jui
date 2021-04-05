@@ -4,17 +4,23 @@
 
   let pageTitle = 'Menu (Navigation)';
 
+  import NavMenu from '$lib/NavMenu.svelte';
+  import NavMenuItem from '$lib/NavMenuItem.svelte';
+  import NavMenuDivider from '$lib/NavMenuDivider.svelte';
+
 </script>
 
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title="Select menu">
+<StyleguideCard title={pageTitle}>
 
-  <ul class="c-menu">
-    <li><a href="#">Item</a></li>
-    <li><a href="#">Item</a></li>
-    <li><a href="#">Item</a></li>
-  </ul>
+    <NavMenu>
+      <NavMenuItem href="/">Action 1</NavMenuItem>
+      <NavMenuItem href="/">Action 2</NavMenuItem>
+      <NavMenuItem href="/">Action 3</NavMenuItem>
+      <NavMenuDivider />
+      <NavMenuItem destructive href="/">Destructive action</NavMenuItem>
+    </NavMenu>
 
 </StyleguideCard>
 

@@ -54,8 +54,16 @@ $c-button-border-radius: .3rem;
     border-bottom-right-radius: $c-button-border-radius;
   }
 
+
+
   .c-button + .c-button {
     margin: 0 0 0 -0.1rem;
+  }
+}
+
+.c-button-toolbar--compact:not(.c-button-toolbar--vertical) {
+  .c-button:first-child {
+    margin-left: -0.2rem;
   }
 }
 
@@ -80,8 +88,12 @@ $c-button-border-radius: .3rem;
   }
 
   &.c-button-toolbar--compact {
+    .c-button:first-child {
+      margin-top: -0.2rem;
+    }
+
     .c-button + .c-button {
-      margin: -0.2rem 0 0 0;
+      margin: -0.1rem 0 0 0;
     }
   }
 }

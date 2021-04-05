@@ -4,7 +4,22 @@
 
   import createPopperAction from '$lib/usePopper.js';
   import { clickOutside } from '$lib/clickOutside.js';
-
+  
+  const sameWidth = {
+    name: "sameWidth",
+    enabled: true,
+    phase: "beforeWrite",
+    requires: ["computeStyles"],
+    fn: ({ state }) => {
+      state.styles.popper.width = `${state.rects.reference.width}px`;
+    },
+    effect: ({ state }) => {
+      state.elements.popper.style.width = `${
+        state.elements.reference.offsetWidth
+      }px`;
+    }
+  };
+  
   const [usePopperElement, usePopperToolip] = createPopperAction();
 
   let placement = 'bottom-start'
@@ -23,7 +38,12 @@
 
 <div
   tabindex="0"
-  class="c-custom-select" class:c-custom-select--focus={showMenu} on:focus={pop} on:click={pop} on:blur={pop}  use:usePopperElement>
+  class="c-custom-select"
+  class:c-custom-select--focus={showMenu}
+  on:focus={pop}
+  on:click={pop}
+  use:usePopperElement
+>
   Custom dropdown (navigation)
   {#if showMenu}
     <Icon icon="caret-up" />
@@ -34,7 +54,7 @@
 
 {#if showMenu}
 <div
-  use:usePopperToolip={{ placement: placement, modifiers: [{ name: 'offset', options: { offset: [0, 10],},},],}}
+  use:usePopperToolip={{ placement: placement, modifiers: [sameWidth, { name: 'offset', options: { offset: [0, 10],},},],}}
   use:clickOutside on:click_outside={handleClickOutside}
 >
   <ul class="c-nav-menu">

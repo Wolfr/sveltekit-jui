@@ -2,13 +2,29 @@
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
 
+  import SelectMenu from '$lib/SelectMenu.svelte';
+  import SelectMenuItem from '$lib/SelectMenuItem.svelte';
+
   let pageTitle = 'Menu (Selection)';
+
+  let optionSet1 = [
+    {
+        name:'Option 1',
+        selected: true
+    },
+    {
+        name:'Option 2',
+    },
+    {
+        name:'Option 3',
+    },
+  ]
 
 </script>
 
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title="Select menu">
+<StyleguideCard title="Select menu (native)">
 
   <div class="c-select-holder">
     <select class="c-select">
@@ -20,8 +36,12 @@
 
 </StyleguideCard>
 
-<!-- <StyleguideCard title="Select menu (custom)">
+<StyleguideCard title="Select menu (custom) (singular selection)">
 
-   @TODO
+  <SelectMenu>
+    {#each optionSet1 as option, index}
+      <SelectMenuItem selected="{option.selected}">{option.name}</SelectMenuItem>
+    {/each}
+  </SelectMenu>
 
-</StyleguideCard> -->
+</StyleguideCard>

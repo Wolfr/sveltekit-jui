@@ -14,7 +14,12 @@
       name: 'compact',
       description: 'Moves the buttons into one another.',
       required: false
-    }    
+    },
+    {
+      name: 'vertical',
+      description: 'Vertical layout.',
+      required: false
+    }
   ]
   
 </script>
@@ -38,11 +43,19 @@
   </ButtonToolbar>
 </StyleguideCard>
 
-<StyleguideCard>
+<StyleguideCard title="Compact">
   <ButtonToolbar compact>
     <Button>A button</Button>
     <Button>A button</Button>
     <Button>A button</Button>
+  </ButtonToolbar>
+</StyleguideCard>
+
+<StyleguideCard title="Vertical + Compact">
+  <ButtonToolbar vertical compact>
+    <Button icon="add" layout="icon">A button</Button>
+    <Button icon="add" layout="icon">A button</Button>
+    <Button icon="add" layout="icon">A button</Button>
   </ButtonToolbar>
 </StyleguideCard>
 
