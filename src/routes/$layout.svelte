@@ -46,6 +46,12 @@
       </div>
       <ul class="c-bordered-list">
         <li>
+            <span>Drawing app</span>
+            <ul>
+              <li><a href="/drawing-app/">Main view</a></li>
+            </ul>
+        </li>
+        <li>
             <span>Website</span>
             <ul>
               <li><a href="/site/">Media example</a></li>

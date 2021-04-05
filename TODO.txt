@@ -1,19 +1,30 @@
 ## Jungle UI todo
 
-* [ ] Implement escape key closing for modal
+* [ ] Slider
+* [ ] Progress bar
+
+### Calendar app demo
+
+* Start making it!
+
+### Drawing app demo
+
+* [ ] Icon toolbar
+    * [ ] Add segments to the drawing app controls
+    * [ ] Add a way to have a dropdown on this UI component
 
 * [ ] Svelte kit: experiment with server routes equivalent
 
 * [ ] Work on unique identifiers e.g. in radio groups, partly done but needs to be a generated UUID
 
 * [ ] Document input group (there is a CSS file for this but no docs, this is about append/prepend)
-* [ ] Document input file (there is a CSS file for this but no docs)
+* [ ] Document input type file (there is a CSS file for this but no docs)
 
 * [ ] Work on this progress bar at the top? The spinning circle in the middle is too much of a flash
 
 * [ ] Work on validation: grab form help text, form help text error etc from other projects and correctly pass it into the way forms are built
-    Email validation with regex https://html5-tutorial.net/form-validation/validating-email/
-   
+    * Email validation with regex https://html5-tutorial.net/form-validation/validating-email/
+
 * [ ] Examples: create a contact form
 * [ ] Examples: create a pricing page
 * [ ] Examples: create a blog post
@@ -40,6 +51,7 @@
 
 * [ ] Add a favicon
     * [ ] Add an overal “brand” (leaf icon @rinxols?) or draw one myself
+
 * [ ] Proper CSS for link button, differentiated from actual button
 
 * [ ] Add blank slate component
@@ -163,6 +175,7 @@
 * [x] Implement better alerts
 * [x] Add spinner to project
 * [x] Add modal
+* [x] Implement escape key closing for modal
 
 ## My feedback on Svelte kit
 
