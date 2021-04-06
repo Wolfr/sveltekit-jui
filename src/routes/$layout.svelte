@@ -4,7 +4,8 @@
   import Spinner from '$lib/Spinner.svelte';
   
   import 'mono-icons/iconfont/icons.css';
-  import '../scss/app.scss';
+  import '../scss/main.scss';
+  import '../scss/styleguide.scss';
   
   let pageIndexVisible = true;
 

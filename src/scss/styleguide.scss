@@ -1,0 +1,48 @@
+/* ==========================================================================
+  Stylesheet for styleguide
+  ITCSS + BEM
+  JUI@0.1
+   ========================================================================== */
+
+@import "../scss/s-colors";
+@import "../scss/s-semantic-colors";
+@import "../scss/s-variables";
+
+// Styleguide specific, needs to move to separate stylesheet
+@import "../scss/c-styleguide-card-inner";
+@import "../scss/prism";
+
+// Bedrock specific, remove in production
+
+.br-prototype-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+.br-prototype-wrapper__content {
+  flex: 0 1 100%;
+  height: 100%;
+}
+
+.br-prototype-wrapper__nav {
+  z-index: 3000;
+  width: 28rem;
+  flex: 0 0 28rem;
+  background: #FFF;
+  box-shadow: 0 0 0.8rem rgba(0,0,0,0.15);
+}
+
+.br-prototype-nav-is-open .c-modal {
+  left: 11%;
+  position: relative;
+  &.c-modal--fullscreen {
+    left: 0;
+    padding-left: calc(25rem);
+  }
+}
+
+.br-prototype-nav-is-open .c-styleguide-card-inner .c-modal {
+  left: 0;
+}

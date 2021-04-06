@@ -1,5 +1,5 @@
 /* ==========================================================================
-  Component: Button Toolbar
+  Button Toolbar
   ---
   Group multiple buttons together
    ========================================================================== */
@@ -53,8 +53,6 @@ $c-button-border-radius: .3rem;
     border-top-right-radius: $c-button-border-radius;
     border-bottom-right-radius: $c-button-border-radius;
   }
-
-
 
   .c-button + .c-button {
     margin: 0 0 0 -0.1rem;
