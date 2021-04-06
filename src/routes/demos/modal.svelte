@@ -24,6 +24,9 @@
 
 </script>
 
+<svelte:head>
+    <title>Modal - Demos - JUI</title>
+</svelte:head>
 
 <div class="u-spacer-l">
 

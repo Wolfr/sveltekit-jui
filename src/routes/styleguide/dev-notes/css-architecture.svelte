@@ -6,6 +6,10 @@
 
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Dev notes - JUI</title>
+</svelte:head>
+
 <div class="c-content">
   <h2>CSS Architecture</h2>
   <div class="u-spacer-top u-spacer-bottom">

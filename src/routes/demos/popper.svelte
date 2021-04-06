@@ -17,6 +17,12 @@
 
 </script>
 
+<!-- You have found a work-in-progress part of JUI -->
+
+<svelte:head>
+  <title>Popover and tooltip - Demos - JUI</title>
+</svelte:head>
+
 <div class="u-spacer-l">
 
   <div class="container">

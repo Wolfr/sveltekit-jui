@@ -152,6 +152,8 @@
     }
     return curr
   }, [])
+  
+  let pageTitle = "Colors"
 
 </script>
 
@@ -187,7 +189,11 @@
 
 </style>
 
-<h1 class="c-h1">Colors</h1>
+<svelte:head>
+  <title>{pageTitle} - Basics - JUI</title>
+</svelte:head>
+
+<h1 class="c-h1">{pageTitle}</h1>
 
 <div class="u-spacer-bottom-l">
   <div classs="c-content">

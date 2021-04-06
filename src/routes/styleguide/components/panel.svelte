@@ -10,6 +10,10 @@
 
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} />
 
 <StyleguideCard title={pageTitle} code="&lt;Panel&gt;
@@ -25,7 +29,6 @@
   </Panel>
 
 </StyleguideCard>
-
 
 <StyleguideCard title="Panel body only" code="&lt;Panel&gt;
   &lt;PanelHeader title=&quot;Panel title&quot; /&gt;

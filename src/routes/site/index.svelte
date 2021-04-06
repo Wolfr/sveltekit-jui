@@ -1,14 +1,17 @@
 <script>
   import MediaCard from '$lib/MediaCard.svelte';
-
 </script>
+
+<svelte:head>
+  <title>Media grid- Site example - JUI</title>
+</svelte:head>
 
 <div style="overflow: scroll; height: 100%;">
   <div class="u-spacer-l">
 
     <div class="container">
 
-      <h2 class="c-h2">Hello world.</h2>
+      <h2 class="c-h2">My [category] favorites.</h2>
 
       <div class="o-dynamic-grid">
         {#each {length: 20} as elem}

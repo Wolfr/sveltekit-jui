@@ -7,6 +7,10 @@
 
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Basics - JUI</title>
+</svelte:head>
+
 <h1 class="c-h1">{pageTitle}</h1>
 
 <p>This page documents the typography used in the design system. Use the right typography to present your design and content as clearly and efficiently as possible.</p>

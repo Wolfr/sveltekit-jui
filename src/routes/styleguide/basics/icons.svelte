@@ -148,6 +148,8 @@
       'zoom-in',
       'zoom-out'
     ]
+    
+    let pageTitle = "Icons";
 </script>
 
 <style>
@@ -168,8 +170,11 @@
   }
 </style>
 
+<svelte:head>
+  <title>{pageTitle} - Basics - JUI</title>
+</svelte:head>
 
-<StyleguideIntro title="Icons" content='<p>In this project, we use <a href="https://icons.mono.company/">Mono Icons</a>, loaded as an icon font.</p>' />
+<StyleguideIntro title={pageTitle} content='<p>In this project, we use <a href="https://icons.mono.company/">Mono Icons</a>, loaded as an icon font.</p>' />
   
 <StyleguideCard title="Icons">
   <ul class="styleguide-icon-listing">

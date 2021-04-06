@@ -7,6 +7,11 @@
   import Input from '$lib/Input.svelte';
 </script>
 
+
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} content="Inputs for inputting text."/>
 
 <StyleguideCard title={pageTitle}>

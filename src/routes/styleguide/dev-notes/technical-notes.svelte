@@ -2,6 +2,10 @@
   import RichContent from '$lib/RichContent.svelte';
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Dev notes - JUI</title>
+</svelte:head>
+
 <RichContent>
   <h2 id="technical-notes">Technical notes</h2>
   <p>For those who are curious, here is the technical reasoning behind the way this framework is set up.</p>

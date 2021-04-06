@@ -7,6 +7,10 @@
 
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} content="Generic popover component (todo)."/>
 
 <StyleguideCard title={pageTitle}>

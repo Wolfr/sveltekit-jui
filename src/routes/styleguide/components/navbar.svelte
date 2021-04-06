@@ -32,24 +32,22 @@
   
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} content="<p>Use in conjunction with <code>Toolbar</code> to house controls.</p>"/>
 
-<StyleguideCard title={pageTitle}>
-  <Navbar>
-
-  </Navbar>
+<StyleguideCard title={pageTitle} code="&lt;Navbar&gt;&lt;/Navbar&gt;">
+  <Navbar></Navbar>
 </StyleguideCard>
 
-<StyleguideCard title="Gray variant">
-  <Navbar skin="gray-50">
-  </Navbar>
-
+<StyleguideCard title="Gray variant" code="&lt;Navbar skin=&quot;gray-50&quot;&gt;&lt;/Navbar&gt;">
+  <Navbar skin="gray-50"></Navbar>
 </StyleguideCard>
 
-<StyleguideCard title="Border top">
-  <Navbar borderPosition="top">
-  </Navbar>
-
+<StyleguideCard title="Border top" code="&lt;Navbar borderPosition=&quot;top&quot;&gt;&lt;/Navbar&gt;">
+  <Navbar borderPosition="top"></Navbar>
 </StyleguideCard>
 
 <StyleguidePropsTable propsTable={propsTable} />

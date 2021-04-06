@@ -8,7 +8,6 @@
   
   import Radio from '$lib/Radio.svelte';
 
-
   let propsTable = [
     {
       name: 'checked',
@@ -24,20 +23,20 @@
   
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} />
 
 <StyleguideCard title={pageTitle}>
-
   <Radio checked label="Label" />
-
 </StyleguideCard>
 
 
 <StyleguideCard title="Disabled radio button">
-
   <Radio disabled label="Label" />
   <Radio disabled checked label="Label" />
-
 </StyleguideCard>
 
 <StyleguidePropsTable propsTable={propsTable} />

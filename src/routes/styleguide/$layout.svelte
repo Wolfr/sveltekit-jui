@@ -186,7 +186,7 @@
 </Navbar>
 
 <svelte:head>
-    <title>{pageTitle} - Components - Style guide - JUI</title>
+  <title>{pageTitle} - Components - Style guide - JUI</title>
 </svelte:head>
 
 <div class="c-styleguide-wrapper">

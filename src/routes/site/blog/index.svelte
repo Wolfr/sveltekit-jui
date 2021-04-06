@@ -1,8 +1,11 @@
 <script>
   import Button from '$lib/Button.svelte';
   import BlogArticle from '$lib/BlogArticle.svelte';
-
 </script>
+
+<svelte:head>
+  <title>Blog - Site example - JUI</title>
+</svelte:head>
 
 <div class="o-container o-container--medium">
 

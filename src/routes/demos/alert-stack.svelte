@@ -27,12 +27,15 @@
 
 </script>
 
+<svelte:head>
+  <title>Alert stack - Demos - JUI</title>
+</svelte:head>
+
 <div class="u-spacer-l">
 
   <div class="container">
 
     <h2 class="c-h2">Alert stack demo here.</h2>
-    
     <Button on:click={spawnAlert}>Spawn alert</Button>
 
   </div>

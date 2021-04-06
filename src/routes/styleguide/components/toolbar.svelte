@@ -11,12 +11,15 @@
 
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} />
 
 <p>Use the toolbar to position elements to the left and right.</p>
 
 <StyleguideCard title={pageTitle}>
-
   <Toolbar>
     <ToolbarGroup position="left">
       <ToolbarItem>
@@ -41,5 +44,4 @@
       </ToolbarItem>
     </ToolbarGroup>
   </Toolbar>
-
 </StyleguideCard>

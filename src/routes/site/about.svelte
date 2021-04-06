@@ -4,6 +4,10 @@
 
 </script>
 
+<svelte:head>
+  <title>About- Site example - JUI</title>
+</svelte:head>
+
 <div class="o-container o-container--medium">
 
   <div class="o-container-vertical">

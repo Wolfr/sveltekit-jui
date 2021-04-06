@@ -37,6 +37,11 @@
   
 </script>
 
+<!-- You have found a work-in-progress part of JUI -->
+<svelte:head>
+  <title>Creative app - Demos - JUI</title>
+</svelte:head>
+
 <div style="height: 100%; flex-direction: column;;">
 
   <Navbar>

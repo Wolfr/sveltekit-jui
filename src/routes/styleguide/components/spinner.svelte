@@ -8,6 +8,10 @@
 
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} />
 
 <StyleguideCard title={pageTitle}>

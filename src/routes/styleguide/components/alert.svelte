@@ -35,6 +35,10 @@
 
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} />
 
 <StyleguideCard title={pageTitle} code="&lt;Alert&gt;This is an alert with no specified type.&lt;/Alert&gt;

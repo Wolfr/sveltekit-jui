@@ -41,19 +41,21 @@
 
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} />
 
 <StyleguideCard title="Accordion" description="<p>Wraps <code>AccordionItem</code>s together.</p>">
   <Accordion>
-      {#each accordionContent as item}
-      <AccordionItem title={item.title} open={item.open}>
-          {@html item.content}
-      </AccordionItem>
-      {/each}
+    {#each accordionContent as item}
+    <AccordionItem title={item.title} open={item.open}>
+      {@html item.content}
+    </AccordionItem>
+    {/each}
   </Accordion>
 </StyleguideCard>
-
-
 
 <StyleguideIntro title="Accordion Item" />
 
@@ -62,7 +64,7 @@
 &lt;/AccordionItem&gt;">
 
   <AccordionItem title="Title" open>
-      <p>Some HTML content.</p>
+    <p>Some HTML content.</p>
   </AccordionItem>
 
 </StyleguideCard>

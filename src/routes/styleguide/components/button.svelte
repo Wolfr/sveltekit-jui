@@ -93,6 +93,10 @@
 
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} />
 
 <StyleguideCard title="Button layouts" code="&lt;Button&gt;A button&lt;/Button&gt;

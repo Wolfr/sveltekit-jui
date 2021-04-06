@@ -9,8 +9,8 @@
 
   <div class="u-spacer-l">
     <div style="display: flex; align-items: center; justify-content: space-between;">
-      <h1 class="c-h3">My website</h1>
-  
+      <h1 class="c-h3"><a href="/site">My website</a></h1>
+
       <Nav>
         <NavItem href="/site">Home</NavItem>
         <NavItem href="/site/about">About</NavItem>
