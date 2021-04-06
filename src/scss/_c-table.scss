@@ -88,7 +88,7 @@ $c-table-row-selected-bg: $color-primary !default;
 }
 
 .c-table--bordered {
-  border: 1px solid $c-table-border-color;
+  border: .1rem solid $c-table-border-color;
   border-radius: 0.3rem;
   border-collapse: separate;
 }
@@ -204,7 +204,7 @@ $i: 1;
 
 .c-table-responsive {
 
-  border: 1px solid $c-table-border-color;
+  border: .1rem solid $c-table-border-color;
   border-radius: 0.3rem;
 
   display: block;
@@ -241,6 +241,8 @@ $i: 1;
   }
 }
 
+/* Indented table
+   ========================================================================== */
 
 .c-table--indented {
   td:first-child {

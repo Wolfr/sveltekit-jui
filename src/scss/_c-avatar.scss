@@ -133,23 +133,3 @@ $c-avatar-dimensions-xs: 1.8rem !default;
     object-position: center; // Not supported in IE
   }
 }
-
-/* Avatar list
-   ========================================================================== */
-
-.c-avatar-list {
-  display: flex;
-  align-items: center;
-
-  .c-avatar + .c-avatar {
-    margin-left: -0.8rem;
-  }
-
-  $i: 0;
-  @while ($i < 10) {
-    .c-avatar:nth-child(#{$i}) {
-      z-index: 10 - $i;
-    }
-    $i: $i + 1;
-  }
-}

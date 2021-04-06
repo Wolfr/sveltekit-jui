@@ -34,20 +34,3 @@ $c-card-border-color: $color-gray-200 !default;
   background-color: #fff;
   height: 100%;
 }
-
-
-.c-card__footer {
-  border-top: 0.1rem solid $c-card-border-color;
-  padding: 1.6rem;
-}
-
-.c-card .c-content {
-  *:first-child {
-    margin-top: 0;
-  }
-
-  *:last-child {
-    margin-bottom: 0;
-  }
-
-}

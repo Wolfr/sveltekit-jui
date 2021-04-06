@@ -12,16 +12,19 @@
 
 .c-bordered-list li a {
   padding: .4rem;
-  border-bottom: .1rem solid #E9ECF1;
+  border-bottom: .1rem solid $color-gray-100;
   display: block;
   color: $color-primary;
 }
 
 .c-bordered-list li span {
   padding: .4rem;
-  border-bottom: .1rem solid #E9ECF1;
+  border-bottom: .1rem solid $color-gray-100;
   display: block;
 }
+
+/* Modifiers
+   ========================================================================== */
 
 .c-bordered-list--small {
   font-size: 1.4rem;

@@ -24,36 +24,3 @@
     margin: 0;
   }
 }
-
-/* Animation
-   ========================================================================== */
-
-.c-alert--floating--animate-in {
-  animation: 0.3s ease-in 0.2s both floating-alert-in;
-}
-
-.c-alert--floating--animate-out {
-  animation: 0.3s ease-out 0.2s both floating-alert-out;
-}
-
-@keyframes floating-alert-in {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%) translateY(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-}
-
-@keyframes floating-alert-out {
-  100% {
-    opacity: 0;
-    transform: translateX(-50%) translateY(-1rem);
-  }
-  0% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-}
