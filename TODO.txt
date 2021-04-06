@@ -1,5 +1,8 @@
 ## Jungle UI todo
 
+* [ ] Link to github on the styleguide
+* [ ] Add CTAs for feedback on the style guide
+* [ ] Add a contributing.md
 
 * [ ] Something wrong with disabled radio buttons that are checked
 * [ ] correct aria roles listbox item
