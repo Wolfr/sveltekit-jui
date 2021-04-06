@@ -11,14 +11,13 @@
     pageIndexVisible = !pageIndexVisible;
   }
 
-  let trigger = '§';
-
-  function handleKeydown(e) {
-    if (e.key == trigger) {
-      pageIndexVisible = !pageIndexVisible;
+  function handleKeydown (evt) { 
+    if (!evt) evt = event; 
+      // Ctrl+m or Ctrl+b as alternative
+      if (evt.ctrlKey && evt.keyCode === 77 || evt.ctrlKey && evt.keyCode === 66) { 
+        toggleVisibility();
+      }
     }
-  }
-
 </script>
   
 <svelte:head>
@@ -41,7 +40,7 @@
       <div class="c-content">
         <p><button class="c-button c-button--secondary" on:click={toggleVisibility}>Close page tree</button></p>
         <h4 class="c-h6">Page index</h4>
-        <p>Press § to show the page index.</p>
+        <p>Press Ctrl+m to show the page index.</p>
       </div>
       <ul class="c-bordered-list c-bordered-list--small">
         <li>
