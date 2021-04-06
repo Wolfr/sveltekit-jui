@@ -51,6 +51,7 @@
 @import "../scss/c-pill-list";
 @import "../scss/c-popover";
 @import "../scss/c-select-menu";
+@import "../scss/c-toggle";
 @import "../scss/c-side-menu";
 @import "../scss/c-spinner";
 @import "../scss/c-styled-select";
@@ -67,6 +68,9 @@ html, body, #svelte {
   height: 100%;
   overflow: hidden;
 }
+
+// Styleguide specific, move to separate stylesheet
+@import "../scss/c-styleguide-card-inner";
 
 // Bedrock specific, remove in production
 

@@ -16,11 +16,13 @@
 
   let pageTitle = 'Style guide';
   
+
+
   let data = [
     {
       prettyName: "CSS architecture",
       url: "css-architecture",
-      category: "Dev notes"
+      category: "dev-notes",
     },
     {
       url: "icons",
@@ -188,9 +190,9 @@
 <div class="c-styleguide-wrapper">
   <div class="c-styleguide-sidebar">
 
-    <div style="padding: 0 2.4rem 2.4rem;">
+    <!-- <div style="padding: 0 2.4rem 2.4rem;">
       <Input icon="search" type="search"  placeholder="Enter a search term..." />
-    </div>
+    </div> -->
 
     <SideMenu>
       <SideMenuItem href="/styleguide/">Intro</SideMenuItem>

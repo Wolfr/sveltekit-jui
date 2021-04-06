@@ -1,28 +1,22 @@
 <script>
 
+  export let cssClass = null;
   export let options = [{name: "Option 1"}];
 
   import Icon from '$lib/Icon.svelte';
-  
+
+  // Trap focus
+  import { trapFocus } from "$lib/trapFocus";
+
+  // Popperaction, thanks Tan li hau!
+  // https://www.youtube.com/watch?v=CFj4X0bGOvE&ab_channel=lihautan
+
   import createPopperAction from '$lib/usePopper.js';
-  import { clickOutside } from '$lib/clickOutside.js';
-
-
   const [usePopperElement, usePopperToolip] = createPopperAction();
-  import {trapFocus} from "$lib/trapFocus";
   let placement = 'bottom-start'
 
-  let showMenu = false;
-
-  function pop() {
-    showMenu = !showMenu;
-  }
-  
-  function handleClickOutside() {
-    showMenu = !showMenu;
-  }
-  
   import SelectMenuItem from '$lib/SelectMenuItem.svelte';
+  // Selected state handling with children (using event dispatching)
   let activeIndex = 0;
   let activeIndexStr = '';
   $: activeIndexStr = activeIndex.toString();
@@ -30,14 +24,43 @@
   function handleSelectedState(event) {
      activeIndex = event.detail.text;
   }
-  
-  let trigger = 'Escape';
 
+  let showMenu = false;
+
+  // Simple click
+  function pop() {
+    showMenu = !showMenu;
+  }
+  
+  // Click outside
+  import { clickOutside } from '$lib/clickOutside.js';
+  function handleClickOutside() {
+    showMenu = !showMenu;
+  }
+
+  // Keyboard shortcut
+  let trigger = 'Escape';
   function handleKeydown(e) {
     if (e.key == trigger) {
       showMenu = !showMenu;
     }
   }
+
+  // Samewidth, pass false if not needed
+  export let sameWidth = {
+    name: "sameWidth",
+    enabled: true,
+    phase: "beforeWrite",
+    requires: ["computeStyles"],
+    fn: ({ state }) => {
+      state.styles.popper.width = `${state.rects.reference.width}px`;
+    },
+    effect: ({ state }) => {
+      state.elements.popper.style.width = `${
+        state.elements.reference.offsetWidth
+      }px`;
+    }
+  };
 
 </script>
 
@@ -45,7 +68,7 @@
 
 <div
   tabindex="0"
-  class="c-custom-select"
+  class="c-custom-select { cssClass} "
   class:c-custom-select--focus={showMenu}
   on:focus={pop}
   on:click={pop}
@@ -62,7 +85,7 @@
 
 {#if showMenu}
 <div
-  use:usePopperToolip={{ placement: placement, modifiers: [{ name: 'offset', options: { offset: [0, 4],},},],}}
+  use:usePopperToolip={{ placement: placement, modifiers: [sameWidth, { name: 'offset', options: { offset: [0, 4],},},],}}
   use:clickOutside on:click_outside={handleClickOutside}
 >
   <ul class="c-select-menu" use:trapFocus>

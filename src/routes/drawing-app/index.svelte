@@ -6,8 +6,7 @@
   import Button from '$lib/Button.svelte';
   import ButtonToolbar from '$lib/ButtonToolbar.svelte';
 
-  import Input from '$lib/Input.svelte';
-  import Slider from '$lib/Slider.svelte';
+
 
   import Navbar from '$lib/Navbar.svelte';
   
@@ -16,6 +15,35 @@
   import ToolbarItem from '$lib/ToolbarItem.svelte';
   import ToolbarTitle from '$lib/ToolbarTitle.svelte';
 
+  import FormGroupLayout from '$lib/FormGroupLayout.svelte';
+  
+  // Form controls
+  import Input from '$lib/Input.svelte';
+  import Slider from '$lib/Slider.svelte';
+  import SelectMenu from '$lib/SelectMenu.svelte';
+  import Toggle from '$lib/Toggle.svelte';
+
+  let optionSet1 = [
+    {
+        name:'Option 1'
+    },
+    {
+        name:'Option 2',
+    },
+    {
+        name:'Option 3',
+    },
+    {
+        name:'Better option 1',
+    },
+    {
+        name:'Better option 2',
+    },
+    {
+        name:'Better option 3',
+    },
+  ]
+  
 </script>
 
 <div style="height: 100%; flex-direction: column;;">
@@ -45,11 +73,38 @@
     <div style="background: #FFF; border-left: .1rem solid #DDD; flex: 0 0 30rem;">
       <div class="u-spacer-l">
         
-        <Slider />
-        <Input />
-        <Input />
-        <Input />
-        <Input />
+        
+        <FormGroupLayout>
+          <div class="o-form-group">
+            <label class="o-form-group__label" for="fieldId">Dots amount</label>
+            <div class="o-form-group__controls">
+              <Slider />
+            </div>
+          </div>
+          
+          <div class="o-form-group">
+            <label class="o-form-group__label" for="fieldId">Animate</label>
+            <div class="o-form-group__controls">
+              <Toggle />
+            </div>
+          </div>
+        
+          <div class="o-form-group">
+            <label class="o-form-group__label" for="fieldId">Field 2</label>
+            <div class="o-form-group__controls">
+              <input class="c-input" id="fieldId" type="text" />
+            </div>
+          </div>
+        
+          <div class="o-form-group">
+            <label class="o-form-group__label" for="fieldId">Field 3</label>
+            <div class="o-form-group__controls">
+              <SelectMenu cssClass="c-custom-select--fullwidth" options={optionSet1} />
+
+            </div>
+          </div>
+        </FormGroupLayout>
+        
       </div>
     </div>
   </div>

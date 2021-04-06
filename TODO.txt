@@ -1,5 +1,7 @@
 ## Jungle UI todo
 
+* [ ] Implement pretty category name
+
 ### New components
 
 * [ ] Slider
@@ -7,17 +9,24 @@
 
 ### Calendar app demo
 
-* Start making it!
+* [ ] Start making it!
 
 ### General
 
 * [ ] Implement a tooltip (using Popper, or tippy?)
 * [ ] Custom select: be able to start typing, then based on what you type make a selection (implement using tick()?)
-* [ ] Fix scroll bug on modals page
+* [ ] Fix horizontal scroll bug on modals page
+
+#### Modals
+
 * [ ] Style headerless modal better
+
+#### Pills
+
 * [ ] Implement closable pills - selectable pills
 * [ ] Deduplicate badge
 * [ ] Support icons on pills, on left and right side
+
 * [ ] Implement multiple select component (using closable pills)
 * [ ] Document navbar
 
@@ -39,6 +48,9 @@
     * Email validation with regex https://html5-tutorial.net/form-validation/validating-email/
 
 ### Examples
+
+* [ ] Test with screenreader
+* [ ] Add template for new SCSS component
 
 * [ ] Examples: create a contact form
 * [ ] Examples: create a pricing page

@@ -1,4 +1,7 @@
 <script>
+
+  import StyleguideCardInner from '$lib/StyleguideCardInner.svelte';
+
   export let title = null;
   export let code = null;
   export let description = null;
@@ -18,11 +21,10 @@
   {#if description}
     <div class="c-content">{@html description}</div>
   {/if}
-  <div class="c-card u-spacer-bottom">
-    <div class="c-card__content">
-      <slot />
-    </div>
-  </div>
+
+  <StyleguideCardInner>
+    <slot />
+  </StyleguideCardInner>
 
   {#if code}
     <button class="c-show-code-button c-tiny-button" on:click={toggleCode}>{#if !showCode}Show code{:else}Hide code{/if}</button>
@@ -41,7 +43,6 @@
   .c-styleguide-code-block {
     margin: 1rem 0 0 ;
     position: relative;
-    background: red;
   }
 
   .c-tiny-button {

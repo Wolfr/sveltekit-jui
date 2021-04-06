@@ -6,7 +6,6 @@
 
   let pageTitle = 'Menu (Selection)';
 
-
   let optionSet1 = [
     {
         name:'Option 1'
@@ -44,7 +43,7 @@
 
 </StyleguideCard>
 
-<StyleguideCard title="Select menu (custom) (singular selection)">
+<StyleguideCard title="Select menu (custom)" description="<p>Single selection.</p>">
 
   <SelectMenu options={optionSet1} />
 

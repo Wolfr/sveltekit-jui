@@ -1,13 +1,15 @@
-
 /* ==========================================================================
   c-card
  ========================================================================== */
 
-// Border radius
-$c-card-border-radius: 0.3rem !default;
+/* Variables
+   ========================================================================== */
 
-// Border color
+$c-card-border-radius: 0.3rem !default;
 $c-card-border-color: $color-gray-200 !default;
+
+/* Component
+   ========================================================================== */
 
 .c-card-list {
   .c-card + .c-card {
@@ -18,53 +20,7 @@ $c-card-border-color: $color-gray-200 !default;
 .c-card {
   display: block;
   color: $g-text-color;
-  text-decoration: none;
   position: relative;
-
-  .c-button--borderless-i {
-    margin-left: auto;
-  }
-
-  .c-card__settings {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    opacity: 0;
-    padding: 0;
-  }
-}
-
-.c-card:hover,
-.c-card:focus {
-  .c-card__settings {
-    opacity: 1;
-  }
-}
-
-.c-button--invisible:focus + .c-card__settings {
-  opacity: 1;
-}
-
-.c-card__settings:hover,
-.c-card__settings:focus {
-  opacity: 1;
-}
-
-.c-button.c-button--borderless-i.c-card__settings:focus {
-  outline: -webkit-focus-ring-color auto 1px;
-  opacity: 1;
-}
-
-.c-card--archived {
-  background-color: $color-gray-50;
-}
-
-.c-card--background-gray {
-  background: $color-gray-50;
-}
-
-.c-card--no-border {
-  border: none;
 }
 
 .c-card__header {
@@ -79,39 +35,11 @@ $c-card-border-color: $color-gray-200 !default;
   height: 100%;
 }
 
-.c-card__content h3 {
-  margin-bottom: 0;
-}
-
-.c-card__content--centered {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-  justify-content: center;
-}
-
-.c-card__content--spaced {
-  padding: 3.2rem;
-}
 
 .c-card__footer {
   border-top: 0.1rem solid $c-card-border-color;
   padding: 1.6rem;
-
-  .c-table td {
-    padding: 0;
-  }
-
-  .c-table {
-    td + td {
-      padding: 0.8rem 0;
-    }
-  }
 }
-
-
 
 .c-card .c-content {
   *:first-child {

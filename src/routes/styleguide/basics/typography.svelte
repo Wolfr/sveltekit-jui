@@ -12,7 +12,6 @@
 <p>This page documents the typography used in the design system. Use the right typography to present your design and content as clearly and efficiently as possible.</p>
 
 <StyleguideCard>
-  
   <h1 class="c-h1">Heading 1</h1>
   <h2 class="c-h2">Heading 2</h2>
   <h3 class="c-h3">Heading 3</h3>
