@@ -12,7 +12,7 @@
   // https://www.youtube.com/watch?v=CFj4X0bGOvE&ab_channel=lihautan
 
   import createPopperAction from '$lib/usePopper.js';
-  const [usePopperElement, usePopperToolip] = createPopperAction();
+  const [usePopperElement, usePopperTooltip] = createPopperAction();
   let placement = 'bottom-start'
 
   import SelectMenuItem from '$lib/SelectMenuItem.svelte';
@@ -85,7 +85,7 @@
 
 {#if showMenu}
 <div
-  use:usePopperToolip={{ placement: placement, modifiers: [sameWidth, { name: 'offset', options: { offset: [0, 4],},},],}}
+  use:usePopperTooltip={{ placement: placement, modifiers: [sameWidth, { name: 'offset', options: { offset: [0, 4],},},],}}
   use:clickOutside on:click_outside={handleClickOutside}
 >
   <ul class="c-select-menu" use:trapFocus>

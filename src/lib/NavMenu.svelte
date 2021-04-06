@@ -20,7 +20,7 @@
     }
   };
   
-  const [usePopperElement, usePopperToolip] = createPopperAction();
+  const [usePopperElement, usePopperTooltip] = createPopperAction();
 
   let placement = 'bottom-start'
 
@@ -54,7 +54,7 @@
 
 {#if showMenu}
 <div
-  use:usePopperToolip={{ placement: placement, modifiers: [sameWidth, { name: 'offset', options: { offset: [0, 10],},},],}}
+  use:usePopperTooltip={{ placement: placement, modifiers: [sameWidth, { name: 'offset', options: { offset: [0, 10],},},],}}
   use:clickOutside on:click_outside={handleClickOutside}
 >
   <ul class="c-nav-menu">

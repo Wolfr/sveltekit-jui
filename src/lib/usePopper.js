@@ -27,7 +27,7 @@ export default function createPopperAction() {
       }
     }
   }
-  function usePopperToolip(element, params) {
+  function usePopperTooltip(element, params) {
     popperTooltip = element;
     popperParams = params;
     initialisePopper();
@@ -43,5 +43,5 @@ export default function createPopperAction() {
       }
     }
   }
-  return [usePopperElement, usePopperToolip];
+  return [usePopperElement, usePopperTooltip];
 }

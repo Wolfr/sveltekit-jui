@@ -34,13 +34,10 @@
     <h3 class="c-h3">Generic popups</h3>
 
     <div class="c-content">
-      <p>Click this button to show a generic popover:</p>
-      <p>
-        <PopoverContainer>
-          <Button icon="circle-information">Show a popup</Button>
-          <Popover>Hey. I am not automatically positioned yet.</Popover>
-        </PopoverContainer>
-      </p>
+      <Popover>
+        <div slot="one">Click this to show a generic popover</div>
+        <div slot="two">Hey. I am not automatically positioned yet.</div>
+      </Popover>
 
     </div>
 
