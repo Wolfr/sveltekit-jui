@@ -13,7 +13,7 @@
     import Radio from '$lib/Radio.svelte';
     import RadioGroup from '$lib/RadioGroup.svelte';
     
-    let radioOptions = ['EU','Outside EU'];
+    let radioOptions = [{ name: 'EU'}, { name: 'Outside EU'}];
 
 </script>
 

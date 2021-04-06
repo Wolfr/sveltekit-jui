@@ -21,7 +21,6 @@
 		"node": ">= 12.17.0"
 	},
 	"dependencies": {
-		"@popperjs/core": "^2.9.2",
-		"layercake": "^4.1.0"
+		"@popperjs/core": "^2.9.2"
 	}
 }

@@ -1,6 +1,9 @@
 ## Jungle UI todo
 
+* [ ] Implement marked to render technical notes markdown as content
+
 * [ ] Listbox: implement aria-activedescendant
+* [ ] Dropdown menus should have more satisfactory animations
 
 * [ ] Styleguide nav: Implement pretty category name
 
@@ -220,6 +223,7 @@
 
 ## My feedback on Svelte kit
 
-* Needs a title system
+* Needs a title system, that can derive titles from pages to page
+* Aria announcer is undocumented, needs documentation
 * Needs a way to add meta tags properly per page
-* How do I access the object with all routes?
+* How do I access the object with all routes? (So I can maybe build a page tree automatically?)
