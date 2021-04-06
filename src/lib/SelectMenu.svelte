@@ -90,7 +90,6 @@
 >
   <ul
       class="c-select-menu"
-      transition:fade={{  duration: 150 }}
       use:trapFocus
       role="listbox"
       tabindex="0"
