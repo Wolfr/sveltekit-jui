@@ -36,6 +36,7 @@
 
 <StyleguideCard title="Disabled radio button">
   <Radio disabled label="Label" />
+  <br>
   <Radio disabled checked label="Label" />
 </StyleguideCard>
 

@@ -1,5 +1,6 @@
 <script>
-import RichContent from '$lib/RichContent.svelte';
+  import RichContent from '$lib/RichContent.svelte';
+  import Button from '$lib/Button.svelte';
 </script>
 
 <slot />
@@ -11,8 +12,14 @@ import RichContent from '$lib/RichContent.svelte';
       <h1>Sveltekit-JUI (0.1)</h1>
     </div>
     <RichContent>
-      <p>Sveltekit-JUI is a kit of UI components to be used in conjunction with <a href="https://svelte.dev/">Svelte</a> and <a href="https://kit.svelte.dev/docs">Svelte Kit</a>. The J stands for Jungle - UI for user interface.</p>
-      <p>Please use the page tree to navigate to different page examples, or view the <a href="/styleguide">styleguide</a> to view the documented components.</p>
+      <p>Sveltekit-JUI is a kit of UI components to be used in conjunction with <a href="https://svelte.dev/">Svelte</a> and <a href="https://kit.svelte.dev/docs">Svelte Kit</a>. The J stands for Jungle - the UI for user interface.</p>
+      <p>Please use the page tree on the left to navigate to different page examples, or view the <a href="/styleguide">styleguide</a> to view the documented components.</p>
+
+      <div class="c-links-license">
+        <Button href="https://github.com/Wolfr/sveltekit-jui">Code on Github</Button>
+        <p>MIT licensed</p>
+      </div>
+      
     </RichContent>
   </div>
 </main>
@@ -43,6 +50,16 @@ import RichContent from '$lib/RichContent.svelte';
     font-size: 2.8rem;
     font-weight: 600;
     color: #000;
+  }
+
+  .c-links-license {
+    display: flex;
+    align-items: center;
+  }
+  
+  .c-links-license p {
+    margin-left: 1.6rem;
+    opacity: .66;
   }
 
 </style>

@@ -79,67 +79,52 @@
     {
       name: 'red-500',
       hex: '#D34D4D',
-      category: 'Functional'
+      category: 'Colors'
     },
     {
       name: 'red-200',
       hex: '#F8E8ED',
-      category: 'Functional'
+      category: 'Colors'
     },
     {
       name: 'green-500',
       hex: '#37C8AB',
-      category: 'Functional'
+      category: 'Colors'
     },
     {
       name: 'green-200',
       hex: '#EBF9F6',
-      category: 'Functional'
+      category: 'Colors'
     },
     {
       name: 'orange-500',
       hex: '#EEB902',
-      category: 'Functional'
+      category: 'Colors'
     },
     {
       name: 'orange-200',
       hex: '#FEF9EA',
-      category: 'Functional'
-    },
-    {
-      name: 'safe-blue',
-      hex: '#1F72FB',
-      category: 'Secondary'
-    },
-    {
-      name: 'safe-red',
-      hex: '#DE3434',
-      category: 'Secondary'
-    },
-    {
-      name: 'safe-green',
-      hex: '#348556',
-      category: 'Secondary'
+      category: 'Colors'
     },
     {
       name: 'purple-500',
       hex: '#7B47EB',
-      category: 'Tertiary'
+      category: 'Colors'
     },
     {
       name: 'purple-200',
       hex: '#E5DAFB',
-      category: 'Tertiary'
+      category: 'Colors'
     },
     {
       name: 'aqua-500',
       hex: '#ACEEFD',
-      category: 'Tertiary'
+      category: 'Colors'
     },
     {
       name: 'darkblue-500',
       hex: '#263261',
-      category: 'Tertiary'
+      category: 'Colors'
     }
   ]
   

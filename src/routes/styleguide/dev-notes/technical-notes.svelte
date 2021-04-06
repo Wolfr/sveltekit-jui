@@ -1,5 +1,6 @@
 <script>
   import RichContent from '$lib/RichContent.svelte';
+  let pageTitle = "Technical notes";
 </script>
 
 <svelte:head>
