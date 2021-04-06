@@ -8,7 +8,7 @@
 
     import SideMenu from '$lib/SideMenu.svelte';
     import SideMenuItem from '$lib/SideMenuItem.svelte';
-    
+
     import Checkbox from '$lib/Checkbox.svelte';
     import Radio from '$lib/Radio.svelte';
     import RadioGroup from '$lib/RadioGroup.svelte';

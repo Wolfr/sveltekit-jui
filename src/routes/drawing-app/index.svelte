@@ -6,7 +6,7 @@
   import Button from '$lib/Button.svelte';
   import ButtonToolbar from '$lib/ButtonToolbar.svelte';
 
-
+  import Checkbox from '$lib/Checkbox.svelte';
 
   import Navbar from '$lib/Navbar.svelte';
   
@@ -33,15 +33,6 @@
     {
         name:'Option 3',
     },
-    {
-        name:'Better option 1',
-    },
-    {
-        name:'Better option 2',
-    },
-    {
-        name:'Better option 3',
-    },
   ]
   
 </script>
@@ -53,10 +44,15 @@
       <ToolbarGroup position="left">
         <ToolbarItem>
           <Button layout="icon" skin="borderless" icon="add" />
-          <Button layout="icon" skin="borderless" icon="add" />
-          <Button layout="icon" skin="borderless" icon="add" />
-          <Button layout="icon" skin="borderless" icon="add" />
-          <Button layout="icon" skin="borderless" icon="add" />
+          <Button layout="icon" skin="borderless" icon="board" />
+          <Button layout="icon" skin="borderless" icon="repeat" />
+        </ToolbarItem>
+        <ToolbarItem>
+          <p class="u-text-muted">|</p>
+        </ToolbarItem>
+        <ToolbarItem>
+          <Button layout="icon" skin="borderless" icon="search" />
+          <Button layout="icon" skin="borderless" icon="options-vertical" />
         </ToolbarItem>
       </ToolbarGroup>
     </Toolbar>
@@ -90,19 +86,26 @@
           </div>
         
           <div class="o-form-group">
-            <label class="o-form-group__label" for="fieldId">Field 2</label>
+            <label class="o-form-group__label" for="fieldId">Field</label>
             <div class="o-form-group__controls">
               <input class="c-input" id="fieldId" type="text" />
             </div>
           </div>
-        
+
           <div class="o-form-group">
-            <label class="o-form-group__label" for="fieldId">Field 3</label>
+            <label class="o-form-group__label" for="fieldId">Field</label>
             <div class="o-form-group__controls">
               <SelectMenu cssClass="c-custom-select--fullwidth" options={optionSet1} />
-
             </div>
           </div>
+
+          <div class="o-form-group">
+            <label class="o-form-group__label">Add-ons</label>
+            <Checkbox label="Analog" /> 
+            <Checkbox label="Synthetic" /> 
+            <Checkbox label="A+" /> 
+          </div>
+
         </FormGroupLayout>
         
       </div>

@@ -73,7 +73,6 @@
   on:focus={pop}
   on:click={pop}
   use:usePopperElement
-  
 >
   {options[activeIndex].name}
   {#if showMenu}
@@ -86,7 +85,7 @@
 {#if showMenu}
 <div
   use:usePopperToolip={{ placement: placement, modifiers: [sameWidth, { name: 'offset', options: { offset: [0, 4],},},],}}
-  use:clickOutside on:click_outside={handleClickOutside}
+  use:clickOutside on:click_outside={handleClickOutside} style="z-index: 1;"
 >
   <ul
       class="c-select-menu"

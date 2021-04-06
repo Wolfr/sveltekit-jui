@@ -48,24 +48,10 @@
           <a href="/styleguide/">Style guide</a>
         </li>
         <li>
-            <span>Drawing app</span>
-            <ul>
-              <li><a href="/drawing-app/">Main view</a></li>
-            </ul>
-        </li>
-        <li>
             <span>Website</span>
             <ul>
               <li><a href="/site/">Media example</a></li>
               <li><a href="/site/blog">Blog list</a></li>
-            </ul>
-        </li>
-        <li>
-            <span>Demos</span>
-            <ul>
-              <li><a href="/demos/modal">Modal</a></li>
-              <li><a href="/demos/alert-stack">Alert stack</a></li>
-              <li><a href="/demos/popper">Popper</a></li>
             </ul>
         </li>
         <li>
@@ -83,6 +69,20 @@
             <li><a href="/app/modules/settings">Settings</a></li>
           </ul>
         </li>
+        <li>
+            <span>Demos</span>
+            <ul>
+              <li><a href="/demos/modal">Modal</a></li>
+              <li><a href="/demos/alert-stack">Alert stack</a></li>
+              <!-- <li><a href="/demos/popper">Popper</a></li> -->
+            </ul>
+        </li>
+        <!-- <li>
+            <span>Drawing app</span>
+            <ul>
+              <li><a href="/drawing-app/">Main view</a></li>
+            </ul>
+        </li> -->
       </ul>
 
     </div>
