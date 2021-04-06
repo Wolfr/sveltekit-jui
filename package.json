@@ -21,6 +21,7 @@
 	},
 	"dependencies": {
 		"@popperjs/core": "^2.9.2",
+		"mono-icons": "^1.2.4",
 		"prismjs": "^1.23.0"
 	}
 }

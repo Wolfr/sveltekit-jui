@@ -3,8 +3,9 @@
 
   import Spinner from '$lib/Spinner.svelte';
   
+  import 'mono-icons/iconfont/icons.css';
   import '../scss/app.scss';
-
+  
   let pageIndexVisible = true;
 
   function toggleVisibility() {

@@ -1,5 +1,6 @@
 ## Jungle UI todo
 
+* [ ] Add my own placeholder images
 * [ ] Implement marked to render technical notes markdown as content
 
 * [ ] Listbox: implement aria-activedescendant
