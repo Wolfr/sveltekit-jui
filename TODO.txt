@@ -140,7 +140,6 @@
 
 ### External reference needed (component level)
 
-* [ ] Accordion component
 * [ ] Tabs component
 * [ ] Segmented control (with radio)
 
@@ -229,6 +228,7 @@
 * [x] http://localhost:3000/styleguide/components/menu-navigation needs taller example
 * [x] http://localhost:3000/styleguide/components/menu-selection document sameWidth property
 * [x] Add Ctrl+M shortcut
+* [x] Accordion component
 
 ## Later
 
