@@ -175,7 +175,7 @@
 ### Bedrock-like todos
 
 * [ ] Add local filter (using JS) to styleguide tree left
-* [ ] Add Ctrl+M shortcut
+
 
 ## Todos module
 
@@ -220,6 +220,7 @@
 * [x] Implement Svelte Prism https://www.npmjs.com/package/svelte-prism
 * [x] http://localhost:3000/styleguide/components/menu-navigation needs taller example
 * [x] http://localhost:3000/styleguide/components/menu-selection document sameWidth property
+* [x] Add Ctrl+M shortcut
 
 ## My feedback on Svelte kit
 
