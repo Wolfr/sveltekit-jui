@@ -1,6 +1,8 @@
 <script>
+
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
 
   import SelectMenu from '$lib/SelectMenu.svelte';
 
@@ -27,6 +29,32 @@
     },
   ]
 
+  let propsTable = [
+    {
+      name: 'sameWidth',
+      description: 'Makes menu same width as parent.',
+      options: [
+        {
+          name: 'true/false',
+          default: false
+        }
+      ],
+      required: false
+    },
+    {
+      name: 'options',
+      description: 'Object with available options.',
+      options: [
+        {
+          name: `[{name: 'Option 1'},{name: 'Option 2'}]`,
+          default: false
+        }
+      ],
+      required: false
+    }
+    
+  ]
+
 </script>
 
 <StyleguideIntro title={pageTitle} />
@@ -43,8 +71,10 @@
 
 </StyleguideCard>
 
-<StyleguideCard title="Select menu (custom)" description="<p>Single selection.</p>">
+<StyleguideCard title="Select menu (custom)" description="<p>Single selection.</p>" style="height: 40rem;">
 
   <SelectMenu options={optionSet1} sameWidth=0 />
 
 </StyleguideCard>
+
+<StyleguidePropsTable propsTable={propsTable} />

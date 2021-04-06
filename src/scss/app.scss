@@ -89,9 +89,23 @@ html, body, #svelte {
 
 .br-prototype-wrapper__nav {
   z-index: 3000;
-  width: 32rem;
+  width: 28rem;
+  flex: 0 0 28rem;
   background: #FFF;
   box-shadow: 0 0 0.8rem rgba(0,0,0,0.15);
 }
 
 
+.br-prototype-nav-is-open .c-modal {
+  left: 11%;
+  position: relative;
+  &.c-modal--fullscreen {
+    left: 0;
+    padding-left: calc(25rem);
+  }
+}
+
+.br-prototype-nav-is-open .c-styleguide-card-inner .c-modal {
+  left: 0;
+}
+  

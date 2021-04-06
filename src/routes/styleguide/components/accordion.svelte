@@ -24,7 +24,6 @@
       open: false
     }
   ]
-  
 
   let propsTable = [
     {
@@ -37,7 +36,7 @@
         }
       ],
       required: false
-    }    
+    }
   ]
 
 </script>

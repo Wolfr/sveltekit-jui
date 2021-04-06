@@ -1,5 +1,7 @@
 <script>
 
+  import Alert from '$lib/Alert.svelte';
+  
   import Button from '$lib/Button.svelte';
   import ButtonToolbar from '$lib/ButtonToolbar.svelte';
   
@@ -7,6 +9,11 @@
   import ToolbarGroup from '$lib/ToolbarGroup.svelte';
   import ToolbarItem from '$lib/ToolbarItem.svelte';
   import ToolbarTitle from '$lib/ToolbarTitle.svelte';
+
+  import FormGroupLayout from '$lib/FormGroupLayout.svelte';
+  import FormGroup from '$lib/FormGroup.svelte';
+  import Input from '$lib/Input.svelte';
+
   
   import Modal from '$lib/Modal.svelte';
   import { modals } from '$lib/modals.js';
@@ -33,7 +40,17 @@
   <div class="c-modal-backdrop c-modal-backdrop--visible"></div>
 
   <Modal title="Modal demo">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <Alert>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Alert>
+    <FormGroupLayout>
+      <FormGroup label="Name" id="nameId" type="text" />
+      <FormGroup label="E-mail address" id="emailId" type="email" />
+      <div class="o-form-group">
+        <label class="o-form-group__label" for="messageId">Message</label>
+        <div class="o-form-group__controls">
+          <textarea class="c-input c-input--h-large" id="messageId" />
+        </div>
+      </div>
+    </FormGroupLayout>
   </Modal>
 
 </div>

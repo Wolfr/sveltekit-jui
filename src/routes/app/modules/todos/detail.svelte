@@ -35,7 +35,7 @@
 
   // Base values
   let nextId = 3;
-  let todoText = 'bd';
+  let todoText = '';
   
   $: todoValue = { title: todoText, id: nextId, completed: false };
   
@@ -67,10 +67,10 @@
     <form on:submit|preventDefault={addTodo} style="width: 100%;">
       <FormGroupLayout layoutType="inline">
         <FormGroup cssClass="o-form-group--inline-grow" layoutType="inline">
-          <Input type="text" bind:value={todoText} />
+          <Input type="text" bind:value={todoText}  />
         </FormGroup>
         <FormGroup cssClass="o-form-group--inline-shrink" layoutType="inline">
-          <Button on:submit={addTodo} on:click={addTodo} icon="add">Add item</Button>
+          <Button on:submit={addTodo} on:click={addTodo} icon="add" disabled={todoText==''}>Add item</Button>
         </FormGroup>
       </FormGroupLayout>
     </form>

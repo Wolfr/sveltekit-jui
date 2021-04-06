@@ -2,6 +2,7 @@
   import Prism from '$lib/Prism.svelte';
   import StyleguideCardInner from '$lib/StyleguideCardInner.svelte';
 
+  export let style;
   export let title = null;
   export let code = null;
   export let description = null;
@@ -22,7 +23,7 @@
     <div class="c-content">{@html description}</div>
   {/if}
 
-  <StyleguideCardInner>
+  <StyleguideCardInner {style}>
     <slot />
   </StyleguideCardInner>
 

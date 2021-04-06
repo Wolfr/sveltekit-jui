@@ -8,6 +8,7 @@
 
   <div class="o-container-vertical">
     <BlogArticle
+      slug="post-1"
       title="My title"
       date="April 5, 2021 10:31"
       content="
@@ -23,6 +24,7 @@
 
   <div class="o-container-vertical">
     <BlogArticle
+      slug="post-2"
       title="My title"
       date="April 5, 2021 10:31"
       content="

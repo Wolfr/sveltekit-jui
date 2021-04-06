@@ -13,8 +13,12 @@
     margin: 0 .8rem;
     border-radius: .3rem;
     color: $color-primary;
-    display: block;
+    display: flex;
   }
+  .c-icon {
+    margin-right: .8rem;
+  }
+  
   a:hover {
     background: $color-gray-50;
   }

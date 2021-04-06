@@ -42,9 +42,11 @@
         <p><button class="c-button c-button--secondary" on:click={toggleVisibility}>Close page tree</button></p>
         <h4 class="c-h6">Page index</h4>
         <p>Press § to show the page index.</p>
-        <p>View the <a href="/styleguide">style guide</a>.</p>
       </div>
-      <ul class="c-bordered-list">
+      <ul class="c-bordered-list c-bordered-list--small">
+        <li>
+          <a href="/styleguide/">Style guide</a>
+        </li>
         <li>
             <span>Drawing app</span>
             <ul>
@@ -63,7 +65,6 @@
             <ul>
               <li><a href="/demos/modal">Modal</a></li>
               <li><a href="/demos/alert-stack">Alert stack</a></li>
-              <li><a href="/demos/popover">Popover</a></li>
               <li><a href="/demos/popper">Popper</a></li>
             </ul>
         </li>
@@ -92,19 +93,3 @@
 
 <svelte:window on:keydown={handleKeydown}/>
 
-<style lang="scss">
-
-  
-  /* Better display for modals when prototype nav is open
-     ========================================================================== */
-
-  :global(.br-prototype-nav-is-open .c-modal) {
-    left: 11%;
-    position: relative;
-    &.c-modal--fullscreen {
-      left: 0;
-      padding-left: calc(25rem);
-    }
-  }
-
-</style>

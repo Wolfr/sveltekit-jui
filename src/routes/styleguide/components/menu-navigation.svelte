@@ -12,7 +12,18 @@
 
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title={pageTitle}>
+<StyleguideCard title={pageTitle} style="height: 40rem;">
+
+    <NavMenu type="icon" sameWidth=0>
+      <NavMenuItem icon="eye" href="/">View</NavMenuItem>
+      <NavMenuItem icon="edit" href="/">Edit</NavMenuItem>
+      <NavMenuItem icon="delete" href="/">Delete</NavMenuItem>
+    </NavMenu>
+
+</StyleguideCard>
+
+
+<StyleguideCard title={pageTitle} style="height: 40rem;">
 
     <NavMenu>
       <NavMenuItem href="/">Action 1</NavMenuItem>

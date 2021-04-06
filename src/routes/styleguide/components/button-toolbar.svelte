@@ -26,20 +26,13 @@
 
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title="Button group" code="&lt;ButtonToolbar&gt;
+<StyleguideCard title="Button toolbar" code="&lt;ButtonToolbar&gt;
   &lt;Button&gt;A button&lt;/Button&gt;
   &lt;Button&gt;A button&lt;/Button&gt;
 &lt;/ButtonToolbar&gt;">
   <ButtonToolbar>
     <Button>A button</Button>
     <Button>A button</Button>
-  </ButtonToolbar>
-</StyleguideCard>
-
-<StyleguideCard>
-  <ButtonToolbar compact>
-    <Button icon="add">A button</Button>
-    <Button icon="delete">A button</Button>
   </ButtonToolbar>
 </StyleguideCard>
 

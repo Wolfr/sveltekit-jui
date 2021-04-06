@@ -1,5 +1,7 @@
 <script>
 
+  import { fade } from 'svelte/transition';
+
   export let cssClass = null;
   export let options = [{name: "Option 1"}];
 
@@ -88,9 +90,21 @@
   use:usePopperToolip={{ placement: placement, modifiers: [sameWidth, { name: 'offset', options: { offset: [0, 4],},},],}}
   use:clickOutside on:click_outside={handleClickOutside}
 >
-  <ul class="c-select-menu" use:trapFocus>
+  <ul
+      class="c-select-menu"
+      transition:fade={{  duration: 150 }}
+      use:trapFocus
+      role="listbox"
+      tabindex="0"
+    >
     {#each options as option, index}
-      <SelectMenuItem on:sendValue={handleSelectedState} index={index} selected={index==activeIndexStr}>{option.name}</SelectMenuItem>
+      <SelectMenuItem
+        on:sendValue={handleSelectedState}
+        index={index}
+        selected={index==activeIndexStr}
+      >
+          {option.name}
+      </SelectMenuItem>
     {/each}
   </ul>
 </div>

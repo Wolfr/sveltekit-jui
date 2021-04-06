@@ -14,6 +14,9 @@
 
 	import { clickOutside } from '$lib/clickOutside.js';
   import { modals } from '$lib/modals.js';
+
+  // Trap focus
+  import { trapFocus } from "$lib/trapFocus";
   
   function switchModalVisibility() {
     $modals[0].modalShow = !$modals[0].modalShow;
@@ -43,7 +46,7 @@
 
 <svelte:window on:keydown={handleKeydown}/>
 
-<div class="c-modal c-modal--{size}" role="dialog" aria-labelledby="modalTitle-02" use:clickOutside on:click_outside={handleClickOutside}>
+<div class="c-modal c-modal--{size}" use:trapFocus role="dialog" use:clickOutside on:click_outside={handleClickOutside}>
   <div class="c-modal__push"></div>
   {#if !headerless}
   <div class="c-modal__header c-modal__header--bordered">

@@ -20,14 +20,12 @@
     <FormGroupLayout>
       <FormGroup label="Name" id="nameId" type="text" />
       <FormGroup label="E-mail address" id="emailId" type="email" />
-      
       <div class="o-form-group">
         <label class="o-form-group__label" for="messageId">Message</label>
         <div class="o-form-group__controls">
           <textarea class="c-input c-input--h-large" id="messageId" />
         </div>
       </div>
-
       <Button>Submit message</Button>
 
     </FormGroupLayout>

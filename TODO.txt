@@ -1,15 +1,17 @@
 ## Jungle UI todo
 
-* [ ] Implement pretty category name
-* [ ] http://localhost:3000/styleguide/components/menu-navigation needs taller example
-* [ ] http://localhost:3000/styleguide/components/menu-selection document sameWidth property
+* [ ] Listbox: implement aria-activedescendant
+
+* [ ] Styleguide nav: Implement pretty category name
+
 * [ ] http://localhost:3000/styleguide/components/menu-selection document option group (native)
+* [ ] Provide non-native option group logic
+
+* [ ] Implement direct SVG for certain icons: e.g. carets
 
 * [ ] Implement category sorting: dev notes should be at the bottom
 
 ### New components
-
-
 
 * [ ] Document standard card
 * [ ] Document media card
@@ -213,6 +215,8 @@
 * [x] Make alerts use global color system
 * [x] Change badge component into pill component
 * [x] Implement Svelte Prism https://www.npmjs.com/package/svelte-prism
+* [x] http://localhost:3000/styleguide/components/menu-navigation needs taller example
+* [x] http://localhost:3000/styleguide/components/menu-selection document sameWidth property
 
 ## My feedback on Svelte kit
 
