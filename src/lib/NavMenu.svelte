@@ -70,9 +70,9 @@
     use:usePopperElement
   >
     {#if showMenu}
-      <Button layout="icon" variant="borderless" icon="options-horizontal">Show options</Button>
-    {:else}
       <Button layout="icon" variant="borderless" icon="options-horizontal" active>Show options</Button>
+    {:else}
+      <Button layout="icon" variant="borderless" icon="options-horizontal">Show options</Button>
     {/if}
   </div>
 {/if}
