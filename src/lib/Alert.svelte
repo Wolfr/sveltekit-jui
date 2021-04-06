@@ -13,6 +13,9 @@
 {#if show}
   <div class="c-alert {type ? 'c-alert--'+type : 'c-alert--default'}" role="alert">
     <div class="c-alert__body">
+    {#if !type }
+      <Icon icon="circle-information" />
+    {/if}
     {#if type == "success"}
       <Icon icon="check" />
     {/if}

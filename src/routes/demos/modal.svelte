@@ -40,7 +40,9 @@
   <div class="c-modal-backdrop c-modal-backdrop--visible"></div>
 
   <Modal title="Modal demo">
-    <Alert>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</Alert>
+    <div class="u-spacer-bottom">
+      <Alert>Notice how focus is trapped within the modal.</Alert>
+    </div>
     <FormGroupLayout>
       <FormGroup label="Name" id="nameId" type="text" />
       <FormGroup label="E-mail address" id="emailId" type="email" />
