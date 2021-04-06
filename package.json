@@ -10,7 +10,6 @@
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/kit": "next",
-		"prismjs": "^1.23.0",
 		"sass": "^1.32.8",
 		"svelte": "^3.29.0",
 		"svelte-preprocess": "^4.0.0",
@@ -21,6 +20,7 @@
 		"node": ">= 12.17.0"
 	},
 	"dependencies": {
-		"@popperjs/core": "^2.9.2"
+		"@popperjs/core": "^2.9.2",
+		"prismjs": "^1.23.0"
 	}
 }
