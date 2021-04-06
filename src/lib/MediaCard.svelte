@@ -12,7 +12,7 @@
 
 <div class="c-media-card">
   <a {href}>
-    <img src="http://placehold.it/400x300">
+    <img src="placeholder.png" alt="">
     <div class="c-media-card__content">
       <h4 class="c-h4">{title}</h4>
       <p class="c-body-2">{description}</p>

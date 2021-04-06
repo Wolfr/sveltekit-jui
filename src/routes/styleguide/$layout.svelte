@@ -23,11 +23,6 @@
       category: "dev-notes",
     },
     {
-      url: "css-component-template",
-      prettyName: "CSS component template",
-      category: "dev-notes",
-    },
-    {
       url: "technical-notes",
       category: "dev-notes",
     },
@@ -116,10 +111,10 @@
       url: 'panel',
       category: 'components'
     },
-    {
-      url: 'popover',
-      category: 'components'
-    },
+    // {
+    //   url: 'popover',
+    //   category: 'components'
+    // },
     {
       url: 'radio-button',
       category: 'components'
@@ -144,22 +139,22 @@
       url: 'toolbar',
       category: 'components'
     },
-    {
-      url: 'tooltip',
-      category: 'components'
-    },
-    {
-      url: 'display',
-      category: 'utilities'
-    },
-    {
-      url: 'spacer',
-      category: 'utilities'
-    },
-    {
-      url: 'flex',
-      category: 'utilities'
-    }
+    // {
+    //   url: 'tooltip',
+    //   category: 'components'
+    // },
+    // {
+    //   url: 'display',
+    //   category: 'utilities'
+    // },
+    // {
+    //   url: 'spacer',
+    //   category: 'utilities'
+    // },
+    // {
+    //   url: 'flex',
+    //   category: 'utilities'
+    // }
   ]
 
   let groups = data.reduce((curr, val) => {

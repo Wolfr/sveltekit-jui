@@ -10,7 +10,7 @@
         <li>Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</li>
         <li>In voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
       </ul>
-      <img src='http://placehold.it/1200x900' />
+      <img src='placeholder.png' />
 
     </article>
 

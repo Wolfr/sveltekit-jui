@@ -7,9 +7,7 @@
 
 </script>
 
-<StyleguideIntro title={pageTitle} />
-
-<p>TODO</p>
+<StyleguideIntro title={pageTitle} content="Generic popover component (todo)."/>
 
 <StyleguideCard title={pageTitle}>
 
