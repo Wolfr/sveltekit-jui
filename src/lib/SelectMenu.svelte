@@ -1,7 +1,5 @@
 <script>
 
-  import { fade } from 'svelte/transition';
-
   export let cssClass = null;
   export let options = [{name: "Option 1"}];
 

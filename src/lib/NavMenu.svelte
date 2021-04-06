@@ -1,8 +1,6 @@
 <script>
   export let type = "select";
 
-  import { fade } from 'svelte/transition';
-
   import Icon from '$lib/Icon.svelte';
 
   import createPopperAction from '$lib/usePopper.js';
@@ -83,7 +81,6 @@
 <div
   use:usePopperToolip={{ placement: placement, modifiers: [sameWidth, { name: 'offset', options: { offset: [0, 10],},},],}}
   use:clickOutside on:click_outside={handleClickOutside}
-  transition:fade={{  duration: 150 }}
   use:trapFocus
 >
   <ul class="c-nav-menu">
