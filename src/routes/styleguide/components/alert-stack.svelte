@@ -21,13 +21,15 @@
 
 <style>
 
-  :global(#alert-stack-demo .c-card__content) {
+  :global(#alert-stack-demo .c-styleguide-card-inner) {
     position: relative;
     min-height: 40rem;
   }
 
-  :global(#alert-stack-demo .c-card__content .c-alert-stack) {
+  :global(#alert-stack-demo .c-styleguide-card-inner .c-alert-stack) {
     position: absolute;
   }
 
 </style>
+
+

@@ -1,5 +1,5 @@
 <script>
-
+  import Prism from '$lib/Prism.svelte';
   import StyleguideCardInner from '$lib/StyleguideCardInner.svelte';
 
   export let title = null;
@@ -26,11 +26,12 @@
     <slot />
   </StyleguideCardInner>
 
+  
   {#if code}
     <button class="c-show-code-button c-tiny-button" on:click={toggleCode}>{#if !showCode}Show code{:else}Hide code{/if}</button>
     {#if showCode}
       <div class="c-styleguide-code-block">
-        <pre class="c-pre"><code>{code}</code></pre>
+        <Prism cssClass="c-pre" source={code} />
         <!-- <button class="c-copy-code-button c-tiny-button" on:click={copyCode}>Copy code</button> -->
       </div>
       
@@ -39,6 +40,10 @@
 </div>
 
 <style>
+
+  .c-show-code-button {
+    margin-top: .8rem;
+  }
 
   .c-styleguide-code-block {
     margin: 1rem 0 0 ;

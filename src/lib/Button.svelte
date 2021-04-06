@@ -1,3 +1,10 @@
+<style>
+  :global(.tooltip) {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+</style>
+
 <script>
 
     import ButtonInnerLayout from './ButtonInnerLayout.svelte';

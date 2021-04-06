@@ -15,13 +15,20 @@
   import StyleguideCard from '$lib/StyleguideCard.svelte';
 
   let pageTitle = 'Style guide';
-  
-
 
   let data = [
     {
       prettyName: "CSS architecture",
       url: "css-architecture",
+      category: "dev-notes",
+    },
+    {
+      url: "css-component-template",
+      prettyName: "CSS component template",
+      category: "dev-notes",
+    },
+    {
+      url: "technical-notes",
       category: "dev-notes",
     },
     {

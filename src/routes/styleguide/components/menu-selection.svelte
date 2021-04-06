@@ -45,6 +45,6 @@
 
 <StyleguideCard title="Select menu (custom)" description="<p>Single selection.</p>">
 
-  <SelectMenu options={optionSet1} />
+  <SelectMenu options={optionSet1} sameWidth=0 />
 
 </StyleguideCard>

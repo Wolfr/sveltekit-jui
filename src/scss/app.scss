@@ -71,6 +71,7 @@ html, body, #svelte {
 
 // Styleguide specific, move to separate stylesheet
 @import "../scss/c-styleguide-card-inner";
+@import "../scss/prism";
 
 // Bedrock specific, remove in production
 
@@ -92,3 +93,5 @@ html, body, #svelte {
   background: #FFF;
   box-shadow: 0 0 0.8rem rgba(0,0,0,0.15);
 }
+
+

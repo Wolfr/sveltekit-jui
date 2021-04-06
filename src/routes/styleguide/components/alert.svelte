@@ -37,7 +37,13 @@
 
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title={pageTitle}>
+<StyleguideCard title={pageTitle} code="&lt;Alert&gt;This is an alert with no specified type.&lt;/Alert&gt;
+&lt;br&gt;
+&lt;Alert type=&quot;success&quot;&gt;This is a succes message!&lt;/Alert&gt;
+&lt;br&gt;
+&lt;Alert type=&quot;error&quot;&gt;This is an error message.&lt;/Alert&gt;
+&lt;br&gt;
+&lt;Alert type=&quot;warning&quot;&gt;This is a warning message.&lt;/Alert&gt;">
 
   <Alert>This is an alert with no specified type.</Alert>
   <br>
@@ -49,10 +55,11 @@
 
 </StyleguideCard>
 
-<StyleguideCard title="Alert (closable)">
+<StyleguideCard title="Alert (closable)" code="&lt;Alert closable&gt;Hey, I am a closable alert.&lt;/Alert&gt;">
 
   <Alert closable>Hey, I am a closable alert.</Alert>
 
 </StyleguideCard>
 
 <StyleguidePropsTable propsTable={propsTable} />
+
