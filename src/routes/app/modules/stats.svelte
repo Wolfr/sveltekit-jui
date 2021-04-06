@@ -27,9 +27,7 @@
       <Panel>
         <PanelHeader>
             <div slot="panel-header">
-              <h2>
-                  Hey I am the header with customized HTML
-                </h2>
+              <h2 class="c-toolbar__title">Hey, I am the header with customized HTML</h2>
              </div>
           </PanelHeader>
           <PanelBody>
