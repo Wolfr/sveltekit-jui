@@ -8,7 +8,8 @@
 @import "../scss/s-semantic-colors";
 @import "../scss/s-variables";
 
-// Styleguide specific, needs to move to separate stylesheet
+// Styleguide specific
+@import "../scss/c-tiny-button";
 @import "../scss/c-styleguide-card-inner";
 @import "../scss/c-styleguide-sidebar";
 @import "../scss/prism";

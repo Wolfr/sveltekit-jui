@@ -18,7 +18,7 @@
   {#if propsTable}
     <ToolbarGroup align="right">
       <ToolbarItem>
-        <p class="u-text-muted">* denotes a required prop. Black text denotes the default value.</p>
+        <p class="u-text-muted">* denotes a required prop. Overlined text denotes the default value.</p>
       </ToolbarItem>
     </ToolbarGroup>
   {/if}
@@ -42,7 +42,7 @@
             {#if prop.options}
               {#each prop.options as option, index}
                   {#if option.default}
-                    <strong><code class="c-code">{option.name}</code></strong>
+                    <span class="c-props-table-default"><code class="c-code">{option.name}</code></span>
                   {:else}
                     <code class="c-code">{option.name}</code>
                   {/if}
@@ -60,11 +60,10 @@
 {:else}
   <Alert>No props.</Alert>
 {/if}
-<style>
+<style lang="scss">
 
-  :global(strong .c-code) {
-    font-weight: 700;
-    color: #333;
+  :global(.c-props-table-default code) {
+    text-decoration: overline;
   }
 
 </style>

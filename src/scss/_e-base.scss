@@ -40,7 +40,6 @@ body {
 }
 
 label {
-  font-weight: 500;
   color: $color-gray-800;
   @media (prefers-color-scheme: dark) {
     color: $color-gray-200;

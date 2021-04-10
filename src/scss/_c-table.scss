@@ -89,15 +89,14 @@ $c-table-row-selected-bg: $color-primary !default;
     margin-top: -0.8rem;
   }
 
-  td input[type=checkbox]{
-    margin: 0 auto;
-  }
 }
 
 .c-table--bordered {
   border: .1rem solid $c-table-border-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
   border-radius: 0.3rem;
-  border-collapse: separate;
 }
 
 .c-table--nowrap {
@@ -116,14 +115,23 @@ $c-table-row-selected-bg: $color-primary !default;
 .c-table__row--selected {
   td {
     background-color: $color-gray-100;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-700;
+    }
     border-color: $color-gray-300;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-600;
+    }
   }
 
 }
 
 .c-table--striped {
   tbody tr:nth-child(odd) {
-    background: $c-table-row-odd-color;
+    background: $color-gray-50;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-850;
+    }
   }
 }
 
@@ -264,4 +272,37 @@ $i: 1;
   th:last-child {
     padding-right: 2.4rem;
   }
+}
+
+/* Specific table cell classes 
+   ========================================================================== */
+
+.c-table-cell {
+  
+}
+
+.c-table .c-table-cell.c-table-cell--checkbox {
+  width: 1px;
+}
+
+.c-table-cell--checkbox .c-checkbox {
+  display: inline-flex;
+}
+
+.c-table-cell--checkbox label {
+  width: auto;
+}
+
+.c-table .c-table-cell.c-table-cell--minimize-width {
+  width: 0;
+}
+
+.c-table .c-table-cell.c-table-cell--no-padding-sides {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.c-table .c-table-cell__inner.c-table-cell__inner--float-right {
+  float: right;
 }

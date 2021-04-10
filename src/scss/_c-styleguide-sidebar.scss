@@ -4,6 +4,6 @@
   @media (prefers-color-scheme: dark) {
     border-color: $color-gray-800;
   }
-  min-width: 24rem;
+  min-width: clamp(18rem, 20vw, 24rem);
   overflow: auto;
 }
