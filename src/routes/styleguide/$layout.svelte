@@ -86,6 +86,10 @@
       category: 'components'
     },
     {
+      url: 'card',
+      category: 'components'
+    },
+    {
       url: 'checkbox',
       category: 'components'
     },
@@ -93,6 +97,11 @@
       url: 'input-text',
       category: 'components'
     },
+    {
+      url: 'media-card',
+      category: 'components'
+    },
+    
     {
       url: 'menu-navigation',
       category: 'components'

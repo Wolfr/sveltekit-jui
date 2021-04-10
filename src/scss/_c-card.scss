@@ -6,31 +6,30 @@
    ========================================================================== */
 
 $c-card-border-radius: 0.3rem !default;
-$c-card-border-color: $color-gray-200 !default;
 
 /* Component
    ========================================================================== */
-
-.c-card-list {
-  .c-card + .c-card {
-    margin-top: 1.2rem;
-  }
-}
 
 .c-card {
   display: block;
   color: $g-text-color;
   position: relative;
-}
-
-.c-card__header {
-  margin-bottom: .4rem;
-}
-
-.c-card__content {
-  padding: 2.4rem;
-  border: .1rem solid $c-card-border-color;
+  border: .1rem solid $color-gray-200;
   border-radius: $c-card-border-radius;
   background-color: #fff;
-  height: 100%;
+}
+
+.c-card--interactive {
+  border-color: $color-gray-400;
+  &:hover {
+    background: $color-gray-50;
+  }
+}
+
+.c-card__inner {
+  padding: 2.4rem;
+}
+
+.c-card__inner {
+  display: block;
 }

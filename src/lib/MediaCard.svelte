@@ -11,8 +11,25 @@
 </script>
 
 <div class="c-media-card">
-  <a {href}>
-    <img src="placeholder.png" alt="">
+  {#if href}
+    <a {href} class="c-media-card__inner c-media-card__inner--interactive">
+      <img src="/placeholder.png" alt="">
+      <div class="c-media-card__content">
+        <h4 class="c-h4">{title}</h4>
+        <p class="c-body-2">{description}</p>
+        <PillList>
+          {#each tags as tag}
+          <PillListItem>
+            <Pill>{tag}</Pill>
+          </PillListItem>
+          {/each}
+        </PillList>
+      </div>
+
+    </a>
+  {:else}
+  <div class="c-media-card__inner">
+    <img src="/placeholder.png" alt="">
     <div class="c-media-card__content">
       <h4 class="c-h4">{title}</h4>
       <p class="c-body-2">{description}</p>
@@ -24,6 +41,7 @@
         {/each}
       </PillList>
     </div>
-  </a>
+  </div>
+  {/if}
 </div>
 

@@ -2,6 +2,10 @@
 
 ### 0.2 (preview)
 
+* Implement copy/paste button in styleguide
+* Document and improve card component
+* Animate alert stack
+* Animate accordion component
 * Improved accessibility for accordion
 * Improved colors logic
 * Added documentation for container
