@@ -1,6 +1,6 @@
 <script>
 
-  import SvgIcon from '$lib/SvgIcon.svelte';
+  import SvgIcon from '$lib/SvgIconGenerated.svelte';
 
   export let type = "icon-font";
   export let icon;
@@ -16,3 +16,5 @@
 {#if type == "icon-font"}
   <i class="c-icon mi mi-{icon} {iconAnimatedClass}" {style}></i>
 {/if}
+
+
