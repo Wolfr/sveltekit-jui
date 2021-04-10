@@ -46,24 +46,30 @@ $g-c-modal-z: 50 !default;
 }
 
 .c-modal {
-  background-color: #FFF;
-  box-shadow: 0 0 2.4rem rgba($c-modal-shadow-color,0.22), 0 2.4rem 2.4rem rgba($c-modal-shadow-color,0.30);
+  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.2));
   border-radius: $c-modal-border-radius;
   display: flex;
   flex-direction: column;
   margin: auto;
   width: calc(100% - 8rem);
+  height: 100%;
   z-index: $g-c-modal-z;
 }
 
-.c-modal__body {
-  flex: 1 1 auto;
-  overflow: auto;
-  padding: $c-modal-padding-vertical $c-modal-padding-horizontal;
+/* Parts
+   ========================================================================== */
+
+// We use a specific logic of divs to make sure the modal flexes correctly
+.c-modal__push {
+  @media (min-width: 768px) {
+    flex: 1 0 auto;
+  }
 }
 
-.c-modal__body--no-padding {
-  padding: 0;
+.c-modal__header,
+.c-modal__body,
+.c-modal__footer {
+  background-color: #FFF;
 }
 
 .c-modal__header {
@@ -72,7 +78,21 @@ $g-c-modal-z: 50 !default;
 }
 
 .c-modal__header--bordered {
-  border-bottom: 1px solid $c-modal-header-border-color;
+  border-bottom: .1rem solid $c-modal-header-border-color;
+}
+
+.c-modal__body {
+  flex: 1 1 auto;
+  @media (min-width: 768px) {
+    flex: 0 1 auto;
+  }
+  overflow: auto;
+  max-height: calc(100vh - 4rem);
+  padding: $c-modal-padding-vertical $c-modal-padding-horizontal;
+}
+
+.c-modal__body--no-padding {
+  padding: 0;
 }
 
 .c-modal__title {
@@ -92,6 +112,11 @@ $g-c-modal-z: 50 !default;
 
 .c-modal__footer--bordered {
   border-top: 1px solid $c-modal-footer-border-color;
+}
+
+.c-modal__header,
+.c-modal__footer {
+  flex: 0 0 auto;
 }
 
 .c-modal__content {
@@ -131,9 +156,6 @@ $g-c-modal-z: 50 !default;
   height: auto;
 }
 
-.c-modal--scrollable {
-  max-height: 90%;
-}
 
 /* Backdrop
    ========================================================================== */
