@@ -49,6 +49,11 @@
   .c-icon {
     color: $color-orange-500;
   }
+  @media (prefers-color-scheme: dark) {
+    color: #FFF;
+    border-color: $color-orange-600;
+    background: $color-orange-700;
+  }
 }
 
 .c-alert--loading {
