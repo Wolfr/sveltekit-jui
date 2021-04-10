@@ -2,11 +2,10 @@
 ## Jungle UI todo
 
 * [ ] Icon needs a type: icon font or SVG
-
 * [ ] Something wrong with disabled radio buttons that are checked
 * [ ] correct aria roles listbox item
 * [ ] implement narrow icons for listbox
-* [ ] Dont make listbox depend on icon font, make it its own separate code (carets)
+* [ ] Don't make listbox depend on icon font, make it its own separate code (carets)
 * [ ] Need aria expanded attribute on the accordion
 * [ ] Need to do something when there are too many alerts
 
