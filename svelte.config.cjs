@@ -22,7 +22,14 @@ module.exports = {
 		vite: {
 			ssr: {
 				noExternal: Object.keys(pkg.dependencies || {})
-			}
+			},
+      css: {
+        postcss: {
+          plugins: [
+            require('autoprefixer')
+          ]
+        }
+      }
 		}
 	}
 };
