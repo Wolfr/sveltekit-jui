@@ -13,10 +13,7 @@
 </script>
 
 
-<svelte:window
-  bind:innerWidth={windowInnerWidth}
-></svelte:window>
-{$pageIndexVisibility[0].pageIndexVisible}
+<svelte:window bind:innerWidth={windowInnerWidth} />
 <ul class="c-bordered-list c-bordered-list--small">
   <li>
     <a href="/styleguide/" on:click={toggleVisibilityIfMobile}>Style guide</a>
