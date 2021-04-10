@@ -11,6 +11,7 @@
     "@sveltejs/adapter-node": "next",
     "@sveltejs/adapter-vercel": "next",
     "@sveltejs/kit": "next",
+    "mdsvex": "^0.9.0",
     "sass": "^1.32.8",
     "svelte": "^3.29.0",
     "svelte-preprocess": "^4.0.0",
@@ -23,6 +24,8 @@
   "dependencies": {
     "@lukeed/uuid": "^2.0.0",
     "@popperjs/core": "^2.9.2",
+    "markdown-it": "^12.0.4",
+    "marked": "^2.0.1",
     "mono-icons": "^1.2.4",
     "prismjs": "^1.23.0",
     "uuid": "^8.3.2",
