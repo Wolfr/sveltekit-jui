@@ -100,15 +100,15 @@
 <StyleguideIntro title={pageTitle} />
 
 <StyleguideCard title="Button layouts" code="&lt;Button&gt;A button&lt;/Button&gt;
-&lt;Button skin=&quot;primary&quot;&gt;A button&lt;/Button&gt;
-&lt;Button icon=&quot;add&quot;&gt;A button&lt;/Button&gt;
-&lt;Button icon=&quot;add&quot; layout=&quot;icon&quot;&gt;A button&lt;/Button&gt;
-&lt;Button icon=&quot;chevron-right&quot; layout=&quot;label-icon&quot;&gt;A button&lt;/Button&gt;">
+  &lt;Button skin=&quot;primary&quot;&gt;A button&lt;/Button&gt;
+  &lt;Button icon=&quot;add&quot;&gt;Add&lt;/Button&gt;
+  &lt;Button icon=&quot;add&quot; layout=&quot;icon&quot;&gt;Add&lt;/Button&gt;
+  &lt;Button icon=&quot;chevron-right&quot; layout=&quot;label-icon&quot;&gt;Next&lt;/Button&gt;">
   <Button>A button</Button>
   <Button skin="primary">A button</Button>
-  <Button icon="add">A button</Button>
-  <Button icon="add" layout="icon">A button</Button>
-  <Button icon="chevron-right" layout="label-icon">A button</Button>
+  <Button icon="add">Add</Button>
+  <Button icon="add" layout="icon">Add</Button>
+  <Button icon="chevron-right" layout="label-icon">Next</Button>
 </StyleguideCard>
 
 <StyleguideCard
