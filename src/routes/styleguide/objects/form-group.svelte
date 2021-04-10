@@ -23,9 +23,9 @@
   description="<p>The standard way to do form layout, with top aligned labels.</p>"
 >
   <FormGroupLayout>
-    <FormGroup label="Name 1" id="nameId1" type="text" />
-    <FormGroup label="Name 2" id="nameId2" type="text" />
-    <FormGroup label="Name 3" id="nameId3" type="text" />
+    <FormGroup label="Name 1" type="text" />
+    <FormGroup label="Name 2" type="text" />
+    <FormGroup label="Name 3" type="text" />
   </FormGroupLayout>
 </StyleguideCard>
 
@@ -35,9 +35,9 @@
   description="<p>Another way to do form layout, with left aligned labels.</p>"
 >
   <FormGroupLayout layoutType="horizontal">
-    <FormGroup label="Name 1" id="nameId1" type="text" />
-    <FormGroup label="Name 2" id="nameId2" type="text" />
-    <FormGroup label="Name 3" id="nameId3" type="text" />
+    <FormGroup label="Name 1" type="text" />
+    <FormGroup label="Name 2" type="text" />
+    <FormGroup label="Name 3" type="text" />
   </FormGroupLayout>
 </StyleguideCard>
 

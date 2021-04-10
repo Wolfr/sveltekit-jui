@@ -3,7 +3,10 @@
   export let layoutType = null;
   export let type = null;
   export let value = null;
-  export let id = null;
+  
+  import { v4 as uuid } from '@lukeed/uuid';
+  export let id = uuid();
+
   export let cssClass = null;
 </script>
 
