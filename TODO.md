@@ -29,19 +29,11 @@
 * [ ] Add a favicon
     * [ ] Add an overal “brand” (leaf icon @rinxols?) or draw one myself
 
-* [ ] Proper CSS for link button, differentiated from actual button
-
 * [ ] Screen: Implement forgot password success page, with success alert
-
-* [ ] Implement alert stack base logic (showing alert stack in all its positions)
 
 * [ ] Document utility classes
 
 * [ ] Style tab
-
-* [ ] Progress bar
-    <progress value="59" max="100" />
-
 
 * [ ] Implement link buttons
 
@@ -49,8 +41,6 @@
 
 * [ ] Implement proper tabs (pill style) component with active state
 * [ ] Implement more pleasing link styles (text decoration on hover utility)
-
-* [x] Make sign out button work
 
 * [ ] Implement charts with layercake.graphics
 * [ ] Go through overall CSS - make it use color variables
