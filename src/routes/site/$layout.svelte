@@ -6,6 +6,8 @@
 </script>
 
 <div style="overflow: scroll; height: 100%;">
+  
+  <a href="#content" class="u-d-sr-accessible">Skip to content</a>
 
   <div class="u-spacer-l">
     <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -20,6 +22,8 @@
     </div>
   </div>
 
-  <slot />
+  <main id="content">
+    <slot />
+  </main>
 
 </div>

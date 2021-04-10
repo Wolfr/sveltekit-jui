@@ -22,7 +22,7 @@
 <div class="c-button__content">
   {#if layout == "icon"}
       <span class="c-button__icon-wrap"><Icon {icon} /></span>
-      <span class="u-d-sr-only"><slot></slot></span>
+      <span class="u-d-sr-accessible"><slot></slot></span>
   {:else if layout == "label-icon"}
       <span class="c-button__label"><slot></slot></span>
       <Icon {icon} />

@@ -2,7 +2,8 @@
   import { navigating } from '$app/stores';
 
   import Spinner from '$lib/Spinner.svelte';
-  
+  import Button from '$lib/Button.svelte';
+
   import 'mono-icons/iconfont/icons.css';
   import '../scss/main.scss';
   import '../scss/styleguide.scss';
@@ -37,13 +38,17 @@
     {/if}
   </div>
   {#if pageIndexVisible}
-  <div class="br-prototype-wrapper__nav">
+  <nav class="br-prototype-wrapper__nav">
     <div class="u-spacer">
-      <div class="c-content">
-        <p><button class="c-button c-button--secondary" on:click={toggleVisibility}>Close page tree</button></p>
+
+      <Button on:click={toggleVisibility}>Close page tree</Button>
+
+      <div class="c-content u-spacer-top">
         <h4 class="c-h6">Page index</h4>
-        <p>Press Ctrl+m to show the page index.</p>
+        <p>Press <kbd>Ctrl+m</kbd> to show the page index.</p>
       </div>
+     
+     <h4>All pages</h4>
       <ul class="c-bordered-list c-bordered-list--small">
         <li>
           <a href="/styleguide/">Style guide</a>
@@ -94,7 +99,7 @@
       </ul>
 
     </div>
-  </div>
+  </nav>
   {/if}
 
 </div>

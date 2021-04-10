@@ -191,6 +191,8 @@
       <ToolbarItem>
         <ToolbarTitle>Styleguide</ToolbarTitle>
       </ToolbarItem>
+    </ToolbarGroup>
+    <ToolbarGroup align="right">
       <ToolbarItem>
         <LinkButton href="https://github.com/Wolfr/sveltekit-jui">View on Github</LinkButton>
       </ToolbarItem>
@@ -209,6 +211,8 @@
       <Input icon="search" type="search"  placeholder="Enter a search term..." />
     </div> -->
 
+    <a href="#detail" class="u-d-sr-accessible">Skip to detail</a>
+
     <SideMenu>
       <SideMenuItem href="/styleguide/">Intro</SideMenuItem>
       {#each groups as group}
@@ -221,7 +225,7 @@
 
   </div>
   <div class="o-scroll-wrapper" style="flex-grow: 1;">
-    <div class="o-scroll-wrapper__body" style="padding: 2.4rem;">
+    <div class="o-scroll-wrapper__body" style="padding: 2.4rem;" id="detail">
         <slot />
     </div>
   </div>

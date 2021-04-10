@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class="c-button-toolbar"
+  class="c-button-toolbar" role="toolbar"
   class:c-button-toolbar--compact={compact}
   class:c-button-toolbar--vertical={vertical}
 >

@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Media grid- Site example - JUI</title>
+  <title>Media grid - Site example - JUI</title>
 </svelte:head>
 
 <div style="overflow: scroll; height: 100%;">
