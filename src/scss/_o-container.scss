@@ -1,7 +1,7 @@
 /* ==========================================================================
     Object: Container
     ---
-    Fluid container for content
+    Fluid container for content, with optional maximum width. Padded by default.
    ========================================================================== */
 
 /* Variables
@@ -15,15 +15,13 @@ $o-container-width-bp4: calc(100% - 6.4rem);
 $o-container-max-width-small: 56rem;
 $o-container-max-width-medium: 72rem;
 $o-container-max-width-large: 94rem;
-$o-container-max-width: 130rem;
-$o-container-side-gap: 1.2rem !default; // Should be 1/2 of grid col gap
+
 
 /* Object
    ========================================================================== */
 
 .o-container {
   margin: 0 auto;
-  max-width: $o-container-max-width;
   width: $o-container-width-bp1;
   @media (min-width: $g-bp2) {
     width: $o-container-width-bp2;
@@ -51,11 +49,10 @@ $o-container-side-gap: 1.2rem !default; // Should be 1/2 of grid col gap
   max-width: $o-container-max-width-large;
 }
 
-@media (min-width: $g-bp2) {
+/* Containers that kick in from media queries
+   ========================================================================== */
 
-  .o-container-bp2 {
-    max-width: $o-container-max-width;
-  }
+@media (min-width: $g-bp2) {
 
   .o-container-bp2--small {
     max-width: $o-container-max-width-small;

@@ -43,6 +43,10 @@
       category: "objects"
     },
     {
+      url: "container",
+      category: "objects"
+    },
+    {
       url: "form-group",
       category: "objects"
     },
