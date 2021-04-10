@@ -183,6 +183,23 @@
     return title;
   }
 
+  // Scroll saving styleguide tree
+  import { scrollStyleguideValue } from '$lib/scroll-track-styleguide.js';
+
+  let scrollTop;
+  let itemElement;
+  import { onMount } from 'svelte';
+  onMount( () => {
+    itemElement.scrollTop = $scrollStyleguideValue;
+    
+  });
+
+  $: {
+    if (scrollTop > 0) {
+      $scrollStyleguideValue = scrollTop;
+    }
+  }
+  
 </script>
 
 <Navbar>
@@ -205,14 +222,18 @@
 </svelte:head>
 
 <div class="c-styleguide-wrapper">
-  <div class="c-styleguide-sidebar">
-
+  <div
+    class="c-styleguide-sidebar" 
+    on:scroll={ ({target}) => scrollTop = target.scrollTop}
+    bind:this={itemElement}
+  >
+    
     <!-- <div style="padding: 0 2.4rem 2.4rem;">
       <Input icon="search" type="search"  placeholder="Enter a search term..." />
     </div> -->
 
     <a href="#detail" class="u-d-sr-accessible">Skip to detail</a>
-
+    
     <SideMenu>
       <SideMenuItem href="/styleguide/">Intro</SideMenuItem>
       {#each groups as group}

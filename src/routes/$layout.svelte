@@ -1,4 +1,5 @@
 <script>
+
   import { navigating } from '$app/stores';
 
   import Spinner from '$lib/Spinner.svelte';
