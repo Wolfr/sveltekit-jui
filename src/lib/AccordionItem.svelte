@@ -1,5 +1,6 @@
 <script>
   import { v4 as uuid } from '@lukeed/uuid';
+  import { slide } from 'svelte/transition';
 
   export let accordionOpen = false;
   export let title;
@@ -18,6 +19,19 @@
 </script>
 
 
+<style>
+
+  :global(.rotated.c-icon) {
+    transform: rotate(0deg);
+    transition: transform ease-in-out .15s;
+  }
+
+  :global(.rotated.c-icon) {
+    transform: rotate(90deg);
+  }
+
+</style>
+
 {#if activatedOnce && accordionOpen}
   <div aria-live="assertive" aria-atomic="true" class="u-d-sr-accessible">Opened section</div>
 {/if}
@@ -34,21 +48,8 @@
   </div>
 
   {#if accordionOpen}
-    <div class="c-accordion__content" role="region" tabindex="0" id={controlId} aria-labelledby={labelId}>
+    <div class="c-accordion__content" transition:slide role="region" tabindex="0" id={controlId} aria-labelledby={labelId}>
       <slot />
     </div>
   {/if}
 </div>
-
-<style>
-
-  :global(.rotated.c-icon) {
-    transform: rotate(0deg);
-    transition: transform ease-in-out .15s;
-  }
-
-  :global(.rotated.c-icon) {
-    transform: rotate(90deg);
-  }
-
-</style>
