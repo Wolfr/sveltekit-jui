@@ -3,15 +3,16 @@
 
   import Spinner from '$lib/Spinner.svelte';
   import Button from '$lib/Button.svelte';
+  import PageTree from '$lib/PageTree.svelte';
 
   import 'mono-icons/iconfont/icons.css';
   import '../scss/main.scss';
   import '../scss/styleguide.scss';
   
-  let pageIndexVisible = true;
+  import { pageIndexVisibility } from '$lib/page-index.js';
 
   function toggleVisibility() {
-    pageIndexVisible = !pageIndexVisible;
+    $pageIndexVisibility[0].pageIndexVisible = !$pageIndexVisibility[0].pageIndexVisible;
   }
 
   function handleKeydown (evt) { 
@@ -27,7 +28,11 @@
     <title>JUI</title>
 </svelte:head>
 
-<div class="br-prototype-wrapper" class:br-prototype-nav-is-open={pageIndexVisible}>
+<svelte:window
+  on:keydown={handleKeydown}
+></svelte:window>
+
+<div class="br-prototype-wrapper" class:br-prototype-nav-is-open={$pageIndexVisibility[0].pageIndexVisible}>
   <div class="br-prototype-wrapper__content">
     {#if $navigating}
       <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
@@ -37,7 +42,7 @@
       <slot />
     {/if}
   </div>
-  {#if pageIndexVisible}
+  {#if $pageIndexVisibility[0].pageIndexVisible}
   <nav class="br-prototype-wrapper__nav">
     <div class="u-spacer">
 
@@ -49,60 +54,12 @@
       </div>
      
      <h4>All pages</h4>
-      <ul class="c-bordered-list c-bordered-list--small">
-        <li>
-          <a href="/styleguide/">Style guide</a>
-        </li>
-        <li>
-            <span>Website</span>
-            <ul>
-              <li><a href="/site/">Media example</a></li>
-              <li><a href="/site/blog">Blog list</a></li>
-            </ul>
-        </li>
-        <li>
-          <span>App</span>
-          <ul>
-            <li><a href="/app/">Sign in</a></li>
-            <li><a href="/app/forgot-password">Forgot password</a></li>
-            <li>
-              <a href="/app/modules/todos">Todos</a>
-              <ul>
-                <li><a href="/app/modules/todos/detail">Detail</a></li>
-              </ul>
-            </li>
-            <li><a href="/app/modules/stats">Stats</a></li>
-            <li><a href="/app/modules/settings">Settings</a></li>
-          </ul>
-        </li>
-        <li>
-            <span>Demos</span>
-            <ul>
-              <li><a href="/demos/modal">Modal</a></li>
-              <li><a href="/demos/alert-stack">Alert stack</a></li>
-              <li><a href="/demos/tabs">Tabs</a></li>
-              <!-- <li><a href="/demos/popper">Popper</a></li> -->
-            </ul>
-        </li>
-        <!-- <li>
-            <span>Drawing app</span>
-            <ul>
-              <li><a href="/drawing-app/">Main view</a></li>
-            </ul>
-        </li>
-        <li>
-            <span>Mobile app</span>
-            <ul>
-              <li><a href="/mobile-app/">Main view</a></li>
-            </ul>
-        </li> -->
-      </ul>
+
+      <PageTree />
 
     </div>
   </nav>
   {/if}
 
 </div>
-
-<svelte:window on:keydown={handleKeydown}/>
 
