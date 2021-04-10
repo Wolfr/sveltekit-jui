@@ -1,131 +1,38 @@
 <script>
 
-  let data = [
-    {
-      name: 'gray-25',
-      hex: '#F9FAFC',
-      category: 'Grays'
-    },
-    {
-      name: 'gray-50',
-      hex: '#F5F6F9',
-      category: 'Grays'
-    },
-    {
-      name: 'gray-100',
-      hex: '#E9ECF1',
-      category: 'Grays'
-    },
-    {
-      name: 'gray-150',
-      hex: '#DEE1E8',
-      category: 'Grays'
-    },
-    {
-      name: 'gray-200',
-      hex: '#CED3DE',
-      category: 'Grays'
-    },
-    {
-      name: 'gray-300',
-      hex: '#A8AFBE',
-      category: 'Grays'
-    },
-    {
-      name: 'gray-400',
-      hex: '#959DAC',
-      category: 'Grays'
-    },
-    {
-      name: 'gray-500',
-      hex: '#737C8D',
-      category: 'Grays'
-    },
-    {
-      name: 'gray-600',
-      hex: '#576175',
-      category: 'Grays'
-    },
-    {
-      name: 'gray-700',
-      hex: '#414959',
-      category: 'Grays'
-    },
-    {
-      name: 'gray-800',
-      hex: '#2B303B',
-      category: 'Grays'
-    },
-    {
-      name: 'gray-900',
-      hex: '#15181F',
-      category: 'Grays'
-    },
-    {
-      name: 'brand-blue-800',
-      hex: '#003399',
-      category: 'Brand'
-    },
-    {
-      name: 'brand-blue',
-      hex: '#427CF0',
-      category: 'Brand'
-    },
-    {
-      name: 'brand-blue-200',
-      hex: '#E8EFFC',
-      category: 'Brand'
-    },
-    {
-      name: 'red-500',
-      hex: '#D34D4D',
-      category: 'Colors'
-    },
-    {
-      name: 'red-200',
-      hex: '#F8E8ED',
-      category: 'Colors'
-    },
-    {
-      name: 'green-500',
-      hex: '#37C8AB',
-      category: 'Colors'
-    },
-    {
-      name: 'green-200',
-      hex: '#EBF9F6',
-      category: 'Colors'
-    },
-    {
-      name: 'orange-500',
-      hex: '#EEB902',
-      category: 'Colors'
-    },
-    {
-      name: 'orange-200',
-      hex: '#FEF9EA',
-      category: 'Colors'
-    },
-    {
-      name: 'purple-500',
-      hex: '#7B47EB',
-      category: 'Colors'
-    },
-    {
-      name: 'purple-200',
-      hex: '#E5DAFB',
-      category: 'Colors'
-    },
-    {
-      name: 'aqua-500',
-      hex: '#ACEEFD',
-      category: 'Colors'
-    },
-    {
-      name: 'darkblue-500',
-      hex: '#263261',
-      category: 'Colors'
-    }
+let data = [
+    { name: 'gray-50 ',       hex: "#F2F2F2",    category: "Grays" },
+    { name: 'gray-100',       hex: "#E6E6E6",    category: "Grays" },
+    { name: 'gray-150',       hex: "#D9D9D9",    category: "Grays" },
+    { name: 'gray-200',       hex: "#CCCCCC",    category: "Grays" },
+    { name: 'gray-300',       hex: "#B3B3B3",    category: "Grays" },
+    { name: 'gray-400',       hex: "#999999",    category: "Grays" },
+    { name: 'gray-500',       hex: "#808080",    category: "Grays" },
+    { name: 'gray-550',       hex: "#737373",    category: "Grays" },
+    { name: 'gray-600',       hex: "#666666",    category: "Grays" },
+    { name: 'gray-700',       hex: "#4D4D4D",    category: "Grays" },
+    { name: 'gray-800',       hex: "#333333",    category: "Grays" },
+    { name: 'gray-850',       hex: "#262626",    category: "Grays" },
+    { name: 'gray-900',       hex: "#1A1A1A",    category: "Grays" },
+    { name: 'gray-950',       hex: "#0D0D0D",    category: "Grays" },
+    { name: 'blue-gray-25',   hex: '#F9FAFC',    category: 'Blue Grays' },
+    { name: 'blue-gray-50',   hex: '#F5F6F9',    category: 'Blue Grays' },
+    { name: 'blue-gray-100',  hex: '#E9ECF1',    category: 'Blue Grays' },
+    { name: 'blue-gray-150',  hex: '#DEE1E8',    category: 'Blue Grays' },
+    { name: 'blue-gray-200',  hex: '#CED3DE',    category: 'Blue Grays' },
+    { name: 'blue-gray-300',  hex: '#A8AFBE',    category: 'Blue Grays' },
+    { name: 'blue-gray-400',  hex: '#959DAC',    category: 'Blue Grays' },
+    { name: 'blue-gray-500',  hex: '#737C8D',    category: 'Blue Grays' },
+    { name: 'blue-gray-600',  hex: '#576175',    category: 'Blue Grays' },
+    { name: 'blue-gray-700',  hex: '#414959',    category: 'Blue Grays' },
+    { name: 'blue-gray-800',  hex: '#2B303B',    category: 'Blue Grays' },
+    { name: 'blue-gray-900',  hex: '#15181F',    category: 'Blue Grays' },
+    { name: 'red-200',        hex: '#F8E8ED',    category: 'Reds' },
+    { name: 'red-500',        hex: '#D34D4D',    category: 'Reds' },
+    { name: 'green-200',      hex: '#EBF9F6',    category: 'Greens' },
+    { name: 'green-500',      hex: '#37C8AB',    category: 'Greens' },
+    { name: 'orange-200',     hex: '#FEF9EA',    category: 'Oranges' },
+    { name: 'orange-500',     hex: '#EEB902',    category: 'Oranges' }
   ]
   
   let groups = data.reduce((curr, val) => {
@@ -182,7 +89,7 @@
 
 <div class="u-spacer-bottom-l">
   <div classs="c-content">
-    <p>Available colors.</p>
+    <p>Available colors. Colors are organized by hue (color name) and lightness (number).</p>
   </div>
 </div>
 

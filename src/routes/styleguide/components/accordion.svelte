@@ -2,7 +2,6 @@
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
   import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
-  
   import Alert from '$lib/Alert.svelte';
 
   let pageTitle = 'Accordion';
