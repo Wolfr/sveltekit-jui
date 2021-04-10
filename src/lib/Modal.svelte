@@ -46,7 +46,13 @@
 
 <svelte:window on:keydown={handleKeydown}/>
 
-<div class="c-modal c-modal--{size}" use:trapFocus role="dialog" use:clickOutside on:click_outside={handleClickOutside}>
+<div
+  class="c-modal c-modal--{size}"
+  use:trapFocus
+  role="dialog"
+  use:clickOutside
+  on:click_outside={handleClickOutside}
+>
   <div class="c-modal__push"></div>
   {#if !headerless}
   <div class="c-modal__header c-modal__header--bordered">
