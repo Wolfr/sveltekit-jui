@@ -9,7 +9,7 @@
   <div>
     <div class="c-brand">
       <img src="/leaf.svg" width="44" />
-      <h1>Sveltekit-JUI (0.1)</h1>
+      <h1>Sveltekit-JUI (0.2)</h1>
     </div>
     <RichContent>
       <p>Sveltekit-JUI is a kit of UI components to be used in conjunction with <a href="https://svelte.dev/">Svelte</a> and <a href="https://kit.svelte.dev/docs">Svelte Kit</a>. The J stands for Jungle - the UI for user interface.</p>

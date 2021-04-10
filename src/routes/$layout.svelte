@@ -79,7 +79,7 @@
               <!-- <li><a href="/demos/popper">Popper</a></li> -->
             </ul>
         </li>
-        <li>
+        <!-- <li>
             <span>Drawing app</span>
             <ul>
               <li><a href="/drawing-app/">Main view</a></li>
@@ -90,7 +90,7 @@
             <ul>
               <li><a href="/mobile-app/">Main view</a></li>
             </ul>
-        </li>
+        </li> -->
       </ul>
 
     </div>
