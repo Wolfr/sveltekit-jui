@@ -15,7 +15,7 @@
 
   <Navbar skin="gray-50">
     <Toolbar>
-      <ToolbarGroup position="left">
+      <ToolbarGroup align="left">
         <ToolbarItem>
           <ToolbarTitle>My app</ToolbarTitle>
         </ToolbarItem>
@@ -27,7 +27,7 @@
           </Nav>
         </ToolbarItem>
       </ToolbarGroup>
-      <ToolbarGroup position="right">
+      <ToolbarGroup align="right">
         <ToolbarItem>
           <Avatar />
         </ToolbarItem>

@@ -75,15 +75,22 @@
             <ul>
               <li><a href="/demos/modal">Modal</a></li>
               <li><a href="/demos/alert-stack">Alert stack</a></li>
+              <li><a href="/demos/tabs">Tabs</a></li>
               <!-- <li><a href="/demos/popper">Popper</a></li> -->
             </ul>
         </li>
-        <!-- <li>
+        <li>
             <span>Drawing app</span>
             <ul>
               <li><a href="/drawing-app/">Main view</a></li>
             </ul>
-        </li> -->
+        </li>
+        <li>
+            <span>Mobile app</span>
+            <ul>
+              <li><a href="/mobile-app/">Main view</a></li>
+            </ul>
+        </li>
       </ul>
 
     </div>

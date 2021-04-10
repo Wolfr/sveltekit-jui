@@ -1,6 +1,13 @@
+## Changelog 0.2
+
+* Added documentation for container
+* Added documentation for toolbar
+* Added list component
+
+
 ## Jungle UI todo
 
-* [ ] Link to github on the styleguide
+* [ ] Link to Github on the styleguide
 * [ ] Add CTAs for feedback on the style guide
 * [ ] Add a contributing.md
 
@@ -241,5 +248,5 @@
 
 * Needs a title system, that can derive titles from pages to page
 * Aria announcer is undocumented, needs documentation
-* Needs a way to add meta tags properly per page
+* Needs a way to add meta tags properly per page (like in Routify metatags package)
 * How do I access the object with all routes? (So I can maybe build a page tree automatically?)

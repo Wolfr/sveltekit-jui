@@ -7,6 +7,8 @@
   import ToolbarTitle from '$lib/ToolbarTitle.svelte';
 
   import Input from '$lib/Input.svelte';
+  
+  import LinkButton from '$lib/LinkButton.svelte';
 
   import SideMenu from '$lib/SideMenu.svelte';
   import SideMenuItem from '$lib/SideMenuItem.svelte';
@@ -108,6 +110,10 @@
       category: 'components'
     },
     {
+      url: 'list',
+      category: 'components'
+    },
+    {
       url: 'pagination',
       category: 'components'
     },
@@ -181,9 +187,12 @@
 
 <Navbar>
   <Toolbar>
-    <ToolbarGroup position="left">
+    <ToolbarGroup align="left">
       <ToolbarItem>
         <ToolbarTitle>Styleguide</ToolbarTitle>
+      </ToolbarItem>
+      <ToolbarItem>
+        <LinkButton href="https://github.com/Wolfr/sveltekit-jui">View on Github</LinkButton>
       </ToolbarItem>
     </ToolbarGroup>
   </Toolbar>

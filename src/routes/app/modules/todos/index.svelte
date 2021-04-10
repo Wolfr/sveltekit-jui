@@ -44,7 +44,7 @@
 </div>
 <Navbar borderPosition="top">
   <Toolbar>
-    <ToolbarGroup position="left">
+    <ToolbarGroup align="left">
       <ToolbarItem>
         <Pagination totalPages="3" currentPage="1" />
       </ToolbarItem>

@@ -25,7 +25,7 @@
   <slot />
 </code>
 
-<pre class="{cssClass} language-{language}" command-line data-output="2-17">
+<pre class="{cssClass} language-{language}">
   <code class="language-{language}">
     {#if language === 'none'}
       {formattedCode}

@@ -51,12 +51,12 @@
   {#if !headerless}
   <div class="c-modal__header c-modal__header--bordered">
     <Toolbar>
-      <ToolbarGroup position="left">
+      <ToolbarGroup align="left">
         <ToolbarItem>
           <ToolbarTitle>{title}</ToolbarTitle>
         </ToolbarItem>
       </ToolbarGroup>
-      <ToolbarGroup position="right">
+      <ToolbarGroup align="right">
         <ToolbarItem>
           <Button icon="close" skin="borderless" layout="icon" on:click={handleCloseClick}>Close</Button>
         </ToolbarItem>

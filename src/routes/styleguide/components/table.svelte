@@ -1,7 +1,6 @@
 <script>
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
-
   let pageTitle = 'Table';
 
 </script>
@@ -22,24 +21,15 @@
       </tr>
     </thead>
     <tbody>
+      {#each {length: 3} as elem}
       <tr>
         <td>Data point</td>
         <td>Data point</td>
         <td>Data point</td>
       </tr>
-      <tr>
-        <td>Data point</td>
-        <td>Data point</td>
-        <td>Data point</td>
-      </tr>
-      <tr>
-        <td>Data point</td>
-        <td>Data point</td>
-        <td>Data point</td>
-      </tr>
+      {/each}
     </tbody>
   </table>
-
 </StyleguideCard>
 
 <StyleguideCard title="Table striped">

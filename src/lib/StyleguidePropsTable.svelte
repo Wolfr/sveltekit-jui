@@ -10,13 +10,13 @@
 </script>
 
 <Toolbar spaced={false}>
-  <ToolbarGroup position="left">
+  <ToolbarGroup align="left">
     <ToolbarItem>
       <h3 class="c-h3">Props</h3>
     </ToolbarItem>
   </ToolbarGroup>
   {#if propsTable}
-    <ToolbarGroup position="right">
+    <ToolbarGroup align="right">
       <ToolbarItem>
         <p class="u-text-muted">* denotes a required prop. Black text denotes the default value.</p>
       </ToolbarItem>

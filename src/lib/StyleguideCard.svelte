@@ -27,7 +27,6 @@
     <slot />
   </StyleguideCardInner>
 
-  
   {#if code}
     <button class="c-show-code-button c-tiny-button" on:click={toggleCode}>{#if !showCode}Show code{:else}Hide code{/if}</button>
     {#if showCode}

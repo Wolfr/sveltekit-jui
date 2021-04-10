@@ -46,7 +46,7 @@
 
   <Navbar>
     <Toolbar>
-      <ToolbarGroup position="left">
+      <ToolbarGroup align="left">
         <ToolbarItem>
           <Button layout="icon" skin="borderless" icon="add" />
           <Button layout="icon" skin="borderless" icon="board" />
@@ -119,7 +119,7 @@
 
   <Navbar borderPosition="top">
     <Toolbar>
-      <ToolbarGroup position="left">
+      <ToolbarGroup align="left">
         <ToolbarItem>
           <Button layout="icon" skin="borderless" icon="add" />
           <Button layout="icon" skin="borderless" icon="add" />

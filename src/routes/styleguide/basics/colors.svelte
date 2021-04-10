@@ -161,8 +161,8 @@
   }
 
   .c-swatch {
-     height: 4rem;
-     width: 4rem;
+     height: 6.4rem;
+     width: 6.4rem;
      border-radius: 100%;
      margin: 0 auto 1rem;
   }

@@ -51,7 +51,7 @@
 
 <Navbar>
   <Toolbar>
-    <ToolbarGroup position="left">
+    <ToolbarGroup align="left">
       <ToolbarItem>
         <Button href="../todos" layout="icon" skin="borderless" icon="chevron-left">Back</Button>
       </ToolbarItem>
