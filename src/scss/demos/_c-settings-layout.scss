@@ -1,0 +1,13 @@
+.c-settings-layout {
+  display: flex;
+  height: calc( 100% - 5.6rem);
+}
+
+.c-settings-layout__sidebar {
+  padding: 2.4rem 0;
+  min-width: 24rem;
+  border-right: .1rem solid $color-gray-150;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
+}

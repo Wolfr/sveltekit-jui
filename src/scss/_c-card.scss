@@ -23,6 +23,9 @@ $c-card-border-radius: 0.3rem !default;
   border-color: $color-gray-400;
   &:hover {
     background: $color-gray-50;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-800;
+    }
   }
 }
 

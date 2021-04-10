@@ -27,6 +27,9 @@
 
 .o-container-vertical--bg-alt {
    background: $color-gray-50;
+   @media (prefers-color-scheme: dark) {
+     background: $color-gray-800;
+   }
 }
 
 .o-container-vertical--bottom-bordered {

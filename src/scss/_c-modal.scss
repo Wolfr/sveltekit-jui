@@ -10,8 +10,6 @@ $c-modal-padding-vertical: 2.4rem !default;
 $c-modal-border-radius: 0.4rem !default;
 $c-modal-shadow-color: $color-gray-600 !default;
 
-$c-modal-header-bg-color: #FFF !default;
-$c-modal-footer-bg-color: #FFF !default;
 $c-modal-header-border-color: $color-gray-100 !default;
 $c-modal-footer-border-color: $color-gray-100 !default;
 
@@ -70,15 +68,21 @@ $g-c-modal-z: 50 !default;
 .c-modal__body,
 .c-modal__footer {
   background-color: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
 }
 
 .c-modal__header {
-  background-color: $c-modal-header-bg-color;
   border-radius: $c-modal-border-radius $c-modal-border-radius 0 0;
 }
 
-.c-modal__header--bordered {
-  border-bottom: .1rem solid $c-modal-header-border-color;
+.c-modal__header--bordered,
+.c-modal__footer--bordered {
+  border-bottom: .1rem solid $color-gray-150;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-850
+  }
 }
 
 .c-modal__body {
@@ -106,13 +110,10 @@ $g-c-modal-z: 50 !default;
 }
 
 .c-modal__footer {
-  background-color: $c-modal-footer-bg-color;
   border-radius: 0 0 $c-modal-border-radius $c-modal-border-radius;
 }
 
-.c-modal__footer--bordered {
-  border-top: 1px solid $c-modal-footer-border-color;
-}
+
 
 .c-modal__header,
 .c-modal__footer {

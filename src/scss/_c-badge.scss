@@ -16,6 +16,9 @@
 .c-badge--default {
   color: $color-gray-500;
   background: $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-800;
+  }
 }
 
 .c-badge--warning {

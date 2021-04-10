@@ -17,8 +17,8 @@
 
 </script>
 
-<div style="display: flex; height: calc( 100% - 5.6rem);">
-  <div style="padding: 2.4rem 0; min-width: 24rem; border-right: 1px solid #CED3DE;">
+<div class="c-settings-layout">
+  <div class="c-settings-layout__sidebar">
     <SideMenu>
         <SideMenuItem href="/">Setting 1</SideMenuItem>
         <SideMenuItem href="/">Setting 2</SideMenuItem>

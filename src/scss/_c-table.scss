@@ -16,6 +16,7 @@ $c-table-row-selected-bg: $color-primary !default;
 
 .c-table {
   width: 100%;
+  border-collapse: collapse;
 
   th, td {
     text-align: left;
@@ -44,7 +45,10 @@ $c-table-row-selected-bg: $color-primary !default;
   th {
     font-weight: $g-headings-font-weight;
     border-radius: 0.4rem 0.4rem 0 0;
-    border-bottom: 0.1rem solid $c-table-border-color;
+    border-bottom: .2rem solid $c-table-border-color;
+    @media (prefers-color-scheme: dark) {
+      border-color: $color-gray-700;
+    }
     vertical-align: top;
   }
 
@@ -61,6 +65,9 @@ $c-table-row-selected-bg: $color-primary !default;
 
   td {
     border-bottom: 0.1rem solid $c-table-border-color;
+    @media (prefers-color-scheme: dark) {
+      border-color: $color-gray-800;
+    }
   }
 
   tr:last-child {

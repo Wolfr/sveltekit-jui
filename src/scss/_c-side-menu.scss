@@ -4,6 +4,9 @@
 
 .c-side-menu {
   background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-900;
+  }
 }
 
 .c-side-menu__item a {
@@ -15,6 +18,9 @@
   &:hover,
   &:focus {
     background: $color-gray-50;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-800;
+    }
   }
 
   .o-svg-icon {
@@ -26,6 +32,9 @@
 .c-side-menu__item a:focus,
 .c-side-menu__item--active a {
   background: $color-gray-50;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-800;
+  }
   color: $color-primary;
   .o-svg-icon {
     color: $color-primary;

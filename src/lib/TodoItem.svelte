@@ -19,23 +19,9 @@
 
 </li>
 
-<style lang="scss">
-
-  :global(.c-todo-list li) {
-    border-bottom: .1rem solid #CCC;
-    &:last-child {
-      border: none;
-    }
-  }
-
-  .c-todo-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .8rem;
-  }
+<style>
   
-  :global(.c-todo-item .strikethrough) {
+  :global(.strikethrough) {
     text-decoration: line-through;
   }
 

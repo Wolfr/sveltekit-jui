@@ -31,24 +31,25 @@
 @import "../scss/c-avatar";
 @import "../scss/c-badge";
 @import "../scss/c-bordered-list";
+@import "../scss/c-brand";
 @import "../scss/c-button";
 @import "../scss/c-button-link";
-@import "../scss/c-form-help-text";
 @import "../scss/c-button-skins";
 @import "../scss/c-button-toolbar";
 @import "../scss/c-card";
 @import "../scss/c-checkbox-radio";
 @import "../scss/c-content";
 @import "../scss/c-custom-select";
+@import "../scss/c-form-help-text";
 @import "../scss/c-frame";
 @import "../scss/c-icon";
 @import "../scss/c-input";
 @import "../scss/c-input-file";
 @import "../scss/c-input-group";
+@import "../scss/c-list";
 @import "../scss/c-media-card";
 @import "../scss/c-modal";
 @import "../scss/c-nav";
-@import "../scss/c-list";
 @import "../scss/c-nav-menu";
 @import "../scss/c-navbar";
 @import "../scss/c-pagination";
@@ -57,13 +58,19 @@
 @import "../scss/c-pill-list";
 @import "../scss/c-popover";
 @import "../scss/c-select-menu";
-@import "../scss/c-toggle";
 @import "../scss/c-side-menu";
-@import "../scss/c-tabs";
 @import "../scss/c-spinner";
 @import "../scss/c-styled-select";
 @import "../scss/c-table";
+@import "../scss/c-tabs";
+@import "../scss/c-toggle";
 @import "../scss/c-toolbar";
+
+// Non framework components, for demos
+@import "../scss/demos/c-todo-item";
+@import "../scss/demos/c-todo-list";
+@import "../scss/demos/c-blog-article-header";
+@import "../scss/demos/c-settings-layout";
 
 // Utilities
 @import "../scss/u-display";

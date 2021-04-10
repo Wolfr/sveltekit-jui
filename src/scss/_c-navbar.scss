@@ -27,10 +27,16 @@
 
 .c-navbar--white {
   background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-900;
+  }
 }
 
 .c-navbar--gray-50 {
   background: $color-gray-50;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-800;
+  }
 }
 
 /* Bordered equivalents
@@ -38,10 +44,16 @@
 
 .c-navbar--bordered-top {
   border-top: 0.1rem solid $color-gray-150;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
 }
 
 .c-navbar--bordered-bottom {
   border-bottom: 0.1rem solid $color-gray-150;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
 }
 
 /* Sizes

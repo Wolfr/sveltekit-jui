@@ -14,6 +14,9 @@
 .c-content h3,
 .c-content h4 {
   color: $g-headings-color;
+  @media (prefers-color-scheme: dark) {
+    color: $g-headings-color-i;
+  }
 }
 
 .c-h1, .c-content h1 {

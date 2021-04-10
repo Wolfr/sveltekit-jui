@@ -16,8 +16,14 @@ $c-panel-border-radius: 0.4rem !default;
 
 .c-panel {
   background-color: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
   border-radius: $c-panel-border-radius;
-  border: 1px solid $c-panel-border-color;
+  border: .1rem solid $c-panel-border-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
 }
 
 .c-panel__body {
@@ -25,7 +31,10 @@ $c-panel-border-radius: 0.4rem !default;
 }
 
 .c-panel__body + .c-panel__body {
-  border-top: 1px solid $c-panel-border-color;
+  border-top: .1rem solid $c-panel-border-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
 }
 
 .c-panel__header {
@@ -34,8 +43,14 @@ $c-panel-border-radius: 0.4rem !default;
   height: 5.6rem;
   padding: 0 $c-panel-padding-horizontal;
   background:  $color-gray-50;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-800;
+  }
   border-radius: 0.4rem 0.4rem 0 0;
-  border-bottom: 1px solid $c-panel-border-color;
+  border-bottom: .1rem solid $c-panel-border-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
 }
 
 .c-panel__title {

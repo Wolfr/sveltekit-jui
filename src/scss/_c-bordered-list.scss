@@ -13,6 +13,9 @@
 .c-bordered-list li a {
   padding: .4rem;
   border-bottom: .1rem solid $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
   display: block;
   color: $color-primary;
 }
@@ -20,6 +23,9 @@
 .c-bordered-list li span {
   padding: .4rem;
   border-bottom: .1rem solid $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
   display: block;
 }
 

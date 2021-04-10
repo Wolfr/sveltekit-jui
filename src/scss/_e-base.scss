@@ -30,13 +30,30 @@ body {
   font-size: $g-base-font-size;
   line-height: $base-line-height;
   color: $color-text;
+  -webkit-overflow-scrolling: touch;
+
   background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-900;
+    color: $color-gray-200;
+  }
 }
 
-body.c-body-compensate-header {
-  margin: $g-bar-size-regular 0 0;
+label {
+  font-weight: 500;
+  color: $color-gray-800;
+  @media (prefers-color-scheme: dark) {
+    color: $color-gray-200;
+  }
 }
 
+strong {
+  font-weight: 700;
+  color: $color-gray-800;
+  @media (prefers-color-scheme: dark) {
+    color: $color-gray-100;
+  }
+}
 
 img,
 video {

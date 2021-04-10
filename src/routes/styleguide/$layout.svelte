@@ -266,12 +266,5 @@
   .c-styleguide-wrapper {
     display: flex; height: calc( 100% - 5.6rem);
   }
-  
-  .c-styleguide-sidebar {
-    padding: 2.4rem 0;
-    border-right: 1px solid #CED3DE;
-    min-width: 24rem;
-    overflow: auto;
-  }
 
 </style>

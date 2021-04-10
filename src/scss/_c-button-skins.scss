@@ -179,5 +179,10 @@ $c-button-link-color: $color-primary !default;
     color: $color-gray-200;
     pointer-events: none;
     border: none;
+    
+    @media (prefers-color-scheme: dark) {
+      color: $color-gray-700;
+      background: $color-gray-800;
+    }
   }
 }

@@ -11,6 +11,10 @@
   background: #FFF;
   border-radius: 0.3rem;
   border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+    border-color: $color-gray-600;
+  }
 }
 
 .c-alert--success {
@@ -19,6 +23,11 @@
   .c-icon {
     color: $color-green-500;
   }
+  @media (prefers-color-scheme: dark) {
+    color: #FFF;
+    border-color: $color-green-600;
+    background: $color-green-700;
+  }
 }
 
 .c-alert--error {
@@ -26,6 +35,11 @@
   background: $color-red-200;
   .c-icon {
     color: $color-red-500;
+  }
+  @media (prefers-color-scheme: dark) {
+    color: #FFF;
+    border-color: $color-red-600;
+    background: $color-red-700;
   }
 }
 
