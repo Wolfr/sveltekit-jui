@@ -1,9 +1,3 @@
-<script>
-
-  
-
-</script>
-
 <div class="c-accordion">
   <slot />
 </div>

@@ -2,6 +2,8 @@
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
   import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
+  
+  import Alert from '$lib/Alert.svelte';
 
   let pageTitle = 'Accordion';
   import Accordion from '$lib/Accordion.svelte';
@@ -50,7 +52,7 @@
 <StyleguideCard title="Accordion" description="<p>Wraps <code>AccordionItem</code>s together.</p>">
   <Accordion>
     {#each accordionContent as item}
-    <AccordionItem title={item.title} open={item.open}>
+    <AccordionItem title={item.title} accordionOpen={item.open}>
       {@html item.content}
     </AccordionItem>
     {/each}
@@ -59,14 +61,17 @@
 
 <StyleguideIntro title="Accordion Item" />
 
-<StyleguideCard title="Accordion item" code="&lt;AccordionItem title=&quot;Title&quot; open&gt;
-  &lt;p&gt;Some HTML content.&lt;/p&gt;
-&lt;/AccordionItem&gt;">
+<StyleguideCard title="Accordion item">
 
-  <AccordionItem title="Title" open>
+  <AccordionItem title="Title">
     <p>Some HTML content.</p>
   </AccordionItem>
 
 </StyleguideCard>
 
 <StyleguidePropsTable propsTable={propsTable} />
+
+<div class="u-spacer-top">
+  <h3 class="c-h3">Open issues</h3>
+  <Alert>Needs accessibility audit.</Alert>
+</div>

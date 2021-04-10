@@ -1,7 +1,7 @@
 {
   "name": "sveltekit-jui",
   "version": "0.2.0",
-  "license" : "MIT",
+  "license": "MIT",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -21,8 +21,11 @@
     "node": ">= 12.17.0"
   },
   "dependencies": {
+    "@lukeed/uuid": "^2.0.0",
     "@popperjs/core": "^2.9.2",
     "mono-icons": "^1.2.4",
-    "prismjs": "^1.23.0"
+    "prismjs": "^1.23.0",
+    "uuid": "^8.3.2",
+    "uuid-v4": "^0.1.0"
   }
 }

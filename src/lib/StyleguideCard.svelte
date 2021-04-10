@@ -2,7 +2,7 @@
   import Prism from '$lib/Prism.svelte';
   import StyleguideCardInner from '$lib/StyleguideCardInner.svelte';
 
-  export let style;
+  export let style = null;
   export let title = null;
   export let code = null;
   export let description = null;

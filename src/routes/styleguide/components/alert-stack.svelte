@@ -22,6 +22,13 @@
   </AlertStack>
 </StyleguideCard>
 
+<div class="u-spacer-top">
+  <h3 class="c-h3">Open issues</h3>
+  <Alert>Accessibility: Needs accessibility audit.</Alert>
+  <div class="u-spacer-top">
+    <Alert>Quality: Need animations.</Alert>
+  </div>
+</div>
 
 <style>
 
@@ -35,3 +42,4 @@
   }
 
 </style>
+

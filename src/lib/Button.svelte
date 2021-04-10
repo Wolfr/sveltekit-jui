@@ -28,6 +28,9 @@
     export let layout = null;
     export let active = null;
     export let skin = null;
+    export let ariaExpanded = null;
+    export let ariaControls = null;
+    export let iconAnimatedClass = null;
 
     let computedSkinValue = '';
 
@@ -54,7 +57,7 @@
     class:c-button--disabled={disabled}
     class:c-button--active={active}
   >
-        <ButtonInnerLayout {icon} {layout}><slot></slot></ButtonInnerLayout>
+        <ButtonInnerLayout {icon} {iconAnimatedClass} {layout}><slot></slot></ButtonInnerLayout>
    </a>
 {:else}
     {#if type == "submit"}
@@ -63,12 +66,14 @@
             {disabled}
             class="c-button { cssClass } { computedSkinValue }"
             {style}
+            aria-expanded={ariaExpanded}
+            aria-controls={ariaControls}
             class:c-button--block={block}
             class:c-button--icon={layout=="icon"}
             class:c-button--active={active}
             on:submit|preventDefault on:click|preventDefault
         >
-            <ButtonInnerLayout {icon} {layout}><slot></slot></ButtonInnerLayout>
+            <ButtonInnerLayout {icon} {iconAnimatedClass} {layout}><slot></slot></ButtonInnerLayout>
         </button>
     {:else}
         <button
@@ -76,12 +81,14 @@
             {disabled}
             class="c-button { cssClass } { computedSkinValue }"
             {style}
+            aria-expanded={ariaExpanded}
+            aria-controls={ariaControls}
             on:submit|preventDefault on:click|preventDefault
             class:c-button--block={block}
             class:c-button--icon={layout=="icon"}
             class:c-button--active={active}
         >
-            <ButtonInnerLayout {icon} {layout}><slot></slot></ButtonInnerLayout>
+            <ButtonInnerLayout {icon} {iconAnimatedClass} {layout}><slot></slot></ButtonInnerLayout>
         </button>
     {/if}
 {/if}

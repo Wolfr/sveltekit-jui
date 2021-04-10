@@ -23,6 +23,7 @@
   }
 }
 
+.c-side-menu__item a:focus,
 .c-side-menu__item--active a {
   background: $color-gray-50;
   color: $color-primary;
