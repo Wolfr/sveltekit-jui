@@ -2,6 +2,8 @@
 
 ### 0.2 (preview)
 
+* Improved accessibility for accordion
+* Improved colors logic
 * Added documentation for container
 * Added documentation for toolbar
 * Added list component
