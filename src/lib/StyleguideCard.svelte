@@ -1,5 +1,6 @@
 <script>
   import Prism from '$lib/Prism.svelte';
+
   import StyleguideCardInner from '$lib/StyleguideCardInner.svelte';
 
   export let style = null;
@@ -10,9 +11,20 @@
 
   let showCode = false;
 
+
   function toggleCode() {
     showCode = !showCode;
   }
+
+  let textarea;
+  let copied = false;
+
+  function copyCode() {
+    copied = !copied;
+    textarea.select();
+    document.execCommand('copy');
+  }
+
 </script>
 
 <div class="o-container-vertical" {id}>
@@ -27,12 +39,15 @@
     <slot />
   </StyleguideCardInner>
 
+
+<textarea class="copy-code-textarea" bind:value={code} bind:this={textarea}></textarea>
+
   {#if code}
     <button class="c-show-code-button c-tiny-button" on:click={toggleCode}>{#if !showCode}Show code{:else}Hide code{/if}</button>
     {#if showCode}
       <div class="c-styleguide-code-block">
         <Prism cssClass="c-pre" source={code} />
-        <!-- <button class="c-copy-code-button c-tiny-button" on:click={copyCode}>Copy code</button> -->
+        <button class="c-copy-code-button c-tiny-button" on:click={copyCode}>{#if copied}Copied!{:else}Copy code{/if}</button>
       </div>
       
     {/if}
@@ -40,6 +55,11 @@
 </div>
 
 <style>
+
+  .copy-code-textarea {
+    position: absolute;
+    left: -9000px;
+  }
 
   .c-show-code-button {
     margin-top: .8rem;
