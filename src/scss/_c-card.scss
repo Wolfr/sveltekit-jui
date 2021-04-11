@@ -15,8 +15,14 @@ $c-card-border-radius: 0.3rem !default;
   color: $g-text-color;
   position: relative;
   border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
   border-radius: $c-card-border-radius;
-  background-color: #fff;
+  background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
 }
 
 .c-card--interactive {
