@@ -6,11 +6,13 @@
   export let icon;
   export let iconAnimatedClass = null;
   export let style = null;
+  // SVG only
+  export let size = null;
 
 </script>
 
 {#if type == "svg"}
-  <SvgIcon {icon} {iconAnimatedClass} />
+  <SvgIcon {icon} {iconAnimatedClass} {size} />
 {/if}
 
 {#if type == "icon-font"}

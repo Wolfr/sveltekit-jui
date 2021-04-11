@@ -4,6 +4,7 @@
   export let content;
   export let slug;
   import RichContent from '$lib/RichContent.svelte';
+
 </script>
 
 <article>
