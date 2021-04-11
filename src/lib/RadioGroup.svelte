@@ -1,6 +1,6 @@
 <script>
   export let options;
-  export let inline;
+  export let inline = null;
   export let uuid;
 
   let activeIndex = 0;

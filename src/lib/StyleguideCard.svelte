@@ -39,8 +39,7 @@
     <slot />
   </StyleguideCardInner>
 
-
-<textarea class="copy-code-textarea" bind:value={code} bind:this={textarea}></textarea>
+  <textarea class="copy-code-textarea" bind:value={code} bind:this={textarea}></textarea>
 
   {#if code}
     <button class="c-show-code-button c-tiny-button" on:click={toggleCode}>{#if !showCode}Show code{:else}Hide code{/if}</button>
@@ -68,14 +67,6 @@
   .c-styleguide-code-block {
     margin: 1rem 0 0 ;
     position: relative;
-  }
-
-  .c-tiny-button {
-    border: .1rem solid #CED3DE;
-    background: #FFF;
-    border-radius: .3rem;
-    padding: .3rem .8rem;
-    font-size: 1.3rem;
   }
 
   .c-copy-code-button {

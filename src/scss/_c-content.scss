@@ -162,10 +162,16 @@
 
 .c-code, .c-content code {
   font-size: 85%;
-  background: $color-gray-50;
   padding: 0.2rem;
   border-radius: 0.2rem;
+  background: $color-gray-50;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-800;
+  }
   color: $color-red-500;
+  @media (prefers-color-scheme: dark) {
+    color: $color-red-200;
+  }
 }
 
 .c-pre code {

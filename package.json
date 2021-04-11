@@ -23,6 +23,7 @@
   "dependencies": {
     "@lukeed/uuid": "^2.0.0",
     "@popperjs/core": "^2.9.2",
+    "autoprefixer": "^10.2.5",
     "mono-icons": "^1.2.4",
     "prismjs": "^1.23.0",
     "uuid": "^8.3.2",

@@ -8,12 +8,11 @@
    ========================================================================== */
 
 $c-checkbox-input-border-radius: 0.3rem !default;
-$c-checkbox-size: 1.6rem !default;
+$c-checkbox-size: 1.8rem !default;
 $c-checkbox-small-size: 1.2rem !default;
-$c-radio-size: 1.6rem !default;
+$c-radio-size: 1.8rem !default;
 $c-radio-dot-size: $c-radio-size / 2 !default;
 $c-checkbox-icon-size: 1.6rem !default;
-
 
 /* Spacing/Grouping
    ========================================================================== */
@@ -86,7 +85,17 @@ $c-checkbox-icon-size: 1.6rem !default;
 
 .c-checkbox input[type='checkbox'] {
   background: #FFF;
+
+  // Standard combo bg + border for inputs
+  background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-800;
+  }
   border: .1rem solid $color-gray-300;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-600;
+  }
+
   border-radius: $c-checkbox-input-border-radius;
   height: $c-checkbox-size;
   width: $c-checkbox-size;
@@ -111,6 +120,13 @@ $c-checkbox-icon-size: 1.6rem !default;
 .c-checkbox input[type='checkbox'][disabled] {
   border-color: $color-gray-300;
   background-color: $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+    background-color: $color-gray-700;
+    &:before {
+       background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='1.414'%3E%3Cpath fill='none' d='M0 0h16v16H0z'/%3E%3CclipPath id='a'%3E%3Cpath d='M0 0h16v16H0z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M11.69 4.675l-.443.424L6.77 9.575 4.752 7.558l-.442-.422L3.445 8l.423.442 2.46 2.46.442.423.442-.423 4.92-4.92.423-.442-.865-.865z' fill='%23666'/%3E%3C/g%3E%3C/svg%3E") no-repeat;
+    }
+  }
 }
 
 .c-checkbox input[type='checkbox']:checked:not([disabled]),
@@ -122,8 +138,16 @@ $c-checkbox-icon-size: 1.6rem !default;
    ========================================================================== */
 
 .c-radio input[type='radio'] {
+  // Standard combo bg + border for inputs
   background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-800;
+  }
   border: .1rem solid $color-gray-300;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-600;
+  }
+
   border-radius: 100%;
   height: $c-radio-size;
   width: $c-radio-size;
@@ -132,12 +156,15 @@ $c-checkbox-icon-size: 1.6rem !default;
 
 .c-radio input[type='radio']:checked {
   &:before {
+    content: " ";
+    font-size: 0;
+    display: inline-block;
     background: $color-primary;
     height: $c-radio-dot-size;
     width: $c-radio-dot-size;
     top: ($c-radio-size - $c-radio-dot-size - 0.2rem) / 2;
     left: ($c-radio-size - $c-radio-dot-size - 0.2rem) / 2;
-    border-radius: 100%;
+    border-radius: 50%;
   }
 }
 
@@ -147,6 +174,13 @@ $c-checkbox-icon-size: 1.6rem !default;
   }
   border-color: $color-gray-300;
   background: $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    &:before {
+      background: $color-gray-600;
+    }
+    border-color: $color-gray-800;
+    background: $color-gray-850;
+  }
 }
 
 /* Inline checkbox and Radio
@@ -155,42 +189,13 @@ $c-checkbox-icon-size: 1.6rem !default;
 .c-radio-group--inline {
   .c-radio {
     display: inline-block;
-    height: $c-radio-size;
-    margin-right: .8rem;
+    margin-right: 1.6rem;
   }
 }
 
 .c-checkbox-group--inline {
   .c-checkbox {
     display: inline-block;
-    height: $c-checkbox-size;
-    margin-right: .8rem;
+    margin-right: 1.6rem;
   }
-}
-
-/* Checkbox / Radio without label
-   @todo document this
-   ========================================================================== */
-
-.c-checkbox--no-label {
-  display: inline-block;
-
-  input[type='checkbox'] {
-    margin: 0;
-  }
-}
-
-.c-radio--no-label {
-  display: inline-block;
-
-  input[type='radio'] {
-    margin: 0;
-  }
-}
-
-/* Checkbox Subgroup
-   ========================================================================== */
-
-.c-checkbox-subgroup {
-  margin: 0.8rem 0 0 2.4rem;
 }
