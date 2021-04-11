@@ -362,11 +362,11 @@ source += `    default:
 </script>
 
 {#if iconAnimatedClass}
-  <div class="o-svg-icon {iconAnimatedClass}">
+  <div class="c-icon c-icon--svg {iconAnimatedClass}">
     {@html html}
   </div>
 {:else}
-  <div class="o-svg-icon">
+  <div class="c-icon c-icon--svg">
     {@html html}
   </div>
 {/if}

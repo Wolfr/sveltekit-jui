@@ -8,6 +8,10 @@
   display: inline-block;
 }
 
-.c-icon:before {
+.c-icon--icon-font {
+
+}
+
+.c-icon--icon-font i:before {
   font-size: 2rem;
 }

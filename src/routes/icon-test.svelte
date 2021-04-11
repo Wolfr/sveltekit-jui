@@ -26,6 +26,15 @@
 <slot />
 
 <div class="u-spacer">
+
+  <h1 class="c-h1">Test</h1>
+  <div class="c-svg-icon-list">
+
+    <Icon icon="add" type="svg" />
+    <Icon icon="add"  />
+  </div>
+
+  
   <h1 class="c-h1">SVG icons test page</h1>
   <div class="c-svg-icon-list">
 

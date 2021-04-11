@@ -165,7 +165,7 @@
   }
 
   :global(.styleguide-icon-listing .c-icon) {
-    margin-right: 0.4rem;
+    margin-right: 1.2rem;
     display: inline-block;
   }
 </style>

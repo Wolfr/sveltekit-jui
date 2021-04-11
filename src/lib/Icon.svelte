@@ -7,7 +7,7 @@
   export let iconAnimatedClass = null;
   export let style = null;
   // SVG only
-  export let size = null;
+  export let size = '20';
 
 </script>
 
@@ -16,7 +16,9 @@
 {/if}
 
 {#if type == "icon-font"}
-  <i class="c-icon mi mi-{icon} {iconAnimatedClass}" {style}></i>
+  <div class="c-icon c-icon--icon-font {iconAnimatedClass ? iconAnimatedClass : ''}">
+    <i class="mi mi-{icon}" {style}></i>
+  </div>
 {/if}
 
 
