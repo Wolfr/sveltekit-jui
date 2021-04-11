@@ -9,7 +9,7 @@
 <li class="c-side-menu__item { $page.path == href ? 'c-side-menu__item--active' : ''}">
   <a href={href}>
     {#if icon}
-      <Icon icon="add" />
+      <Icon style="margin-right: .8rem;" bind:icon />
     {/if}
     <span><slot /></span>
   </a>
