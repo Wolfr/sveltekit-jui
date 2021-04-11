@@ -5,7 +5,7 @@ const vercel = require('@sveltejs/adapter-vercel');
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
-  compilerOptions: { ssr: true },
+  compilerOptions: { generate: "ssr" },
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	preprocess: sveltePreprocess(
