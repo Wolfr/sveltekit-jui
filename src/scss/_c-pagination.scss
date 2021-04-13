@@ -11,6 +11,10 @@
   padding-right: 1.4rem;
 }
 
+.c-pagination .c-button--active {
+  cursor: default;
+}
+
 .c-pagination__ellipsis {
   padding: 0 .4rem;
   margin: 0 .4rem;

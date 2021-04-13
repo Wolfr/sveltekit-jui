@@ -81,7 +81,7 @@
           on:click={() => {
             setPage(page);
           }}
-          active={page === internalPage}>{page}</Button
+          active={page == internalPage}>{page}</Button
         >
       {/if}
     {/each}
