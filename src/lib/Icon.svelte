@@ -16,7 +16,7 @@
 {/if}
 
 {#if type == "icon-font"}
-  <i class="c-icon mi mi-{icon} {iconAnimatedClass}" {style}></i>
+  <i class="c-icon mi mi-{icon} {iconAnimatedClass ? iconAnimatedClass : ''}" {style}></i>
 {/if}
 
 
