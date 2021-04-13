@@ -42,7 +42,7 @@
   let trigger = 'Escape';
   function handleKeydown(e) {
     if (e.key == trigger) {
-      showMenu = !showMenu;
+      showMenu = false;
     }
   }
 

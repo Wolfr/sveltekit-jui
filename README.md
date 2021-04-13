@@ -16,4 +16,4 @@ Start a development server:
 
 ### Deploy
 
-`vercel .`
+`vercel .` for development and `vercel --prod` for production

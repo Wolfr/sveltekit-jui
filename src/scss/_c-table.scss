@@ -114,9 +114,9 @@ $c-table-row-selected-bg: $color-primary !default;
 
 .c-table__row--selected {
   td {
-    background-color: $color-gray-100;
+    background-color: $color-gray-50;
     @media (prefers-color-scheme: dark) {
-      background: $color-gray-700;
+      background: $color-gray-800;
     }
     border-color: $color-gray-300;
     @media (prefers-color-scheme: dark) {
@@ -130,7 +130,7 @@ $c-table-row-selected-bg: $color-primary !default;
   tbody tr:nth-child(odd) {
     background: $color-gray-50;
     @media (prefers-color-scheme: dark) {
-      background: $color-gray-850;
+      background: mix($color-gray-850, $color-gray-900);
     }
   }
 }

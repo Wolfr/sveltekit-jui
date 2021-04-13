@@ -17,7 +17,10 @@
     border-color: $color-gray-800;
   }
   display: block;
-  color: $color-primary;
+  color: $color-blue-600;
+  @media (prefers-color-scheme: dark) {
+    color: $color-blue-400;
+  }
 }
 
 .c-bordered-list li span {

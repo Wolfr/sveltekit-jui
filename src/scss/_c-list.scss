@@ -12,6 +12,9 @@
   width: 100%;
 
   border-bottom: .1rem solid $color-gray-150;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
 
   &:last-child {
     border: none;
@@ -47,6 +50,9 @@
 
 .c-list__first-line {
   color: $color-gray-900;
+  @media (prefers-color-scheme: dark) {
+    color: #FFF;
+  }
   font-weight: 500;
   padding-bottom: .2rem;
 }

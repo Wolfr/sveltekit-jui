@@ -1,7 +1,7 @@
 <script>
-  export let destructive;
-  export let href;
-  export let icon;
+  export let destructive = null;
+  export let href = null;
+  export let icon = null;
   
   import Icon from '$lib/Icon.svelte';
 </script>

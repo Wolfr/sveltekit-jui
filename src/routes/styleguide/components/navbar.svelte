@@ -11,6 +11,12 @@
     {
       name: 'skin',
       description: 'Determines look.',
+      options: [
+        {
+          name: 'alt',
+          default: false
+        },
+      ],
       required: false,
     },
     {
@@ -42,8 +48,8 @@
   <Navbar></Navbar>
 </StyleguideCard>
 
-<StyleguideCard title="Gray variant" code="&lt;Navbar skin=&quot;gray-50&quot;&gt;&lt;/Navbar&gt;">
-  <Navbar skin="gray-50"></Navbar>
+<StyleguideCard title="Alternate variant" code="&lt;Navbar skin=&quot;gray-50&quot;&gt;&lt;/Navbar&gt;">
+  <Navbar skin="alt"></Navbar>
 </StyleguideCard>
 
 <StyleguideCard title="Border top" code="&lt;Navbar borderPosition=&quot;top&quot;&gt;&lt;/Navbar&gt;">

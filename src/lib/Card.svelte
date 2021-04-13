@@ -1,6 +1,6 @@
 <script>
   export let cssClass = null;
-  export let href;
+  export let href = null;
 </script>
 
 <div class="c-card {cssClass}" class:c-card--interactive={href}>

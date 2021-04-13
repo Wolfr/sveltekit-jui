@@ -13,7 +13,7 @@
 
 <div style="display: flex; flex-direction: column; height: 100%;">
 
-  <Navbar skin="gray-50">
+  <Navbar skin="alt">
     <Toolbar>
       <ToolbarGroup align="left">
         <ToolbarItem>

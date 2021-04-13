@@ -42,16 +42,11 @@
 
 </script>
 
-<!--
-    @todo de-duplicate some logic here
-    @see discussion around classNames package
--->
-
 {#if href}
    <a
     href="{href}"
     {style}
-    class="c-button { cssClass } { computedSkinValue }"
+    class="c-button { cssClass ? cssClass : '' } { computedSkinValue }"
     class:c-button--block={block}
     class:c-button--icon={layout=="icon"}
     class:c-button--disabled={disabled}
@@ -64,7 +59,7 @@
         <button
             type="submit"
             {disabled}
-            class="c-button { cssClass } { computedSkinValue }"
+            class="c-button { cssClass ? cssClass : '' } { computedSkinValue }"
             {style}
             aria-expanded={ariaExpanded}
             aria-controls={ariaControls}
@@ -79,7 +74,7 @@
         <button
             type="button"
             {disabled}
-            class="c-button { cssClass } { computedSkinValue }"
+            class="c-button { cssClass ? cssClass : '' } { computedSkinValue }"
             {style}
             aria-expanded={ariaExpanded}
             aria-controls={ariaControls}

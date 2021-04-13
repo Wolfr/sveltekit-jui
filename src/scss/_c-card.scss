@@ -12,15 +12,23 @@ $c-card-border-radius: 0.3rem !default;
 
 .c-card {
   display: block;
-  color: $g-text-color;
   position: relative;
   border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
   border-radius: $c-card-border-radius;
-  background-color: #fff;
+  background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
 }
 
 .c-card--interactive {
   border-color: $color-gray-400;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-600;
+  }
   &:hover {
     background: $color-gray-50;
     @media (prefers-color-scheme: dark) {

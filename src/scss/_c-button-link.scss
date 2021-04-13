@@ -3,7 +3,10 @@
    ========================================================================== */
 
 .c-link-button {
-  color: $color-primary;
+  color: $color-blue-600;
+  @media (prefers-color-scheme: dark) {
+    color: $color-blue-400;
+  }
 }
 
 .c-link-button .c-button__content {

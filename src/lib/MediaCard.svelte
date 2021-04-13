@@ -7,13 +7,16 @@
   import PillList from '$lib/PillList.svelte';
   import PillListItem from '$lib/PillListItem.svelte';
   import Pill from '$lib/Pill.svelte';
+  
+  import ImagePlaceholder from '$lib/ImagePlaceholder.svelte';
 
 </script>
 
 <div class="c-media-card">
   {#if href}
     <a {href} class="c-media-card__inner c-media-card__inner--interactive">
-      <img src="/placeholder.png" alt="">
+      <ImagePlaceholder alt="" />
+      
       <div class="c-media-card__content">
         <h4 class="c-h4">{title}</h4>
         <p class="c-body-2">{description}</p>
@@ -29,7 +32,7 @@
     </a>
   {:else}
   <div class="c-media-card__inner">
-    <img src="/placeholder.png" alt="">
+    <ImagePlaceholder alt="" />
     <div class="c-media-card__content">
       <h4 class="c-h4">{title}</h4>
       <p class="c-body-2">{description}</p>

@@ -15,6 +15,8 @@
 
 <StyleguideIntro title={pageTitle} />
 
+<p>This is a markup component. We recommend implementing it as straight-up markup.</p>
+
 <StyleguideCard title={pageTitle}>
 
   <dl class="c-key-value">
