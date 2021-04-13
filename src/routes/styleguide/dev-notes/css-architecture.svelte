@@ -30,7 +30,7 @@
       <p>The different layers that you find within the ITCSS architecture are, in the following order:</p>
       <ul>
         <li>
-          <strong>Settings</strong>,which are used with preprocessors and contain font, colors variables.
+          <strong>Settings</strong>, which are used with preprocessors and contain font, colors variables.
         </li>
         <li>
           <strong>Tools</strong>, which is a layer used for mixins and functions.
