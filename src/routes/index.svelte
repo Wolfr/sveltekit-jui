@@ -1,6 +1,11 @@
 <script>
   import RichContent from '$lib/RichContent.svelte';
   import Button from '$lib/Button.svelte';
+  import { pageIndexVisibility } from '$lib/page-index.js';
+
+  function toggleVisibility() {
+    $pageIndexVisibility[0].pageIndexVisible = !$pageIndexVisibility[0].pageIndexVisible;
+  }
 </script>
 
 <slot />
@@ -15,7 +20,7 @@
     </div>
     <RichContent>
       <p>Sveltekit-JUI is a kit of UI components to be used in conjunction with <a href="https://svelte.dev/">Svelte</a> and <a href="https://kit.svelte.dev/docs">Svelte Kit</a>. The J stands for Jungle - the UI for user interface.</p>
-      <p>Please use the page tree on the left to navigate to different page examples (activate with Ctrl+M), or view the <a href="/styleguide">styleguide</a> to view the documented components.</p>
+      <p>Please use the <a href="/" on:click={toggleVisibility}>page tree</a> on the left to navigate to different page examples (activate with Ctrl+M), or view the <a href="/styleguide">styleguide</a> to view the documented components.</p>
       <div class="c-links-license">
         <Button href="https://github.com/Wolfr/sveltekit-jui">Code on Github</Button>
         <p>MIT licensed</p>
