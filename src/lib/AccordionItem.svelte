@@ -1,6 +1,5 @@
 <script>
   import { v4 as uuid } from '@lukeed/uuid';
-  import { slide } from 'svelte/transition';
 
   export let accordionOpen = false;
   export let title;
@@ -48,7 +47,7 @@
   </div>
 
   {#if accordionOpen}
-    <div class="c-accordion__content" transition:slide role="region" tabindex="0" id={controlId} aria-labelledby={labelId}>
+    <div class="c-accordion__content" role="region" tabindex="0" id={controlId} aria-labelledby={labelId}>
       <slot />
     </div>
   {/if}
