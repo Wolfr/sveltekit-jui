@@ -17,21 +17,35 @@
   color: $color-gray-500;
   background: $color-gray-100;
   @media (prefers-color-scheme: dark) {
-    background: $color-gray-800;
+    background: $color-gray-700;
+    color: $color-gray-200;
   }
 }
 
 .c-badge--warning {
   background: $color-orange-200;
   color: $color-orange-500;
+  @media (prefers-color-scheme: dark) {
+    color: $color-orange-200;
+    background: $color-orange-600;
+  }
 }
 
 .c-badge--success {
   background: $color-green-200;
   color: $color-green-500;
+  @media (prefers-color-scheme: dark) {
+    color: $color-green-200;
+    background: $color-green-600;
+  }
+  
 }
 
 .c-badge--danger {
   background: $color-red-200;
   color: $color-red-500;
+  @media (prefers-color-scheme: dark) {
+    color: $color-red-200;
+    background: $color-red-500;
+  }
 }
