@@ -32,7 +32,7 @@
     </a>
   {:else}
   <div class="c-media-card__inner">
-    <img src="/placeholder.png" alt="">
+    <ImagePlaceholder alt="" />
     <div class="c-media-card__content">
       <h4 class="c-h4">{title}</h4>
       <p class="c-body-2">{description}</p>
