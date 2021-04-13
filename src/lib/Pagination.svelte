@@ -65,7 +65,7 @@
       setPage(internalPage - 1);
       dispatcher("previous", { internalPage });
     }}
-    layout="label-icon"
+    layout="icon-label"
     bind:disabled={isPreviousDisabled}
     icon="chevron-left"
     cssClass="c-pagination__previous">{previousText}</Button
@@ -74,7 +74,7 @@
   <ButtonToolbar>
     {#each pages as page}
       {#if page === MORE}
-        <span aria-hidden="true">...</span>
+        <span aria-hidden="true" class="c-pagination__ellipsis">...</span>
       {:else}
         <Button
           skin="borderless"
