@@ -25,7 +25,10 @@
     padding: .8rem 1.6rem;
     margin: 0 .8rem;
     border-radius: .3rem;
-    color: $color-primary;
+    color: $color-blue-600;
+    @media (prefers-color-scheme: dark) {
+      color: $color-blue-400;
+    }
     display: flex;
   }
   .c-icon {
