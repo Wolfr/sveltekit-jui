@@ -94,6 +94,7 @@
 
 {#if showMenu}
 <div
+  style="z-index: 1"
   use:usePopperToolip={{ placement: placement, modifiers: [sameWidth, { name: 'offset', options: { offset: [0, 10],},},],}}
   use:clickOutside on:click_outside={handleClickOutside}
   use:trapFocus
