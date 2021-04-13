@@ -6,6 +6,8 @@ Are you excited to work in Svelte Kit? Want to learn how to implement common UI 
 
 Are you a JS dev without a lot of design knowledge but a desire to do design well? Use the components in Jungle to up your design game. Check out the [help wanted](https://github.com/Wolfr/sveltekit-jui/labels/help%20wanted) tag!
 
+Some issues are tagged “designer”, I plan to work together with the talented visual designers in our [design team](http://mono.company/) to tackle these, as they are quite specific (branding, color and icon related).
+
 Currently, there are some issues listed on https://github.com/Wolfr/sveltekit-jui/issues which could use some help. Especially because my Javascript game is not that strong.
 
 ### Current contributors:
