@@ -42,8 +42,9 @@
     }
 
     return [
+      1,
       rangeStart > 2 && MORE,
-      ...Array.from({ length: rangeEnd - 1 }, (_, i) => i + 1),
+      ...range(rangeStart, rangeEnd),
       rangeEnd < totalPages && MORE,
       +totalPages,
     ].filter(Boolean);
@@ -55,6 +56,13 @@
       internalPage = newPage;
       dispatcher("pageIndex", { newPage });
     }
+  }
+
+  function range(start, end) {
+    if (start == end) {
+      return [start]
+    }
+    return [start, ...range(start + 1, end)]
   }
 
 </script>
