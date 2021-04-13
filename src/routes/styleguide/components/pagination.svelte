@@ -14,5 +14,5 @@
 <StyleguideIntro title={pageTitle} />
 
 <StyleguideCard title={pageTitle}>
-  <Pagination totalPages="3" />
+  <Pagination totalPages=15 />
 </StyleguideCard>
