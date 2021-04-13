@@ -1,9 +1,12 @@
 <script>
-  export let label;
+  export let label = null;
   export let layoutType = null;
-  export let type;
-  export let value;
-  export let id;
+  export let type = null;
+  export let value = null;
+  
+  import { v4 as uuid } from '@lukeed/uuid';
+  export let id = uuid();
+
   export let cssClass = null;
 </script>
 

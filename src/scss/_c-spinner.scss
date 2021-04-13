@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Spinner
+   ========================================================================== */
+
+.c-spinner {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  vertical-align: text-bottom;
+  border: .5rem solid $color-primary;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner 1.3s linear infinite;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}

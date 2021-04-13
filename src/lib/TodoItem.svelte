@@ -12,27 +12,17 @@
 
 <li class="c-todo-item">
   <div>
-    <Checkbox bind:checked={todo.completed} label={todo.title} />
+    <Checkbox bind:checked={todo.completed} label={todo.title} cssClass="strikethrough" />
     <!-- {todo.id} -->
   </div>
   <Button on:click={handleDelete} icon="delete" layout="icon">Remove</Button>
 
 </li>
 
-<style lang="scss">
-
-  :global(.c-todo-list li) {
-    border-bottom: .1rem solid #CCC;
-    &:last-child {
-      border: none;
-    }
-  }
-
-  .c-todo-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .8rem;
+<style>
+  
+  :global(.strikethrough) {
+    text-decoration: line-through;
   }
 
 </style>

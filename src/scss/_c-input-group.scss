@@ -1,0 +1,66 @@
+/* ==========================================================================
+  Input groups (append/prepend)
+   ========================================================================== */
+
+.c-input-prefix-holder {
+  position: relative;
+
+  .c-input-prefix + .c-input {
+    padding-left: 4.4rem;
+  }
+
+  .c-input:first-child:not(.c-input-prefix) {
+    padding-right: 4.4rem;
+  }
+}
+
+.c-input-prefix,
+.c-input-suffix {
+  background-color: $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-gray-850;
+  }
+  color: $color-gray-600;
+  border: 0.1rem solid $color-gray-300;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-600;
+  }
+
+  position: absolute;
+  z-index: 1;
+
+  min-width: 3.2rem;
+  padding: 0.6rem 0.8rem;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right-width: 0;
+  transition: all 0.15s ease-in-out;
+
+  .c-input-prefix-holder--focus & {
+    outline: 0;
+    border-color: #a6a6a6;
+    box-shadow: inset .1rem 0 0 0.1rem #a6a6a6;
+    border-width: .1rem 0;
+  }
+}
+
+.c-input-prefix {
+  left: 0;
+  border-top-left-radius: $c-input-border-radius;
+  border-bottom-left-radius: $c-input-border-radius;
+}
+
+.c-input-suffix {
+  right: 0;
+  border-top-right-radius: $c-input-border-radius;
+  border-bottom-right-radius: $c-input-border-radius;
+  border: .1rem solid $color-gray-300;
+  border-left-width: 0;
+
+  .c-input-prefix-holder--focus & {
+    box-shadow: inset -0.1rem 0 0 0.1rem #a6a6a6;
+  }
+}

@@ -1,0 +1,9 @@
+.c-todo-list li {
+  border-bottom: .1rem solid $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
+  &:last-child {
+    border: none;
+  }
+}

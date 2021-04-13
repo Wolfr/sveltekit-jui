@@ -1,0 +1,50 @@
+/* ==========================================================================
+  File input
+   ========================================================================== */
+
+.c-input-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.c-input-file + label {
+  border: .1rem dashed $color-gray-300;
+  border-radius: 0.4rem;
+  padding: 1.6rem;
+  display: flex;
+  cursor: pointer;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  .c-button {
+    margin-left: 0.8rem;
+  }
+}
+.c-input-file:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto .5rem;
+}
+
+.c-input-file + label * {
+  pointer-events: none;
+}
+
+.c-input-file--large {
+
+  + label {
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  .c-button {
+    margin: 0;
+  }
+}

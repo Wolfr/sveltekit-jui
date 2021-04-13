@@ -1,0 +1,62 @@
+/* ==========================================================================
+  Alert skins
+  ---
+  Rules of this file: you CAN'T touch the box model here, just colors.
+   ========================================================================== */
+
+/* Component
+   ========================================================================== */
+
+.c-alert {
+  background: #FFF;
+  border-radius: 0.3rem;
+  border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+    border-color: $color-gray-700;
+  }
+}
+
+.c-alert--success {
+  border-color: darken($color-green-200, 10%);
+  background: $color-green-200;
+  .c-icon {
+    color: $color-green-500;
+  }
+  @media (prefers-color-scheme: dark) {
+    color: #FFF;
+    border-color: $color-green-600;
+    background: $color-green-700;
+  }
+}
+
+.c-alert--error {
+  border-color: darken($color-red-200, 10%);
+  background: $color-red-200;
+  .c-icon {
+    color: $color-red-500;
+  }
+  @media (prefers-color-scheme: dark) {
+    color: #FFF;
+    border-color: $color-red-600;
+    background: $color-red-700;
+  }
+}
+
+.c-alert--warning {
+  border-color: darken($color-orange-200, 10%);
+  background: $color-orange-200;
+  .c-icon {
+    color: $color-orange-500;
+  }
+  @media (prefers-color-scheme: dark) {
+    color: #FFF;
+    border-color: $color-orange-600;
+    background: $color-orange-700;
+  }
+}
+
+.c-alert--loading {
+  background: $color-gray-100;
+}
+  

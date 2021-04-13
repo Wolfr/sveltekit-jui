@@ -1,0 +1,28 @@
+/* ==========================================================================
+  Pagination
+   ========================================================================== */
+
+.c-pagination {
+  display: flex;
+}
+
+.c-pagination .c-button {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+
+.c-pagination .c-button--active {
+  cursor: default;
+}
+
+.c-pagination__ellipsis {
+  padding: 0 .4rem;
+  margin: 0 .4rem;
+}
+.c-button.c-pagination__previous {
+  margin-right: 1.4rem;
+}
+
+.c-button.c-pagination__next {
+  margin-left: 1.4rem;
+}

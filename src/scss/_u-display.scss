@@ -1,18 +1,14 @@
-
 /* ==========================================================================
-  Utility: display
-  ===
+  Display
+  ---
   Display-related utility classes
-   ========================================================================== */
-
-/* Utilities
    ========================================================================== */
 
 /* Use this to make sure screen readers read something sensible when encountering the mi. If you are using the icons decoratively, you can omit the <span> */
 // u = utility
 // d = display
 
-.u-d-sr-only {
+.u-d-sr-accessible {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -23,4 +19,16 @@
 
 .u-d-block {
   display: block;
+}
+
+.u-d-sr-accessible:focus {
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1.2rem;
+  background: $color-primary;
+  color: #FFF;
+  z-index: $g-c-skiplink-z;
 }

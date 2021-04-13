@@ -1,0 +1,50 @@
+/* ==========================================================================
+  Media card
+   ========================================================================== */
+
+.c-media-card {
+  max-width: 32rem;
+}
+
+.c-media-card__inner {
+  display: block;
+  border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
+  border-radius: .3rem;
+}
+
+.c-media-card__inner--interactive {
+  border-color: $color-gray-300;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
+  &:hover {
+    border-color: $color-gray-500;
+    @media (prefers-color-scheme: dark) {
+      border-color: $color-gray-600;
+    }
+  }
+  &:hover .c-media-card__content {
+    background: $color-gray-50;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-850;
+    }
+  }
+}
+
+.c-media-card img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+.c-media-card__content {
+  padding: 1.6rem;
+  background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
+}

@@ -1,5 +1,5 @@
 /* ==========================================================================
-  Component: Form group
+  Form group
   ---
   Wrapping component for a label and an input control
    ========================================================================== */
@@ -30,6 +30,9 @@ $o-form-group-label-font-weight: $g-headings-font-weight !default;
     padding: $o-form-group-spacing/2 0;
 
     color: $c-input-label-color;
+    @media (prefers-color-scheme: dark) {
+      color: $color-gray-200;
+    }
     flex: none;
     font-size: $g-base-font-size;
     font-weight: $o-form-group-label-font-weight;

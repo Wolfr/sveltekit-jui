@@ -1,0 +1,62 @@
+/* ==========================================================================
+  List
+   ========================================================================== */
+
+.c-list .c-list {
+  margin-left: 4.8rem;
+  margin-right: 0;
+}
+
+.c-list__item {
+  list-style: none;
+  width: 100%;
+
+  border-bottom: .1rem solid $color-gray-150;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
+
+  &:last-child {
+    border: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: currentColor;
+  }
+
+  .c-list-item__inner, a {
+    padding: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.c-list__content {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  .c-avatar {
+    flex: 0 0 auto;
+  }
+  .c-avatar,
+  .c-icon {
+    margin-right: 1.6rem;
+  }
+}
+
+.c-list__first-line {
+  color: $color-gray-900;
+  @media (prefers-color-scheme: dark) {
+    color: #FFF;
+  }
+  font-weight: 500;
+  padding-bottom: .2rem;
+}
+
+.c-list__second-line {
+  font-size: 1.4rem;
+}

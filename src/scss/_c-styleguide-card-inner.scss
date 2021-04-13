@@ -1,0 +1,14 @@
+/* ==========================================================================
+  Styleguide card inner
+   ========================================================================== */
+
+.c-styleguide-card-inner {
+  border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
+  border-radius: .3rem;
+  overflow: scroll;
+  padding: 4rem;
+  position: relative;
+}

@@ -16,7 +16,7 @@
       </Panel>
     </div>
     <div class="o-dynamic-grid__item">
-      <Panel minimal>
+      <Panel>
           <PanelHeader title="Panel header" />
           <PanelBody>
               <p>I am other HTML content.</p>
@@ -24,12 +24,10 @@
       </Panel>
     </div>
     <div class="o-dynamic-grid__item">
-      <Panel minimal>
+      <Panel>
         <PanelHeader>
             <div slot="panel-header">
-              <h2>
-                  Hey I am the header with customized HTML
-                </h2>
+              <h2 class="c-toolbar__title">Hey, I am the header with customized HTML</h2>
              </div>
           </PanelHeader>
           <PanelBody>

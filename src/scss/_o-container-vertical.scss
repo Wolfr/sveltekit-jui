@@ -1,0 +1,37 @@
+/* ==========================================================================
+  Container vertical
+   ========================================================================== */
+
+/* Block spacing
+   ========================================================================== */
+
+.o-container-vertical--padding-small {
+   padding: 2.4rem 0;
+}
+
+.o-container-vertical { // Standard padding
+   padding: 3.6rem 0;
+}
+
+.o-container-vertical--padding-medium {
+   padding: 4.8rem 0;
+}
+
+.o-container-vertical--padding-large {
+   padding: 6.4rem 0;
+}
+
+/* Block modifiers
+   Change the look of the entire block
+   ========================================================================== */
+
+.o-container-vertical--bg-alt {
+   background: $color-gray-50;
+   @media (prefers-color-scheme: dark) {
+     background: mix($color-gray-850, $color-gray-900);
+   }
+}
+
+.o-container-vertical--bottom-bordered {
+  border-bottom: 1px solid $color-gray-100;
+}

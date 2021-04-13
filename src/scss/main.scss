@@ -1,0 +1,86 @@
+/* ==========================================================================
+  Stylesheet for JUI
+  ITCSS + BEM
+  JUI@0.1
+   ========================================================================== */
+
+// Settings
+@import "../scss/s-colors";
+@import "../scss/s-fonts";
+@import "../scss/s-semantic-colors";
+@import "../scss/s-variables";
+
+// Generic
+@import "../scss/reset";
+
+// Elements
+@import "../scss/e-base";
+
+// Objects
+@import "../scss/o-container";
+@import "../scss/o-container-vertical";
+@import "../scss/o-dynamic-grid";
+@import "../scss/o-form-group";
+@import "../scss/o-scroll-wrapper";
+
+// Components
+@import "../scss/c-accordion";
+@import "../scss/c-alert";
+@import "../scss/c-alert-skins";
+@import "../scss/c-alert-stack";
+@import "../scss/c-avatar";
+@import "../scss/c-badge";
+@import "../scss/c-bordered-list";
+@import "../scss/c-brand";
+@import "../scss/c-button";
+@import "../scss/c-button-link";
+@import "../scss/c-button-skins";
+@import "../scss/c-button-toolbar";
+@import "../scss/c-card";
+@import "../scss/c-checkbox-radio";
+@import "../scss/c-content";
+@import "../scss/c-custom-select";
+@import "../scss/c-image-placeholder";
+@import "../scss/c-form-help-text";
+@import "../scss/c-frame";
+@import "../scss/c-icon";
+@import "../scss/c-input";
+@import "../scss/c-input-file";
+@import "../scss/c-input-group";
+@import "../scss/c-key-value";
+@import "../scss/c-list";
+@import "../scss/c-media-card";
+@import "../scss/c-modal";
+@import "../scss/c-nav";
+@import "../scss/c-nav-menu";
+@import "../scss/c-navbar";
+@import "../scss/c-pagination";
+@import "../scss/c-panel";
+@import "../scss/c-pill";
+@import "../scss/c-pill-list";
+@import "../scss/c-popover";
+@import "../scss/c-select-menu";
+@import "../scss/c-side-menu";
+@import "../scss/c-spinner";
+@import "../scss/c-styled-select";
+@import "../scss/c-table";
+@import "../scss/c-tabs";
+@import "../scss/c-toggle";
+@import "../scss/c-toolbar";
+
+// Non framework components, for demos
+@import "../scss/demos/c-todo-item";
+@import "../scss/demos/c-todo-list";
+@import "../scss/demos/c-blog-article-header";
+@import "../scss/demos/c-settings-layout";
+
+// Utilities
+@import "../scss/u-display";
+@import "../scss/u-text";
+@import "../scss/u-spacer";
+
+html, body, #svelte {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

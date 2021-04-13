@@ -1,5 +1,5 @@
 /* ==========================================================================
-  Component: c-panel
+  Panel
    ========================================================================== */
 
 /* Variables
@@ -16,8 +16,14 @@ $c-panel-border-radius: 0.4rem !default;
 
 .c-panel {
   background-color: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-900;
+  }
   border-radius: $c-panel-border-radius;
-  border: 1px solid $c-panel-border-color;
+  border: .1rem solid $c-panel-border-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
 }
 
 .c-panel__body {
@@ -25,7 +31,10 @@ $c-panel-border-radius: 0.4rem !default;
 }
 
 .c-panel__body + .c-panel__body {
-  border-top: 1px solid $c-panel-border-color;
+  border-top: .1rem solid $c-panel-border-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
 }
 
 .c-panel__header {
@@ -33,9 +42,15 @@ $c-panel-border-radius: 0.4rem !default;
   align-items: center;
   height: 5.6rem;
   padding: 0 $c-panel-padding-horizontal;
-  background:  $color-gray-25;
+  background:  $color-gray-50;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
   border-radius: 0.4rem 0.4rem 0 0;
-  border-bottom: 1px solid $c-panel-border-color;
+  border-bottom: .1rem solid $c-panel-border-color;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
 }
 
 .c-panel__title {
@@ -67,55 +82,4 @@ $c-panel-border-radius: 0.4rem !default;
   .c-panel__body {
     padding: 4rem;
   }
-}
-
-/* Make panels equal height when positioned next to each other
-   ========================================================================== */
-
-.c-panel--full-height {
-  height: 100%;
-  .c-panel__body {
-    height: 100%;
-  }
-}
-
-.c-panel--grid {
-  display: flex;
-  flex-wrap: wrap;
-
-  .c-panel__body {
-    width: 50%;
-  }
-
-  .c-panel__header {
-    flex: 1 0 100%;
-  }
-
-  .c-panel__body:nth-child(even) {
-    border-right: 0.1rem solid $color-gray-150;
-  }
-
-  .c-panel__body + .c-panel__body {
-    border-top: none;
-  }
-
-  .c-panel__body:nth-child(n+4) {
-    border-top: 0.1rem solid $color-gray-150;
-  }
-}
-
-@media (max-width: 800px) {
- .c-panel--grid {
-   .c-panel__body {
-     width: 100%;
-   }
-
-   .c-panel__body:nth-child(even) {
-    border-right: none;
-  }
-
-   .c-panel__body + .c-panel__body {
-     border-top: 1px solid $color-gray-150;
-   }
- }
 }

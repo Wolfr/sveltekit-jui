@@ -1,7 +1,7 @@
 /* ==========================================================================
-  Component: Buttons
+  Buttons
   ---
-  This code is about button layout.
+  This code is about button layout. For button look, see _c-button-skins.scss
    ========================================================================== */
 
 /* Variables
@@ -101,6 +101,10 @@ button.c-button {
   width: 3.6rem;
   padding: 0;
   display: inline-flex;
+  .o-svg-icon {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 .c-button--icon .c-button__content,

@@ -1,26 +1,33 @@
 {
-	"name": "sveltekittest",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"start": "svelte-kit start"
-	},
-	"devDependencies": {
-		"@rollup/plugin-dsv": "^2.0.1",
-		"@sveltejs/adapter-node": "next",
-		"@sveltejs/adapter-vercel": "next",
-		"@sveltejs/kit": "next",
-		"sass": "^1.32.8",
-		"svelte": "^3.29.0",
-		"svelte-preprocess": "^4.0.0",
-		"vite": "^2.1.0"
-	},
-	"type": "module",
-	"engines": {
-		"node": ">= 12.17.0"
-	},
-	"dependencies": {
-		"layercake": "^4.1.0"
-	}
+  "name": "sveltekit-jui",
+  "version": "0.3.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "start": "svelte-kit start"
+  },
+  "devDependencies": {
+    "@rollup/plugin-dsv": "^2.0.1",
+    "@sveltejs/adapter-node": "next",
+    "@sveltejs/adapter-vercel": "next",
+    "@sveltejs/kit": "next",
+    "autoprefixer": "^10.2.5",
+    "sass": "^1.32.8",
+    "svelte": "^3.29.0",
+    "svelte-preprocess": "^4.0.0",
+    "vite": "^2.1.0"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">= 12.17.0"
+  },
+  "dependencies": {
+    "@lukeed/uuid": "^2.0.0",
+    "@popperjs/core": "^2.9.2",
+    "mono-icons": "^1.2.4",
+    "prismjs": "^1.23.0",
+    "uuid-v4": "^0.1.0",
+    "layercake": "^4.1.0"
+  }
 }

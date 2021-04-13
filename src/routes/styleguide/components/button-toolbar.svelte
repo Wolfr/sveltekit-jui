@@ -11,36 +11,27 @@
 
   let propsTable = [
     {
-      name: 'skin',
-      description: 'Changes the look of the badge.',
-      required: false,
-      options: [
-        {
-          name: 'default',
-          default: true
-        },
-        {
-          name: 'success',
-          default: false
-        },
-        {
-          name: 'warning',
-          default: false
-        },
-        {
-          name: 'danger',
-          default: false
-        }
-      ]
+      name: 'compact',
+      description: 'Moves the buttons into one another.',
+      required: false
     },
-    
+    {
+      name: 'vertical',
+      description: 'Vertical layout.',
+      required: false
+    }
   ]
   
 </script>
 
+
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title="Button group" code="&lt;ButtonToolbar&gt;
+<StyleguideCard title="Button toolbar" code="&lt;ButtonToolbar&gt;
   &lt;Button&gt;A button&lt;/Button&gt;
   &lt;Button&gt;A button&lt;/Button&gt;
 &lt;/ButtonToolbar&gt;">
@@ -50,13 +41,19 @@
   </ButtonToolbar>
 </StyleguideCard>
 
-<StyleguideCard title="Button toolbar (compact)" code="&lt;ButtonToolbar compact&gt;
-  &lt;Button&gt;A button&lt;/Button&gt;
-  &lt;Button&gt;A button&lt;/Button&gt;
-&lt;/ButtonToolbar&gt;">
+<StyleguideCard title="Compact">
   <ButtonToolbar compact>
     <Button>A button</Button>
     <Button>A button</Button>
+    <Button>A button</Button>
+  </ButtonToolbar>
+</StyleguideCard>
+
+<StyleguideCard title="Vertical + Compact">
+  <ButtonToolbar vertical compact>
+    <Button icon="add" layout="icon">A button</Button>
+    <Button icon="add" layout="icon">A button</Button>
+    <Button icon="add" layout="icon">A button</Button>
   </ButtonToolbar>
 </StyleguideCard>
 

@@ -1,0 +1,26 @@
+/* ==========================================================================
+  Alert stack
+   ========================================================================== */
+
+.c-alert-stack {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+}
+
+.c-alert-stack li {
+  margin-top: 1.2rem;
+}
+
+.c-alert-stack .c-alert {
+  border-radius: .3rem;
+  margin: 0 0 1.6rem;
+  display: flex;
+  padding: 1.6rem;
+  z-index: 100;
+  min-width: 44rem;
+  max-width: 44rem;
+  &:last-child {
+    margin: 0;
+  }
+}

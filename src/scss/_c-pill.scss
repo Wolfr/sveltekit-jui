@@ -1,0 +1,37 @@
+/* ==========================================================================
+  Pill
+   ========================================================================== */
+
+.c-pill {
+  font-size: 1.3rem;
+  font-weight: $g-headings-font-weight;
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-pill--default {
+  color: $color-gray-500;
+  background: $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-800;
+  }
+}
+
+.c-pill--warning {
+  background: $color-orange-200;
+  color: $color-orange-500;
+}
+
+.c-pill--success {
+  background: $color-green-200;
+  color: $color-green-500;
+}
+
+.c-pill--danger {
+  background: $color-red-200;
+  color: $color-red-500;
+}

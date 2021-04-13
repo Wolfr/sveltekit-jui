@@ -1,0 +1,58 @@
+/* ==========================================================================
+  Styled select
+  ---
+  Styles for styling native <select>
+   ========================================================================== */
+
+/* Component
+   ========================================================================== */
+
+.c-select {
+  @include textfield-transition;
+  appearance: none;
+  background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-800;
+  }
+  border: .1rem solid $color-gray-300;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-600;
+  }
+  color: $color-text;
+  @media (prefers-color-scheme: dark) {
+    color: $color-gray-200;
+  }
+  border-radius: $c-input-border-radius; // We use properties from textfield here
+  font-size: inherit;
+  height: 3.6rem;
+  padding: 0.8rem 2.8rem 0.8rem 0.8rem;
+  width: 100%;
+
+  &[disabled] {
+    background: $color-gray-100;
+  }
+
+  @include textfield-focus;
+}
+
+// A wrapper, so we can position a CSS created arrow
+.c-select-holder {
+  position: relative;
+  &:after {
+    pointer-events: none;
+    content: ' ';
+    position: absolute;
+    right: 1rem;
+    top: 1.7rem;
+    width: 0;
+    height: 0;
+    border-width: 1rem;
+    border: 0.5rem solid $color-gray-900;
+    @media (prefers-color-scheme: dark) {
+      border-top-color: $color-gray-200;
+    }
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+}

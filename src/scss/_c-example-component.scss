@@ -1,0 +1,38 @@
+/* ==========================================================================
+  Example component
+   ========================================================================== */
+
+/**
+ * This is an example to explain the component structure.
+ * Component classes are prefixed with `.c-`.
+ */
+
+/* Variables
+   ========================================================================== */
+
+/**
+ * Provide variables that are scoped for each component.
+ * Add `!default` so the component can be adapted easily adapted.
+ */
+
+$c-component-variable: 1rem !default;
+
+
+/* Component
+   ========================================================================== */
+
+.c-component {
+  // Component styles
+}
+
+.c-component__child {
+  // Component child styles
+}
+
+
+/* Modifiers
+  ========================================================================== */
+
+.c-component--modifier {
+  // Component modifier styles
+}

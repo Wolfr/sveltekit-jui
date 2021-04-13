@@ -1,9 +1,12 @@
 /* ==========================================================================
-  Component: side menu
+   Side menu
    ========================================================================== */
 
 .c-side-menu {
   background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-900;
+  }
 }
 
 .c-side-menu__item a {
@@ -15,19 +18,44 @@
   &:hover,
   &:focus {
     background: $color-gray-50;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-800;
+    }
+    color: $color-blue-600;
+    @media (prefers-color-scheme: dark) {
+      color: $color-blue-400;
+    }
   }
 
-  .o-svg-icon {
+  .c-icon {
     margin-right: 1.2rem;
     color: $color-gray-300;
+    @media (prefers-color-scheme: dark) {
+      color: $color-gray-600;
+    }
   }
 }
 
+.c-side-menu__item a:focus,
 .c-side-menu__item--active a {
   background: $color-gray-50;
-  color: $color-primary;
+
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-800;
+  }
+
+  color: $color-blue-600;
+  @media (prefers-color-scheme: dark) {
+    color: $color-blue-400;
+  }
+  
+  
+  // @todo does this code make any sense? If it's SVG, it should be fill
   .o-svg-icon {
-    color: $color-primary;
+    color: $color-blue-600;
+    @media (prefers-color-scheme: dark) {
+      color: $color-blue-400;
+    }
   }
 }
 

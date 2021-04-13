@@ -1,5 +1,5 @@
 /* ==========================================================================
-  Component: Text Field
+  Component: Input
   ---
   Styles for text inputs
    ========================================================================== */
@@ -10,10 +10,8 @@
 $c-input-border-radius: 0.3rem !default;
 $c-input-dark-text-color: $color-gray-600 !default;
 $c-input-focus-icon-color: $color-gray-600 !default;
-$c-input-bg-color: #fff !default;
-$c-input-border-color: $color-gray-200 !default;
 $c-input-readonly-border-color: $color-gray-200 !default;
-$c-input-accent-color: $color-brand-blue !default;
+$c-input-accent-color: $color-primary !default;
 $c-input-error-accent-color: $color-red-500 !default;
 $c-input-padding: 0.8rem !default;
 
@@ -37,8 +35,22 @@ $c-input-padding: 0.8rem !default;
 
 .c-input {
   border-radius: $c-input-border-radius;
-  background: $c-input-bg-color;
-  border: 1px solid $c-input-border-color;
+
+  // Standard combo bg + border for inputs
+  background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-900;
+  }
+  border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
+
+  color: $color-gray-700;
+  @media (prefers-color-scheme: dark) {
+    color: $color-gray-200;
+  }
+
   font-size: inherit;
   height: 3.6rem;
   padding: $c-input-padding;
@@ -96,10 +108,10 @@ textarea.c-input--h-large { height: 20rem; }
   position: relative;
 
   .c-input {
-    padding-left: 3rem;
+    padding-left: 3.2rem;
   }
 
-  .o-svg-icon {
+  .c-icon {
     left: 0.8rem;
     opacity: 0.5;
     position: absolute;
@@ -109,91 +121,4 @@ textarea.c-input--h-large { height: 20rem; }
   }
 }
 
-.c-input-group {
-  display: flex;
-  align-items: flex-start;
-}
 
-.c-input-group__item {
-  flex: 1;
-}
-
-/* Input group append
-   ========================================================================== */
-
-.c-input-group__append {
-  height: 3.6rem;
-  margin-left: 1rem;
-}
-
-/* Input group prepend
-   ========================================================================== */
-
-.c-input-group__prepend {
-  height: 3.6rem;
-  width: 3.6rem;
-  color: $color-gray-500;
-  background: $color-gray-50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: -0.1rem;
-  padding: 0 0.8rem;
-  border-radius: 0.4rem 0 0 0.4rem;
-  border: 1px solid $color-gray-200;
-}
-
-.c-input-group > .c-input:not(:first-child) {
-  border-radius: 0 0.4rem 0.4rem 0;
-}
-
-
-/* File input
-  ========================================================================== */
-
-.c-input-file {
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
-}
-
-.c-input-file + label {
-  border: 1px dashed $color-gray-300;
-  border-radius: 0.4rem;
-  padding: 1.6rem;
-  display: flex;
-  cursor: pointer;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  .c-button {
-    margin-left: 0.8rem;
-  }
-}
-.c-input-file:focus + label {
-  outline: 1px dotted #000;
-  outline: -webkit-focus-ring-color auto 5px;
-}
-
-.c-input-file + label * {
-  pointer-events: none;
-}
-
-.c-input-file--large {
-
-  + label {
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-    & > *:not(:last-child) {
-      margin-bottom: 1.2rem;
-    }
-  }
-
-  .c-button {
-    margin: 0;
-  }
-}

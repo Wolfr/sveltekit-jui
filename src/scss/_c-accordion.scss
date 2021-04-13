@@ -1,0 +1,27 @@
+/* ==========================================================================
+  Accordion
+   ========================================================================== */
+
+.c-accordion .c-accordion__item {
+  margin: 0 0 1.6rem;
+}
+
+.c-accordion .c-accordion__item:last-child {
+  margin: 0;
+}
+
+.c-accordion__item-header {
+  display: flex;
+  align-items: center;
+  .c-button {
+    margin-right: .4rem;
+  }
+}
+
+.c-accordion__item-title {
+  font-weight: $g-headings-font-weight;
+}
+
+.c-accordion__content {
+  padding-left: 4rem;
+}

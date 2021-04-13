@@ -1,0 +1,48 @@
+/* ==========================================================================
+  Select menu
+  --
+  Customized select
+   ========================================================================== */
+
+.c-select-menu {
+  background: #FFF;
+  border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+    color: #FFF;
+    border-color: $color-gray-950;
+  }
+  padding: .8rem 0;
+  border-radius: .3rem;
+  box-shadow: 0 0 0.8rem rgba(0,0,0,0.15);
+}
+
+.c-select-menu__item {
+  button {
+    box-sizing: border-box;
+    appearance: none;
+    background: #FFF;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-850;
+      color: #FFF;
+    }
+    border-radius: .3rem;
+    padding: .8rem 1.6rem;
+    margin: 0 .8rem;
+    border: none;
+    width: calc(100% - 1.6rem);
+    display: flex;
+    .c-icon {
+      flex: 0 0 auto;
+      margin-right: .8rem;
+    }
+    &:hover {
+      cursor: pointer;
+      background: $color-gray-50;
+      @media (prefers-color-scheme: dark) {
+        background: $color-gray-800;
+        color: #FFF;
+      }
+    }
+  }
+}

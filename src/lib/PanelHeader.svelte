@@ -1,10 +1,8 @@
 <script>
-  export let title;
-	export let minimal = false;
+  export let title = null;
 </script>
 
-
-<div class="c-panel__header {minimal ? 'c-panel__header--minimal' : ''}">
+<div class="c-panel__header">
   <slot name="panel-header">
     <h3 class="c-toolbar__title">{title}</h3>
   </slot>

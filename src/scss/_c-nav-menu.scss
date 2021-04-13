@@ -1,0 +1,57 @@
+/* ==========================================================================
+  Nav menu
+   ========================================================================== */
+
+.c-nav-menu {
+  background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
+  border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-600;
+  }
+  padding: .8rem 0;
+  border-radius: .3rem;
+  box-shadow: 0 0 0.8rem rgba(0,0,0,0.15);
+}
+
+.c-nav-menu__item {
+  background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-850;
+  }
+  a {
+    padding: .8rem 1.6rem;
+    margin: 0 .8rem;
+    border-radius: .3rem;
+    color: $color-blue-600;
+    @media (prefers-color-scheme: dark) {
+      color: $color-blue-400;
+    }
+    display: flex;
+  }
+  .c-icon {
+    margin-right: .8rem;
+  }
+  
+  a:hover {
+    background: $color-gray-50;
+    @media (prefers-color-scheme: dark) {
+      background: $color-gray-900;
+    }
+  }
+}
+
+.c-nav-menu__divider {
+  height: .1rem;
+  margin: .8rem 0;
+  background: $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-900;
+  }
+}
+
+.c-nav-menu__item.c-nav-menu__item--destructive a {
+  color: $color-red-500;
+}

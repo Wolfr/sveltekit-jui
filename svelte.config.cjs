@@ -6,6 +6,7 @@ const dsv = require('@rollup/plugin-dsv');
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
+  compilerOptions: { generate: "ssr" },
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
 	preprocess: sveltePreprocess(
@@ -24,7 +25,14 @@ module.exports = {
 			ssr: {
 				noExternal: Object.keys(pkg.dependencies || {})
 			},
-      plugins: [dsv()]
+            plugins: [dsv()],
+           css: {
+            postcss: {
+              plugins: [
+                require('autoprefixer')
+              ]
+            }
+           }
 		}
 	}
 };

@@ -24,7 +24,7 @@
       ]
     },
     {
-      name: 'classValue',
+      name: 'cssClass',
       description: 'Used to add an extra CSS class.',
       required: false,
     },
@@ -62,7 +62,7 @@
       ]
     },
     {
-      name: 'variant',
+      name: 'skin',
       description: 'Determines button look',
       default: 'secondary',
       required: false,
@@ -73,6 +73,10 @@
         },
         {
           name: 'secondary',
+          default: true
+        },
+        {
+          name: 'tertiary',
           default: true
         },
         {
@@ -93,31 +97,40 @@
 
 </script>
 
+<svelte:head>
+  <title>{pageTitle} - Components - JUI</title>
+</svelte:head>
+
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title="Button layouts" code="&lt;Button&gt;A button&lt;/Button&gt;
-&lt;Button variant=&quot;primary&quot;&gt;A button&lt;/Button&gt;
-&lt;Button icon=&quot;add&quot;&gt;A button&lt;/Button&gt;
-&lt;Button icon=&quot;add&quot; layout=&quot;icon&quot;&gt;A button&lt;/Button&gt;
-&lt;Button icon=&quot;chevron-right&quot; layout=&quot;label-icon&quot;&gt;A button&lt;/Button&gt;">
+<StyleguideCard title="Button layouts">
   <Button>A button</Button>
-  <Button variant="primary">A button</Button>
-  <Button icon="add">A button</Button>
-  <Button icon="add" layout="icon">A button</Button>
-  <Button icon="chevron-right" layout="label-icon">A button</Button>
+  <Button skin="primary">A button</Button>
+  <Button icon="add">Add</Button>
+  <Button icon="add" layout="icon">Add</Button>
+  <Button icon="chevron-right" layout="label-icon">Next</Button>
 </StyleguideCard>
 
-<StyleguideCard
-  title="Button skins"
-  code="&lt;Button&gt;Secondary button&lt;/Button&gt;
-&lt;Button variant=&quot;primary&quot;&gt;Primary button&lt;/Button&gt;
-&lt;Button variant=&quot;borderless&quot;&gt;Borderless button&lt;/Button&gt;"
->
+<StyleguideCard title="Button skins">
   <Button>Secondary button</Button>
-  <Button variant="primary">Primary button</Button>
-  <Button variant="borderless">Borderless button</Button>
-  <Button variant="danger">Danger button</Button>
-  <Button variant="danger-hover">Danger on hover button</Button>
+  <Button skin="primary">Primary button</Button>
+  <Button skin="tertiary">Tertiary button</Button>
+  <Button skin="borderless">Borderless button</Button>
 </StyleguideCard>
+
+<StyleguideCard title="Danger buttons">
+  <Button skin="danger">Danger button</Button>
+  <Button skin="danger-hover">Danger on hover button</Button>
+</StyleguideCard>
+
+<StyleguideCard title="Disabled buttons">
+  <Button skin="primary" disabled>Primary button</Button>
+  <Button skin="tertiary" disabled>Tertiary button</Button>
+  <Button skin="danger" disabled>Danger button</Button>
+  <Button skin="danger-hover" disabled>Danger on hover button</Button>
+  <Button skin="borderless" disabled>Borderless button</Button>
+</StyleguideCard>
+
+
 
 <StyleguidePropsTable propsTable={propsTable} />

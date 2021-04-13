@@ -1,8 +1,10 @@
 /* ==========================================================================
-  Component: Button Toolbar
+  Button Toolbar
   ---
   Group multiple buttons together
    ========================================================================== */
+
+$c-button-border-radius: .3rem;
 
 .c-button-toolbar {
   align-items: center;
@@ -57,6 +59,12 @@
   }
 }
 
+.c-button-toolbar--compact:not(.c-button-toolbar--vertical) {
+  .c-button:first-child {
+    margin-left: -0.2rem;
+  }
+}
+
 .c-button-toolbar--vertical {
   flex-flow: column;
 
@@ -78,8 +86,12 @@
   }
 
   &.c-button-toolbar--compact {
+    .c-button:first-child {
+      margin-top: -0.2rem;
+    }
+
     .c-button + .c-button {
-      margin: -0.2rem 0 0 0;
+      margin: -0.1rem 0 0 0;
     }
   }
 }

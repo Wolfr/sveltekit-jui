@@ -1,0 +1,40 @@
+/* ==========================================================================
+  Bordered list
+   ========================================================================== */
+
+.c-bordered-list, .c-bordered-list ul {
+  list-style: none;
+}
+
+.c-bordered-list ul {
+  padding-left: 2.4rem;
+}
+
+.c-bordered-list li a {
+  padding: .4rem;
+  border-bottom: .1rem solid $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
+  display: block;
+  color: $color-blue-600;
+  @media (prefers-color-scheme: dark) {
+    color: $color-blue-400;
+  }
+}
+
+.c-bordered-list li span {
+  padding: .4rem;
+  border-bottom: .1rem solid $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-800;
+  }
+  display: block;
+}
+
+/* Modifiers
+   ========================================================================== */
+
+.c-bordered-list--small {
+  font-size: 1.4rem;
+}

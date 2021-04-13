@@ -1,0 +1,14 @@
+/* ==========================================================================
+  c-form-help-text
+   ========================================================================== */
+
+.c-form-help-text {
+  display: block;
+  margin-top: .4rem;
+  font-size: 1.4rem;
+  color: $color-gray-600;
+}
+
+.c-form-help-text--error {
+  color: $color-red-500;
+}
