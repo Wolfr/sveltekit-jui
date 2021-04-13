@@ -13,7 +13,9 @@
   import { pageIndexVisibility } from '$lib/page-index.js';
 
   function toggleVisibility() {
-    $pageIndexVisibility[0].pageIndexVisible = !$pageIndexVisibility[0].pageIndexVisible;
+    if ($pageIndexVisibility) {
+      $pageIndexVisibility[0].pageIndexVisible = !$pageIndexVisibility[0].pageIndexVisible;
+    }
   }
 
   function handleKeydown (evt) { 

@@ -25,15 +25,14 @@ module.exports = {
 			ssr: {
 				noExternal: Object.keys(pkg.dependencies || {})
 			},
-            plugins: [dsv()],
-           css: {
-            postcss: {
-              plugins: [
-                require('autoprefixer')
-              ]
-            }
-           }
-		}
+			plugins: [dsv()],
+			css: {
+			postcss: {
+				plugins: [
+					require('autoprefixer')
+				]
+			}
+		}}
 	}
 };
 
