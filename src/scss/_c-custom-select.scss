@@ -4,6 +4,9 @@
 
 .c-custom-select {
   border: .1rem solid $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
   display: inline-flex;
   padding: .8rem 1.2rem;
   border-radius: .3rem;
