@@ -18,7 +18,7 @@
     <h3 id="sveltekit">SvelteKit</h3>
     <ul>
     <li>Using the power of Sveltekit, we can have an SPA, SSR or static site</li>
-    <li>Next to this we have the power of adapaters to easily deploy to Netlify, Vercel etc.</li>
+    <li>Next to this we have the power of adapters to easily deploy to Netlify, Vercel etc.</li>
     </ul>
     <h3 id="component-composition-strategy">Component composition strategy</h3>
     <ul>
