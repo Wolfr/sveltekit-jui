@@ -1,5 +1,8 @@
 <script>
   export let type = "select";
+  export let id = uuid();
+
+  import { v4 as uuid } from '@lukeed/uuid';
 
   import Icon from '$lib/Icon.svelte';
 
@@ -38,11 +41,23 @@
   function handleClickOutside() {
     showMenu = !showMenu;
   }
+  
+  // Keyboard shortcut
+  let trigger = 'Escape';
+
+  function handleKeydown(e) {
+    if (e.key == trigger) {
+      showMenu = !showMenu;
+    }
+  }
+
 </script>
 
+<svelte:window on:keydown={handleKeydown}/>
 
 {#if type == "select"}
   <div
+    {id}
     tabindex="0"
     class="c-custom-select"
     class:c-custom-select--focus={showMenu}
@@ -62,6 +77,7 @@
 {#if type == "icon"}
   <Icon icon="options" />
   <div
+    {id}
     style="float: left;"
     tabindex="0"
 
@@ -70,9 +86,9 @@
     use:usePopperElement
   >
     {#if showMenu}
-      <Button layout="icon" variant="borderless" icon="options-horizontal" active>Show options</Button>
+      <Button layout="icon" skin="secondary" icon="options-horizontal" active>Show options</Button>
     {:else}
-      <Button layout="icon" variant="borderless" icon="options-horizontal">Show options</Button>
+      <Button layout="icon" skin="borderless" icon="options-horizontal">Show options</Button>
     {/if}
   </div>
 {/if}
