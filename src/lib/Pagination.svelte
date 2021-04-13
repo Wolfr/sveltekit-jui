@@ -5,7 +5,7 @@
 
   export let forwardText = "Next";
   export let previousText = "Previous";
-  export let totalPages = 1;
+  export let totalPages = 10;
   export let currentPage = 1;
   export let pageLimit = 7;
 

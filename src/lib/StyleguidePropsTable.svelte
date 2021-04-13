@@ -39,6 +39,9 @@
           <td><code class="c-code">{prop.name}</code>{#if prop.required}*{/if}</td>
           <td>
             {#if prop.type == "boolean"}Boolean{/if}
+            {#if prop.defaultValue}
+              Default value: {prop.defaultValue}
+            {/if}
             {#if prop.options}
               {#each prop.options as option, index}
                   {#if option.default}
