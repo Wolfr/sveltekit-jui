@@ -73,6 +73,10 @@
       category: 'components'
     },
     {
+      url: 'bordered-list',
+      category: 'components'
+    },
+    {
       url: 'button-link',
       category: 'components',
       prettyName: 'Button (link)'
@@ -98,10 +102,13 @@
       category: 'components'
     },
     {
+      url: 'key-value',
+      category: 'components'
+    },
+    {
       url: 'media-card',
       category: 'components'
     },
-    
     {
       url: 'menu-navigation',
       category: 'components'

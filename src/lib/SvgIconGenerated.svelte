@@ -78,16 +78,16 @@
       html = `<svg width=${size} height=${size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19 12L14 7.5L14 16.5L19 12ZM5 12L10 16.5L10 7.5L5 12Z" fill="#3F545B"/></svg>`
       break;
     case "caret-left":
-      html = `<svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 16.5L3.5 12L8.5 7.5V16.5Z" fill="#3F545B"/></svg>`
+      html = `<svg width=${size} height=${size} viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 16.5L3.5 12L8.5 7.5V16.5Z" fill="#3F545B"/></svg>`
       break;
     case "caret-right":
-      html = `<svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 7.5L8.5 12L3.5 16.5L3.5 7.5Z" fill="#3F545B"/></svg>`
+      html = `<svg width=${size} height=${size} viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 7.5L8.5 12L3.5 16.5L3.5 7.5Z" fill="#3F545B"/></svg>`
       break;
     case "caret-up-down":
-      html = `<svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 5L1.5 10L10.5 10L6 5ZM6 19L10.5 14H1.5L6 19Z" fill="#3F545B"/></svg>`
+      html = `<svg width=${size} height=${size} viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6 5L1.5 10L10.5 10L6 5ZM6 19L10.5 14H1.5L6 19Z" fill="#3F545B"/></svg>`
       break;
     case "caret-up":
-      html = `<svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 14.5L6 9.5L10.5 14.5L1.5 14.5Z" fill="#3F545B"/></svg>`
+      html = `<svg width=${size} height=${size} viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 14.5L6 9.5L10.5 14.5L1.5 14.5Z" fill="#3F545B"/></svg>`
       break;
     case "check":
       html = `<svg width=${size} height=${size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.6644 5.25259C21.0772 5.6195 21.1143 6.25158 20.7474 6.66436L10.0808 18.6644C9.89099 18.8778 9.61898 19 9.33334 19C9.04771 19 8.7757 18.8778 8.58593 18.6644L3.2526 12.6644C2.88568 12.2516 2.92286 11.6195 3.33565 11.2526C3.74843 10.8857 4.3805 10.9228 4.74742 11.3356L9.33334 16.4948L19.2526 5.33563C19.6195 4.92285 20.2516 4.88567 20.6644 5.25259Z" fill="#3F545B"/></svg>`
@@ -514,5 +514,3 @@
     {@html html}
   </div>
 {/if}
-
-

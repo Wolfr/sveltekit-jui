@@ -147,6 +147,9 @@
 
 .c-pre, .c-content pre {
   background: $color-gray-50;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-800;
+  }
   padding: 1.5rem;
   margin: 0 0 1rem;
   font-size: 75%;

@@ -76,6 +76,10 @@
           default: true
         },
         {
+          name: 'tertiary',
+          default: true
+        },
+        {
           name: 'borderless',
           default: false
         },
@@ -99,11 +103,7 @@
 
 <StyleguideIntro title={pageTitle} />
 
-<StyleguideCard title="Button layouts" code="&lt;Button&gt;A button&lt;/Button&gt;
-  &lt;Button skin=&quot;primary&quot;&gt;A button&lt;/Button&gt;
-  &lt;Button icon=&quot;add&quot;&gt;Add&lt;/Button&gt;
-  &lt;Button icon=&quot;add&quot; layout=&quot;icon&quot;&gt;Add&lt;/Button&gt;
-  &lt;Button icon=&quot;chevron-right&quot; layout=&quot;label-icon&quot;&gt;Next&lt;/Button&gt;">
+<StyleguideCard title="Button layouts">
   <Button>A button</Button>
   <Button skin="primary">A button</Button>
   <Button icon="add">Add</Button>
@@ -111,14 +111,10 @@
   <Button icon="chevron-right" layout="label-icon">Next</Button>
 </StyleguideCard>
 
-<StyleguideCard
-  title="Button skins"
-  code="&lt;Button&gt;Secondary button&lt;/Button&gt;
-&lt;Button skin=&quot;primary&quot;&gt;Primary button&lt;/Button&gt;
-&lt;Button skin=&quot;borderless&quot;&gt;Borderless button&lt;/Button&gt;"
->
+<StyleguideCard title="Button skins">
   <Button>Secondary button</Button>
   <Button skin="primary">Primary button</Button>
+  <Button skin="tertiary">Tertiary button</Button>
   <Button skin="borderless">Borderless button</Button>
 </StyleguideCard>
 
@@ -126,5 +122,15 @@
   <Button skin="danger">Danger button</Button>
   <Button skin="danger-hover">Danger on hover button</Button>
 </StyleguideCard>
+
+<StyleguideCard title="Disabled buttons">
+  <Button skin="primary" disabled>Primary button</Button>
+  <Button skin="tertiary" disabled>Tertiary button</Button>
+  <Button skin="danger" disabled>Danger button</Button>
+  <Button skin="danger-hover" disabled>Danger on hover button</Button>
+  <Button skin="borderless" disabled>Borderless button</Button>
+</StyleguideCard>
+
+
 
 <StyleguidePropsTable propsTable={propsTable} />
