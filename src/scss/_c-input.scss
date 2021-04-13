@@ -41,7 +41,7 @@ $c-input-padding: 0.8rem !default;
   @media (prefers-color-scheme: dark) {
     background: $color-gray-900;
   }
-  border: .1rem solid $color-gray-300;
+  border: .1rem solid $color-gray-200;
   @media (prefers-color-scheme: dark) {
     border-color: $color-gray-700;
   }

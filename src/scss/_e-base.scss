@@ -29,13 +29,13 @@ body {
   font-family: $g-base-font-family;
   font-size: $g-base-font-size;
   line-height: $base-line-height;
-  color: $color-text;
   -webkit-overflow-scrolling: touch;
 
   background: #FFF;
+  color: $color-text;
   @media (prefers-color-scheme: dark) {
     background: $color-gray-900;
-    color: $color-gray-200;
+    color: $color-gray-300;
   }
 }
 
