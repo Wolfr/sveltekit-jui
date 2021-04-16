@@ -1,6 +1,9 @@
 <script>
   import StyleguideIntro from '$lib/StyleguideIntro.svelte';
   import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import SideMenu from "$lib/SideMenu.svelte";
+  import SideMenuItem from "$lib/SideMenuItem.svelte";
+  import SideMenuSectionHeader from "$lib/SideMenuSectionHeader.svelte";
 
   let pageTitle = 'Badge';
   
@@ -55,3 +58,30 @@ code="&lt;Badge&gt;Default&lt;/Badge&gt;
 </StyleguideCard>
 
 <StyleguidePropsTable propsTable={propsTable} />
+<br />
+
+<StyleguideCard style="overflow: hidden" title="Component Details">
+  <ul class="c-bordered-list c-bordered-list--small">
+    <li>
+      <span>Forwarded Events</span>
+      <ul>
+        <li><span>on:click</span></li>
+        <li><span>on:mouseover</span></li>
+        <li><span>on:mouseenter</span></li>
+        <li><span>on:mouseleave</span></li>
+      </ul>
+    </li>
+    <li>
+        <span>Slots</span>
+        <ul>
+          <li><span>Default</span></li>
+        </ul>
+    </li>
+    <li>
+      <span>Dispatch Events</span>
+      <ul>
+        <li><span>None</span></li>
+      </ul>
+    </li>
+  </ul>
+</StyleguideCard>

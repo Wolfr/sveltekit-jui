@@ -69,3 +69,29 @@
 </StyleguideCard>
 
 <StyleguidePropsTable propsTable={propsTable} />
+<br>
+<StyleguideCard style="overflow: hidden" title="Component Details">
+  <ul class="c-bordered-list c-bordered-list--small">
+    <li>
+      <span>Forwarded Events</span>
+      <ul>
+        <li><span>on:click</span></li>
+        <li><span>on:mouseover</span></li>
+        <li><span>on:mouseenter</span></li>
+        <li><span>on:mouseleave</span></li>
+      </ul>
+    </li>
+    <li>
+        <span>Slots</span>
+        <ul>
+          <li><span>Default</span></li>
+        </ul>
+    </li>
+    <li>
+      <span>Dispatched Events</span>
+      <ul>
+        <li><span>None</span></li>
+      </ul>
+    </li>
+  </ul>
+</StyleguideCard>
