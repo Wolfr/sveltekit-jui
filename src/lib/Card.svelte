@@ -5,7 +5,11 @@
 
 <div class="c-card {cssClass}" class:c-card--interactive={href}>
   {#if href}
-    <a {href} class="c-card__inner c-card__inner--interactive">
+    <a
+      {href}
+      class="c-card__inner c-card__inner--interactive"
+      on:mouseover on:mouseenter on:mouseleave
+    >
       <div class="c-content">
         <slot />
       </div>

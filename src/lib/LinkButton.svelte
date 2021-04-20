@@ -32,6 +32,10 @@
   class="c-link-button { cssClass } { computedSkinValue }"
   class:c-link-button--icon={layout=="icon"}
   class:c-link-button--disabled={disabled}
+  on:click
+  on:mouseover
+  on:mouseenter
+  on:mouseleave
 >
   <ButtonInnerLayout {icon} {layout}><slot></slot></ButtonInnerLayout>
 </a>

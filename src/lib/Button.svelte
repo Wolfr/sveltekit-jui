@@ -51,6 +51,10 @@
     class:c-button--icon={layout=="icon"}
     class:c-button--disabled={disabled}
     class:c-button--active={active}
+    on:click
+    on:mouseover
+    on:mouseenter
+    on:mouseleave
   >
         <ButtonInnerLayout {icon} {iconAnimatedClass} {layout}><slot></slot></ButtonInnerLayout>
    </a>
@@ -66,7 +70,11 @@
             class:c-button--block={block}
             class:c-button--icon={layout=="icon"}
             class:c-button--active={active}
-            on:submit|preventDefault on:click|preventDefault
+            on:submit|preventDefault
+            on:click|preventDefault
+            on:mouseover
+            on:mouseenter
+            on:mouseleave
         >
             <ButtonInnerLayout {icon} {iconAnimatedClass} {layout}><slot></slot></ButtonInnerLayout>
         </button>
@@ -82,6 +90,9 @@
             class:c-button--block={block}
             class:c-button--icon={layout=="icon"}
             class:c-button--active={active}
+            on:mouseover
+            on:mouseenter
+            on:mouseleave
         >
             <ButtonInnerLayout {icon} {iconAnimatedClass} {layout}><slot></slot></ButtonInnerLayout>
         </button>
