@@ -9,7 +9,6 @@
   export let activatedOnce = 0;
 
   import Button from '$lib/Button.svelte';
-  import PanelBody from '$lib/Icon.svelte';
 
   function toggle() {
     activatedOnce = 1;
