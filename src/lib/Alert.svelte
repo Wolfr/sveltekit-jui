@@ -3,7 +3,6 @@
   import Button from './Button.svelte';
   import Icon from './Icon.svelte';
 
-  export let message = "Default message";
   export let type = null;
   export let closable = null;
   export let show = true;
