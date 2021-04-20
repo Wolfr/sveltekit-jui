@@ -202,7 +202,7 @@
   // Scroll saving styleguide tree
   import { scrollStyleguideValue } from '$lib/scroll-track-styleguide.js';
 
-  let scrollTop;
+  let scrollTop = 0;
   let itemElement;
   import { onMount } from 'svelte';
   onMount( () => {
