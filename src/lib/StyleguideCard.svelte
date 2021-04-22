@@ -1,6 +1,8 @@
 <script>
   import Prism from '$lib/Prism.svelte';
 
+  import { kebabCase } from 'lodash';
+
   import StyleguideCardInner from '$lib/StyleguideCardInner.svelte';
 
   export let style = null;
@@ -8,6 +10,10 @@
   export let code = null;
   export let description = null;
   export let id = null;
+
+  $: if (!id) {
+    id = kebabCase(title);
+  }
 
   let showCode = false;
 
@@ -25,11 +31,17 @@
     document.execCommand('copy');
   }
 
+  import { page } from '$app/stores';
+  $: dynLink = $page.path + '#' + id;
+
 </script>
 
 <div class="o-container-vertical" {id}>
   {#if title}
-  <h3 class="c-h3">{title}</h3>
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <h3 class="c-h3">{title}</h3>
+    <a href={dynLink} style="opacity: 0.5;">#</a>
+  </div>
   {/if}
   {#if description}
     <div class="c-content">{@html description}</div>
@@ -48,7 +60,6 @@
         <Prism cssClass="c-pre" source={code} />
         <button class="c-copy-code-button c-tiny-button" on:click={copyCode}>{#if copied}Copied!{:else}Copy code{/if}</button>
       </div>
-      
     {/if}
   {/if}
 </div>
