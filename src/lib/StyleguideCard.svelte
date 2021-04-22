@@ -1,7 +1,6 @@
 <script>
   import Prism from '$lib/Prism.svelte';
-
-  import { kebabCase } from 'lodash';
+  import kebabCase from 'just-kebab-case';
 
   import StyleguideCardInner from '$lib/StyleguideCardInner.svelte';
 
