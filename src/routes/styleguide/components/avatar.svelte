@@ -1,48 +1,46 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
+  import StyleguideIntro from "$lib/StyleguideIntro.svelte";
+  import StyleguideCard from "$lib/StyleguideCard.svelte";
+  import StyleguidePropsTable from "$lib/StyleguidePropsTable.svelte";
 
-  let pageTitle = 'Avatar';
-  import Avatar from '$lib/Avatar.svelte';
-  
+  let pageTitle = "Avatar";
+  import Avatar from "$lib/Avatar.svelte";
+
   let propsTable = [
     {
-      name: 'initials',
-      description: 'Determines label shown.',
+      name: "initials",
+      description: "Determines label shown.",
       required: false,
     },
     {
-      name: 'imgSrc',
-      description: 'If set, shows an avatar image.',
+      name: "imgSrc",
+      description: "If set, shows an avatar image.",
       required: false,
     },
     {
-      name: 'size',
-      description: 'If set, changes avatar size.',
+      name: "size",
+      description: "If set, changes avatar size.",
       required: false,
       options: [
         {
-          name: 'xsmall',
-          default: false
+          name: "xsmall",
+          default: false,
         },
         {
-          name: 'small',
-          default: false
+          name: "small",
+          default: false,
         },
         {
-          name: 'medium',
-          default: false
+          name: "medium",
+          default: false,
         },
         {
-          name: 'large',
-          default: false
-        }
-      ]
+          name: "large",
+          default: false,
+        },
+      ],
     },
-    
-  ]
-
+  ];
 </script>
 
 <svelte:head>
@@ -51,26 +49,63 @@
 
 <StyleguideIntro title={pageTitle} content="<p>A profile picture.</p>" />
 
-<StyleguideCard title={pageTitle}
-  code="&lt;Avatar initials=&quot;JC&quot; /&gt;">
+<StyleguideCard
+  title={pageTitle}
+  code="&lt;Avatar initials=&quot;JC&quot; /&gt;"
+>
   <Avatar initials="JC" />
 </StyleguideCard>
 
-<StyleguideCard title="Avatar with image" code="&lt;Avatar imgSrc=&quot;http://placekitten.com/500/500&quot; /&gt;">
+<StyleguideCard
+  title="Avatar with image"
+  code="&lt;Avatar imgSrc=&quot;http://placekitten.com/500/500&quot; /&gt;"
+>
   <Avatar imgSrc="http://placekitten.com/500/500" />
 </StyleguideCard>
 
-<StyleguideCard title="Avatar sizes" code="&lt;Avatar initials=&quot;DK&quot; size=&quot;xsmall&quot; /&gt;
+<StyleguideCard
+  title="Avatar sizes"
+  code="&lt;Avatar initials=&quot;DK&quot; size=&quot;xsmall&quot; /&gt;
 &lt;Avatar initials=&quot;DK&quot; size=&quot;small&quot; /&gt;
 &lt;Avatar initials=&quot;DK&quot;  /&gt;
 &lt;Avatar initials=&quot;DK&quot; size=&quot;medium&quot; /&gt;
 &lt;Avatar initials=&quot;DK&quot; size=&quot;large&quot; /&gt;
-">
+"
+>
   <Avatar initials="DK" size="xsmall" />
   <Avatar initials="DK" size="small" />
-  <Avatar initials="DK"  />
+  <Avatar initials="DK" />
   <Avatar initials="DK" size="medium" />
   <Avatar initials="DK" size="large" />
 </StyleguideCard>
 
-<StyleguidePropsTable propsTable={propsTable} />
+<StyleguidePropsTable {propsTable} />
+
+<br />
+
+<StyleguideCard style="overflow: hidden" title="Component Details">
+  <ul class="c-bordered-list c-bordered-list--small">
+    <li>
+      <span>Forwarded Events</span>
+      <ul>
+        <li><span>on:click</span></li>
+        <li><span>on:mouseover</span></li>
+        <li><span>on:mouseenter</span></li>
+        <li><span>on:mouseleave</span></li>
+        <li><span>on:focus</span></li>
+      </ul>
+    </li>
+    <li>
+        <span>Slots</span>
+        <ul>
+          <li><span>None</span></li>
+        </ul>
+    </li>
+    <li>
+      <span>Dispatch Events</span>
+      <ul>
+        <li><span>None</span></li>
+      </ul>
+    </li>
+  </ul>
+</StyleguideCard>

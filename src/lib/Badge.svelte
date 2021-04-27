@@ -15,7 +15,6 @@
   
 </script>
 
-
-<span class="c-badge {skin ? 'c-badge--'+skin : 'c-badge--default'}">
+<span on:click on:mouseover on:mouseenter on:mouseleave class="c-badge {skin ? 'c-badge--'+skin : 'c-badge--default'}">
   <slot />
 </span>

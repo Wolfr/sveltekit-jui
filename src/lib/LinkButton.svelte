@@ -1,7 +1,6 @@
 <script>
 
     import ButtonInnerLayout from './ButtonInnerLayout.svelte';
-
     // Extra class
     export let cssClass = null;
 
@@ -27,6 +26,10 @@
 </script>
 
 <a
+  on:click
+  on:mouseover
+  on:mouseenter
+  on:mouseleave
   href="{href}"
   {style}
   class="c-link-button { cssClass } { computedSkinValue }"
