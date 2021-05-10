@@ -17,7 +17,7 @@
   import StyleguideCard from '$lib/StyleguideCard.svelte';
 
   let pageTitle = 'Style guide';
-
+  let categories = ['dev-notes', 'basics', 'objects', 'components']
   let data = [
     {
       prettyName: "CSS architecture",
@@ -199,6 +199,18 @@
     return title;
   }
 
+  function sortByCategories(sortCategories, categories) {
+    let sortedCategories = []
+    sortCategories.forEach((sortCatagory) => {
+      categories.forEach((category) => {
+        if (sortCatagory === category["category"]) {
+          sortedCategories.push(category)
+        }
+      })
+    })
+    return sortedCategories
+  }
+
   // Scroll saving styleguide tree
   import { scrollStyleguideValue } from '$lib/scroll-track-styleguide.js';
 
@@ -252,7 +264,7 @@
     
     <SideMenu>
       <SideMenuItem href="/styleguide/">Intro</SideMenuItem>
-      {#each groups as group}
+      {#each sortByCategories(categories, groups) as group}
         <SideMenuSectionHeader>{group.category}</SideMenuSectionHeader>
         {#each group.values as item}
           <SideMenuItem href="/styleguide/{group.category}/{item.url}">{#if item.prettyName}{item.prettyName}{:else}{prettyTitle(item.url)}{/if}</SideMenuItem>
