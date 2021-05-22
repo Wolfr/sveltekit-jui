@@ -94,6 +94,10 @@
       category: 'components'
     },
     {
+      url: 'color-picker',
+      category: 'components'
+    },
+    {
       url: 'checkbox',
       category: 'components'
     },
@@ -155,6 +159,10 @@
     },
     {
       url: 'spinner',
+      category: 'components'
+    },
+    {
+      url: 'slider',
       category: 'components'
     },
     {

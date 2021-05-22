@@ -6,7 +6,7 @@
   import Icon from '$lib/jui-components/Icon.svelte';
 
   // Trap focus
-  import { trapFocus } from "$lib/trapFocus";
+  import { trapFocus } from "$lib/jui-components/trapFocus";
 
   // Popperaction, thanks Tan li hau!
   // https://www.youtube.com/watch?v=CFj4X0bGOvE&ab_channel=lihautan
@@ -20,7 +20,7 @@
   let activeIndex = 0;
   let activeIndexStr = '';
   $: activeIndexStr = activeIndex.toString();
-  
+
   function handleSelectedState(event) {
      activeIndex = event.detail.text;
   }
@@ -31,7 +31,7 @@
   function pop() {
     showMenu = !showMenu;
   }
-  
+
   // Click outside
   import { clickOutside } from '$lib/jui-components/clickOutside.js';
   function handleClickOutside() {

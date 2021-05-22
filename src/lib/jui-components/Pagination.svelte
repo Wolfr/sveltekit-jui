@@ -1,7 +1,7 @@
 <script>
   import { afterUpdate, createEventDispatcher } from "svelte";
-  import Button from "$lib/Button.svelte";
-  import ButtonToolbar from "$lib/ButtonToolbar.svelte";
+  import Button from "$lib/jui-components/Button.svelte";
+  import ButtonToolbar from "$lib/jui-components/ButtonToolbar.svelte";
 
   export let forwardText = "Next";
   export let previousText = "Previous";

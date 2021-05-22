@@ -11,8 +11,8 @@
   import Button from '$lib/jui-components/Button.svelte';
 
   // Trap focus
-  import { trapFocus } from "$lib/trapFocus";
-  
+  import { trapFocus } from "$lib/jui-components/trapFocus";
+
   export let sameWidth = {
     name: "sameWidth",
     enabled: true,
@@ -27,7 +27,7 @@
       }px`;
     }
   };
-  
+
   const [usePopperElement, usePopperToolip] = createPopperAction();
 
   let placement = 'bottom-start'
@@ -41,7 +41,7 @@
   function handleClickOutside() {
     showMenu = !showMenu;
   }
-  
+
   // Keyboard shortcut
   let trigger = 'Escape';
   function handleKeydown(e) {

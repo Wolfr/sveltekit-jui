@@ -16,8 +16,8 @@
   import { modals } from '$lib/jui-components/modals.js';
 
   // Trap focus
-  import { trapFocus } from "$lib/trapFocus";
-  
+  import { trapFocus } from "$lib/jui-components/trapFocus";
+
   function switchModalVisibility() {
     $modals[0].modalShow = !$modals[0].modalShow;
   }
@@ -29,7 +29,7 @@
   function handleCancelClick() {
     switchModalVisibility();
   }
-  
+
   function handleCloseClick() {
     switchModalVisibility();
   }
@@ -70,7 +70,7 @@
     </Toolbar>
   </div>
   {/if}
-  
+
   <div class="c-modal__body">
       <slot></slot>
   </div>
