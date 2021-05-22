@@ -9,22 +9,22 @@
   import 'mono-icons/iconfont/icons.css';
   import '../scss/main.scss';
   import '../scss/styleguide.scss';
-  
+
   import { pageIndexVisibility } from '$lib/page-index.js';
 
   function toggleVisibility() {
     $pageIndexVisibility[0].pageIndexVisible = !$pageIndexVisibility[0].pageIndexVisible;
   }
 
-  function handleKeydown (evt) { 
-    if (!evt) evt = event; 
+  function handleKeydown (evt) {
+    if (!evt) evt = event;
       // Ctrl+m or Ctrl+b as alternative
-      if (evt.ctrlKey && evt.keyCode === 77 || evt.ctrlKey && evt.keyCode === 66) { 
+      if (evt.ctrlKey && evt.keyCode === 77 || evt.ctrlKey && evt.keyCode === 66) {
         toggleVisibility();
       }
     }
 </script>
-  
+
 <svelte:head>
     <title>JUI</title>
 </svelte:head>
@@ -53,7 +53,7 @@
         <h4 class="c-h6">Page index</h4>
         <p>Press <kbd>Ctrl+m</kbd> to show the page index.</p>
       </div>
-     
+
      <h4>All pages</h4>
 
       <PageTree />
@@ -63,4 +63,5 @@
   {/if}
 
 </div>
+
 

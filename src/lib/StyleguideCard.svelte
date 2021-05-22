@@ -5,7 +5,7 @@
   import StyleguideCardInner from '$lib/StyleguideCardInner.svelte';
 
   export let style = null;
-  export let title = null;
+  export let title = '';
   export let code = null;
   export let description = null;
   export let id = null;
