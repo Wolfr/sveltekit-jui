@@ -73,6 +73,10 @@
       category: 'components'
     },
     {
+      url: 'bar-chart',
+      category: 'components'
+    },
+    {
       url: 'bordered-list',
       category: 'components'
     },
@@ -131,6 +135,10 @@
     },
     {
       url: 'list',
+      category: 'components'
+    },
+    {
+      url: 'line-area-chart',
       category: 'components'
     },
     {
