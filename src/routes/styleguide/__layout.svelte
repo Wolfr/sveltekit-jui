@@ -7,7 +7,7 @@
   import ToolbarTitle from '$lib/ToolbarTitle.svelte';
 
   import Input from '$lib/Input.svelte';
-  
+
   import LinkButton from '$lib/LinkButton.svelte';
 
   import SideMenu from '$lib/SideMenu.svelte';
@@ -188,11 +188,11 @@
     if (group) {
       group.values.push(val)
     } else {
-      curr.push({ category: `${val.category}`, values: [ val ] }) 
+      curr.push({ category: `${val.category}`, values: [ val ] })
     }
     return curr
   }, [])
-  
+
   function prettyTitle(title) {
     title = title.replace(/-/, " ");
     title = title.charAt(0).toUpperCase() + title.slice(1);
@@ -206,8 +206,11 @@
   let itemElement;
   import { onMount } from 'svelte';
   onMount( () => {
-    itemElement.scrollTop = $scrollStyleguideValue;
-    
+    if ($scrollStyleguideValue) {
+      itemElement.scrollTop = $scrollStyleguideValue;
+    } else {
+      itemElement.scrollTop = 0;
+    }
   });
 
   $: {
@@ -215,7 +218,7 @@
       $scrollStyleguideValue = scrollTop;
     }
   }
-  
+
 </script>
 
 <Navbar>
@@ -239,17 +242,17 @@
 
 <div class="c-styleguide-wrapper">
   <div
-    class="c-styleguide-sidebar" 
+    class="c-styleguide-sidebar"
     on:scroll={ ({target}) => scrollTop = target.scrollTop}
     bind:this={itemElement}
   >
-    
+
     <!-- <div style="padding: 0 2.4rem 2.4rem;">
       <Input icon="search" type="search"  placeholder="Enter a search term..." />
     </div> -->
 
     <a href="#detail" class="u-d-sr-accessible">Skip to detail</a>
-    
+
     <SideMenu>
       <SideMenuItem href="/styleguide/">Intro</SideMenuItem>
       {#each groups as group}

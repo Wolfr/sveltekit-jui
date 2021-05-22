@@ -1,12 +1,14 @@
 <script>
 
   let windowInnerWidth;
-  
+
   import { pageIndexVisibility } from '$lib/page-index.js';
 
   function toggleVisibilityIfMobile() {
     if (windowInnerWidth < 768) {
-        $pageIndexVisibility[0].pageIndexVisible = false
+        if ($pageIndexVisibility) {
+            $pageIndexVisibility[0].pageIndexVisible = false
+        }
     }
   }
 
