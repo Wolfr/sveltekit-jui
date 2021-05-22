@@ -123,12 +123,22 @@
 
   table th {
     border-bottom: 0.2rem solid $color-gray-200;
+    @media (prefers-color-scheme: dark) {
+      color: #FFF;
+      border-color: $color-gray-700;
+    }
     font-weight: $g-headings-font-weight;
     text-align: left;
   }
 
+
+
   table td {
     border-bottom: 1px solid $color-gray-100;
+    @media (prefers-color-scheme: dark) {
+      border-color: $color-gray-700;
+    }
+
   }
 
   strong {
