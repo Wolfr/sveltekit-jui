@@ -115,12 +115,12 @@
 
 <svelte:window bind:innerHeight={windowHeight} on:keydown={handleKeydown} />
 
-<div class="color-picker-holder">
-<div class="color-picker-inner"  >
-  <button bind:clientHeight={inputHeight} class="select-color" on:click={(e) => toggleDropdown(e)} class:fake-focus={ddActive}>
+<div class="c-color-picker-holder">
+<div class="c-color-picker-inner">
+  <button bind:clientHeight={inputHeight} class="c-color-picker__select-color" on:click={(e) => toggleDropdown(e)} class:fake-focus={ddActive}>
     <div style="display: flex;">
       <div style="background: {value};" class="color-block"></div>
-      <div class="caret" class:top={top} style="margin-right: .2rem;"></div>
+      <div class="c-color-picker__caret" class:c-color-picker__caret--top={top} style="margin-right: .2rem;"></div>
     </div>
   </button>
   <input type="text" bind:value>
@@ -134,7 +134,7 @@
     {#each val as innerValue, innerIndex}
       <button
           id="{id}-{index}-{innerIndex}"
-          class:active={innerValue == value}
+          class:values-button--active={innerValue == value}
           on:keydown={(e) => keyboardGridNav(e,  innerIndex)}
           style="background: {innerValue};"
           on:click={() => { changeValue(innerValue) }}
@@ -146,91 +146,3 @@
   </div>
   {/if}
 </div>
-
-
-<style>
-
-  .color-picker-holder {
-    position: relative;
-  }
-
-  .color-picker-inner {
-    display: flex;
-    height: 35px;
-  }
-
-  .select-color {
-    border: 1px solid #CCC;
-    padding: 3px;
-    border-radius: .2rem;
-    margin-right: .4rem;
-    background: #FFF;
-    height: 35px;
-  }
-
-  .caret {
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid #555;
-    position: relative;
-    top: 10px;
-    margin-left: 4px;
-  }
-
-  .caret.top {
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 4px solid #555;
-    border-top: none;
-  }
-
-  .active {
-    box-shadow: inset 0 0 0 1px #FFF, 0 0 3px 1px rgba(0,0,0,0.25);
-  }
-
-  .fake-focus, input:focus, button:focus  {
-    outline: 0;
-    box-shadow: 0 0 0 2px #18A0FB;
-    border-color: #18A0FB;
-  }
-
-  input {
-    border: 1px solid #CCC;
-    height: 35px;
-    border-radius: .2rem;
-  }
-
-  .color-block {
-    border-radius: .2rem; width: 24px; height: 24px; line-height: 0; font-size: 0;
-  }
-
-  .values-dropdown {
-    padding: 1rem;
-    position: absolute;
-    z-index: 1;
-    top: 40px;
-    background: white;
-    border: 1px solid #CCC;
-    border-radius: .3rem;
-  }
-
-  .values-dropdown-grid {
-    grid-template-columns: repeat(7, 24px);
-    grid-template-rows: 24px 24px;
-    grid-gap: 10px;
-    display: grid;
-  }
-
-  .values-dropdown.top {
-    top: auto;
-    bottom: 40px;
-  }
-
-  .values-dropdown button {
-    border: none;
-  }
-
-</style>
-

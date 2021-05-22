@@ -170,6 +170,10 @@
       category: 'components'
     },
     {
+      url: 'toggle',
+      category: 'components'
+    },
+    {
       url: 'toolbar',
       category: 'components'
     },

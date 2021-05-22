@@ -1,0 +1,203 @@
+/* ==========================================================================
+    Component: Multi select
+   ========================================================================== */
+
+.c-multiselect {
+  padding: .3rem;
+  border-radius:.3rem;
+
+  // Standard text combo for inputs
+  color: $color-text;
+  @media (prefers-color-scheme: dark) {
+    color: $color-gray-200;
+  }
+
+  // Standard combo bg + border for inputs
+  background: #FFF;
+  @media (prefers-color-scheme: dark) {
+    background: $color-gray-900;
+  }
+  border: .1rem solid $color-gray-300;
+  @media (prefers-color-scheme: dark) {
+    border-color: $color-gray-700;
+  }
+
+  position: relative;
+}
+
+
+.c-multiselect .c-multiselect__tokens {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.c-multiselect .c-multiselect__tokens::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -.1rem;
+  content: "";
+  display: block;
+  height: .2rem;
+  left: 50%;
+  position: absolute;
+  width: 0;
+}
+
+.c-multiselect .c-multiselect__tokens.showOptions::after {
+  width: 100%;
+  left: 0;
+}
+
+.c-multiselect .token {
+  align-items: center;
+
+  background-color: $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-gray-850;
+  }
+  border-radius: 1.25rem;
+  display: flex;
+  margin: .25rem .5rem .25rem 0;
+  padding: .25rem .8rem .25rem .8rem;
+  transition: background-color .17s ease-in-out;
+  white-space: nowrap;
+}
+
+.c-multiselect .token:hover {
+  background-color: $color-gray-150;
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-gray-700;
+  }
+}
+
+.c-multiselect .readonly .token {
+  color: hsl(0, 0%, 40%);
+}
+
+.c-multiselect .token-remove, .remove-all {
+  align-items: center;
+  background-color: $color-gray-200;
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-gray-800;
+
+  }
+  border-radius: 50%;
+  color: $color-gray-800;
+  @media (prefers-color-scheme: dark) {
+    color: $color-gray-200;
+  }
+  display: flex;
+  justify-content: center;
+  margin-left: .25rem;
+  min-width: 1.25rem;
+  min-width: 2rem;
+}
+
+
+
+.c-multiselect .token-remove:hover, .remove-all:hover {
+  background-color: $color-gray-400;
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-gray-700;
+  }
+  cursor: pointer;
+}
+
+.c-multiselect .c-multiselect__actions {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  min-width: 15rem;
+}
+
+.c-multiselect input {
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  color: #FFF;
+  appearance: none;
+  -webkit-appearance: none;
+
+  background: transparent;
+}
+
+.c-multiselect .dropdown-arrow path {
+  fill: $color-gray-800;
+  @media (prefers-color-scheme: dark) {
+    fill: $color-gray-400;
+  }
+}
+
+.c-multiselect:hover .dropdown-arrow path {
+  fill: $color-gray-800;
+  @media (prefers-color-scheme: dark) {
+    fill: $color-gray-400;
+  }
+}
+
+.c-multiselect .icon-clear path {
+  fill: $color-gray-800;
+  @media (prefers-color-scheme: dark) {
+    fill: $color-gray-400;
+  }
+}
+
+.c-multiselect .options {
+  box-shadow: 0px 2px 4px rgba(0,0,0,.1), 0px -2px 4px rgba(0,0,0,.1);
+  left: 0;
+  list-style: none;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  max-height: 45vh;
+
+  overflow: auto;
+  padding-inline-start: 0;
+  position: absolute;
+  top: calc(100% + 1px);
+  width: 100%;
+  z-index: 30;
+}
+
+.c-multiselect li {
+  background-color: white;
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-gray-850;
+  }
+  cursor: pointer;
+  padding: .8rem;
+}
+
+.c-multiselect li:last-child {
+  border-bottom-left-radius: .2rem;
+  border-bottom-right-radius: .2rem;
+}
+
+.c-multiselect li:not(.selected):hover {
+  background-color: $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-gray-900;
+  }
+}
+
+.c-multiselect li.selected {
+  background-color: $color-gray-100;
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-gray-800;
+  }
+  color: $color-gray-700;
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
+}
+
+.c-multiselect li.active {
+  background-color: $color-gray-150;
+  @media (prefers-color-scheme: dark) {
+    background-color: $color-gray-700;
+  }
+}
