@@ -1,3 +1,5 @@
+@use "sass:math";
+
 /* ==========================================================================
   Toolbar
   ---
@@ -83,7 +85,7 @@ $c-toolbar-main-border-color: $color-gray-200 !default;
   flex: 1 0 auto;
   align-items: center;
   .c-toolbar__item {
-    margin: 0 $c-toolbar-item-spacing/2;
+    margin: 0 math.div($c-toolbar-item-spacing, 2);
     &:only-child {
       margin: 0;
     }

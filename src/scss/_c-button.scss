@@ -1,3 +1,5 @@
+@use "sass:math";
+
 /* ==========================================================================
   Buttons
   ---
@@ -46,7 +48,7 @@ $c-button-icon-spacing-small: 0 !default;
   cursor: pointer;
   vertical-align: middle;
   border-radius: $c-button-border-radius;
-  padding: (($c-button-height - $c-button-line-height) / 2) $c-button-padding-horizontal;
+  padding: math.div($c-button-height - $c-button-line-height, 2) $c-button-padding-horizontal;
   font-size: $c-button-font-size;
   text-align: center;
   display: inline-flex;
@@ -121,7 +123,7 @@ button.c-button {
 }
 
 .c-button--small.c-button--icon {
-  padding: ($c-button-height-small - $c-button-line-height-small)/2;
+  padding: math.div($c-button-height-small - $c-button-line-height-small, 2);
 }
 
 /* Block button
