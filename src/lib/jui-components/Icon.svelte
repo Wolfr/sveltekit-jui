@@ -1,6 +1,6 @@
 <script>
 
-  import SvgIcon from '$lib/SvgIconGenerated.svelte';
+  import SvgIcon from '$lib/jui-components/SvgIconGenerated.svelte';
 
   export let type = "icon-font";
   export let icon;

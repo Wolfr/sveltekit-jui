@@ -4,11 +4,11 @@
   export let title = null;
   export let description = null;
 
-  import PillList from '$lib/PillList.svelte';
-  import PillListItem from '$lib/PillListItem.svelte';
-  import Pill from '$lib/Pill.svelte';
+  import PillList from '$lib/jui-components/PillList.svelte';
+  import PillListItem from '$lib/jui-components/PillListItem.svelte';
+  import Pill from '$lib/jui-components/Pill.svelte';
   
-  import ImagePlaceholder from '$lib/ImagePlaceholder.svelte';
+  import ImagePlaceholder from '$lib/jui-components/ImagePlaceholder.svelte';
 
 </script>
 

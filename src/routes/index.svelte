@@ -1,6 +1,6 @@
 <script>
-  import RichContent from '$lib/RichContent.svelte';
-  import Button from '$lib/Button.svelte';
+  import RichContent from '$lib/jui-components/RichContent.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
 </script>
 
 <slot />

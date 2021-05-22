@@ -1,20 +1,20 @@
 <script>
 
-  import Navbar from '$lib/Navbar.svelte';
-  import Toolbar from '$lib/Toolbar.svelte';
-  import ToolbarGroup from '$lib/ToolbarGroup.svelte';
-  import ToolbarItem from '$lib/ToolbarItem.svelte';
-  import ToolbarTitle from '$lib/ToolbarTitle.svelte';
+  import Navbar from '$lib/jui-components/Navbar.svelte';
+  import Toolbar from '$lib/jui-components/Toolbar.svelte';
+  import ToolbarGroup from '$lib/jui-components/ToolbarGroup.svelte';
+  import ToolbarItem from '$lib/jui-components/ToolbarItem.svelte';
+  import ToolbarTitle from '$lib/jui-components/ToolbarTitle.svelte';
 
-  import Input from '$lib/Input.svelte';
+  import Input from '$lib/jui-components/Input.svelte';
 
-  import LinkButton from '$lib/LinkButton.svelte';
+  import LinkButton from '$lib/jui-components/LinkButton.svelte';
 
-  import SideMenu from '$lib/SideMenu.svelte';
-  import SideMenuItem from '$lib/SideMenuItem.svelte';
-  import SideMenuSectionHeader from '$lib/SideMenuSectionHeader.svelte';
+  import SideMenu from '$lib/jui-components/SideMenu.svelte';
+  import SideMenuItem from '$lib/jui-components/SideMenuItem.svelte';
+  import SideMenuSectionHeader from '$lib/jui-components/SideMenuSectionHeader.svelte';
 
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
   let pageTitle = 'Style guide';
 
@@ -200,7 +200,7 @@
   }
 
   // Scroll saving styleguide tree
-  import { scrollStyleguideValue } from '$lib/scroll-track-styleguide.js';
+  import { scrollStyleguideValue } from '$lib/jui-components/scroll-track-styleguide.js';
 
   let scrollTop = 0;
   let itemElement;

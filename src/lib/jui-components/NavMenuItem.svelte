@@ -3,7 +3,7 @@
   export let href = null;
   export let icon = null;
   
-  import Icon from '$lib/Icon.svelte';
+  import Icon from '$lib/jui-components/Icon.svelte';
 </script>
 
 <li class="c-nav-menu__item" class:c-nav-menu__item--destructive={destructive}>

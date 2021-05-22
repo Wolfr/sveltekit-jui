@@ -1,11 +1,11 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
+  import StyleguidePropsTable from '$lib/jui-components/StyleguidePropsTable.svelte';
 
   let pageTitle = 'Button';
   
-  import Button from '$lib/Button.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
 
   let propsTable = [
     {

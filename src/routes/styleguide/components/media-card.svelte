@@ -1,12 +1,12 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
   let pageTitle = 'Media Card';
   
-  import Card from '$lib/Card.svelte';
-  import MediaCard from '$lib/MediaCard.svelte';
-  import Button from '$lib/Button.svelte';
+  import Card from '$lib/jui-components/Card.svelte';
+  import MediaCard from '$lib/jui-components/MediaCard.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
 
 </script>
 

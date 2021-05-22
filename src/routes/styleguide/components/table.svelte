@@ -1,13 +1,13 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
   let pageTitle = 'Table';
 
-  import NavMenu from '$lib/NavMenu.svelte';
-  import NavMenuItem from '$lib/NavMenuItem.svelte';
-  import NavMenuDivider from '$lib/NavMenuDivider.svelte';
+  import NavMenu from '$lib/jui-components/NavMenu.svelte';
+  import NavMenuItem from '$lib/jui-components/NavMenuItem.svelte';
+  import NavMenuDivider from '$lib/jui-components/NavMenuDivider.svelte';
   
-  import Checkbox from '$lib/Checkbox.svelte';
+  import Checkbox from '$lib/jui-components/Checkbox.svelte';
 
 </script>
 

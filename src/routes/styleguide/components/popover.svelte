@@ -1,7 +1,7 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import Button from '$lib/Button.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
 
   let pageTitle = 'Popover';
 

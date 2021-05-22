@@ -1,11 +1,11 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
   let pageTitle = 'List View';
 
-  import List from '$lib/List.svelte';
-  import ListItem from '$lib/ListItem.svelte';
+  import List from '$lib/jui-components/List.svelte';
+  import ListItem from '$lib/jui-components/ListItem.svelte';
 </script>
 
 

@@ -1,9 +1,9 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
+  import StyleguidePropsTable from '$lib/jui-components/StyleguidePropsTable.svelte';
   
-  import Navbar from '$lib/Navbar.svelte';
+  import Navbar from '$lib/jui-components/Navbar.svelte';
 
   let pageTitle = 'Navbar';
 

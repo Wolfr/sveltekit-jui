@@ -4,16 +4,16 @@
   export let title = "Modal window";
   export let headerless;
 
-  import Button from '$lib/Button.svelte';
-  import ButtonToolbar from '$lib/ButtonToolbar.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import ButtonToolbar from '$lib/jui-components/ButtonToolbar.svelte';
 
-  import Toolbar from '$lib/Toolbar.svelte';
-  import ToolbarGroup from '$lib/ToolbarGroup.svelte';
-  import ToolbarItem from '$lib/ToolbarItem.svelte';
-  import ToolbarTitle from '$lib/ToolbarTitle.svelte';
+  import Toolbar from '$lib/jui-components/Toolbar.svelte';
+  import ToolbarGroup from '$lib/jui-components/ToolbarGroup.svelte';
+  import ToolbarItem from '$lib/jui-components/ToolbarItem.svelte';
+  import ToolbarTitle from '$lib/jui-components/ToolbarTitle.svelte';
 
-	import { clickOutside } from '$lib/clickOutside.js';
-  import { modals } from '$lib/modals.js';
+	import { clickOutside } from '$lib/jui-components/clickOutside.js';
+  import { modals } from '$lib/jui-components/modals.js';
 
   // Trap focus
   import { trapFocus } from "$lib/trapFocus";

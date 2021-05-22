@@ -1,12 +1,12 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
   let pageTitle = 'Side menu';
 
-  import SideMenu from '$lib/SideMenu.svelte';
-  import SideMenuItem from '$lib/SideMenuItem.svelte';
-  import SideMenuSectionHeader from '$lib/SideMenuSectionHeader.svelte';
+  import SideMenu from '$lib/jui-components/SideMenu.svelte';
+  import SideMenuItem from '$lib/jui-components/SideMenuItem.svelte';
+  import SideMenuSectionHeader from '$lib/jui-components/SideMenuSectionHeader.svelte';
 
 </script>
 

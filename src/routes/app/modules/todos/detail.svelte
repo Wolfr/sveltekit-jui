@@ -1,23 +1,23 @@
 
 <script>
-  import Alert from '$lib/Alert.svelte';
-  import Badge from '$lib/Badge.svelte';
-  import Button from '$lib/Button.svelte';
-  import Card from '$lib/Card.svelte';
-  import Input from '$lib/Input.svelte';
-  import Navbar from '$lib/Navbar.svelte';
+  import Alert from '$lib/jui-components/Alert.svelte';
+  import Badge from '$lib/jui-components/Badge.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import Card from '$lib/jui-components/Card.svelte';
+  import Input from '$lib/jui-components/Input.svelte';
+  import Navbar from '$lib/jui-components/Navbar.svelte';
   
-  import FormGroup from '$lib/FormGroup.svelte';
-  import FormGroupLayout from '$lib/FormGroupLayout.svelte';
+  import FormGroup from '$lib/jui-components/FormGroup.svelte';
+  import FormGroupLayout from '$lib/jui-components/FormGroupLayout.svelte';
   
   // Specific
-  import TodoItem from '$lib/TodoItem.svelte';
+  import TodoItem from '$lib/jui-components/TodoItem.svelte';
 
   // Toolbar
-  import Toolbar from '$lib/Toolbar.svelte';
-  import ToolbarGroup from '$lib/ToolbarGroup.svelte';
-  import ToolbarItem from '$lib/ToolbarItem.svelte';
-  import ToolbarTitle from '$lib/ToolbarTitle.svelte';
+  import Toolbar from '$lib/jui-components/Toolbar.svelte';
+  import ToolbarGroup from '$lib/jui-components/ToolbarGroup.svelte';
+  import ToolbarItem from '$lib/jui-components/ToolbarItem.svelte';
+  import ToolbarTitle from '$lib/jui-components/ToolbarTitle.svelte';
 
   // Todos should become a store so it can persist a bit more
   let todos = [

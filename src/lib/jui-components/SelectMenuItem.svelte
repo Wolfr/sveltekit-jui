@@ -2,7 +2,7 @@
   import { createEventDispatcher } from 'svelte';
   const dispatch = createEventDispatcher();
 
-  import Icon from '$lib/Icon.svelte';
+  import Icon from '$lib/jui-components/Icon.svelte';
   export let selected;
   export let index;
 

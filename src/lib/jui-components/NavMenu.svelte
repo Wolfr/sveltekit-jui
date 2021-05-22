@@ -4,11 +4,11 @@
 
   import { v4 as uuid } from '@lukeed/uuid';
 
-  import Icon from '$lib/Icon.svelte';
+  import Icon from '$lib/jui-components/Icon.svelte';
 
-  import createPopperAction from '$lib/usePopper.js';
-  import { clickOutside } from '$lib/clickOutside.js';
-  import Button from '$lib/Button.svelte';
+  import createPopperAction from '$lib/jui-components/usePopper.js';
+  import { clickOutside } from '$lib/jui-components/clickOutside.js';
+  import Button from '$lib/jui-components/Button.svelte';
 
   // Trap focus
   import { trapFocus } from "$lib/trapFocus";

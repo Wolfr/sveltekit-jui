@@ -2,15 +2,15 @@
 
   import { navigating } from '$app/stores';
 
-  import Spinner from '$lib/Spinner.svelte';
-  import Button from '$lib/Button.svelte';
-  import PageTree from '$lib/PageTree.svelte';
+  import Spinner from '$lib/jui-components/Spinner.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import PageTree from '$lib/jui-components/PageTree.svelte';
 
   import 'mono-icons/iconfont/icons.css';
   import '../scss/main.scss';
   import '../scss/styleguide.scss';
 
-  import { pageIndexVisibility } from '$lib/page-index.js';
+  import { pageIndexVisibility } from '$lib/jui-components/page-index.js';
 
   function toggleVisibility() {
     $pageIndexVisibility[0].pageIndexVisible = !$pageIndexVisibility[0].pageIndexVisible;

@@ -1,10 +1,10 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
   let pageTitle = 'Spinner';
   
-  import Spinner from '$lib/Spinner.svelte';
+  import Spinner from '$lib/jui-components/Spinner.svelte';
 
 </script>
 

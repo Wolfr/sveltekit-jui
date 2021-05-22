@@ -2,7 +2,7 @@
 
   let windowInnerWidth;
 
-  import { pageIndexVisibility } from '$lib/page-index.js';
+  import { pageIndexVisibility } from '$lib/jui-components/page-index.js';
 
   function toggleVisibilityIfMobile() {
     if (windowInnerWidth < 768) {

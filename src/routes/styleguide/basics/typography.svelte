@@ -1,7 +1,7 @@
 <script>
 
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import RichContent from '$lib/RichContent.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
+  import RichContent from '$lib/jui-components/RichContent.svelte';
   
   let pageTitle = 'Typography';
 

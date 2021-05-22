@@ -1,6 +1,6 @@
 <script>
-  import Button from '$lib/Button.svelte';
-  import FormGroup from '$lib/FormGroup.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import FormGroup from '$lib/jui-components/FormGroup.svelte';
 </script>
 
 <div class="c-frame">

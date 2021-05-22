@@ -1,6 +1,6 @@
 <script>
-  import Button from '$lib/Button.svelte';
-  import Checkbox from '$lib/Checkbox.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import Checkbox from '$lib/jui-components/Checkbox.svelte';
   
   export let todo;
   

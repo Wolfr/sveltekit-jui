@@ -1,15 +1,15 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import RichContent from '$lib/RichContent.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
+  import RichContent from '$lib/jui-components/RichContent.svelte';
 
-  import LinkButton from '$lib/LinkButton.svelte';
-  import Button from '$lib/Button.svelte';
+  import LinkButton from '$lib/jui-components/LinkButton.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
 
-  import Toolbar from '$lib/Toolbar.svelte';
-  import ToolbarGroup from '$lib/ToolbarGroup.svelte';
-  import ToolbarItem from '$lib/ToolbarItem.svelte';
-  import ToolbarTitle from '$lib/ToolbarTitle.svelte';
+  import Toolbar from '$lib/jui-components/Toolbar.svelte';
+  import ToolbarGroup from '$lib/jui-components/ToolbarGroup.svelte';
+  import ToolbarItem from '$lib/jui-components/ToolbarItem.svelte';
+  import ToolbarTitle from '$lib/jui-components/ToolbarTitle.svelte';
 
   let pageTitle = 'Toolbar';
 

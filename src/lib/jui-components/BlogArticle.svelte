@@ -3,7 +3,7 @@
   export let date;
   export let content;
   export let slug;
-  import RichContent from '$lib/RichContent.svelte';
+  import RichContent from '$lib/jui-components/RichContent.svelte';
 
 </script>
 

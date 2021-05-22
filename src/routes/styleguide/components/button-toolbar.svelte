@@ -1,13 +1,13 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
   let pageTitle = 'Button Toolbar';
   
-  import Button from '$lib/Button.svelte';
-  import ButtonToolbar from '$lib/ButtonToolbar.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import ButtonToolbar from '$lib/jui-components/ButtonToolbar.svelte';
 
-  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
+  import StyleguidePropsTable from '$lib/jui-components/StyleguidePropsTable.svelte';
 
   let propsTable = [
     {

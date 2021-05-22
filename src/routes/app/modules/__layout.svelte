@@ -1,12 +1,12 @@
 <script>
-  import Toolbar from '$lib/Toolbar.svelte';
-  import ToolbarGroup from '$lib/ToolbarGroup.svelte';
-  import ToolbarItem from '$lib/ToolbarItem.svelte';
-  import ToolbarTitle from '$lib/ToolbarTitle.svelte';
-  import Navbar from '$lib/Navbar.svelte';
-  import Nav from '$lib/Nav.svelte';
-  import NavItem from '$lib/NavItem.svelte';
-  import Avatar from '$lib/Avatar.svelte';  
+  import Toolbar from '$lib/jui-components/Toolbar.svelte';
+  import ToolbarGroup from '$lib/jui-components/ToolbarGroup.svelte';
+  import ToolbarItem from '$lib/jui-components/ToolbarItem.svelte';
+  import ToolbarTitle from '$lib/jui-components/ToolbarTitle.svelte';
+  import Navbar from '$lib/jui-components/Navbar.svelte';
+  import Nav from '$lib/jui-components/Nav.svelte';
+  import NavItem from '$lib/jui-components/NavItem.svelte';
+  import Avatar from '$lib/jui-components/Avatar.svelte';  
   
 </script>
 

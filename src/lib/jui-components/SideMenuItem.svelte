@@ -1,5 +1,5 @@
 <script>
-  import Icon from '$lib/Icon.svelte';
+  import Icon from '$lib/jui-components/Icon.svelte';
 
   export let href;
   export let icon = null;

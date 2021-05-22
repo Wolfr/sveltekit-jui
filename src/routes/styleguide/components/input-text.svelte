@@ -1,10 +1,10 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
   let pageTitle = 'Input (text)';
   
-  import Input from '$lib/Input.svelte';
+  import Input from '$lib/jui-components/Input.svelte';
 </script>
 
 

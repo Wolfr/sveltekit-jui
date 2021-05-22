@@ -4,7 +4,7 @@
   export let placeholder = null;
   export let autocomplete = null;
   export let icon = null;
-  import Icon from '$lib/Icon.svelte';
+  import Icon from '$lib/jui-components/Icon.svelte';
 
 </script>
 

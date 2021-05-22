@@ -1,11 +1,11 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
   let pageTitle = 'Pagination';
   
-  import Pagination from '$lib/Pagination.svelte';
-  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
+  import Pagination from '$lib/jui-components/Pagination.svelte';
+  import StyleguidePropsTable from '$lib/jui-components/StyleguidePropsTable.svelte';
 
   let propsTable = [
     {

@@ -1,15 +1,15 @@
 <script>
-  import Alert from '$lib/Alert.svelte';
-  import Badge from '$lib/Badge.svelte';
-  import Button from '$lib/Button.svelte';
-  import Card from '$lib/Card.svelte';
-  import Input from '$lib/Input.svelte';
-  import Pagination from '$lib/Pagination.svelte';
-  import Navbar from '$lib/Navbar.svelte';
-  import TodoItem from '$lib/TodoItem.svelte';
-  import Toolbar from '$lib/Toolbar.svelte';
-  import ToolbarGroup from '$lib/ToolbarGroup.svelte';
-  import ToolbarItem from '$lib/ToolbarItem.svelte';
+  import Alert from '$lib/jui-components/Alert.svelte';
+  import Badge from '$lib/jui-components/Badge.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import Card from '$lib/jui-components/Card.svelte';
+  import Input from '$lib/jui-components/Input.svelte';
+  import Pagination from '$lib/jui-components/Pagination.svelte';
+  import Navbar from '$lib/jui-components/Navbar.svelte';
+  import TodoItem from '$lib/jui-components/TodoItem.svelte';
+  import Toolbar from '$lib/jui-components/Toolbar.svelte';
+  import ToolbarGroup from '$lib/jui-components/ToolbarGroup.svelte';
+  import ToolbarItem from '$lib/jui-components/ToolbarItem.svelte';
 </script>
 
 <div style="flex: 0 0 calc(100% - 11.2rem); overflow: scroll;">

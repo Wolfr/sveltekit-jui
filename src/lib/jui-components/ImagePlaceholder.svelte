@@ -1,7 +1,7 @@
 <script>
   export let alt;
   export let aspect = "16:9"
-  import Icon from '$lib/Icon.svelte';
+  import Icon from '$lib/jui-components/Icon.svelte';
 </script>
 
 <div

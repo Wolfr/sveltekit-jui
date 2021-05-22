@@ -1,6 +1,6 @@
 <script>
-  import Button from '$lib/Button.svelte';
-  import BlogArticle from '$lib/BlogArticle.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import BlogArticle from '$lib/jui-components/BlogArticle.svelte';
 </script>
 
 <svelte:head>

@@ -1,19 +1,19 @@
 <script>
-  import Button from '$lib/Button.svelte';
-  import Alert from '$lib/Alert.svelte';
-  import Icon from '$lib/Icon.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import Alert from '$lib/jui-components/Alert.svelte';
+  import Icon from '$lib/jui-components/Icon.svelte';
   
-  import SelectMenu from '$lib/SelectMenu.svelte';
-  import SelectMenuItem from '$lib/SelectMenuItem.svelte';
+  import SelectMenu from '$lib/jui-components/SelectMenu.svelte';
+  import SelectMenuItem from '$lib/jui-components/SelectMenuItem.svelte';
   
   
-  import PopoverContainer from '$lib/PopoverContainer.svelte';
-  import Popover from '$lib/Popover.svelte';
+  import PopoverContainer from '$lib/jui-components/PopoverContainer.svelte';
+  import Popover from '$lib/jui-components/Popover.svelte';
 
   
-  import NavMenu from '$lib/NavMenu.svelte';
-  import NavMenuItem from '$lib/NavMenuItem.svelte';
-  import NavMenuDivider from '$lib/NavMenuDivider.svelte';
+  import NavMenu from '$lib/jui-components/NavMenu.svelte';
+  import NavMenuItem from '$lib/jui-components/NavMenuItem.svelte';
+  import NavMenuDivider from '$lib/jui-components/NavMenuDivider.svelte';
 
 </script>
 

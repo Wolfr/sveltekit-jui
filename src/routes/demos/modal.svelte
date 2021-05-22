@@ -1,22 +1,22 @@
 <script>
 
-  import Alert from '$lib/Alert.svelte';
+  import Alert from '$lib/jui-components/Alert.svelte';
   
-  import Button from '$lib/Button.svelte';
-  import ButtonToolbar from '$lib/ButtonToolbar.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import ButtonToolbar from '$lib/jui-components/ButtonToolbar.svelte';
   
-  import Toolbar from '$lib/Toolbar.svelte';
-  import ToolbarGroup from '$lib/ToolbarGroup.svelte';
-  import ToolbarItem from '$lib/ToolbarItem.svelte';
-  import ToolbarTitle from '$lib/ToolbarTitle.svelte';
+  import Toolbar from '$lib/jui-components/Toolbar.svelte';
+  import ToolbarGroup from '$lib/jui-components/ToolbarGroup.svelte';
+  import ToolbarItem from '$lib/jui-components/ToolbarItem.svelte';
+  import ToolbarTitle from '$lib/jui-components/ToolbarTitle.svelte';
 
-  import FormGroupLayout from '$lib/FormGroupLayout.svelte';
-  import FormGroup from '$lib/FormGroup.svelte';
-  import Input from '$lib/Input.svelte';
+  import FormGroupLayout from '$lib/jui-components/FormGroupLayout.svelte';
+  import FormGroup from '$lib/jui-components/FormGroup.svelte';
+  import Input from '$lib/jui-components/Input.svelte';
 
   
-  import Modal from '$lib/Modal.svelte';
-  import { modals } from '$lib/modals.js';
+  import Modal from '$lib/jui-components/Modal.svelte';
+  import { modals } from '$lib/jui-components/modals.js';
 
   function activateModal() {
     $modals[0].modalShow = !$modals[0].modalShow;

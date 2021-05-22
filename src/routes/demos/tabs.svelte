@@ -1,6 +1,6 @@
 <script>
 
-  import Tabs from '$lib/Tabs.svelte';
+  import Tabs from '$lib/jui-components/Tabs.svelte';
 
   let tabItems = [
       { label: "Label", value: "1" },

@@ -1,7 +1,7 @@
 <script>
 
-  import Nav from '$lib/Nav.svelte';
-  import NavItem from '$lib/NavItem.svelte';
+  import Nav from '$lib/jui-components/Nav.svelte';
+  import NavItem from '$lib/jui-components/NavItem.svelte';
 
 </script>
 

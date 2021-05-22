@@ -1,5 +1,5 @@
 <script>
-  import RichContent from '$lib/RichContent.svelte';
+  import RichContent from '$lib/jui-components/RichContent.svelte';
 
   export let title;
   export let content = null;

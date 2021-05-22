@@ -1,11 +1,11 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import Modal from '$lib/Modal.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
+  import Modal from '$lib/jui-components/Modal.svelte';
 
   let pageTitle = 'Modal';
 
-  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
+  import StyleguidePropsTable from '$lib/jui-components/StyleguidePropsTable.svelte';
 
   let propsTable = [
     {

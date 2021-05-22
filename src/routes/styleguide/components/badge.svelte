@@ -1,12 +1,12 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
   let pageTitle = 'Badge';
   
-  import Badge from '$lib/Badge.svelte';
+  import Badge from '$lib/jui-components/Badge.svelte';
 
-  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
+  import StyleguidePropsTable from '$lib/jui-components/StyleguidePropsTable.svelte';
 
   let propsTable = [
     {

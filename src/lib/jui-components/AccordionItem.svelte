@@ -8,7 +8,7 @@
   
   export let activatedOnce = 0;
 
-  import Button from '$lib/Button.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
 
   function toggle() {
     activatedOnce = 1;

@@ -1,17 +1,17 @@
 <script>
-	  import Panel from '$lib/Panel.svelte';
-    import PanelHeader from '$lib/PanelHeader.svelte';
-    import PanelBody from '$lib/PanelBody.svelte';
+	  import Panel from '$lib/jui-components/Panel.svelte';
+    import PanelHeader from '$lib/jui-components/PanelHeader.svelte';
+    import PanelBody from '$lib/jui-components/PanelBody.svelte';
 
-    import FormGroupLayout from '$lib/FormGroupLayout.svelte';
-    import FormGroup from '$lib/FormGroup.svelte';
+    import FormGroupLayout from '$lib/jui-components/FormGroupLayout.svelte';
+    import FormGroup from '$lib/jui-components/FormGroup.svelte';
 
-    import SideMenu from '$lib/SideMenu.svelte';
-    import SideMenuItem from '$lib/SideMenuItem.svelte';
+    import SideMenu from '$lib/jui-components/SideMenu.svelte';
+    import SideMenuItem from '$lib/jui-components/SideMenuItem.svelte';
 
-    import Checkbox from '$lib/Checkbox.svelte';
-    import Radio from '$lib/Radio.svelte';
-    import RadioGroup from '$lib/RadioGroup.svelte';
+    import Checkbox from '$lib/jui-components/Checkbox.svelte';
+    import Radio from '$lib/jui-components/Radio.svelte';
+    import RadioGroup from '$lib/jui-components/RadioGroup.svelte';
     
     let radioOptions = [{ name: 'EU'}, { name: 'Outside EU'}];
 

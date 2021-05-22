@@ -1,12 +1,12 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
   let pageTitle = 'Panel';
 
-  import Panel from '$lib/Panel.svelte';
-  import PanelHeader from '$lib/PanelHeader.svelte';
-  import PanelBody from '$lib/PanelBody.svelte';
+  import Panel from '$lib/jui-components/Panel.svelte';
+  import PanelHeader from '$lib/jui-components/PanelHeader.svelte';
+  import PanelBody from '$lib/jui-components/PanelBody.svelte';
 
 </script>
 

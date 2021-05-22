@@ -1,11 +1,11 @@
 <script>
-  import Alert from '$lib/Alert.svelte';
-  import Button from '$lib/Button.svelte';
-  import LinkButton from '$lib/LinkButton.svelte';
+  import Alert from '$lib/jui-components/Alert.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import LinkButton from '$lib/jui-components/LinkButton.svelte';
 
-  import Input from '$lib/Input.svelte';
-  import FormGroup from '$lib/FormGroup.svelte';
-  import FormGroupLayout from '$lib/FormGroupLayout.svelte';
+  import Input from '$lib/jui-components/Input.svelte';
+  import FormGroup from '$lib/jui-components/FormGroup.svelte';
+  import FormGroupLayout from '$lib/jui-components/FormGroupLayout.svelte';
   
   let success = false;
   let emailFieldBlankError = false;

@@ -3,7 +3,7 @@
   export let cssClass = null;
   export let options = [{name: "Option 1"}];
 
-  import Icon from '$lib/Icon.svelte';
+  import Icon from '$lib/jui-components/Icon.svelte';
 
   // Trap focus
   import { trapFocus } from "$lib/trapFocus";
@@ -11,11 +11,11 @@
   // Popperaction, thanks Tan li hau!
   // https://www.youtube.com/watch?v=CFj4X0bGOvE&ab_channel=lihautan
 
-  import createPopperAction from '$lib/usePopper.js';
+  import createPopperAction from '$lib/jui-components/usePopper.js';
   const [usePopperElement, usePopperToolip] = createPopperAction();
   let placement = 'bottom-start'
 
-  import SelectMenuItem from '$lib/SelectMenuItem.svelte';
+  import SelectMenuItem from '$lib/jui-components/SelectMenuItem.svelte';
   // Selected state handling with children (using event dispatching)
   let activeIndex = 0;
   let activeIndexStr = '';
@@ -33,7 +33,7 @@
   }
   
   // Click outside
-  import { clickOutside } from '$lib/clickOutside.js';
+  import { clickOutside } from '$lib/jui-components/clickOutside.js';
   function handleClickOutside() {
     showMenu = !showMenu;
   }

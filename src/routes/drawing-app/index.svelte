@@ -1,27 +1,27 @@
 <script>
 
   import Globe from './MyGlobe.svelte';
-  import Icon from '$lib/Icon.svelte';
+  import Icon from '$lib/jui-components/Icon.svelte';
 
-  import Button from '$lib/Button.svelte';
-  import ButtonToolbar from '$lib/ButtonToolbar.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
+  import ButtonToolbar from '$lib/jui-components/ButtonToolbar.svelte';
 
-  import Checkbox from '$lib/Checkbox.svelte';
+  import Checkbox from '$lib/jui-components/Checkbox.svelte';
 
-  import Navbar from '$lib/Navbar.svelte';
+  import Navbar from '$lib/jui-components/Navbar.svelte';
   
-  import Toolbar from '$lib/Toolbar.svelte';
-  import ToolbarGroup from '$lib/ToolbarGroup.svelte';
-  import ToolbarItem from '$lib/ToolbarItem.svelte';
-  import ToolbarTitle from '$lib/ToolbarTitle.svelte';
+  import Toolbar from '$lib/jui-components/Toolbar.svelte';
+  import ToolbarGroup from '$lib/jui-components/ToolbarGroup.svelte';
+  import ToolbarItem from '$lib/jui-components/ToolbarItem.svelte';
+  import ToolbarTitle from '$lib/jui-components/ToolbarTitle.svelte';
 
-  import FormGroupLayout from '$lib/FormGroupLayout.svelte';
+  import FormGroupLayout from '$lib/jui-components/FormGroupLayout.svelte';
   
   // Form controls
-  import Input from '$lib/Input.svelte';
-  import Slider from '$lib/Slider.svelte';
-  import SelectMenu from '$lib/SelectMenu.svelte';
-  import Toggle from '$lib/Toggle.svelte';
+  import Input from '$lib/jui-components/Input.svelte';
+  import Slider from '$lib/jui-components/Slider.svelte';
+  import SelectMenu from '$lib/jui-components/SelectMenu.svelte';
+  import Toggle from '$lib/jui-components/Toggle.svelte';
 
   let optionSet1 = [
     {

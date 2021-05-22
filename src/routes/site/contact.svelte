@@ -1,9 +1,9 @@
 <script>
-  import FormGroupLayout from '$lib/FormGroupLayout.svelte';
-  import FormGroup from '$lib/FormGroup.svelte';
+  import FormGroupLayout from '$lib/jui-components/FormGroupLayout.svelte';
+  import FormGroup from '$lib/jui-components/FormGroup.svelte';
 
-  import Input from '$lib/Input.svelte';
-  import Button from '$lib/Button.svelte';
+  import Input from '$lib/jui-components/Input.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
 
 </script>
 

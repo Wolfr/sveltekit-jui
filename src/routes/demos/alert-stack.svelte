@@ -1,12 +1,12 @@
 <script>
   import { fly } from 'svelte/transition';
 
-  import AlertStack from '$lib/AlertStack.svelte';
-  import Alert from '$lib/Alert.svelte';
+  import AlertStack from '$lib/jui-components/AlertStack.svelte';
+  import Alert from '$lib/jui-components/Alert.svelte';
 
-  import Button from '$lib/Button.svelte';
+  import Button from '$lib/jui-components/Button.svelte';
 
-  import { alerts } from '$lib/alert-stack.js';
+  import { alerts } from '$lib/jui-components/alert-stack.js';
 
   let warningAlertValue = { type: "warning", content: "This is a warning!", visible: true}
   let successAlertValue = { type: "success", content: "Done!", visible: true}

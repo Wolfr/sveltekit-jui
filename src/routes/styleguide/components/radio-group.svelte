@@ -1,10 +1,10 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
   let pageTitle = 'Radio group';
 
-  import RadioGroup from '$lib/RadioGroup.svelte';
+  import RadioGroup from '$lib/jui-components/RadioGroup.svelte';
 
   let optionSet1 = [
     {

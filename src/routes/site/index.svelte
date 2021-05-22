@@ -1,5 +1,5 @@
 <script>
-  import MediaCard from '$lib/MediaCard.svelte';
+  import MediaCard from '$lib/jui-components/MediaCard.svelte';
 </script>
 
 <svelte:head>

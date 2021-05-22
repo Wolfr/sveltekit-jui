@@ -1,13 +1,13 @@
 <script>
   
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
-  import Alert from '$lib/Alert.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
+  import StyleguidePropsTable from '$lib/jui-components/StyleguidePropsTable.svelte';
+  import Alert from '$lib/jui-components/Alert.svelte';
 
   let pageTitle = 'Accordion';
-  import Accordion from '$lib/Accordion.svelte';
-  import AccordionItem from '$lib/AccordionItem.svelte';
+  import Accordion from '$lib/jui-components/Accordion.svelte';
+  import AccordionItem from '$lib/jui-components/AccordionItem.svelte';
 
   let accordionContent = [
     {

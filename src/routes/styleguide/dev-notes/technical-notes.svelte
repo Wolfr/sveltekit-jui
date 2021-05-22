@@ -1,5 +1,5 @@
 <script>
-  import RichContent from '$lib/RichContent.svelte';
+  import RichContent from '$lib/jui-components/RichContent.svelte';
   let pageTitle = "Technical notes";
 </script>
 

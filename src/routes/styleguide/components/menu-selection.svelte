@@ -1,10 +1,10 @@
 <script>
 
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
+  import StyleguidePropsTable from '$lib/jui-components/StyleguidePropsTable.svelte';
 
-  import SelectMenu from '$lib/SelectMenu.svelte';
+  import SelectMenu from '$lib/jui-components/SelectMenu.svelte';
 
   let pageTitle = 'Menu (Selection)';
 

@@ -1,7 +1,7 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
-  import RichContent from '$lib/RichContent.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
+  import RichContent from '$lib/jui-components/RichContent.svelte';
 
   let pageTitle = 'Container';
 

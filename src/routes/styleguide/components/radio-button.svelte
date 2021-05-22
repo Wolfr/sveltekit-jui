@@ -1,12 +1,12 @@
 <script>
-  import StyleguideIntro from '$lib/StyleguideIntro.svelte';
-  import StyleguideCard from '$lib/StyleguideCard.svelte';
+  import StyleguideIntro from '$lib/jui-components/StyleguideIntro.svelte';
+  import StyleguideCard from '$lib/jui-components/StyleguideCard.svelte';
 
-  import StyleguidePropsTable from '$lib/StyleguidePropsTable.svelte';
+  import StyleguidePropsTable from '$lib/jui-components/StyleguidePropsTable.svelte';
 
   let pageTitle = 'Radio button';
   
-  import Radio from '$lib/Radio.svelte';
+  import Radio from '$lib/jui-components/Radio.svelte';
 
   let propsTable = [
     {

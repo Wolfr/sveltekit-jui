@@ -1,7 +1,7 @@
 <script>
-	  import Panel from '$lib/Panel.svelte';
-    import PanelHeader from '$lib/PanelHeader.svelte';
-    import PanelBody from '$lib/PanelBody.svelte';
+	  import Panel from '$lib/jui-components/Panel.svelte';
+    import PanelHeader from '$lib/jui-components/PanelHeader.svelte';
+    import PanelBody from '$lib/jui-components/PanelBody.svelte';
 </script>
 
 <div class="u-spacer-l">

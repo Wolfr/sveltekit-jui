@@ -1,10 +1,10 @@
 <script>
-    import Icon from '$lib/Icon.svelte';
-    import Avatar from '$lib/Avatar.svelte';
+    import Icon from '$lib/jui-components/Icon.svelte';
+    import Avatar from '$lib/jui-components/Avatar.svelte';
 
-    import Button from '$lib/Button.svelte';
+    import Button from '$lib/jui-components/Button.svelte';
 
-    import Toggle from '$lib/Toggle.svelte';
+    import Toggle from '$lib/jui-components/Toggle.svelte';
 
     export let href = null;
     export let icon = "";

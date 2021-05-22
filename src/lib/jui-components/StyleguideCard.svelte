@@ -1,8 +1,8 @@
 <script>
-  import Prism from '$lib/Prism.svelte';
+  import Prism from '$lib/jui-components/Prism.svelte';
   import kebabCase from 'just-kebab-case';
 
-  import StyleguideCardInner from '$lib/StyleguideCardInner.svelte';
+  import StyleguideCardInner from '$lib/jui-components/StyleguideCardInner.svelte';
 
   export let style = null;
   export let title = '';
