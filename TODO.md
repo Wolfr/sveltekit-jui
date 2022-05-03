@@ -1,5 +1,4 @@
-
-## Jungle UI todo
+## Todo
 
 * [ ] Svelte kit: experiment with server routes equivalent
 

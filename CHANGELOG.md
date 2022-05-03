@@ -15,4 +15,4 @@
 
 ## 0.1
 
-* Initial release of Sveltekit-JUI. Sveltekit-JUI is a kit of UI components to be used in conjunction with Svelte and Svelte Kit. The J stands for Jungle - the UI for user interface.
+* Initial release of Sveltekit-JUI. Sveltekit-JUI is a kit of UI components to be used in conjunction with Svelte and Svelte Kit.
