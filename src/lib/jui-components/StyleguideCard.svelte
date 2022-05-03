@@ -31,7 +31,7 @@
   }
 
   import { page } from '$app/stores';
-  $: dynLink = $page.path + '#' + id;
+  $: dynLink = $page.url.pathname + '#' + id;
 
 </script>
 

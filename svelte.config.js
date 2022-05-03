@@ -10,7 +10,6 @@ const config = {
     { sass: { includePaths: ['src'] }
   }),
   kit: {
-    target: '#svelte',
     adapter: vercel(),
 
     vite: {
