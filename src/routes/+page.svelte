@@ -8,7 +8,7 @@
 <main>
   <div>
     <div class="c-brand">
-      <h1>Sveltekit-JUI (0.5)</h1>
+      <h1>Sveltekit-JUI (0.6)</h1>
     </div>
     <RichContent>
       <p>Sveltekit-JUI is a kit of UI components to be used in conjunction with <a href="https://svelte.dev/">Svelte</a> and <a href="https://kit.svelte.dev/docs">SvelteKit</a>.</p>

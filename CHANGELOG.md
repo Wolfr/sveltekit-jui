@@ -1,5 +1,19 @@
 # Changelog 
 
+### 0.6
+
+* Migrated to SvelteKit with latest breaking changes (+page)
+
+
+
+### 0.3
+
+* Migrated to latest SvelteKit version (109)
+* Added chart logic powered by LayerCake
+* Added multi select component
+* Added slider component
+* Added color picker component
+
 ### 0.2 (preview)
 
 * Implement copy/paste button in styleguide
