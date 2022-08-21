@@ -11,12 +11,12 @@
   let propsTable = [
     {
       name: 'checked',
-      description: 'Set checkbox as checked',
+      description: 'Set radio button as checked',
       required: false,
     },
     {
       name: 'disabled',
-      description: 'Disable the checkbox',
+      description: 'Disable the radio button',
       required: false,
     },
   ]
