@@ -11,18 +11,6 @@ const config = {
   }),
   kit: {
     adapter: vercel(),
-
-    vite: {
-      ssr: {
-        noExternal: []
-      },
-      optimizeDeps: {
-        include: ['layercake']
-      },
-      css: {
-        postcss: {}
-      }
-    }
   }
 };
 

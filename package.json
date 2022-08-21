@@ -3,11 +3,10 @@
   "version": "0.5.0",
   "license": "MIT",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
-    "prepare": "svelte-kit sync"
+    "dev": "vite dev",
+    "build": "vite build",
+    "package": "vite package",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-vercel": "next",
@@ -21,11 +20,12 @@
     "sass": "^1.32.8",
     "autoprefixer": "^10.2.5",
     "just-kebab-case": "^1.1.0",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "vite": "^3.0.4"
   },
   "type": "module",
   "dependencies": {
-    "layercake": "^4.1.0",
+    "layercake": "^7.0.0",
     "@lukeed/uuid": "^2.0.0",
     "@popperjs/core": "^2.9.2",
     "mono-icons": "^1.2.4",
