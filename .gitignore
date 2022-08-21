@@ -2,6 +2,7 @@
 node_modules
 /.svelte-kit
 .svelte
+.vercel_build_output
 /build
 /functions
 .vercel
