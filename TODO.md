@@ -1,5 +1,6 @@
 ## Todo
 
+* [ ] Switch UUID to "uuid": "^8.3.2"
 * [ ] Svelte kit: experiment with server routes equivalent
 
 ### Drawing app demo
